@@ -2,20 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* For screen sizes smaller than or equal to 1023px */
+@media (max-width: 1023px) {
+  .navbar-bg {
+    background-color: #1e4f4d; /* teal-700 */
+  }
+
+  /* Hide Bottom Navbar and Show Menu Icon */
+  .bottom-nav {
+    display: none; /* Hide bottom navbar */
+  }
+
+  /* Ensure the Menu Icon is visible on smaller screens */
+  .nav-menu {
+    display: block; /* Display the menu icon */
+    width: 1.2rem;
+    color: white;
+    z-index: 999;
+  }
+
+  /* Centering logo and heading */
+  #aLogo {
+    display: flex;
+    justify-content: center; /* Center logo and heading */
+    text-align: center;
+    margin-left: 30%;
+  }
+
+  .navbar-maintext {
+    color: white;
+    font-size: medium;
+  }
+
+  .navbar-subtext {
+    color: white;
+    font-size: x-small;
+  }
+
+  .nav-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .text-left {
+    text-align: center !important;
+  }
+
+  .dropdown-menu {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .dropdown-menu.expanded {
+    max-height: 500px;
+  }
+
+  .dropdown-menu.collapsed {
+    max-height: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-menu {
+    display: none; /* Hide the menu icon on larger screens */
+  }
+  #pPhone {
+    display: block; /* Show Navbar Links for larger screens */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 540px) {
+  .nav-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-close {
+    width: 1.2rem;
+    margin-right: -2.5rem;
+  }
+
+  .nav-user {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin-right: -2.5rem;
+    margin-top: -0.1rem;
+  }
+
+  .nav-bucket {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin-top: -0.1rem;
+  }
+}
+
+/* Navbar Smooth Transitions */
+.dropdown-menu {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.dropdown-menu.expanded {
+  max-height: 500px;
+}
+
+.dropdown-menu.collapsed {
+  max-height: 0;
 }
