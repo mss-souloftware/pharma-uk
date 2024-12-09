@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; 
+  background-color: rgb(216, 216, 216);
+}
+
+/* Tailwind CSS customizations */
+.nav {
+  position: relative;
+}
+
+.nav-header {
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none; /* Initially hidden for larger screens */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styling for individual items in the nav */
+.nav-list li {
+  margin: 1rem 0;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-list li a:hover {
+  color: #d6d4d0;
+}
+
+/* Media Query for screens 1030px and smaller */
+@media (max-width: 1030px) {
+  .nav-list {
+    display: none; /* Hide nav list by default */
+  }
+
+  /* Display the mobile menu button on smaller screens */
+  .nav-btn {
+    display: block; /* Show hamburger icon */
+  }
+  
+  .nav-list.open {
+    display: block; /* Show the mobile menu when it's open */
+  }
+  .mobile-nav-hidden{
+    display: none;
+    height: 0%;
+  }
 }
