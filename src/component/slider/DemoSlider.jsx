@@ -29,6 +29,10 @@ const DemoSlider = ({ data }) => {
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${image})`,
                   }}
                 ></div>
+
+                {/* Bottom White Gradient */}
+                <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+
                 {/* Content */}
                 <div className="relative z-10 flex items-center justify-center h-full">
                   <div className="text-center px-4">

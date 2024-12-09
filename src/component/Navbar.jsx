@@ -54,6 +54,7 @@ const Navbar = () => {
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="/Logo.png"
+            width={500} height={500}
             className="absolute h-16 w-16 sm:h-20 sm:w-20 md:h-28 md:w-28 lg:h-36 lg:w-36 xl:h-40 xl:w-40"
             alt="Responsive Logo"
           />
