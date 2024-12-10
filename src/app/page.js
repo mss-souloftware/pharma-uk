@@ -1,13 +1,11 @@
 // Page.jsx
 import React from 'react';
-import Hero from '@/component/Hero'; // Correct import
-import Content from '../component/Content';  // Correct import for default export
+import Hero from '@/component/Hero/Hero'; // Correct import 
 
 const Page = () => {
   return (
     <>
       <Hero />
-      <Content />
     </>
   );
 };

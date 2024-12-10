@@ -1,0 +1,152 @@
+
+
+.cube, .cube2, .cube3 {
+  position: relative;
+  transform-style: preserve-3d;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  will-change: transform, box-shadow;
+}
+
+.cube {
+  width: 20px;
+  height: 20px;
+  animation-name: animateD;
+  
+}
+
+@keyframes animateD {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(-360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid #DC143C;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+  transition: transform 1s ease-in-out;
+}
+
+.topD {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #DC143C;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.topD::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #DC143C;
+  transform: translateZ(-400px);
+  filter: blur(20px);
+  box-shadow: 0 0 60px rgba(125, 255, 153, 0.2),
+    0 0 100px rgba(125, 255, 153, 0.4), 0 0 200px rgba(125, 255, 153, 0.6);
+}
+
+.cube2 {
+  width: 15vw;
+  height: 15vw;
+  animation-name: animateD2;
+}
+
+@keyframes animateD2 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(-360deg);
+  }
+}
+
+.cube2 div {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 65%;
+  height: 65%;
+  transform-style: preserve-3d;
+}
+
+.cube2 div span {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 65%;
+  height: 65%;
+  background: transparent;
+  border: 2px solid #DC143C;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(62px);
+}
+
+.cube3 {
+  width: 10vw;
+  height: 10vw;
+  animation-name: animateD3;
+}
+
+@keyframes animateD3 {
+  0% {
+    transform: rotateX(-90deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateY(45deg);
+  }
+}
+
+.cube3 div {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 15%;
+  height: 15%;
+  transform-style: preserve-3d;
+}
+
+.cube3 div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(14px);
+  box-shadow: 0px 0px 7px #DC143C;
+}
+
+.top3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transform: rotateX(90deg) translateZ(14px);
+  box-shadow: 0px 0px 10px #DC143C;
+}
