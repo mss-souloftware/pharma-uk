@@ -1,19 +1,24 @@
 
 
-.cube, .cube2, .cube3 {
+.cube {
   position: relative;
   transform-style: preserve-3d;
-  animation-timing-function: ease-in-out;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  will-change: transform, box-shadow;
+  animation: rotate 4s infinite linear;
+  margin-right: 30%;
+  position: absolute;
+  margin-top: -20%;
 }
 
-.cube {
-  width: 20px;
-  height: 20px;
-  animation-name: animateD;
-  
+.cube2 {
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate 4s infinite linear;
+}
+
+.cube3 {
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotate 4s infinite linear;
 }
 
 @keyframes animateD {
