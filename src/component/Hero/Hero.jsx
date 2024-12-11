@@ -120,7 +120,7 @@ const Hero = () => {
       Virtual Consultation
     </h1>
     <p className="text-xs sm:text-sm md:text-base text-gray-900 mb-4 opacity-90">
-      Virtual consultations provide a convenient and accessible way to connect with healthcare professionals remotely. Whether it's a quick check-up, follow-up appointment, or expert advice, virtual consultations offer timely care without the need to visit a clinic in person.
+      Virtual consultations provide a convenient and accessible way to connect with healthcare professionals remotely. Whether it&apos;s a quick check-up, follow-up appointment, or expert advice, virtual consultations offer timely care without the need to visit a clinic in person.
     </p>
     <button className="px-6 py-2 text-black bg-transparent border-2 border-hoverUnderlineColor hover:text-white hover:bg-hoverUnderlineColor font-semibold rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50">
       View More

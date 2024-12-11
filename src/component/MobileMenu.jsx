@@ -63,7 +63,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             onClick={() => handleDropdownToggle("men")}
             className="text-white bg-blackBackground hover:bg-blackBackground focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center relative group"
           >
-            Men's Health
+            Men&apos;s Health
             <FaCaretDown className="ml-2 text-white" />
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
           </button>
@@ -101,7 +101,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             onClick={() => handleDropdownToggle("women")}
             className="text-white bg-blackBackground hover:bg-blackBackground focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center relative group"
           >
-            Women's Health
+            Women&apos;s Health
             <FaCaretDown className="ml-2 text-white" />
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
           </button>
