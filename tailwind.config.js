@@ -14,7 +14,7 @@ module.exports = {
         primaryText: 'white', // text-white
         secondary: 'gray', // secondary color
         blackBackground: 'black', // background color
-        hoverUnderlineColor: '#DC143C', // Hover underline color
+        hoverUnderlineColor: '#C70039', // Hover underline color
       },
     },
   },

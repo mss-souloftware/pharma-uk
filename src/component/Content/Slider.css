@@ -1,0 +1,48 @@
+/* Swiper container */
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+/* Slide content */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 20px;
+}
+
+/* Font size scaling */
+.swiper-slide div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+/* Responsiveness: Change font size based on screen width */
+@media (max-width: 1200px) {
+  .swiper-slide div {
+    font-size: 1.2rem; /* Slightly smaller font for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide div {
+    font-size: 1rem; /* Smaller font for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide div {
+    font-size: 0.9rem; /* Smallest font for smaller screens */
+  }
+}
+
+/* Bulky font applied globally */
+.swiper-slide div {
+  font-family: 'Roboto', sans-serif; /* You can use a bulky font such as 'Roboto' */
+  font-weight: bolder;
+}

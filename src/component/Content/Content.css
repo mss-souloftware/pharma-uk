@@ -1,0 +1,11 @@
+
+@media only screen and (max-width: 425px) {
+    .left-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        font-size: 25px;
+        color: black;
+    }
+}

@@ -77,13 +77,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-100">Condoms</Link>
+                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-300">Condoms</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-100">Erectile Dysfunction</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-300">Erectile Dysfunction</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-100">Hair Loss</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-300">Hair Loss</Link>
                 </motion.li>
               </ul>
             </motion.div>
@@ -114,13 +114,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-100">Cystitis</Link>
+                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-300">Cystitis</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-100">Contraceptive Pill</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-300">Contraceptive Pill</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-100">Feminine Care</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-300">Feminine Care</Link>
                 </motion.li>
               </ul>
             </motion.div>
@@ -151,13 +151,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-100">Asthma</Link>
+                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-300">Asthma</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-100">Allergies</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-300">Allergies</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-100">Cough</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-300">Cough</Link>
                 </motion.li>
               </ul>
             </motion.div>

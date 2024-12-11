@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css"; // Import the CSS module
+import About from "../button/About";
 const Hero = () => {
   return (
     <>
@@ -67,9 +68,7 @@ const Hero = () => {
           <div
             className={`${styles.animateSlidein500} mt-8 sm:mt-10 opacity-0`}
           >
-            <button className="px-8 sm:px-12 md:px-16 py-3 text-sm sm:text-base md:text-lg text-white font-semibold bg-hoverUnderlineColor border-2 border-transparent rounded-lg hover:bg-hoverUnderlineColor transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor focus:ring-opacity-50">
-              About Us
-            </button>
+           <About/>
           </div>
         </div>
 
@@ -107,19 +106,28 @@ const Hero = () => {
       </div>
 
       {/* Card Content */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 mt-[2%] w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto sm:h-[25vh] md:h-[30vh] lg:h-[35vh] border-solid border-2 flex items-center justify-center z-20 opacity-100 bg-[#ffeeee] rounded-xl shadow-lg p-4 overflow-hidden hover:rotate-x-45 hover:bg-[#ffdfe5] transition-all duration-200 ease-in-out">
-        <div className="text-center px-4 sm:px-6 md:px-8 lg:px-10">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-3">
-            Virtual Consultation
-          </h1>
-          <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4">
-          Virtual consultations provide a convenient and accessible way to connect with healthcare professionals remotely. Whether &quot;s a quick check-up, follow-up appointment, or expert advice, virtual consultations offer timely care without the need to visit a clinic in person.
-          </p>
-          <button className="px-6 py-2 text-black bg-transparent border-2 border-hoverUnderlineColor hover:text-white hover:bg-hoverUnderlineColor font-semibold rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50">
-            View More
-          </button>
-        </div>
-      </div>
+      <div className="relative left-1/2 transform -translate-x-1/2 mt-[2%] w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto sm:h-[25vh] md:h-[30vh] lg:h-[35vh] border-solid border-2 flex items-center justify-center z-20 opacity-100 rounded-xl shadow-lg p-4 overflow-hidden hover:rotate-x-45 transition-all duration-200 ease-in-out">
+  {/* Background Image */}
+  <img
+    src="/DoctorImages/HeroImg.jpg" // Replace this with your image URL
+    alt="Background"
+    className="absolute inset-0 w-full h-full object-cover rounded-xl opacity-60 shadow-2xl" // Added shadow effect
+  />
+  
+  {/* Content Overlay */}
+  <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 lg:px-10">
+    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-3 opacity-90">
+      Virtual Consultation
+    </h1>
+    <p className="text-xs sm:text-sm md:text-base text-gray-900 mb-4 opacity-90">
+      Virtual consultations provide a convenient and accessible way to connect with healthcare professionals remotely. Whether it's a quick check-up, follow-up appointment, or expert advice, virtual consultations offer timely care without the need to visit a clinic in person.
+    </p>
+    <button className="px-6 py-2 text-black bg-transparent border-2 border-hoverUnderlineColor hover:text-white hover:bg-hoverUnderlineColor font-semibold rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50">
+      View More
+    </button>
+  </div>
+</div>
+
     </>
   );
 };
