@@ -65,7 +65,7 @@ body {
 /* Media Query for screens 1030px and smaller */
 @media (max-width: 1030px) {
   .nav-list {
-    display: none; /* Hide nav list by default */
+    display: none; 
   }
 
   /* Display the mobile menu button on smaller screens */
