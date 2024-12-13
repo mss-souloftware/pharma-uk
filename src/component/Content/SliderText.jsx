@@ -254,7 +254,7 @@ const Content = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="flex justify-center items-center h-full text-gray-300 text-4xl font-extrabold">
+          <div className="flex justify-center items-center h-full text-gray-300 text-4xl font-extrabold  [word-spacing:-20px]">
             Aloe Vera Gel
           </div>
         </SwiperSlide>

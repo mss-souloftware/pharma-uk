@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import "./style/Content.css";
 
 const FirstLeftContent = () => {
   return (
-    <div className="w-full flex justify-center items-center relative">
-      <h1 className="text-4xl sm:text-2xl md:text-6xl font-extrabold text-hoverUnderlineColor text-center sm:text-left max-w-full px-4 overflow-hidden break-words">
+    <div className="w-full flex justify-center items-center relative text-left sm:text-center">
+      <h1 className="text-xl sm:text-lg md:text-6xl font-extrabold text-hoverUnderlineColor max-w-full overflow-hidden break-words">
         Here’s what makes us different from conventional clinics
       </h1>
     </div>

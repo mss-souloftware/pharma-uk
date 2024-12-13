@@ -13,31 +13,38 @@
   background-position: center;
   background-size: contain;
   padding: 20px;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /* Font size scaling */
 .swiper-slide div {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   transition: font-size 0.3s ease;
+  word-spacing: normal;
 }
 
 /* Responsiveness: Change font size based on screen width */
 @media (max-width: 1200px) {
   .swiper-slide div {
     font-size: 1.2rem; /* Slightly smaller font for larger screens */
+    word-spacing: normal; /* Ensure word-spacing is normal */
   }
 }
 
 @media (max-width: 768px) {
   .swiper-slide div {
     font-size: 1rem; /* Smaller font for medium screens */
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .swiper-slide div {
     font-size: 0.9rem; /* Smallest font for smaller screens */
+    word-spacing: 20px;
+    padding: 8px; 
+
   }
 }
 

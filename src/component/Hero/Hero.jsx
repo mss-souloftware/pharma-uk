@@ -1,134 +1,114 @@
 import React from "react";
-import styles from "./Hero.module.css"; // Import the CSS module
-import About from "../button/About";
+import "./Hero.module.css"
+
 const Hero = () => {
   return (
-    <>
-      <div className="relative flex justify-center items-center w-full h-[100%] bg-white overflow-hidden">
-        {/* Cube 2 */}
-        <div
-          className={`${styles.cube2New} 
-          w-[20vw] h-[20vw] md:w-[15vw] md:h-[15vw] lg:w-[10vw] lg:h-[10vw] 
-          xl:w-[8vw] xl:h-[8vw] transform rotate-45 absolute`}
+    <div
+      className="relative  flex justify-center items-center w-full h-[38rem] bg-cover bg-center overflow-hidden"
+      style={{ backgroundImage: "url('/hero.jpg')" }}
+    >
+      {/* Transparent Overlay */}
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-40 z-10"></div>
+
+      {/* Text Content with Fade-in Animation */}
+      <div className="relative container z-20 flex flex-col justify-center md:justify-start md:left-0 xl:left-44  ">
+        {/* Heading */}
+        <h1
+          className={`text-2xl sm:text-3xl  font-bold tracking-wider leading-relaxed text-white xl:mb-5 md:mb-4`}
         >
-          <div className={styles.topD}></div>
-          <div>
-            <span style={{ "--i": 0 }}></span>
-            <span style={{ "--i": 1 }}></span>
-            <span style={{ "--i": 2 }}></span>
-            <span style={{ "--i": 3 }}></span>
+          <span className="block xl:text-5xl md:text-3xl racking-wide ">Get high-quality service</span>
+          <span className="mt-2 xl:text-5xl md:text-3xl tracking-wide ">with quality medicine</span>
+        </h1>
+
+        <div className="heroSubText grid container grid-cols-2 lg:grid-cols-2 gap-0 sm:gap-2 ml-0 sm:w-full sm:gap-4   sm:justify-center   sm:items-center  lg:ml-0 md:w-[48%] sm:items-center  sm:justify-center md:items-start md:w-[60%] sm:items-start xl:w-[calc(100%-70%)] mx-auto"> 
+
+
+          <div className=" heroSubText pt-2 flex ">
+            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
+            <span className=" text-white xl:text-base md:text-sm "> UK registered pharmacy </span>
           </div>
-          <div className={styles.cube2}>
-            <div>
-              <span style={{ "--i": 0 }}></span>
-              <span style={{ "--i": 1 }}></span>
-              <span style={{ "--i": 2 }}></span>
-              <span style={{ "--i": 3 }}></span>
-            </div>
-            <div className={styles.cube3}>
-              <div className={styles.top3}></div>
-              <div>
-                <span style={{ "--i": 0 }}></span>
-                <span style={{ "--i": 1 }}></span>
-                <span style={{ "--i": 2 }}></span>
-                <span style={{ "--i": 3 }}></span>
-              </div>
-            </div>
+          <div className=" pt-2 flex  ">
+            {" "}
+            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
+            <span className=" text-white sm:w-full xl:text-base md:text-sm sm:text-xs  "> Express next day delivery </span>
           </div>
+          <div className=" flex">
+            {" "}
+            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1   " />
+            <span className=" text-white xl:text-base md:text-sm "> Discreet packaging </span>
+          </div>
+          <div className="   flex">
+            {" "}
+            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
+            <span className=" text-white xl:text-base md:text-sm "> 207,731 customer reviews </span>
+          </div> 
+
         </div>
 
-        {/* Text Content with Fade-in Animation */}
-        <div className="grid gap-x-8 gap-y-4 gap-4 flex flex-col items-center justify-center text-center relative z-10 px-4 sm:px-8 md:px-12 lg:px-20 mt-16 sm:mt-20 md:mt-32">
-          {/* Heading */}
-          <h1
-            className={`${styles.animateSlidein300} 
-  text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-  font-bold tracking-wider leading-relaxed opacity-0 whitespace-nowrap`}
-          >
-            <span className="block">Get high-quality service</span>
-            <span className="block mt-2 tracking-wide">
-              with quality medicine
-            </span>
-          </h1>
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:w-[30%] md:w-[45%]  md:text-sm xl:text-base sm:grid-cols-2 gap-2 md:gap-0  border-2 border-solid border-transparent mt-8 px-2 sm:px-1     ">
+          {/* Left Column */}
+          <div className="flex flex-col space-y-2 sm:space-y-2 justify-center items-center  sm:items-start">
+            {/* Name and Rating */}
+              <div className="flex justify-between items-center xl:w-[30%] gap-4 md:gap-12  ">
+                <span className="text-white text-base sm:text-xl md:text-xl lg:text-3xl font-extrabold">
+                  <span className="xl:text-2xl md:text-xl">
+                  𝙸𝚏𝚎𝚎𝚑𝚜𝚑𝚢 
+                  </span>
+                <span className="text-white text-base sm:text-base md:text-bsae lg:text-xl font-semibold  sm:ml-[20%] sm:text-font-normal  ">
+                  <span className=" ">
+                  4.7
+                  </span>
+                </span>
+                </span>
+              </div>
 
-          {/* Subtext */}
-          <p
-            className={`${styles.animateSlidein300} mt-4 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-normal sm:leading-relaxed opacity-0`}
-          >
-            <span>Take control of your health</span>
-            <span className="block sm:inline">
-              {" "}
-              and experience the benefits of healthcare{" "}
-            </span>
-            <br className="hidden sm:block" />
-            <span>with our platform.</span>
-          </p>
-
-          {/* Button */}
-          <div
-            className={`${styles.animateSlidein500} mt-8 sm:mt-10 opacity-0`}
-          >
-           <About/>
+            {/* Star Images */}
+            <div className="flex items-center xl:space-x-5 md:space-x-4 space-x-1 sm:space-x-2  ">
+              <img
+                src="/rank.png"
+                alt="star"
+                className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
+              />
+              <img
+                src="/rank.png"
+                alt="star"
+                className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
+              />
+              <img
+                src="/rank.png"
+                alt="star"
+                className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
+              />
+              <img
+                src="/rank.png"
+                alt="star"
+                className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
+              />
+            </div>
           </div>
+
+          {/* Right Column */}
+          <div className="flex sm:items-center xl:text-left  justify-center items-center flex-col sm:flex-row mr-[30%] sm:w-[80%] sm:h-[80%]">
+            <div className="xl:h-[10vh] md:h-[10vh] w-[2px] bg-white md:mx-auto"></div>
+            <span className="flex items-center flex-wrap text-white font-medium text-base sm:ml-2 md:ml-4 "> 
+  <span className="text-left text-xs sm:text-sm md:text-base leading-tight sm:ml-2 md:ml-3 md:text-xs ">
+    The Winner of the Feefo Platinum Trusted Service Award in 2024
+  </span>
+</span>
+
+          </div>
+          
         </div>
 
-        {/* CUBIC DIV */}
-        <div
-          className={`${styles.cube2New} 
-            w-[4vw] h-[4vw] md:w-[5vw] md:h-[5vw] lg:w-[4vw] lg:h-[4vw] 
-            xl:w-[3vw] xl:h-[3vw] transform rotate-45 absolute`}
-        >
-          <div className={styles.topD}></div>
-          <div>
-            <span style={{ "--i": 0 }}></span>
-            <span style={{ "--i": 1 }}></span>
-            <span style={{ "--i": 2 }}></span>
-            <span style={{ "--i": 3 }}></span>
-          </div>
-          <div className={styles.cube2}>
-            <div>
-              <span style={{ "--i": 0 }}></span>
-              <span style={{ "--i": 1 }}></span>
-              <span style={{ "--i": 2 }}></span>
-              <span style={{ "--i": 3 }}></span>
-            </div>
-            <div className={styles.cube3}>
-              <div className={styles.top3}></div>
-              <div>
-                <span style={{ "--i": 0 }}></span>
-                <span style={{ "--i": 1 }}></span>
-                <span style={{ "--i": 2 }}></span>
-                <span style={{ "--i": 3 }}></span>
-              </div>
-            </div>
-          </div>
+        {/* Button or Call to Action */}
+        <div className="xl:mt-5 sm:mt-6 md:mt-4">
+          <button className="xl:px-6 xl:py-3 md:px-6 md:py-1  bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg  hover:bg-hoverUnderlineColor transition-all  transition ease-in-out delay-15 bg-hoverUnderlineColor hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300">
+            Learn More
+          </button>
         </div>
       </div>
-
-      {/* Card Content */}
-      <div className="relative left-1/2 transform -translate-x-1/2 mt-[2%] w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto sm:h-[25vh] md:h-[30vh] lg:h-[35vh] border-solid border-2 flex items-center justify-center z-20 opacity-100 rounded-xl shadow-lg p-4 overflow-hidden hover:rotate-x-45 transition-all duration-200 ease-in-out">
-  {/* Background Image */}
-  <img
-    src="/DoctorImages/HeroImg.jpg" // Replace this with your image URL
-    alt="Background"
-    className="absolute inset-0 w-full h-full object-cover rounded-xl opacity-60 shadow-2xl" // Added shadow effect
-  />
-  
-  {/* Content Overlay */}
-  <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 lg:px-10">
-    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-3 opacity-90">
-      Virtual Consultation
-    </h1>
-    <p className="text-xs sm:text-sm md:text-base text-gray-900 mb-4 opacity-90">
-      Virtual consultations provide a convenient and accessible way to connect with healthcare professionals remotely. Whether it&apos;s a quick check-up, follow-up appointment, or expert advice, virtual consultations offer timely care without the need to visit a clinic in person.
-    </p>
-    <button className="px-6 py-2 text-black bg-transparent border-2 border-hoverUnderlineColor hover:text-white hover:bg-hoverUnderlineColor font-semibold rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50">
-      View More
-    </button>
-  </div>
-</div>
-
-    </>
+    </div>
   );
 };
 

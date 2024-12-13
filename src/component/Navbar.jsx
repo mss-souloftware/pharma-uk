@@ -6,6 +6,7 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu"; // Import the MobileMenu Component
 import Dropdown from "./DropDown"; // Import the Dropdown Component
 import UserProfileMenu from "./UserProfileMenu";
+import Header from "./Header";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -46,11 +47,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-blackBackground border-gray-200 dark:bg-blackBackground dark:border-gray-700 relative">
+      <Header/>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 sm:w-6 tl:space-x-reverse">
           <img
             src="/Logo.png"
-            className="absolute h-10 w-10 sm:h-20 sm:w-20 md:h-28 md:w-28 lg:h-36 lg:w-36 xl:h-40 xl:w-40"
+            className="absolute w-10 sm:w-6  sm:w-20   md:w-28  lg:w-36  xl:w-40  "
             alt="Responsive Logo"
           />
         </Link>
@@ -84,7 +86,7 @@ const Navbar = () => {
 
         {/* Navbar Items (hidden on small screens, visible on larger screens) */}
         <div className="w-full md:block md:w-auto mobile-nav-hidden">
-          <ul className="hidden md:flex flex-col font-medium p-4 md:p-0 mt-4 border dark:bg-blackBackground rounded-lg bg-blackBackground md:space-x-14 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-blackBackground dark:bg-gray-800 md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0">
+          <ul className="hidden md:flex flex-col font-medium sm:text-xs p-4 md:p-0 mt-4 border dark:bg-blackBackground rounded-lg bg-blackBackground md:space-x-14 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-blackBackground dark:bg-gray-800 md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0">
             {/* Menu items go here */}
             <div className="flex flex-wrap items-center space-y-4 space-x-0 md:space-y-0 md:space-x-8">
               {/* Dropdown Components */}

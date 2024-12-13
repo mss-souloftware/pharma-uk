@@ -28,11 +28,11 @@ const UserProfileMenu = () => {
       {/* User Profile Image */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="cursor-pointer group relative w-12 h-12 rounded-full overflow-hidden"
+        className="cursor-pointer group relative xl:w-10 xl:h-10 md:w-7 md:h-7 rounded-full overflow-hidden"
       >
         {/* Replace with actual user image or placeholder */}
         <img
-          src="/userProfile.png" // Example image, replace with user image source
+          src="/user-icon.png" // Example image, replace with user image source
           alt="User Profile"
           className="w-full h-full object-cover absolute h-12 w-12 "
         />

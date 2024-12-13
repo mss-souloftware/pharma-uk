@@ -1,0 +1,7 @@
+/* You can add custom CSS here if needed */
+@media (max-width: 600px) {
+    .text-center {
+      text-align: center !important;
+    }
+  }
+  
