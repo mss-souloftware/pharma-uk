@@ -223,6 +223,7 @@ const ContentSection3 = () => {
             el: ".swiper-pagination",
             type: "progressbar",
           }}
+          
           className="progress-slide-carousel"
         >
           {/* Each SwiperSlide holds a sub-slider with 3 cards */}
@@ -240,6 +241,26 @@ const ContentSection3 = () => {
                   }}
                   pagination={{
                     clickable: true,
+                  }}
+                  breakpoints={{
+                    414:{
+                      slidesPerView: 1,
+                    },
+                    375:{
+                      slidesPerView: 1,
+                    },
+                    320:{
+                      slidesPerView: 1,
+                    },
+                    640: {
+                      slidesPerView: 1, // 1 card on small screens ('sm')
+                    },
+                    768: {
+                      slidesPerView: 2, // 2 cards on medium screens ('md')
+                    },
+                    1024: {
+                      slidesPerView: 3, // 3 cards on large screens ('lg')
+                    },
                   }}
                   className="sub-slide-carousel"
                 >
