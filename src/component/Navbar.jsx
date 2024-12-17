@@ -46,13 +46,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blackBackground border-gray-200 dark:bg-blackBackground dark:border-gray-700 relative">
+    <nav className="bg-blackBackground z-50 border-gray-200 dark:bg-blackBackground dark:border-gray-700 relative">
       <Header/>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
+      <div className=" md:mx-auto md:container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
         <Link href="/" className="flex items-center space-x-3 sm:w-6 tl:space-x-reverse">
           <img
             src="/Logo.png"
-            className="absolute w-10 sm:w-6  sm:w-20   md:w-28  lg:w-36  xl:w-40  "
+            className="absolute w-10 sm:w-6  sm:w-20   md:w-24 ml-5 sm:ml-0 lg:w-24  xl:w-28  "
             alt="Responsive Logo"
           />
         </Link>

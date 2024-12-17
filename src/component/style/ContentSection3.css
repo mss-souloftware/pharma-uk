@@ -1,0 +1,7 @@
+
+  .swiper-wrapper {
+    @apply w-full h-auto relative pb-16 transition-all ease-linear;
+  }
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    @apply bg-indigo-600;
+  } 
