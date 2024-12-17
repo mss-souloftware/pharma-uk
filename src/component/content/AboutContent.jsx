@@ -28,10 +28,10 @@ const ContentSection = () => {
         {/* Text Section */}
         <div className='lg:w-1/2 w-full text-center mt-14 lg:text-left lg:pl-8 order-1 lg:order-2'>
           <h3 className='text-2xl font-bold mb-6 text-hoverUnderlineColor '>
-            <img src="/about-logo.png" alt="" className='h-10 w-10 inline-block  ' />
+            <img src="/about-logo.png" alt="" className='h-10 w-10 inline-block' />
             About Us Company
           </h3>
-          <h1 className='text-2xl md:text-3xl lg:text-4xl font-extrabold mb-8 font-extrabold'>
+          <h1 className='text-2xl md:text-3xl lg:text-4xl font-extrabold mb-8 '>
             Affordable Health Care Solutions
           </h1>
           <p className='text-base mb-8 text-gray-500'>
