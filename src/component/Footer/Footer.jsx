@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
         <footer
-            className="rounded-t-lg  border-2 border-solid border-hoverUnderlineColor mb-3 bg-black  mt-48 mx-auto text-center text-neutral-600 dark:text-neutral-200 lg:text-left"
+            className="rounded-t-lg  border-2 border-solid border-hoverUnderlineColor mb-3 bg-black  mt-16 mx-auto text-center text-neutral-600 dark:text-neutral-200 lg:text-left"
             style={{
               position: 'relative', // Make sure the footer is positioned relative
              
@@ -107,15 +107,18 @@ export default function Footer() {
                             Get In Touch
                         </h6>
                         <p className="mb-4 flex items-center justify-center md:justify-start">
+                            <img src="/phone-icon.png" className=' sm:w-3 md:w-3 lg:w-5 w-3 mr-2' alt="" />
                         <a className="text-white dark:text-neutral-200">Phone: +92323471232</a>
                         </p>
 
                         <p className="mb-4 flex items-center justify-center md:justify-start">
+                            <img src="/email-icon.png" className=' sm:w-3 md:w-3 lg:w-5 w-3 mr-2' alt="" />
                         <a className="text-white dark:text-neutral-200">Email: 123@gmail.com</a>
                         </p>
 
 
                         <p className="mb-4 flex items-center justify-center md:justify-start">
+                            <img src="/sms.png" className=' sm:w-3 md:w-3 lg:w-5 w-3 mr-2'  alt="" />
                         <a className="text-white dark:text-neutral-200">Text(SMS): 8818</a>
                         </p>
 
