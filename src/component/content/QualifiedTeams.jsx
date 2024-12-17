@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react'; 
-import ContentSection3 from './ContentSection3';
+import ContentSection3 from './Reviews';
 
 const ContentSection2 = () => {
   return (

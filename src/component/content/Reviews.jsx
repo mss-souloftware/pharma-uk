@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import ContentSection4 from "./ContentSection4";
+import ContentSection4 from "./AboutCompany";
 
 const ContentSection3 = () => {
   const cardsData = [
