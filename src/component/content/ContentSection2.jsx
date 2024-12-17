@@ -80,7 +80,7 @@ const ContentSection2 = () => {
   </div>
 
   {/* Doctor's Name */}
-  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Dr. Lorem, ipsum dolor.</h2>
+  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Jacquiline</h2>
 </div>
 
         {/* Column 3 */}
@@ -115,7 +115,7 @@ const ContentSection2 = () => {
   </div>
 
   {/* Doctor's Name */}
-  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Dr. Lorem, ipsum dolor.</h2>
+  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Leos Morgan</h2>
 </div>
 
         {/* Column 4 */}
@@ -150,7 +150,7 @@ const ContentSection2 = () => {
   </div>
 
   {/* Doctor's Name */}
-  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Dr. Lorem, ipsum dolor.</h2>
+  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Rory Burns</h2>
 </div>
 
         {/* Column 5 */}
@@ -185,7 +185,7 @@ const ContentSection2 = () => {
   </div>
 
   {/* Doctor's Name */}
-  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Dr. Lorem, ipsum dolor.</h2>
+  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">Sara Loren</h2>
 </div>
 
       </div>

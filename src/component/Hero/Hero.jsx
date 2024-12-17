@@ -20,7 +20,7 @@ const Hero = () => {
           <span className="mt-2 xl:text-5xl md:text-3xl tracking-wide ">with quality medicine</span>
         </h1>
 
-        <div className="heroSubText grid container grid-cols-2 xl:text-base md:text-sm text-xs  w-[100%] lg:grid-cols-2 gap-0 sm:gap-2 ml-0 sm:w-full md:gap-4  sm:justify-center   lg:ml-0 xl:w-[40%]  md:items-start sm:w-[50%] sm:items-start xl:w-[calc(100%-65%)] mx-auto"> 
+        <div className="heroSubText grid container grid-cols-2 xl:text-base md:text-sm text-xs  w-[100%] lg:grid-cols-2 gap-0 sm:gap-2 ml-0 sm:w-full md:gap-4  sm:justify-center   lg:ml-0 xl:w-[40%]  md:items-start sm:w-[50%] sm:items-start xl:w-[calc(100%-70%)] mx-auto"> 
 
 
           <div className=" heroSubText pt-2 flex mb-2 sm:mb-0">
@@ -49,6 +49,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:w-[30%] md:w-[45%]  md:text-sm xl:text-base sm:grid-cols-2 gap-2 md:gap-0  border-2 border-solid border-transparent mt-8 px-2 sm:px-1     ">
           {/* Left Column */}
           <div className="flex flex-col space-y-2 sm:space-y-2 justify-center items-center sm:items-start md:w-36">
+
             {/* Name and Rating */}
               <div className="flex justify-between items-center xl:w-[30%] gap-4 md:gap-12  ">
                 <span className="text-white text-base sm:text-xl md:text-xl lg:text-3xl font-extrabold">
@@ -91,7 +92,7 @@ const Hero = () => {
           {/* Right Column */}
           <div className="flex sm:items-center xl:text-left  justify-center items-center flex-col sm:flex-row sm:w-[100%] sm:h-[95%]">
             <div className="xl:h-[10vh] md:h-[10vh] w-[2px] bg-white md:mx-auto  "></div>
-            <span className="flex items-center flex-wrap text-white font-medium text-base sm:ml-2 md:ml-4 md:w-[100%] "> 
+            <span className="flex items-center flex-wrap text-white font-medium text-base sm:ml-2 md:ml-6 md:w-[100%]  "> 
   <span className="text-left text-xs sm:text-sm md:text-base text-center leading-tight sm:ml-0 md:text-xs md:w-[100%] md:text-left   ">
     The Winner of the Feefo Platinum Trusted Service Award in 2024
   </span>

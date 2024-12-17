@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import ContentSection4 from "./ContentSection4";
 
 const ContentSection3 = () => {
   const cardsData = [
@@ -54,6 +55,7 @@ const ContentSection3 = () => {
   ];
 
   return (
+    <>
     <div className="container mx-auto p-4 mt-20 bg-white rounded-2xl ">
       {/* Title */}
       <div className="block mx-auto text-center text-xl lg:text-3xl md:text-2xl text-hoverUnderlineColor mb-8">
@@ -275,6 +277,10 @@ const ContentSection3 = () => {
         </Swiper>
       </div>
     </div>
+{/* Content Section 4 */}
+      <ContentSection4/>
+    </>
+
   );
 };
 

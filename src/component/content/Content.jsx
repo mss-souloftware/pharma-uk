@@ -7,6 +7,7 @@ const Content = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [error, setError] = useState(null);
+  const [activeCategory, setActiveCategory] = useState(null);
 
   // Fetch the JSON data when the component mounts
   useEffect(() => {
@@ -32,6 +33,7 @@ const Content = () => {
 
   const handleCategoriesClick = (category) => {
     setSelectedCategory(category); // Set the selected category
+    setActiveCategory(category);
   };
 
   return (
@@ -51,46 +53,55 @@ const Content = () => {
 
       {/* Button to show all categories */}
       <div className="flex justify-between">
-        {categories.map((category, index) => (
-          <button
-            key={index}
-            onClick={() => handleCategoriesClick(category)}
-            className="flex justify-center items-center rounded-full py-2 px-4 w-20 sm:w-24 md:w-32 lg:w-40 sm:text-xs md:text-xs text-xs lg:text:base h-10 mt-8 border-2 border-solid border-hoverUnderlineColor rounded-md bg-gray-100"
-          >
-            {category.name || "Unnamed Category"} {/* Fallback text */}
-          </button>
-        ))}
-      </div>
+      {categories.map((category, index) => (
+        <button
+          key={index}
+          onClick={() => handleCategoriesClick(category)}
+          className={`flex justify-center items-center py-2 px-4 w-20 sm:w-24 md:w-32 lg:w-44 sm:text-xs md:text-xs text-xs lg:text:base h-10 mt-8 border-2 border-solid border-hoverUnderlineColor rounded-full 
+            ${activeCategory === category ? 'bg-hoverUnderlineColor text-white' : 'bg-gray-100'}`}
+        >
+          {category.name || "Unnamed Category"} {/* Fallback text */}
+        </button>
+      ))}
+    </div>
 
       {/* Display selected category */}
       {selectedCategory && (
-        <div className="mt-8">
-          <h3 className="text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
-            Subcategories under {selectedCategory.name}
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {selectedCategory.subcategories.map((subcategory, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden relative"
-                style={{
-                  backgroundImage: `url(${subcategory.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  height: "300px", // Fixed height for the image
-                }}
-              >
-                <Link href={subcategory.link}>
-                  <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-7">
-                    <div className="absolute top-0 left-0 w-full bg-gray-600 bg-opacity-60 text-white text-center py-4">
-                      <h5 className="text-xl font-medium ">{subcategory.name}</h5>
-                    </div> 
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+    <div className="mt-8">
+    <h3 className="text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
+      Subcategories under {selectedCategory.name}
+    </h3>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      {selectedCategory.subcategories.map((subcategory, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-xl shadow-lg overflow-hidden relative group transform transition-all duration-300 hover:scale-95"
+          style={{
+            backgroundImage: `url(${subcategory.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "300px", // Fixed height for the image
+          }}
+        >
+          <Link href={subcategory.link}>
+            <div className="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h5 className="text-2xl font-semibold text-white">{subcategory.name}</h5>
+              <p className="text-sm text-white mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                {subcategory.description}
+              </p>
+              <button className="mt-4 py-2 px-6 bg-hoverUnderlineColor text-white rounded-full transition-transform transform hover:scale-105">
+                Learn More
+              </button>
+            </div>
+          </Link>
         </div>
+      ))}
+    </div>
+  </div>
+  
+  
+    
+    
       )}
       <div>
       <ContentSection/> 

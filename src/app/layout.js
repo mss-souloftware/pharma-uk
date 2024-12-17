@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/component/Navbar";
 import "./globals.css";
+import Footer from "@/component/Footer/Footer";
 
 export default function RootLayout({ children }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,10 @@ export default function RootLayout({ children }) {
             <main>
               {children} {/* To render children in page components */}
             </main>
+
+              <footer>
+              <Footer/>    
+                </footer>            
           </div>
         )}
       </body>
