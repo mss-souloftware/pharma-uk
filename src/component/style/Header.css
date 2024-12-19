@@ -76,3 +76,9 @@
     margin-bottom: 0; 
   }
 }
+
+@media (min-width: 314px) and (max-width: 480px) {
+  .phone-email-section{
+    margin-left: 1%;
+  }
+}

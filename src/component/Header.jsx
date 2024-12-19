@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import "./style/Header.css";
-
+import './style/Header.css'
 const Header = () => {
   return ( 
      <div className="bg-hoverUnderlineColor">
-       <div className="flex container mx-auto md:justify-between  bg-hoverUnderlineColor md:p-1 p-1  ">
+       <div className="flex container mx-auto md:justify-between  bg-hoverUnderlineColor md:p-2 p-1 sm:ml-auto">
         {/* Phone and Email Section */}
         <div>
         <div className="phone-email-section sm:ml-3 text-nowrap gap-5 lg:gap-12 md:gap-10 sm:text-xs text-xs md:text-sm flex items-center justify-around  ">

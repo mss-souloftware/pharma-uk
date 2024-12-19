@@ -20,7 +20,7 @@ const Hero = () => {
           <span className="mt-2 xl:text-5xl md:text-3xl tracking-wide ">with quality medicine</span>
         </h1>
 
-        <div className="heroSubText grid container grid-cols-2 xl:text-base md:text-sm text-xs w-[100%] sm:w-[50%] lg:grid-cols-2 gap-0 sm:gap-2 ml-0 sm:w-full md:gap-4  sm:justify-center   lg:ml-0 xl:w-[40%]  md:items-start  sm:items-start xl:w-[calc(100%-70%)] mx-auto"> 
+        <div className="heroSubText grid container grid-cols-2 xl:text-base md:text-sm text-xs w-[100%] sm:w-[50%] lg:grid-cols-2 gap-0 sm:gap-2 ml-0  md:gap-4  sm:justify-center   lg:ml-0 xl:w-[40%]  md:items-start  sm:items-start xl:w-[calc(100%-70%)] mx-auto"> 
 
 
           <div className=" heroSubText pt-2 flex mb-2 sm:mb-0  ">
