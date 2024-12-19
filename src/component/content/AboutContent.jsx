@@ -27,14 +27,14 @@ const ContentSection = () => {
         
         {/* Text Section */}
         <div className='lg:w-1/2 w-full text-center mt-14 lg:text-left lg:pl-8 order-1 lg:order-2'>
-          <h3 className='text-2xl font-bold mb-6 text-hoverUnderlineColor '>
+          <h3 className='text-xl sm:text-2xl font-bold mb-6 text-hoverUnderlineColor '>
             <img src="/about-logo.png" alt="" className='h-10 w-10 inline-block' />
             About Us Company
           </h3>
-          <h1 className='text-2xl md:text-3xl lg:text-4xl font-extrabold mb-8 '>
+          <h1 className='text-xl md:text-3xl lg:text-4xl font-extrabold mb-8 '>
             Affordable Health Care Solutions
           </h1>
-          <p className='text-base mb-8 text-gray-500'>
+          <p className='text-base mb-8 text-gray-500 text-sm sm:text-base '>
             A brief statement outlining the purpose and mission of the clinic. This can include the commitment to patient care, community health, and any specific goals for our values. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempore quas illum in nulla officiis molestiae nemo necessitatibus optio beatae.
           </p>
           <Link href='#' className='px-6 py-3 bg-hoverUnderlineColor  text-white rounded-lg'>

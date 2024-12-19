@@ -42,7 +42,7 @@ const Partners = () => {
 
   return (
     <div className="mt-32">
-      <h1 className='text-hoverUnderlineColor text-base sm:text-xl md:text-2xl lg:text-3xl '>Our Partners</h1>
+      <h1 className='text-hoverUnderlineColor text-xl sm:text-2xl md:text-3xl lg:text-3xl '>Our Partners</h1>
       <Slider {...settings}>
         {/* Map through the partners data to display each partner's name */}
         {partners.length > 0 ? (

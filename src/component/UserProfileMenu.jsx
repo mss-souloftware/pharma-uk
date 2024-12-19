@@ -24,11 +24,11 @@ const UserProfileMenu = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       {/* User Profile Image */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="cursor-pointer group relative xl:w-10 xl:h-10 md:w-7 md:h-7 rounded-full overflow-hidden"
+        className="cursor-pointer group relative xl:w-8 xl:h-8 md:w-6 md:h-6 rounded-full overflow-hidden"
       >
         {/* Replace with actual user image or placeholder */}
         <img

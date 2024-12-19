@@ -58,157 +58,86 @@ const ContentSection3 = () => {
     <>
     <div className="container mx-auto p-4 mt-20 bg-white rounded-2xl ">
       {/* Title */}
-      <div className="block mx-auto text-center text-xl lg:text-3xl md:text-2xl text-hoverUnderlineColor mb-8">
-        More than <span className="font-extrabold">207,891 reviews</span>
+      <div className="block mx-auto text-center text-xl sm:text-2xl md:text-3xl lg:text-3xl text-hoverUnderlineColor mb-8     font-bold mb-6 text-hoverUnderlineColor">
+  More than <h1 className="font-extrabold inline-block ">207,891 reviews</h1>
+</div>
+
+{/* Full-width 3-column layout */}
+<div className="flex justify-center mb-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-44 bg-white p-8 rounded-lg w-full sm:w-11/12 lg:w-10/12">
+    <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw] rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+      {/* Google Text */}
+      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2">
+        <span style={{ color: "#4285F4" }}>𝖦</span>
+        𝗈
+        <span style={{ color: "#34A853" }}>𝗈</span>
+        <span style={{ color: "#FBBC05" }}>𝗀</span>
+        <span style={{ color: "#EA4335" }}>𝗅</span>
+        <span style={{ color: "#4285F4" }}>𝖾</span>
+      </h2>
+
+      {/* Rating Stars */}
+      <div className="flex justify-center items-center mb-2">
+        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
       </div>
 
-      {/* Full-width 3-column layout turned into a Swiper Slider */}
-     {/* Full-width 3-column layout */}
-     <div className="grid grid-cols-3 gap-4 bg-white p-4 rounded-lg mb-8">
-          <div className="bg-white  rounded-lg h-auto flex flex-col justify-center items-center p-4">
-            {/* Google Text */}
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-2">
-              <span style={{ color: "#4285F4" }}>𝖦</span>
-              𝗈
-              <span style={{ color: "#34A853" }}>𝗈</span>
-              <span style={{ color: "#FBBC05" }}>𝗀</span>
-              <span style={{ color: "#EA4335" }}>𝗅</span>
-              <span style={{ color: "#4285F4" }}>𝖾</span>
-            </h2>
+      {/* Rating Text */}
+      <div className="w-full sm:w-20 md:w-24 lg:w-28 mb-4 flex justify-center items-center">
+        <span className="text-xs sm:text-sm md:text-base lg:text-lg">Rating 4.9/5</span>
+      </div>
+    </div>
 
-            {/* Rating Stars */}
-            <div className="flex justify-center items-center mb-2">
-              <img
-                className="w-5 sm:w-6 md:w-7 lg:w-8"
-                src="/rankIcon.png"
-                alt="Star"
-              />
-              <img
-                className="w-5 sm:w-6 md:w-7 lg:w-8"
-                src="/rankIcon.png"
-                alt="Star"
-              />
-              <img
-                className="w-5 sm:w-6 md:w-7 lg:w-8"
-                src="/rankIcon.png"
-                alt="Star"
-              />
-              <img
-                className="w-5 sm:w-6 md:w-7 lg:w-8"
-                src="/rankIcon.png"
-                alt="Star"
-              />
-              <img
-                className="w-5 sm:w-6 md:w-7 lg:w-8"
-                src="/rankIcon.png"
-                alt="Star"
-              />
-            </div>
+    <div className="bg-transparent w-full sm:w-48 md:w-60 lg:w-[10vw]  rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+      {/* Trust Pilot Text */}
+      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
+        Trust <span className="text-[#50C878]">Pilot</span>
+      </h2>
 
-            {/* Rating Text */}
-            <div className="w-full sm:w-20 md:w-24 lg:w-28 mb-4 flex justify-center items-center">
-              <span className="text-xs sm:text-sm md:text-base lg:text-lg">
-                Rating 4.9/5
-              </span>
-            </div>
-          </div>
+      {/* Trust Star Image */}
+      <div className="flex justify-center items-center mb-2">
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+      </div>
 
-          <div className="bg-transparent  rounded-lg h-auto flex flex-col justify-center items-center p-4">
-            {/* Trust Pilot Text */}
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-center mb-2 flex items-center justify-center">
-              Trust <span className="text-[#50C878]">Pilot</span>
-            </h2>
+      {/* Rating Text */}
+      <div className="w-full sm:w-20 md:w-24 lg:w-28 mb-4 flex justify-center items-center">
+        <span className="text-xs sm:text-sm md:text-base lg:text-lg text-[#50C878]">Score 4.9</span>
+      </div>
+    </div>
 
-            {/* Trust Star Image */}
-            <div className="flex justify-center items-center mb-2">
-              <img
-                src="/trustPilotIcon.png"
-                className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                alt="Trust Pilot Star"
-              />
+    <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw]  rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+      {/* feefo Text */}
+      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
+        <span style={{ color: "#000" }}>feefo</span>
+      </h2>
 
-              <img
-                src="/trustPilotIcon.png"
-                className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                alt="Trust Pilot Star"
-              />
+      {/* feefo Star Image */}
+      <div className="flex justify-center items-center mb-2">
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+      </div>
 
-              <img
-                src="/trustPilotIcon.png"
-                className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                alt="Trust Pilot Star"
-              />
+      {/* Rating Text */}
+      <div className="w-full sm:w-20 md:w-24 lg:w-28 mb-4 flex justify-center items-center">
+        <span className="text-xs sm:text-sm md:text-base lg:text-lg">Rating 4.9/5</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-              <img
-                src="/trustPilotIcon.png"
-                className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                alt="Trust Pilot Star"
-              />
 
-              <img
-                src="/trustPilotIcon.png"
-                className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                alt="Trust Pilot Star"
-              />
-            </div>
 
-            {/* Rating Text */}
-            <div className="w-full sm:w-20 md:w-24 lg:w-28 mb-4 flex justify-center items-center">
-              <span className="text-xs sm:text-sm md:text-base lg:text-lg text-[#50C878]">
-                Score 4.9
-              </span>
-            </div>
-          </div>
 
-          <div className="bg-white rounded-lg h-48 flex justify-center items-center">
-            <div className="bg-white  rounded-lg h-auto flex flex-col justify-center items-center p-4">
-              {/* Google Text */}
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-2">
-                <span style={{ color: "#000" }}>feefo</span>
-              </h2>
-
-              {/* feefo Star Image */}
-              <div className="flex justify-center items-center mb-2">
-                <img
-                  src="/trustPilotIcon.png"
-                  className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                  alt="Trust Pilot Star"
-                />
-
-                <img
-                  src="/trustPilotIcon.png"
-                  className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                  alt="Trust Pilot Star"
-                />
-
-                <img
-                  src="/trustPilotIcon.png"
-                  className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                  alt="Trust Pilot Star"
-                />
-
-                <img
-                  src="/trustPilotIcon.png"
-                  className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                  alt="Trust Pilot Star"
-                />
-
-                <img
-                  src="/trustPilotIcon.png"
-                  className="w-5 sm:w-6 md:w-7 lg:w-8 "
-                  alt="Trust Pilot Star"
-                />
-              </div>
-
-              {/* Rating Text */}
-              <div className="w-full sm:w-20 md:w-24 lg:w-28 mb-4 flex justify-center items-center">
-                <span className="text-xs sm:text-sm md:text-base lg:text-lg" >
-                  Rating 4.9/5
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
 
       {/* Main SuperSlider for the Google, Trustpilot, and Feefo Cards */}
       <div className="w-full relative">
@@ -274,18 +203,18 @@ const ContentSection3 = () => {
                               key={i}
                               src="/rankStarIcon.png" // Replace with your star icon image
                               alt="Star Icon"
-                              className="w-4 sm:w-5 md:w-5 lg:w-6"
+                              className="w-3 sm:w-6 md:w-7 lg:w-8"
                             />
                           ))}
                         </div>
 
                         {/* Middle - Card Text */}
-                        <div className="text-base font-bold mb-2 text-center">
+                        <div className="text-base font-bold mb-2 text-center text-sm sm:text-base">
                           {card.text}
                         </div>
 
                         {/* Bottom - Green Name */}
-                        <div className="text-hoverUnderlineColor font-bold text-sm sm:text-base md:text-lg lg:text-xl text-center">
+                        <div className="text-hoverUnderlineColor font-bold text-sm sm:text-base text-center">
                           {card.name}
                         </div>
                       </div>

@@ -48,12 +48,12 @@ const Content = () => {
       </div>
 
       {/* Button to show all categories */}
-      <div className="flex overflow-x-auto space-x-4 py-4 sm:py-6 mt-8">
+      <div className="flex overflow-x-auto space-x-2 sm:space-x-1 py-4 sm:py-6 mt-8 justify-between w-full">
         {categories.map((category, index) => (
           <button
             key={index}
             onClick={() => handleCategoriesClick(category)}
-            className={`flex justify-center items-center py-2 px-4 w-20 sm:w-24 md:w-32 lg:w-44 sm:text-xs md:text-xs text-xs lg:text-base h-10 border-2 border-solid border-hoverUnderlineColor rounded-full 
+            className={`flex justify-center items-center py-2 px-2  sm:px-0 w-44  sm:w-28 md:w-28 lg:w-44 sm:text-xs md:text-xs text-xs lg:text-base h-8 xl:h-10 sm:h-8  border-2 border-solid border-hoverUnderlineColor rounded-full
               ${activeCategory === category ? 'bg-hoverUnderlineColor text-white' : 'bg-gray-100'}`}
           >
             {category.name || "Unnamed Category"} {/* Fallback text */}
@@ -71,7 +71,7 @@ const Content = () => {
             {selectedCategory.subcategories.map((subcategory, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden relative group transform transition-all duration-300 hover:scale-95"
+                className="bg-white rounded-xl  shadow-lg overflow-hidden relative group transform transition-all duration-300 hover:scale-95"
                 style={{
                   backgroundImage: `url(${subcategory.image})`,
                   backgroundSize: "cover",
@@ -79,17 +79,17 @@ const Content = () => {
                   height: "300px", // Fixed height for the image
                 }}
               >
-                <Link href={subcategory.link}>
                   <div className="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <h5 className="text-2xl font-semibold text-white">{subcategory.name}</h5>
                     <p className="text-sm text-white mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       {subcategory.description}
                     </p>
+                <Link href={subcategory.link}>
                     <button className="mt-4 py-2 px-6 bg-hoverUnderlineColor text-white rounded-full transition-transform transform hover:scale-105">
                       Learn More
                     </button>
-                  </div>
                 </Link>
+                  </div>
               </div>
             ))}
           </div>

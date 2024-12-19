@@ -6,9 +6,8 @@ import Content from '@/component/content/ProductList';
 const Page = () => {
   return (
     <>
-    
       <Hero /> 
-      <Content/>
+      <Content  />
     </>
   );
 };

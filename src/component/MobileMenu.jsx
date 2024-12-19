@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaCaretDown } from "react-icons/fa"; // Import the dropdown icon
+import { FaBars, FaCaretDown, FaTimes } from "react-icons/fa"; // Import the dropdown icon
 import Link from "next/link"; // Assuming you're using Next.js for routing
+import UserProfileMenu from "./UserProfileMenu";
 
 const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(mobileMenuOpen);
@@ -25,29 +26,21 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
   return (
     <div>
       {/* Hamburger Icon with animation */}
-      <div className="md:hidden">
-        <button onClick={toggleMobileMenu} className="text-white">
-          <motion.span
-            className={`block w-6 h-1 bg-gray-500 mb-1`}
-            animate={{ rotate: isMenuOpen ? 45 : 0 }} // Rotating to form the top part of the cross
-            transition={{ duration: 0.3 }}
-          />
-          <motion.span
-            className={`block w-6 h-1 bg-gray-500 mb-1`}
-            animate={{ opacity: isMenuOpen ? 0 : 1 }} // Fading the middle bar when the menu is open
-            transition={{ duration: 0.3 }}
-          />
-          <motion.span
-            className={`block w-6 h-1 bg-gray-500`}
-            animate={{ rotate: isMenuOpen ? -45 : 0 }} // Rotating to form the bottom part of the cross
-            transition={{ duration: 0.3 }}
-          />
+      <div className="md:hidden z-50 relative ">
+        <button onClick={toggleMobileMenu} className="text-white w-4">
+          {!isMenuOpen ? (
+            <FaBars size={24} className="text-gray-500 w-4" />
+          ) : (
+            <FaTimes size={24} className="text-gray-500 w-4" />
+          )}
         </button>
       </div>
-
+      <div className="relative z-50 ">
+          <UserProfileMenu/>
+      </div>
       {/* Mobile Menu with animation */}
       <motion.ul
-        className={`md:hidden bg-blackBackground absolute top-16 left-0 w-full p-4 transition-transform ease-in-out duration-300 ${isMenuOpen ? "block" : "hidden"} flex flex-col items-stretch z-50`} // Add z-50 to ensure it's above other content
+        className={`md:hidden bg-blackBackground absolute top-16 left-0 w-full p-4 transition-transform ease-in-out duration-300 ${isMenuOpen ? "block" : "hidden"} flex flex-col items-stretch z-10 `} // Add z-50 to ensure it's above other content
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : -20 }}
         transition={{ duration: 0.3 }}
