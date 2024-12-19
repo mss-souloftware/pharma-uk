@@ -1,11 +1,10 @@
-import React from 'react';
-import FooterEndSec from './FooterEndSec';
+import React from 'react'; 
 
 export default function Footer() {
     return (
         <>
         <footer
-            className="rounded-t-lg  border-2 border-solid border-hoverUnderlineColor mb-3 bg-black  mt-16 mx-auto text-center text-neutral-600 dark:text-neutral-200 lg:text-left"
+            className="rounded-t-lg  border-2 border-solid border-hoverUnderlineColor  bg-black  mt-16 mx-auto text-center text-neutral-600 dark:text-neutral-200 lg:text-left"
             style={{
               position: 'relative', // Make sure the footer is positioned relative
              
@@ -28,11 +27,11 @@ export default function Footer() {
                 </div>
                 {/* Social network icons container */}
                 <div className="flex justify-center">
+                    
                     {/* Add your social media icons here */}
                     <a className="mr-6 text-white dark:text-neutral-200">
                         {/* SVG Icon Here */}
                     </a>
-                    {/* Continue for other social media icons */}
                 </div>
             </div>
 
@@ -139,10 +138,9 @@ export default function Footer() {
             className="bg-transparent p-6 text-center dark:bg-neutral-700">
                 <span className='text-white'>© 2023 Copyright:</span>
                 <a className="font-semibold text-hoverUnderlineColor dark:text-hoverUnderlineColor " href="https://tw-elements.com/">ifeelshy</a>
-            </div>
+            </div> 
         </footer>
 
-        <FooterEndSec/>
             </>
     );
 }
