@@ -7,8 +7,7 @@ const Dropdown = ({ isDropdownOpen, setDropdownOpen, dropdownTitle, links, cardS
         onClick={setDropdownOpen} 
         className="text-white relative group">
         {dropdownTitle}
-        <span 
-          className="absolute left-0 bottom-0 block w-0 h-1 bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
+        <span className="absolute left-0 mt-[1px] block w-0 h-0.5   bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
       </button>
       
       {isDropdownOpen && (

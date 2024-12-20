@@ -10,10 +10,8 @@ const UserProfileMenu = () => {
 
   // Links to display in the profile menu
   const links = [
-    { href: "/SignUp", label: "SignUp" },
-    { href: "/Login", label: "Login" },
-    { href: "/EditProfile", label: "Edit Profile" },
-    { href: "/DeleteProfile", label: "Delete Profile" },
+    { href: "/My Account", label: "My Account" },
+    { href: "/My Order", label: "My Order" },
   ];
 
   // Framer Motion variants for menu animation
@@ -34,7 +32,7 @@ const UserProfileMenu = () => {
         <img
           src="/user-icon.png" // Example image, replace with user image source
           alt="User Profile"
-          className="w-full h-full object-cover absolute h-12 w-12 "
+          className=" object-cover absolute h-8 w-8 "
         />
       </div>
 

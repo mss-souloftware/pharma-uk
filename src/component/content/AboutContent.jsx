@@ -41,6 +41,7 @@ const ContentSection = () => {
             More About Us
           </Link>
         </div>
+
       </div>
       <ContentSection2/>
     </div>

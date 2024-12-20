@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ContentSection from "./AboutContent";
+import HowDoesItWorks from "./HowDoesItWorks";
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
@@ -43,7 +44,11 @@ const Content = () => {
           Find your treatment
         </h1>
         <p className="text-center w-full mx-auto text-xs lg:text-base md:text-base sm:text-base font-extrabold mt-7 text-gray-700">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim earum quaerat dicta animi libero asperiores ut dolores, architecto numquam, culpa commodi excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, dicta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, deleniti.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim earum
+          quaerat dicta animi libero asperiores ut dolores, architecto numquam,
+          culpa commodi excepturi. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Eveniet, dicta? Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Error, deleniti.
         </p>
       </div>
 
@@ -53,9 +58,19 @@ const Content = () => {
           <button
             key={index}
             onClick={() => handleCategoriesClick(category)}
-            className={`flex justify-center items-center py-2 px-2  sm:px-0 w-44  sm:w-28 md:w-28 lg:w-44 sm:text-xs md:text-xs text-xs lg:text-base h-8 xl:h-10 sm:h-8  border-2 border-solid border-hoverUnderlineColor rounded-full
-              ${activeCategory === category ? 'bg-hoverUnderlineColor text-white' : 'bg-gray-100'}`}
+            className={`flex justify-center items-center py-2 px-2 sm:px-0 w-44 sm:w-28 md:w-28 lg:w-44 sm:text-xs md:text-xs text-xs lg:text-base h-8 xl:h-10 sm:h-8 border-2 border-solid border-hoverUnderlineColor rounded-full ${
+              activeCategory === category
+                ? "bg-hoverUnderlineColor text-white"
+                : "bg-gray-100"
+            }`}
           >
+            {/* Icon on the left */}
+            <img
+              src={category.image}
+              alt={category.name}
+              className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
+            />
+
             {category.name || "Unnamed Category"}
           </button>
         ))}
@@ -71,30 +86,39 @@ const Content = () => {
             {selectedCategory.subcategories.map((subcategory, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl  shadow-lg overflow-hidden relative group transform transition-all duration-300 hover:scale-95"
-                style={{
-                  backgroundImage: `url(${subcategory.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  height: "300px", // Fixed height for the image
-                }}
+                className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-all duration-300 hover:scale-95"
               >
-                  <div className="absolute inset-0 flex flex-col justify-end p-6 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h5 className="text-2xl font-semibold text-white">{subcategory.name}</h5>
-                    <p className="text-sm text-white mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      {subcategory.description}
-                    </p>
-                <Link href={subcategory.link}>
+                <div
+                  style={{
+                    backgroundImage: `url(${subcategory.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    height: "250px", // Fixed height for the image
+                  }}
+                  className="w-full"
+                ></div>
+                <div className="p-4">
+                  <h5 className="text-xl font-semibold text-gray-900">
+                    {subcategory.name}
+                  </h5>
+                  <p className="text-sm text-gray-700 mt-2">
+                    {subcategory.description}
+                  </p>
+                  <Link href={subcategory.link}>
                     <button className="mt-4 py-2 px-6 bg-hoverUnderlineColor text-white rounded-full transition-transform transform hover:scale-105">
                       Learn More
                     </button>
-                </Link>
-                  </div>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
         </div>
       )}
+
+      <div className="mt-28">
+        <HowDoesItWorks />
+      </div>
 
       <div>
         <ContentSection />

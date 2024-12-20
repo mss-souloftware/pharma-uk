@@ -1,4 +1,4 @@
-"use client"; // This marks the file as a client-side component
+"@use client"; // This marks the file as a client-side component
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -58,7 +58,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
           >
             Men&apos;s Health
             <FaCaretDown className="ml-2 text-white" />
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span> {/* Underline span */}
           </button>
           {/* Show dropdown content if the menu is open */}
           {activeDropdown === "men" && (
@@ -70,13 +70,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-300">Condoms</Link>
+                  <Link href="/dashboard" className="block px-4 py-2 hover:text-gray-500">Condoms</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-300">Erectile Dysfunction</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:text-gray-500">Erectile Dysfunction</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-300">Hair Loss</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:text-gray-500">Hair Loss</Link>
                 </motion.li>
               </ul>
             </motion.div>
@@ -96,7 +96,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
           >
             Women&apos;s Health
             <FaCaretDown className="ml-2 text-white" />
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span> {/* Underline span */}
           </button>
           {activeDropdown === "women" && (
             <motion.div
@@ -107,13 +107,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-300">Cystitis</Link>
+                  <Link href="/dashboard" className="block px-4 py-2 hover:text-gray-500">Cystitis</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-300">Contraceptive Pill</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:text-gray-500">Contraceptive Pill</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-300">Feminine Care</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:text-gray-500">Feminine Care</Link>
                 </motion.li>
               </ul>
             </motion.div>
@@ -133,7 +133,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
           >
             Respiratory & Digestive
             <FaCaretDown className="ml-2 text-white" />
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span> {/* Underline span */}
           </button>
           {activeDropdown === "respiratory" && (
             <motion.div
@@ -144,13 +144,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:bg-gray-300">Asthma</Link>
+                  <Link href="/dashboard" className="block px-4 py-2 hover:text-gray-500">Asthma</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:bg-gray-300">Allergies</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:text-gray-500">Allergies</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:bg-gray-300">Cough</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:text-gray-500">Cough</Link>
                 </motion.li>
               </ul>
             </motion.div>
