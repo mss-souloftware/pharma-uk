@@ -8,7 +8,7 @@ export default function Footer() {
       <div
         className=""
         style={{
-          backgroundImage: "url('/productIcon/FooterImg.jpeg')",
+          backgroundImage: "url('/productIcon/FooterImg12.jpeg')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -19,7 +19,6 @@ export default function Footer() {
           style={{
             position: "relative",
             width: "100%",
-
             color: "#fff",
           }}
         >
