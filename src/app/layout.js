@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
     // Set a timer to hide the spinner after 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    },);
 
     return () => clearTimeout(timer); // Cleanup on component unmount
-  }, []);
+  }, [100]);
 
   return (
     <html lang="en">

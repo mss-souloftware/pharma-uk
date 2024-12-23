@@ -8,6 +8,7 @@ import Dropdown from "./DropDown"; // Import the Dropdown Component
 import UserProfileMenu from "./UserProfileMenu";
 import Header from "./Header";
 import AddToCart from "./AddToCart";
+import SubNavbar from "./SubNavbar";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -47,6 +48,7 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <nav className="bg-blackBackground z-50 border-gray-200 dark:bg-blackBackground dark:border-gray-700 relative">
       <Header/>
       <div className=" md:mx-auto md:container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
@@ -185,6 +187,11 @@ const Navbar = () => {
         
       </div>
     </nav>
+
+    <div className="flex items-center justify-center relative z-30 ">
+      <SubNavbar/>
+    </div>
+    </>
   );
 };
 
