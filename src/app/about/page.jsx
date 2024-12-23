@@ -47,30 +47,30 @@ const page = () => {
           {" "}
           {/* Company Information */}
           <div className="w-full h-auto md:h-[20rem] relative border-2 border-solid shadow-sm rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 border-dotted border-gray-100">
-  <div className="col-span-1 sm:col-span-2 text-base sm:text-lg md:text-xl lg:text-xl font-light text-hoverUnderlineColor ml-5">
-    Company Information
-    <hr />
-  </div>
-  <div className="p-4 lg:p-4 border-b-2 sm:border-b-0 sm:border-r-2 border-solid border-dotted border-gray-300">
-    <p className="mb-4">This website is operated by Pharmica Ltd.</p>
-    <span className="block mb-4">
-      Pharmica Ltd is registered in England and Wales under company number 9668055 (DUNS Number: 22-097-8327).
-    </span>
-    VAT Number: GB 217 7259 95
-  </div>
+            <div className="col-span-1 sm:col-span-2 text-base sm:text-lg md:text-xl lg:text-xl font-light text-hoverUnderlineColor ml-5">
+              Company Information
+              <hr />
+            </div>
+            <div className="p-4 lg:p-4 border-b-2 sm:border-b-0 sm:border-r-2 border-solid border-dotted border-gray-300">
+              <p className="mb-4">This website is operated by Pharmica Ltd.</p>
+              <span className="block mb-4">
+                Pharmica Ltd is registered in England and Wales under company
+                number 9668055 (DUNS Number: 22-097-8327).
+              </span>
+              VAT Number: GB 217 7259 95
+            </div>
 
-  <div className="p-4">
-    {/* Additional information for the second column */}
-    Registered Office:
-    <span className="block mb-2">236 Gray's Inn Rd London</span>
-    <span className="block mb-2">WC1X 8HB</span>
-    <span className="mb-4 block">United Kingdom 020 7112 9014</span>
-    <span className="text-hoverUnderlineColor">
-      help@ifeelshy.co.uk
-    </span>
-  </div>
-</div>
-
+            <div className="p-4">
+              {/* Additional information for the second column */}
+              Registered Office:
+              <span className="block mb-2">236 Gray's Inn Rd London</span>
+              <span className="block mb-2">WC1X 8HB</span>
+              <span className="mb-4 block">United Kingdom 020 7112 9014</span>
+              <span className="text-hoverUnderlineColor">
+                help@ifeelshy.co.uk
+              </span>
+            </div>
+          </div>
           {/* Customer Review */}
           <div className="w-full h-full border-2 border-solid border-dotted border-gray-100 shadow-sm rounded-lg p-0 flex flex-col items-center justify-center">
             {/* Title */}
@@ -150,24 +150,26 @@ const page = () => {
               <hr />
             </div>
 
-            <div className="p-4 border-r-2 border-dotted border-gray-300 md:text-base">
-              <p className="mb-4 text-xs sm:text-sm md:text-base">
+            <div className="p-4 border-r-2 border-dotted border-gray-300  text-xs sm:text-sm md:text-base">
+              <p className="mb-4">
                 The pharmacy is registered with the General Pharmaceutical
                 Council with number 9012030.
               </p>
-              <span className="block mb-4 text-xs sm:text-sm md:text-base">
+              <span className="block mb-4  text-xs sm:text-sm md:text-base">
                 The superintendent pharmacist for Pharmica is: Ana Carolina
                 Osorio De Faria Goncalves GPhC Number: 2088658
               </span>
               <ul>
-                <li className="block text-xs sm:text-sm md:text-base">
+                <li className="block  text-xs sm:text-sm md:text-base">
                   Dr Munawar Iqbal (GPhC Number 2059871)
                 </li>
-                <li className="block text-xs sm:text-sm">Anika Jagot (GPhC Number 2079699)</li>
+                <li className="block text-xs sm:text-sm md:text-base">
+                  Anika Jagot (GPhC Number 2079699)
+                </li>
               </ul>
             </div>
 
-            <div className="p-4 text-xs sm:text-sm">
+            <div className="p-4  text-xs sm:text-sm md:text-base">
               {/* Additional information for the second column */}
               For more information or to view registration details visit the{" "}
               <span className="text-hoverUnderlineColor font-extrabold">
@@ -256,43 +258,54 @@ const page = () => {
           </div>
         </div>
         {/* Qualified Team  */}
-          <div className="w-[50%] h-full relative border-1 border-dotted bg-gray-50">
-            <div className="block ml-5 mt-5 text-hoverUnderlineColor">
-              <h2 className="text-base sm:text-base md:text-base xl:text-xl font-light">Our Qualified Dispensing Team</h2>
-              <hr />
-            </div> 
-            <div className="m-4 font-normal">
-            All our pharmacists are based in the UK and are registered with the General Pharmaceutical Council.
-            </div>  
-
-            <div className=" grid grid-rows-4 grid-cols-1 w-full h-full relative  border-1 border-dotted border-gray-50">
-            {
-              categories.map((category, index)=>(
-                <div key={index} className="grid grid-rows-1 grid-cols-2 gap-y-3 border-solid border-2 relative border-gray-300 shadow-md rounded-lg text-left w-[97%] h-[12rem] block mx-auto justify-items-center  ">
-                  <div>
-                    <img src={category.image} alt="" className="w-10 h-10 sm:w-14 sm:h-14  md:w-40 md:h-full rounded-lg flex " />
-                  </div>
-                   <div className="grid grid-rows-4 grid-cols-1 ">
-                    <div className="mb-0 flex items-center">
-                      <span className="text-2xl h-1 text-hoverUnderlineColor">{category.name}</span>
-                    </div>
-                    <div className="mb-0 flex items-center">
-                      <span className="text-sm h-1">{category.specializes}</span>
-                    </div>
-                    <div className="mb-4 flex items-center">
-                      <span className="text-sm h-1">{category.work}</span>
-                    </div>
-
-                    <div className="mb-4 flex items-center">
-                      <p className="text-sm font-normal text-gray-600">{category.description}</p>
-                    </div>
-
-                   </div>
-                </div>
-              ))
-            }
-            </div>
+        <div className="w-[50%] h-full relative border-1 border-dotted bg-gray-50">
+          <div className="block ml-5 mt-5 text-hoverUnderlineColor">
+            <h2 className="text-base sm:text-base md:text-base xl:text-xl font-light">
+              Our Qualified Dispensing Team
+            </h2>
+            <hr />
           </div>
+          <div className="m-4 font-normal">
+            All our pharmacists are based in the UK and are registered with the
+            General Pharmaceutical Council.
+          </div>
+
+          <div className=" grid grid-rows-4 grid-cols-1 w-full h-full relative  border-1 border-dotted border-gray-50">
+            {categories.map((category, index) => (
+              <div
+                key={index}
+                className="grid grid-rows-1 grid-cols-2 gap-y-3 border-solid border-2 relative border-gray-300 shadow-md rounded-lg text-left w-[97%] h-[12rem] block mx-auto justify-items-center  "
+              >
+                <div>
+                  <img
+                    src={category.image}
+                    alt=""
+                    className="w-10 h-10 sm:w-14 sm:h-14  md:w-40 md:h-full rounded-lg flex "
+                  />
+                </div>
+                <div className="grid grid-rows-4 grid-cols-1 ">
+                  <div className="mb-0 flex items-center">
+                    <span className="text-2xl h-1 text-hoverUnderlineColor">
+                      {category.name}
+                    </span>
+                  </div>
+                  <div className="mb-0 flex items-center">
+                    <span className="text-sm h-1">{category.specializes}</span>
+                  </div>
+                  <div className="mb-4 flex items-center">
+                    <span className="text-sm h-1">{category.work}</span>
+                  </div>
+
+                  <div className="mb-4 flex items-center">
+                    <p className="text-sm font-normal text-gray-600">
+                      {category.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
