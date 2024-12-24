@@ -1,14 +1,14 @@
 import React from "react";
 import SebscribeSection from "./SebscribeSection";
 import Link from "next/link";
-
+// import footerImg '/productIcon/footerImg12.jpeg' 
 export default function Footer() {
   return (
     <>
       <div
         className=""
         style={{
-          backgroundImage: "url('/productIcon/FooterImg12.jpeg')",
+          backgroundImage: "url('/productIcon/footerImg12.jpeg')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
