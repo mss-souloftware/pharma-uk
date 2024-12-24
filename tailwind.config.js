@@ -16,6 +16,7 @@ module.exports = {
         blackBackground: 'black', // background color
         hoverUnderlineColor: '#c62638', // Hover underline color
       },
+      
     },
   },
   plugins: [],

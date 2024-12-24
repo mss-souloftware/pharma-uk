@@ -15,7 +15,7 @@ const SebscribeSection = () => {
         <input
           type="email"
           placeholder="Enter Your Email"
-          className="bg-transparent border-2 border-solid border-hoverUnderlineColor rounded-md w-30 text-center mx-auto ml-0 sm:ml-auto md:ml-auto sm:w-60 md:w-60 lg:w-96 h-10 md:h-12 px-2"
+          className="bg-transparent border-2 bg-white border-solid border-hoverUnderlineColor rounded-md w-30 text-center mx-auto ml-0 sm:ml-auto md:ml-auto sm:w-60 md:w-60 lg:w-96 h-10 md:h-12 px-2"
         />
       </div>
 

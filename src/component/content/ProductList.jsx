@@ -61,7 +61,7 @@ const Content = () => {
             className={`flex justify-center items-center py-2 px-2 sm:px-0 w-44 sm:w-28 md:w-28 lg:w-44 sm:text-xs md:text-xs text-xs lg:text-base h-8 xl:h-10 sm:h-8 border-2 border-solid border-hoverUnderlineColor rounded-full ${
               activeCategory === category
                 ? "bg-hoverUnderlineColor text-white"
-                : "bg-gray-100"
+                : ""
             }`}
           >
             {/* Icon on the left */}
