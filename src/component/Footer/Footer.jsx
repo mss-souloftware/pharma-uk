@@ -8,7 +8,7 @@ export default function Footer() {
       <div
         className=""
         style={{
-          backgroundImage: "url('/productIcon/footerImg12.jpeg')",
+          backgroundImage: "url('/public/productIcon/footerImg12.jpeg')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
