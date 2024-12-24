@@ -8,7 +8,7 @@ import Dropdown from "./DropDown"; // Import the Dropdown Component
 import UserProfileMenu from "./UserProfileMenu";
 import Header from "./Header";
 import AddToCart from "./AddToCart";
-import SubNavbar from "./SubNavbar";
+import SubNavbar from "@/component/SubNavbar";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
