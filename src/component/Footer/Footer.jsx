@@ -1,7 +1,6 @@
 import React from "react";
 import SebscribeSection from "./SebscribeSection";
-import Link from "next/link";
-// import footerImg '/productIcon/footerImg12.jpeg' 
+import Link from "next/link"; 
 export default function Footer() {
   return (
     <>

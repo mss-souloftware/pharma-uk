@@ -77,12 +77,10 @@ const ContentSection3 = () => {
       </h2>
 
       {/* Rating Stars */}
-      <div className="flex justify-center items-center mb-2">
-        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-8" src="/rankIcon.png" alt="Star" />
+      <div className="flex justify-center items-center mb-2"> 
+        {[...Array(5)].map((_, index)=>(
+          <img key={index} src="/rankIcon.png" alt="" className="w-6 sm:w-8 md:w-10 lg:w-8" />
+        ))}
       </div>
 
       {/* Rating Text */}
@@ -98,12 +96,10 @@ const ContentSection3 = () => {
       </h2>
 
       {/* Trust Star Image */}
-      <div className="flex justify-center items-center mb-2">
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+      <div className="flex justify-center items-center mb-2"> 
+        {[...Array(5)].map((_, index)=>(
+          <img key={index} src="/trustPilotIcon.png" alt="" className="w-6 sm:w-8 md:w-10 lg:w-12" />
+        ))}
       </div>
 
       {/* Rating Text */}
@@ -120,11 +116,10 @@ const ContentSection3 = () => {
 
       {/* feefo Star Image */}
       <div className="flex justify-center items-center mb-2">
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
-        <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" />
+        {/* <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" /> */}
+        {[...Array(5)].map((_, index)=>(
+          <img key={index} src="/trustPilotIcon.png" alt=""  className="w-6 sm:w-8 md:w-10 lg:w-12"  />
+        ))}
       </div>
 
       {/* Rating Text */}
@@ -132,6 +127,7 @@ const ContentSection3 = () => {
         <span className="text-xs sm:text-sm md:text-base lg:text-lg">Rating 4.9/5</span>
       </div>
     </div>
+    
   </div>
 </div>
 
