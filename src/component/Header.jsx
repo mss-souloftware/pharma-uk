@@ -27,7 +27,7 @@ const Header = () => {
               alt="Email"
               width={20}  // Set width
                 height={20} // Set height
-              className="mr-1 w-3 md:mr-2 mt-1 logoImg sm:w-3 object-contain  md:w-4  lg:w-5 w-3"
+              className="mr-1 md:mr-2 mt-1 logoImg sm:w-3 object-contain  md:w-4  lg:w-5 w-3"
             />
             <span className="text-white text  mt-1">Email: David@gmial.com</span>
           </div>
