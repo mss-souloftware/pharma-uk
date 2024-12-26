@@ -27,6 +27,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
     <div>
       {/* Hamburger Icon with animation */}
       <div className="md:hidden z-50 relative ">
+          <UserProfileMenu/>
         <button onClick={toggleMobileMenu} className="text-white w-4">
           {!isMenuOpen ? (
             <FaBars size={24} className="text-gray-500 w-4" />
@@ -34,16 +35,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             <FaTimes size={24} className="text-gray-500 w-4" />
           )}
         </button>
-      </div>
-      <div className="relative z-50 ">
-          <UserProfileMenu/>
-      </div>
+      </div> 
       {/* Mobile Menu with animation */}
       <motion.ul
-        className={`md:hidden bg-blackBackground absolute top-16 left-0 w-full p-4 transition-transform ease-in-out duration-300 ${isMenuOpen ? "block" : "hidden"} flex flex-col items-stretch z-10 `} // Add z-50 to ensure it's above other content
+        className={`md:hidden bg-blackBackground absolute top-12 left-0 w-full p-4 transition-transform ease-in-out duration-100 ${isMenuOpen ? "block" : "hidden"} flex flex-col items-stretch z-10 `} // Add z-50 to ensure it's above other content
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : -20 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0 }}
       >
         {/* Dropdown for Men's Health with button toggle */}
         <motion.li

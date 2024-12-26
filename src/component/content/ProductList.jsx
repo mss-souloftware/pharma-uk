@@ -78,7 +78,7 @@ const Content = () => {
               alt={category.name}
               width={20}
               height={20}
-              className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-2"
+              className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 ml-2 sm:ml-0 sm:mr-2"
             />
             <span className="truncate w-24">
               {category.name || "Unnamed Category"}

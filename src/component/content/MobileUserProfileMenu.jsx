@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // Importing framer-motion for animation
 import Link from "next/link"; // Using Next.js Link for navigation
 import Image from "next/image";
 
-const UserProfileMenu = () => {
+const MobileUserProfileMenu = () => {
   // State to control the visibility of the profile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,7 +23,7 @@ const UserProfileMenu = () => {
   };
 
   return (
-    <div className="relative z-50">
+    <div className="relative ">
       {/* User Profile Image */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -35,7 +35,7 @@ const UserProfileMenu = () => {
           alt="User Profile"
           width={20} // Set width
           height={20} // Set height
-          className=" object-cover absolute h-7 w-7 "
+          className=" object-cover  h-6 w-6 relative "
         />
       </div>
 
@@ -74,4 +74,4 @@ const UserProfileMenu = () => {
   );
 };
 
-export default UserProfileMenu;
+export default MobileUserProfileMenu;

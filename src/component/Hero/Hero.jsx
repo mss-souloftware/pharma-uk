@@ -125,7 +125,7 @@ const Hero = () => {
 
         {/* Button or Call to Action */}
         <div className="xl:mt-5 sm:mt-6 md:mt-4 ">
-          <button className="xl:px-6 xl:py-3 md:px-6 md:py-1 mt-2  sm:w-[20%] w-[30vw] sm:h-[3vh] h-[4vh] lg:h-[6vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg  hover:bg-hoverUnderlineColor transition-all  transition ease-in-out delay-15 bg-hoverUnderlineColor
+          <button className="xl:px-6 xl:py-3 md:px-6 md:py-1 mt-2  sm:w-[20%] w-[30vw] sm:h-[8vh] h-[4vh] lg:h-[6vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg  hover:bg-hoverUnderlineColor transition-all  transition ease-in-out delay-15 bg-hoverUnderlineColor
            hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300">
             Learn More
           </button>

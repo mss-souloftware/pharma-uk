@@ -10,6 +10,7 @@ import Header from "./Header";
 import AddToCart from "./AddToCart";
 import SubNavbar from "@/component/SubNavbar";
 import Image from "next/image";
+import MobileUserProfileMenu from "./content/MobileUserProfileMenu";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -98,6 +99,15 @@ useEffect(() => {
           </Link>
 
           {/* Mobile Menu Toggle (visible only on medium screens and below) */}
+          <div className="flex gap-5 relative">
+
+          <div className=" block sm:hidden ">
+      <AddToCart/>
+
+      </div>
+      <div className="block sm:hidden">
+           <MobileUserProfileMenu/> 
+      </div>
           <button
             onClick={toggleMobileMenu}
             className="md:hidden text-white" // 'md:hidden' hides on medium and larger screens
@@ -110,23 +120,23 @@ useEffect(() => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 className="w-6 h-6"
-              >
+                >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
-                />
+                  />
               </svg>
             ) : (
               <></>
             )}
-          </button>
-
+          </button>    
+          </div>
           {/* Navbar Items (hidden on small screens, visible on larger screens) */}
           <div className="w-full md:block md:w-auto mobile-nav-hidden">
             <ul
-              className="hidden md:flex flex-col font-medium sm:text-xs p-4 md:p-0 mt-4 border  rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 
+              className="hidden md:flex flex-col font-bold sm:text-xs text-xs p-4 md:p-0 mt-4 border  rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 
           md:border-0 md:bg-blackBackground dark:bg-gray-800 md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0"
             >
               {/* Menu items go here */}
