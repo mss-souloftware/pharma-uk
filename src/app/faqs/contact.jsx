@@ -6,11 +6,14 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+  
   const [formStatus, setFormStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
-
+  
+  // Get the API URL from the environment variable
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://default-api-url.com/api/submitForm';
+  
   // Handle form field change
   const handleChange = (e) => {
     setFormData({
@@ -33,8 +36,20 @@ const Contact = () => {
     }
 
     try {
-      // Simulating form submission (Replace with real API call)
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      // Submit form data to API
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      const result = await response.json();
       setFormStatus("success");
     } catch (error) {
       setFormStatus("error");
@@ -53,20 +68,17 @@ const Contact = () => {
   };
 
   return (
-    <>
-    <div className="max-w-full ml-0 left-0 py-12 ">
-      <h2 className="text-3xl ml-0 text-start font-semibold text-hoverUnderlineColor dark:text-white mb-8">
-      Can't find what you are looking for?
-      </h2>
+    <div className="max-w-full ml-0 py-12  ">
+      <h2 className="text-3xl font-semibold text-start text-hoverUnderlineColor dark:text-white mb-8">Can't find what you are looking for?</h2>
       {formStatus === "success" && (
         <div className="text-green-500 text-center mb-4">Your message has been sent successfully!</div>
       )}
       {formStatus === "error" && (
         <div className="text-red-500 text-center mb-4">Oops! Something went wrong. Please try again.</div>
       )}
-      <form onSubmit={handleSubmit} className="p-8 pl-0 rounded-lg space-y-6">
-        <div className="grid grid-cols-2 grid-rows-1 gap-20">
+      <form onSubmit={handleSubmit} className=" p-8 rounded-lg space-y-6">
 
+        <div>
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Your Name
@@ -76,10 +88,10 @@ const Contact = () => {
             id="name"
             name="name"
             value={formData.name}
-            onChange={handleChange}
-            className="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
+            onChange={handleChange} 
+            className="mt-1 p-3 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
             placeholder="Enter your name"
-          />
+            />
           {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
         </div>
 
@@ -95,11 +107,11 @@ const Contact = () => {
             onChange={handleChange}
             className="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
             placeholder="Enter your email"
-            />
+          />
           {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
         </div>
-            </div>
 
+            </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Your Message
@@ -109,7 +121,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 p-3 w-full h-32 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+            className="mt-1 p-3 w-full h-32 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
             placeholder="Enter your message"
           />
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
@@ -128,7 +140,6 @@ const Contact = () => {
         </div>
       </form>
     </div>
-            </>
   );
 };
 
