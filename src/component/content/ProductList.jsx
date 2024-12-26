@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ContentSection from "./AboutContent";
 import HowDoesItWorks from "./HowDoesItWorks";
+import './ProductList.css'
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
@@ -53,26 +54,34 @@ const Content = () => {
       </div>
 
       {/* Button to show all categories */}
-      <div className="flex overflow-x-auto space-x-2 sm:space-x-1 py-4 sm:py-6 mt-8 justify-between w-full">
+      <div className="flex overflow-x-auto space-x-2 md:space-x-3 sm:space-x-2 py-4 sm:py-6 md:py-4 mt-8 justify-between w-full scrollbar-thin scrollbar-thumb-hoverUnderlineColor scrollbar-track-gray-200 scrollbar-rounded-lg">
         {categories.map((category, index) => (
           <button
             key={index}
             onClick={() => handleCategoriesClick(category)}
-            className={`flex justify-center items-center py-2 px-2 sm:px-0 w-44 sm:w-28 md:w-28 lg:w-44 sm:text-xs md:text-xs text-xs lg:text-base h-8 xl:h-10 sm:h-8 border-2 border-solid border-hoverUnderlineColor rounded-full ${
-              activeCategory === category
-                ? "bg-hoverUnderlineColor text-white"
-                : ""
-            }`}
+            className={`flex justify-center items-center py-2 
+                     w-full sm:w-28 md:w-32 lg:w-44 
+                     sm:px-2 md:px-4 lg:px-6 
+                     text-xs sm:text-sm md:text-base lg:text-lg 
+                     h-8 sm:h-8 md:h-10 lg:h-12 
+                     border-2 border-solid border-hoverUnderlineColor 
+                     rounded-full transition-all duration-300 ${
+                       activeCategory === category
+                         ? "bg-hoverUnderlineColor text-white"
+                         : "bg-transparent text-gray-800"
+                     }`}
           >
             {/* Icon on the left */}
             <img
               src={category.image}
               alt={category.name}
-              className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
+              className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-2"
             />
-
-            {category.name || "Unnamed Category"}
+            <span className="truncate w-24">
+              {category.name || "Unnamed Category"}
+            </span>
           </button>
+
         ))}
       </div>
 

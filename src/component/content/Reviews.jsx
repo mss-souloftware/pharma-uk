@@ -71,7 +71,7 @@ const ContentSection3 = () => {
         <span style={{ color: "#4285F4" }}>𝖦</span>
         𝗈
         <span style={{ color: "#34A853" }}>𝗈</span>
-        <span style={{ color: "#FBBC05" }}>𝗀</span>
+        <span style={{ color: "#FBBC05" }}>𝗀</span> 
         <span style={{ color: "#EA4335" }}>𝗅</span>
         <span style={{ color: "#4285F4" }}>𝖾</span>
       </h2>
@@ -108,7 +108,7 @@ const ContentSection3 = () => {
       </div>
     </div>
 
-    <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw]  rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+    <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw]  rounded-lg h-auto flex flex-col justify-center  items-center p-4 sm:p-6 md:p-8 col-span-1">
       {/* feefo Text */}
       <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
         <span style={{ color: "#000" }}>feefo</span>
