@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const HowDoesItWorks = () => {
@@ -31,7 +32,7 @@ const HowDoesItWorks = () => {
             key={index}
             className="flex flex-col items-center bg-gray-50 p-4 transition-all"
           >
-            <img
+            <Image
               src={section.image}
               alt={section.name}
               className="w-full h-40 object-cover rounded-md mb-4"

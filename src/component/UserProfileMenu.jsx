@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion"; // Importing framer-motion for animations
 import Link from "next/link"; // Using Next.js Link for navigation
+import Image from "next/image";
 
 const UserProfileMenu = () => {
   // State to control the visibility of the profile menu
@@ -29,7 +30,7 @@ const UserProfileMenu = () => {
         className="cursor-pointer group relative xl:w-8 xl:h-8 md:w-6 md:h-6 rounded-full overflow-hidden"
       >
         {/* Replace with actual user image or placeholder */}
-        <img
+        <Image
           src="/user-icon.png" // Example image, replace with user image source
           alt="User Profile"
           className=" object-cover absolute h-8 w-8 "

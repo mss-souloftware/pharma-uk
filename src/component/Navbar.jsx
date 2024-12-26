@@ -9,6 +9,7 @@ import UserProfileMenu from "./UserProfileMenu";
 import Header from "./Header";
 import AddToCart from "./AddToCart";
 import SubNavbar from "@/component/SubNavbar";
+import Image from "next/image";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -87,7 +88,7 @@ useEffect(() => {
             href="/"
             className="flex items-center w-14 space-x-2 sm:left-0  sm:w-10 tl:space-x-reverse"
           >
-            <img
+            <Image
               src="/Logo.png"
               className="absolute  w-24 sm:ml-0 sm:w-20  sm:w-20   md:w-24 lg:w-24  xl:w-40  "
               alt="Responsive Logo"

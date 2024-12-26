@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
@@ -65,9 +66,9 @@ const SubNavbar = () => {
           className={`${isOpen ? "mt-16" : "mt-1"}`}
         >
           {isOpen ? (
-            <img src="/upper-arrow.png" alt="" className="w-5" />
+            <Image src="/upper-arrow.png" alt="" className="w-5" />
           ) : (
-            <img src="/dropdown.png" alt="Dropdown" className="w-5" />
+            <Image src="/dropdown.png" alt="Dropdown" className="w-5" />
           )}
         </button>
       </div>

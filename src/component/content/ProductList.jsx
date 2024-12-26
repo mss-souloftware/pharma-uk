@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ContentSection from "./AboutContent";
 import HowDoesItWorks from "./HowDoesItWorks";
 import './ProductList.css'
+import Image from "next/image";
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
@@ -72,7 +73,7 @@ const Content = () => {
                      }`}
           >
             {/* Icon on the left */}
-            <img
+            <Image
               src={category.image}
               alt={category.name}
               className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-2"

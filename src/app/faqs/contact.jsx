@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-full ml-0 py-12  ">
-      <h2 className="text-3xl font-semibold text-start text-hoverUnderlineColor dark:text-white mb-8">Can't find what you are looking for?</h2>
+      <h2 className="text-3xl font-semibold text-start text-hoverUnderlineColor dark:text-white mb-8">Can&apos;t find what you are looking for?</h2>
       {formStatus === "success" && (
         <div className="text-green-500 text-center mb-4">Your message has been sent successfully!</div>
       )}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.module.css"
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -24,22 +25,22 @@ const Hero = () => {
 
 
           <div className=" heroSubText pt-2 flex mb-2 sm:mb-0  ">
-            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
+            <Image src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
             <span className=" text-white  "> UK registered pharmacy </span>
           </div>
           <div className=" pt-2 flex mb-2 sm:mb-0 ">
             {" "}
-            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt- 1 " />
+            <Image src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt- 1 " />
             <span className=" text-white xl:text-base md:text-sm   "> Express next day delivery </span>
           </div>
           <div className=" flex mb-2 sm:mb-0 ">
             {" "}
-            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
+            <Image src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
             <span className=" text-white xl:text-base md:text-sm "> Discreet packaging </span>
           </div>
           <div className=" flex mb-2 sm:mb-0">
             {" "}
-            <img src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
+            <Image src="/tick.png" alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1  " />
             <span className=" text-white xl:text-base md:text-sm "> 207,731 customer reviews </span>
           </div> 
 
@@ -66,22 +67,22 @@ const Hero = () => {
 
             {/* Star Images */}
             <div className="flex items-center xl:space-x-5 md:space-x-4 space-x-1 sm:space-x-2  ">
-              <img
+              <Image
                 src="/star.png"
                 alt="star"
                 className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
               />
-              <img
+              <Image
                 src="/star.png"
                 alt="star"
                 className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
               />
-              <img
+              <Image
                 src="/star.png"
                 alt="star"
                 className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"
               />
-              <img
+              <Image
                 src="/star.png"
                 alt="star"
                 className="w-4 sm:w-4 md:w-5 xl:w-6 text-white"

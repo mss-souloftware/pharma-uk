@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import "./style/Header.css";
 import './style/Header.css'
+import Image from "next/image";
 const Header = () => {
   return ( 
      <div className="bg-hoverUnderlineColor">
@@ -10,7 +11,7 @@ const Header = () => {
         <div>
         <div className="phone-email-section sm:ml-3 text-nowrap gap-5 lg:gap-12 md:gap-10 sm:text-xs text-xs md:text-sm flex items-center justify-around  ">
           <div className="flex justify-center">
-            <img
+            <Image
               src="/phone-icon.png"
               alt="Phone"
               className=" ml-1 mr-1 md:ml-0 mt-1 md:mr-2 sm:mt-1 object-contain logoImg sm:w-3 md:w-4 lg:w-5 w-3 "
@@ -19,7 +20,7 @@ const Header = () => {
           </div>
 
           <div className="flex justify-center">
-            <img
+            <Image
               src="/email-icon.png"
               alt="Email"
               className="mr-1 w-3 md:mr-2 mt-1 logoImg sm:w-3 object-contain  md:w-4  lg:w-5 w-3"
@@ -32,21 +33,21 @@ const Header = () => {
         {/* Social Media Icons */}
         <div className="social-media-section flex items-center md:pr-5 sm:space-x-4 space-x-1 sm:mr-0 mr-2 md:justify-around m-1 "> 
             <Link href="/">
-              <img
+              <Image
                 src="/insta-icon.png"
                 alt="Instagram"
                 className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform"
               />
             </Link>
             <Link href="/">
-              <img
+              <Image
                 src="/facebook-icon.png"
                 alt="Facebook"
                 className="w-3 md:w-4  mt-1  hover:scale-110 transition-transform"
               />
             </Link>
             <Link href="/">
-              <img
+              <Image
                 src="/twitter.icon.png"
                 alt="Twitter"
                 className="w-3 md:w-4  mt-1  hover:scale-110 transition-transform"

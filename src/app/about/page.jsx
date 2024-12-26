@@ -1,6 +1,7 @@
 "use client";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const Page = () => {
@@ -32,7 +33,7 @@ const Page = () => {
               About Us
             </h2>
             <h4 className="lg:text-xl md:text-xl sm:text-base text-sm text-gray-500 mt-5">
-              The UK’s trusted online pharmacy since 2015
+              The UK&apos;s trusted online pharmacy since 2015
             </h4>
             <p className="lg:text-base md:text-base sm:text-sm text-xs font-extralight  text-gray-700 mt-10 mx-10">
               Pharmica offers a wide range of treatments through our free online
@@ -74,7 +75,7 @@ const Page = () => {
               <div className="">
                 <div className="mt-20 text-gray-600">
                   <span className="pl-2 pr-2  ">
-                    &nbsp;Registered Office: 236 Gray's Inn Rd&nbsp;
+                    &nbsp;Registered Office: 236 Gray&apos;s Inn Rd&nbsp;
                     <span className="block mt-10 mb-3 pl-2 pr-2 leading-loose">
                       &nbsp;London WC1X 8HB United Kingdom.&nbsp;
                     </span>
@@ -106,7 +107,7 @@ const Page = () => {
                 </span>
                 <span className="flex items-center justify-center mt-5">
                   {[...Array(5)].map((_, index) => (
-                    <img
+                    <Image
                       key={index}
                       src="/rankStarIcon.png"
                       alt="Star Icon"
@@ -187,7 +188,7 @@ const Page = () => {
               >
                 {/* Image Section */}
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     src={category.image}
                     alt=""
                     className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-lg mx-auto sm:mx-0"

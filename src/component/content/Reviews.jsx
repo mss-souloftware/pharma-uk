@@ -4,6 +4,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import ContentSection4 from "./AboutCompany";
+import Image from "next/image";
 
 const ContentSection3 = () => {
   const cardsData = [
@@ -79,7 +80,7 @@ const ContentSection3 = () => {
       {/* Rating Stars */}
       <div className="flex justify-center items-center mb-2"> 
         {[...Array(5)].map((_, index)=>(
-          <img key={index} src="/rankIcon.png" alt="" className="w-6 sm:w-8 md:w-10 lg:w-8" />
+          <Image key={index} src="/rankIcon.png" alt="" className="w-6 sm:w-8 md:w-10 lg:w-8" />
         ))}
       </div>
 
@@ -98,7 +99,7 @@ const ContentSection3 = () => {
       {/* Trust Star Image */}
       <div className="flex justify-center items-center mb-2"> 
         {[...Array(5)].map((_, index)=>(
-          <img key={index} src="/trustPilotIcon.png" alt="" className="w-6 sm:w-8 md:w-10 lg:w-12" />
+          <Image key={index} src="/trustPilotIcon.png" alt="" className="w-6 sm:w-8 md:w-10 lg:w-12" />
         ))}
       </div>
 
@@ -118,7 +119,7 @@ const ContentSection3 = () => {
       <div className="flex justify-center items-center mb-2">
         {/* <img className="w-6 sm:w-8 md:w-10 lg:w-12" src="/trustPilotIcon.png" alt="Trust Pilot Star" /> */}
         {[...Array(5)].map((_, index)=>(
-          <img key={index} src="/trustPilotIcon.png" alt=""  className="w-6 sm:w-8 md:w-10 lg:w-12"  />
+          <Image key={index} src="/trustPilotIcon.png" alt=""  className="w-6 sm:w-8 md:w-10 lg:w-12"  />
         ))}
       </div>
 
@@ -195,7 +196,7 @@ const ContentSection3 = () => {
                         {/* Top - Star Icon */}
                         <div className="flex justify-center items-center mb-2">
                           {Array.from({ length: card.starIcons }).map((_, i) => (
-                            <img
+                            <Image
                               key={i}
                               src="/rankStarIcon.png" // Replace with your star icon image
                               alt="Star Icon"

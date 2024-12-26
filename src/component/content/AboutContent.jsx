@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import ContentSection2 from './QualifiedTeams';
+import Image from 'next/image';
 
 const ContentSection = () => {
   return (
@@ -28,7 +29,7 @@ const ContentSection = () => {
         {/* Text Section */}
         <div className='lg:w-1/2 w-full text-center mt-14 lg:text-left lg:pl-8 order-1 lg:order-2'>
           <h3 className='text-xl sm:text-2xl font-bold mb-6 text-hoverUnderlineColor '>
-            <img src="/about-logo.png" alt="" className='h-10 w-10 inline-block' />
+            <Image src="/about-logo.png" alt="" className='h-10 w-10 inline-block' />
             About Us Company
           </h3>
           <h1 className='text-xl md:text-3xl lg:text-4xl font-extrabold mb-8 '>

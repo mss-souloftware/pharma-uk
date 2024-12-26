@@ -1,6 +1,7 @@
 import React from "react";
 import SebscribeSection from "./SebscribeSection";
 import Link from "next/link"; 
+import Image from "next/image";
 export default function Footer() {
   return (
     <>
@@ -34,13 +35,13 @@ export default function Footer() {
 
             {/* Social icons aligned to the right */}
             <div className="flex justify-end space-x-4 w-auto">
-              <img src="/insta-icon.png" alt="Instagram" className="w-6 h-6" />
-              <img
+              <Image src="/insta-icon.png" alt="Instagram" className="w-6 h-6" />
+              <Image
                 src="/facebook-icon.png"
                 alt="Facebook"
                 className="w-6 h-6"
               />
-              <img src="/twitter.icon.png" alt="Twitter" className="w-6 h-6" />
+              <Image src="/twitter.icon.png" alt="Twitter" className="w-6 h-6" />
             </div>
           </div>
 
@@ -53,7 +54,7 @@ export default function Footer() {
     href="/"
     className="flex justify-center md:justify-start items-center space-x-0 ml-0 "
   >
-    <img
+    <Image
   src="/footerLogo.png"
   className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
   alt="Responsive Logo"
@@ -74,7 +75,7 @@ export default function Footer() {
                 </h6>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <img
+                    <Image
                       src="/productIcon/dysFunction1.png"
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
@@ -84,7 +85,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="flex">
-                    <img
+                    <Image
                       src="/productIcon/weightLoss.png"
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
@@ -94,7 +95,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="flex">
-                    <img
+                    <Image
                       src="/productIcon/hairLoss.png"
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
@@ -104,7 +105,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="flex">
-                    <img
+                    <Image
                       src="/productIcon/sexual.png"
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
@@ -150,7 +151,7 @@ export default function Footer() {
                 </h6>
                 <ul className="space-y-4">
                   <li className="flex items-center justify-center md:justify-start">
-                    <img
+                    <Image
                       src="/phone-icon.png"
                       className="w-5 h-5 mr-2"
                       alt="Phone"
@@ -160,7 +161,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="flex items-center justify-center md:justify-start">
-                    <img
+                    <Image
                       src="/email-icon.png"
                       className="w-5 h-5 mr-2"
                       alt="Email"
@@ -170,7 +171,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="flex items-center justify-center md:justify-start">
-                    <img src="/sms.png" className="w-5 h-5 mr-2" alt="SMS" />
+                    <Image src="/sms.png" className="w-5 h-5 mr-2" alt="SMS" />
                     <a className="text-white dark:text-neutral-200">
                       Text(SMS): 8818
                     </a>

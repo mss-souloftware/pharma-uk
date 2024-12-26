@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     },);
 
     return () => clearTimeout(timer); // Cleanup on component unmount
-  }, [100]);
+  }, []);
 
   return (
     <html lang="en">
