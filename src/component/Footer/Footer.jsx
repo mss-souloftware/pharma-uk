@@ -50,7 +50,7 @@ export default function Footer() {
                 className="w-6 h-6"
               />
               <Image
-                src="/twitter.icon.png"
+                src="/twitter-icon.png"
                 height={20}
                 width={20}
                 alt="Twitter"
@@ -71,7 +71,7 @@ export default function Footer() {
                   <Image
                     src="/footerLogo.png"
                     width={100}
-                    height={50}
+                    height={50} 
                     className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
                     alt="Responsive Logo"
                   />
