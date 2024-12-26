@@ -1,6 +1,6 @@
 import React from "react";
 import SebscribeSection from "./SebscribeSection";
-import Link from "next/link"; 
+import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
   return (
@@ -35,38 +35,53 @@ export default function Footer() {
 
             {/* Social icons aligned to the right */}
             <div className="flex justify-end space-x-4 w-auto">
-              <Image src="/insta-icon.png" alt="Instagram" className="w-6 h-6" />
+              <Image
+                src="/insta-icon.png"
+                height={20}
+                width={20}
+                alt="Instagram"
+                className="w-6 h-6"
+              />
               <Image
                 src="/facebook-icon.png"
+                height={20}
+                width={20}
                 alt="Facebook"
                 className="w-6 h-6"
               />
-              <Image src="/twitter.icon.png" alt="Twitter" className="w-6 h-6" />
+              <Image
+                src="/twitter.icon.png"
+                height={20}
+                width={20}
+                alt="Twitter"
+                className="w-6 h-6"
+              />
             </div>
           </div>
 
           {/* Main container div: holds the footer content */}
           <div className="mx-6 py-10 text-center md:text-left">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-white">
-            {/* Responsive Section */}
-<div className="text-center md:text-left px-1 md:px-0 lg:px-0 h-auto overflow-hidden">
-  <Link
-    href="/"
-    className="flex justify-center md:justify-start items-center space-x-0 ml-0 "
-  >
-    <Image
-  src="/footerLogo.png"
-  className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
-  alt="Responsive Logo"
-/>
-
-  </Link>
-  <p className="mt-3 sm:mt-3 md:mt-0 text-sm sm:text-base md:text-lg lg:text-base text-white leading-relaxed">
-    Here you can use rows and columns to organize your footer content. Lorem
-    ipsum dolor sit amet, consectetur adipisicing elit.
-  </p>
-</div>
-
+              {/* Responsive Section */}
+              <div className="text-center md:text-left px-1 md:px-0 lg:px-0 h-auto overflow-hidden">
+                <Link
+                  href="/"
+                  className="flex justify-center md:justify-start items-center space-x-0 ml-0 "
+                >
+                  <Image
+                    src="/footerLogo.png"
+                    width={100}
+                    height={50}
+                    className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
+                    alt="Responsive Logo"
+                  />
+                </Link>
+                <p className="mt-3 sm:mt-3 md:mt-0 text-sm sm:text-base md:text-lg lg:text-base text-white leading-relaxed">
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
 
               {/* Popular Treatments section */}
               <div>
@@ -77,6 +92,8 @@ export default function Footer() {
                   <li className="flex">
                     <Image
                       src="/productIcon/dysFunction1.png"
+                      height={20}
+                      width={20}
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
                     />
@@ -87,6 +104,8 @@ export default function Footer() {
                   <li className="flex">
                     <Image
                       src="/productIcon/weightLoss.png"
+                      height={20}
+                      width={20}
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
                     />
@@ -97,6 +116,8 @@ export default function Footer() {
                   <li className="flex">
                     <Image
                       src="/productIcon/hairLoss.png"
+                      height={20}
+                      width={20}
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
                     />
@@ -107,6 +128,8 @@ export default function Footer() {
                   <li className="flex">
                     <Image
                       src="/productIcon/sexual.png"
+                      height={20}
+                      width={20}
                       alt=""
                       className="w-5 h-5 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-2"
                     />
@@ -153,6 +176,8 @@ export default function Footer() {
                   <li className="flex items-center justify-center md:justify-start">
                     <Image
                       src="/phone-icon.png"
+                      width={20}
+                      height={20}
                       className="w-5 h-5 mr-2"
                       alt="Phone"
                     />
@@ -163,6 +188,8 @@ export default function Footer() {
                   <li className="flex items-center justify-center md:justify-start">
                     <Image
                       src="/email-icon.png"
+                      width={20}
+                      height={20}
                       className="w-5 h-5 mr-2"
                       alt="Email"
                     />
@@ -171,7 +198,13 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="flex items-center justify-center md:justify-start">
-                    <Image src="/sms.png" className="w-5 h-5 mr-2" alt="SMS" />
+                    <Image
+                      src="/sms.png"
+                      width={20}
+                      height={20}
+                      className="w-5 h-5 mr-2"
+                      alt="SMS"
+                    />
                     <a className="text-white dark:text-neutral-200">
                       Text(SMS): 8818
                     </a>

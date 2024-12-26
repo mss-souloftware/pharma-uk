@@ -68,7 +68,7 @@
     },  
     {
       "name": "Popular", 
-      "image": "/productIcon/popular.png ",
+      "image": "/productIcon/popular.png",
       "subcategories": [
         {
           "name": "Respiratory",
@@ -138,7 +138,7 @@
     },
     {
       "name": "Other", 
-      "image":"/productIcon/other.png ",
+      "image":"/productIcon/other.png",
       "subcategories": [
         {
           "name": "Other Sub 1",

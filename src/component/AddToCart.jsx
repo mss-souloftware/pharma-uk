@@ -6,7 +6,9 @@ const AddToCart = () => {
   return (
     <div className=' sm:w-4 md:w-5 xl:w-8 mr-0'>
       <Link href='/'>
-      <Image src="@/addToCart.png" alt="addtocart" className='mr-0 ' />
+      <Image src="/addToCart.png" width={20}  // Set width
+                height={20} // Set height
+                alt="addtocart" className='mr-0 ' />
       </Link>
     </div>
   )

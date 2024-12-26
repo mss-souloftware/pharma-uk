@@ -14,6 +14,8 @@ const Header = () => {
             <Image
               src="/phone-icon.png"
               alt="Phone"
+              width={20}  // Set width
+                height={20} // Set height
               className=" ml-1 mr-1 md:ml-0 mt-1 md:mr-2 sm:mt-1 object-contain logoImg sm:w-3 md:w-4 lg:w-5 w-3 "
             />
             <span className="text-white text  mt-1  ">Phone: +163--654123</span>
@@ -23,6 +25,8 @@ const Header = () => {
             <Image
               src="/email-icon.png"
               alt="Email"
+              width={20}  // Set width
+                height={20} // Set height
               className="mr-1 w-3 md:mr-2 mt-1 logoImg sm:w-3 object-contain  md:w-4  lg:w-5 w-3"
             />
             <span className="text-white text  mt-1">Email: David@gmial.com</span>
@@ -35,6 +39,8 @@ const Header = () => {
             <Link href="/">
               <Image
                 src="/insta-icon.png"
+                width={20}  // Set width
+                height={20} // Set height
                 alt="Instagram"
                 className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform"
               />
@@ -42,13 +48,17 @@ const Header = () => {
             <Link href="/">
               <Image
                 src="/facebook-icon.png"
+                width={20}  // Set width
+                height={20} // Set height
                 alt="Facebook"
                 className="w-3 md:w-4  mt-1  hover:scale-110 transition-transform"
               />
             </Link>
             <Link href="/">
               <Image
-                src="/twitter.icon.png"
+                src="/twitter-icon.png"
+                width={20}  // Set width
+                height={20} // Set height
                 alt="Twitter"
                 className="w-3 md:w-4  mt-1  hover:scale-110 transition-transform"
               />

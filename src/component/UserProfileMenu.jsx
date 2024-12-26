@@ -33,6 +33,8 @@ const UserProfileMenu = () => {
         <Image
           src="/user-icon.png" // Example image, replace with user image source
           alt="User Profile"
+          width={20} // Set width
+          height={20} // Set height
           className=" object-cover absolute h-8 w-8 "
         />
       </div>
@@ -59,7 +61,9 @@ const UserProfileMenu = () => {
                 className="group px-4 py-2 hover:bg-gray-700 transition-colors duration-300"
               >
                 <Link href={link.href}>
-                  <span className="text-white group-hover:text-gray-100">{link.label}</span>
+                  <span className="text-white group-hover:text-gray-100">
+                    {link.label}
+                  </span>
                 </Link>
               </li>
             ))}

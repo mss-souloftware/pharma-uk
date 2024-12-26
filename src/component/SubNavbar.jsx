@@ -66,9 +66,15 @@ const SubNavbar = () => {
           className={`${isOpen ? "mt-16" : "mt-1"}`}
         >
           {isOpen ? (
-            <Image src="/upper-arrow.png" alt="" className="w-5" />
+            <Image src="/upper-arrow.png"
+            width={20}
+            height={20}
+            alt="" className="w-5" />
           ) : (
-            <Image src="/dropdown.png" alt="Dropdown" className="w-5" />
+            <Image src="/dropdown.png"
+            width={20}
+            height={20}
+            alt="Dropdown" className="w-5" />
           )}
         </button>
       </div>

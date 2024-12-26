@@ -35,6 +35,8 @@ const HowDoesItWorks = () => {
             <Image
               src={section.image}
               alt={section.name}
+              width={100}
+              height={60} 
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 text-center">
