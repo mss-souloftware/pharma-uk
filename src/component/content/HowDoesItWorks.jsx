@@ -23,15 +23,15 @@ const HowDoesItWorks = () => {
   }, []);
 
   return (
-    <div className="container mx-auto mt-10 px-4">
-      <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8 text-black">
+    <div className="container mx-auto h-[30rem] my-24 lg:px-12 ">
+      <h2 className="text-3xl lg:text-[58px] font-bold text-center mb-8 text-black">
   How Does It&nbsp;
   <span className="relative text-hoverUnderlineColor underline-background tracking-widest">
     Work
   </span>
 </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {sections.map((section, index) => (
           <div
             key={index}

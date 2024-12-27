@@ -4,6 +4,7 @@ import "./page.css";
 import Image from "next/image";
 import Link from "next/link";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
+import QualifiedTeamAboutPage from "@/component/qualifiedTeamAboutPage";
 const Page = () => {
   return (
     <div>
@@ -27,7 +28,7 @@ const Page = () => {
               Since 2015
             </span>
           </h1>
-          <div className="justify-start lg:w-[30vw] pt-2 mb-2 sm:mb-0 block">
+          <div className="justify-start lg:w-[40dvw]  pt-2 mb-2 sm:mb-0 block">
             <span className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A
               nesciunt totam esse accusantium vel nulla harum sapiente ipsam
@@ -47,18 +48,18 @@ const Page = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 w-full h-auto grid-rows-1 gap-2  p-0 relative">
+      <div className="container mx-auto mb-[70px] ">
+      <div className="grid  w-full h-auto gap-2 p-0 relative">
           {/* Other Sections */}
           <div className="w-full   my-8">
-            <h1 className="block ml-0 justify-start lg:text-4xl font-extrabold">
+            <h1 className="block ml-0 justify-start lg:text-[48px] font-extrabold">
               Company&nbsp;
               <span className="relative text-hoverUnderlineColor underline-background tracking-widest">
                 Information
               </span>
             </h1>
-            <div className="grid lg:grid-cols-2 grid-rows-1 gap-y-1 h-72">
-              <div className="  mt-7">
+            <div className="grid lg:grid-cols-[30%_70%] grid-rows-1 gap-y-1 h-72">
+              <div className="  mt-7 ">
                 <p className="tracking-wide">
                   <span className="block">
                     This website is operated by Pharmica Ltd. Pharmica Ltd is
@@ -82,7 +83,7 @@ const Page = () => {
                 <h1 className="block lg:text-xl font-bold my-2">
                   Registered Office:
                 </h1>
-                <p className="tracking-wide">
+                <p className="tracking-wide w-[276px] ">
                   <span className="block">
                     Registered Office: 236 Gray&apos;s Inn Rd London WC1X 8HB
                     United
@@ -97,12 +98,12 @@ const Page = () => {
               </div>
 
               {/* Images */}
-              <div className="w-full  mt-7 relative">
+              <div className=" mt-7 w-full relative">
                 <Image
-                  src="/building.jpg"
+                  src="/bg3.png"
                   width={400}
                   height={60}
-                  className="w-full bg-cover h-56"
+                  className="w-full bg-cover h-[260px]  "
                   alt="Building"
                 />
                 <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -113,27 +114,27 @@ const Page = () => {
       </div>
 
       <div className="bg-gray-100">
-  <div className="w-full grid container mx-auto lg:grid-cols-2 grid-rows-1 gap-y-1 md:h-72 lg:h-full">
-    <div>
+  <div className="w-full grid container mx-auto lg:grid-cols-2 grid-rows-1 gap-y-0  md:h-72 lg:h-auto">
+    <div className="my-16">
       <Image
-        src="/consultin.png"
+        src="/customerReview.png"
         width={400}
         height={60}
         alt="Image"
         className="ml-0 bg-cover block"
       />
     </div>
-    <div className="grid grid-rows-5 gap-y-5 my-8">
+    <div className="grid grid-rows-5 gap-y-0  md:ml-10 my-16">
       <div>
         <h1 className="lg:text-5xl font-extrabold">
           Customer&nbsp;
-          <span className="relative text-black redunderline-background tracking-widest">
+          <span className="relative text-black redunderline-background z-50 tracking-widest">
             Reviews
           </span>
         </h1>
 
             </div>
-            <div className="flex justify-start">
+            <div className="flex justify-start items-center">
               {[...Array(5)].map((_, index) => (
                 <Image
                   key={index}
@@ -141,21 +142,25 @@ const Page = () => {
                   width={100}
                   height={60}
                   alt=""
-                  className="w-4 sm:w-6 md:w-8 lg:w-12"
+                  className="w-4 sm:w-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
                 />
               ))}
             </div>
             <div className="flex">
-              <span className="lg:text-4xl font-bold text-hoverUnderlineColor">
+              <span className="lg:text-[48px] font-bold text-hoverUnderlineColor">
                 234,0094+
               </span>
             </div>
             <div>
-              <span className="lg:text-base">
-                <span className="block ">
+              <span className="lg:text-base " style={{lineHeight:'25px'}}>
+                <span className="block lg:w-[504px]  ">
                   Our customers trust us to deliver top-quality service.
                 </span>
-                Read more reviews on Google and TrustPilot!{" "}
+                Read more reviews on Google and 
+                
+                <span className="text-green-500">
+                TrustPilot!{" "}
+                </span>
               </span>
             </div>
 
@@ -172,6 +177,7 @@ const Page = () => {
       style={{
         backgroundImage: "url('/bg.png')",
         backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
         backgroundSize:"cover"
       }}
       > 
@@ -179,7 +185,10 @@ const Page = () => {
           {/* First Section */}
           <div className="  bg- text-white py-14">
             <h1 className="lg:text-[36px] font-extrabold  leading-relaxed pb-5 ">
-              Pharmacy Regulation
+              Pharmacy&nbsp;
+              <span className="text-white redunderline-background z-50 tracking-widest">
+              Regulation
+              </span>
             </h1> 
               <div className=" left-0 block tracking-wide space-y-1">
                 <p
@@ -214,7 +223,7 @@ const Page = () => {
               </div> 
           </div>
           {/* Second Section */}
-          <div className="grid grid-rows-3  text-white w-[504px] justify-start items-center mt-[63px] h-[356px] ml-2 ">
+          <div className="grid grid-rows-3  md:ml-10 text-white w-[504px] justify-start items-center mt-[63px] h-[356px] ml-2 ">
             <div className="block">
               <span  className="max-w-[504px] "
                   style={{
@@ -252,8 +261,9 @@ const Page = () => {
         </div>
         <HowDoesItWorks />
       </div>
-      <div className="w-full border border-black">Section 5</div>
-      <div className="w-full border border-black">Section 6</div>
+      <div className="w-full border border-black ">
+        <QualifiedTeamAboutPage/>
+        </div>   
     </div>
   );
 };

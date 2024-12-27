@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   bottom: 10px; /* Align the underline to the bottom of the text */
-  height: 10px; /* Height of the background underline */
+  height: 27px; /* Height of the background underline */
   background-color: black; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */
@@ -25,8 +25,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -3px; /* Move the underline below the text */
-  height: 5px; /* Height of the background underline */
+  bottom: 9px; /* Move the underline below the text */
+  height: 12px; /* Height of the background underline */
   background-color: #c62638; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */
@@ -37,4 +37,22 @@
   color: #c62638; /* Sets the marker (dot) color to red */
   width: 15px !important;
   height: 15px !important;
+}
+
+.QualifiedTeamunderline-background {
+  position: relative;
+  display: inline-block; /* Ensures the underline is sized correctly to the text */
+}
+
+.QualifiedTeamunderline-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 240px;
+  bottom: 24px; /* Align with the bottom of the text */
+  height: 18px; /* Adjust the height to fit the background underline */
+  background-color: white; /* Background color for the underline */
+  z-index: -1; /* Places the underline behind the text */
+  border-radius: 2px; /* Optional: Add slight curve for style */
 }
