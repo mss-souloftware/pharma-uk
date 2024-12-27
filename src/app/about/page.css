@@ -8,11 +8,19 @@
   left: 0;
   right: 0;
   bottom: 10px; /* Align the underline to the bottom of the text */
-  height: 27px; /* Height of the background underline */
+  height: 18px; /* Height of the background underline */
   background-color: black; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */
   transform: translateY(2px); /* Adjust the vertical position to move the underline slightly down */
+}
+
+/* Media query for xs screens (small devices) */
+@media (max-width: 360px) {
+  .underline-background::after {
+    bottom: 1px; /* Adjusted position */
+    height: 8px; /* Smaller height for underline */
+  }
 }
 
 .redunderline-background {
@@ -26,13 +34,12 @@
   left: 0;
   right: 0;
   bottom: 9px; /* Move the underline below the text */
-  height: 12px; /* Height of the background underline */
+  height: 18px; /* Height of the background underline */
   background-color: #c62638; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */
   transform: translateY(2px); /* Move the underline slightly down, behind the text */
 }
-
 .custom-list-item::marker {
   color: #c62638; /* Sets the marker (dot) color to red */
   width: 15px !important;
