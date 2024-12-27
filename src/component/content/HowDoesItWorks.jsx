@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "../../app/about/page.css";
 import React, { useEffect, useState } from "react";
 
 const HowDoesItWorks = () => {
@@ -23,9 +24,13 @@ const HowDoesItWorks = () => {
 
   return (
     <div className="container mx-auto mt-10 px-4">
-      <h2 className="text-2xl lg:text-4xl font-bold text-center mb-8 text-hoverUnderlineColor">
-        How Does It Work
-      </h2>
+      <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8 text-black">
+  How Does It&nbsp;
+  <span className="relative text-hoverUnderlineColor underline-background tracking-widest">
+    Work
+  </span>
+</h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {sections.map((section, index) => (
           <div
