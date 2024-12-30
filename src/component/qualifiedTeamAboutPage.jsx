@@ -6,19 +6,18 @@ import Image from "next/image";
 const QualifiedTeamAboutPage = () => {
   return (
     <div className="bg-black">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-rows-1 lg:grid-cols-2 gap-4 sm:gap-8 md:h-72 lg:h-full">
+      <div className="container mx-auto px-4  sm:px-6 lg:px-8 w-full "> {/* Added margin-top for mobile */}
+        <div className="grid grid-rows-1  lg:grid-cols-2 gap-4 sm:gap-8 md:h-72 lg:h-full">
 
           {/* First Section */}
-          <div className="my-10 sm:my-20 w-full sm:w-[377px] text-center lg:text-left">
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-relaxed">
-  Our 
-  <span className="text-hoverUnderlineColor underline-background tracking-widest">
-    Qualified&nbsp;
-  </span>
-  <span className="block">Dispensing Team</span>
-</h1>
-
+          <div className="my-10 sm:my-20  w-full sm:w-[377px] text-center lg:text-left">
+            <h1 className="text-white sm:w-[600px] text-4xl sm:text-4xl md:text-5xl font-bold leading-relaxed">
+              Our&nbsp;
+              <span className="text-hoverUnderlineColor underline-background tracking-widest ">
+                Qualified&nbsp;
+              </span>
+              <span className="block">Dispensing Team</span>
+            </h1>
 
             <p className="text-gray-100 mt-4 sm:mt-7 text-base sm:text-lg">
               All our pharmacists are based in the UK and are registered with the

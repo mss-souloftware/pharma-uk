@@ -278,10 +278,13 @@ const Page = () => {
   </div>
 
   {/* Our Qualified Team */}
-  <div className="w-full border border-black bg-black px-4 sm:px-6 lg:px-8 ">
-    <div className="container mx-auto">
+  <div className="my-64 sm:my-0 mb-[-20] sm:mb-0 ">
+
+  <div className="w-full border border-black bg-black px-4 sm:px-6 lg:px-8  sm:py-0">
+    <div className="container mx-auto  ">
       <QualifiedTeamAboutPage />
     </div>
+  </div>
   </div>
   
 </div>
