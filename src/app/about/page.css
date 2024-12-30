@@ -1,5 +1,6 @@
 .underline-background {
   position: relative;
+  display: inline-block;
 }
 
 .underline-background::after {
@@ -7,21 +8,40 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 10px; /* Align the underline to the bottom of the text */
-  height: 18px; /* Height of the background underline */
+  bottom: 1px; /* Align the underline to the bottom of the text */
+  height: 14px; /* Height of the background underline */
   background-color: black; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */
   transform: translateY(2px); /* Adjust the vertical position to move the underline slightly down */
 }
 
+
 /* Media query for xs screens (small devices) */
-@media (max-width: 360px) {
+@media (max-width: 414px) {
   .underline-background::after {
-    bottom: 1px; /* Adjusted position */
-    height: 8px; /* Smaller height for underline */
+    bottom: 4px; /* Adjusted position */
+    height: 7px; /* Smaller height for underline */
   }
 }
+
+.Secondunderline-background {
+  position: relative;
+  display: inline-block; /* Ensures the underline is only applied to the text */
+}
+
+.Secondunderline-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Position the underline slightly below the text */
+  height: 8px; /* Adjust the height of the underline */
+  background-color: black; /* Set the underline color */
+  z-index: -1; /* Ensure the underline appears behind the text */
+  transform: translateY(2px); /* Move the underline down for better alignment */
+}
+
 
 .redunderline-background {
   position: relative;
@@ -39,6 +59,13 @@
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */
   transform: translateY(2px); /* Move the underline slightly down, behind the text */
+}
+/* Media query for xs screens (small devices) */
+@media (max-width: 414px) {
+  .redunderline-background::after {
+    bottom: 4px; /* Adjusted position */
+    height: 7px; /* Smaller height for underline */
+  }
 }
 .custom-list-item::marker {
   color: #c62638; /* Sets the marker (dot) color to red */

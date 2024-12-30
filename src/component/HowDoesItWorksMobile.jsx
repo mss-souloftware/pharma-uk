@@ -1,8 +1,8 @@
 import Image from "next/image";
-import "../../app/about/page.css";
+import "../app/about/page.css";
 import React, { useEffect, useState } from "react";
 
-const HowDoesItWorks = () => {
+const HowDoesItWorksMobile = () => {
   const [sections, setSections] = useState([]);
 
   useEffect(() => {
@@ -23,10 +23,10 @@ const HowDoesItWorks = () => {
   }, []);
 
   return (
-    <div className="container mx-auto h-[30rem] my-24 lg:px-12 ">
+    <div className="container mx-auto h-[55rem] my-24 lg:px-12 ">
       <h2 className="text-3xl lg:text-[58px] font-bold text-center mb-20 text-black">
   How Does It&nbsp;
-  <span className="relative text-hoverUnderlineColor underline-background tracking-widest">
+  <span className="relative text-hoverUnderlineColor Secondunderline-background tracking-widest">
     Work
   </span>
 </h2>
@@ -58,4 +58,4 @@ const HowDoesItWorks = () => {
   );
 };
 
-export default HowDoesItWorks;
+export default HowDoesItWorksMobile;
