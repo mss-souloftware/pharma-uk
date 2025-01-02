@@ -3,10 +3,14 @@ import React, { useEffect, useState } from "react";
 import SimpleMap from "./map";
 import Link from "next/link";
 import Image from "next/image";
+import HowDoesItWorks from "@/component/content/HowDoesItWorks";
+import Card from "./card";
+import Policy from "./policy";
 
 const Page = () => {
   const [information, setInformation] = useState(null);
   const [informationText, setInformationText] = useState(null);
+  const [informationTiming, setinformationTiming] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -14,6 +18,7 @@ const Page = () => {
         const data = await response.json();
         setInformation(data.informationData);
         setInformationText(data.informationText); // Set informationText data
+        setinformationTiming(data.informationTiming);
       } catch (error) {
         console.error(error.message);
         console.log("some error occurs in fetching data ");
@@ -58,36 +63,49 @@ const Page = () => {
       </div>
       <SimpleMap />
 
-      {/* Customer Reviews */}
+      {/* Customer Service Opening Hours
+       */}
       <div className="bg-gray-100 px-4 sm:px-6 lg:px-8">
         <div className="w-full grid container mx-auto grid-cols-1 sm:grid-cols-2 gap-y-8 lg:gap-y-0">
           {/* Image Section */}
           <div className="  order-2 sm:order-1 ml-0 ">
-            <div className="flex flex-wrap justify-between">
+            <div className="flex flex-wrap justify-between my-4">
               {information &&
                 information.map((item) => (
-                 <div key={item.label} className="grid grid-cols-2 w-full gap-y-0 ">
-                  <div>
-                    <span className="font-bold">
-                    {item.label}&nbsp; 
-                    </span>
-                    <Link href='/' className="text-hoverUnderlineColor text-base">
-                    {item.href}
-                    </Link> 
-                  </div>
-                   
-                 </div>
-                
+                  <div
+                    key={item.label}
+                    className="flex items-center w-full mb-10"
+                  >
+                    {/* Image Section on the left */}
+                    <div className="mr-4">
+                      <Image
+                        src={item.img}
+                        width={20}
+                        height={20}
+                        alt={item.label} // Add alt text for accessibility
+                      />
+                    </div>
 
+                    {/* Text Section with Label and Link */}
+                    <div>
+                      <span className="font-bold">{item.label}&nbsp;</span>
+                      <Link
+                        href={item.href}
+                        className="text-hoverUnderlineColor text-base"
+                      >
+                        {item.href}
+                      </Link>
+                    </div>
+                  </div>
                 ))}
             </div>
           </div>
 
           {/* Text Section */}
-          <div className="grid grid-rows-5 gap-y-2 my-4 text-center sm:text-left order-1 sm:order-2">
+          <div className="grid  gap-y-2 my-4 text-center sm:text-left order-1 sm:order-2">
             {/* Heading */}
-            <div className="mb-2">
-              <h1 className="text-4xl sm:text-base md:text-4xl lg:text-5xl font-extrabold">
+            <div className=" ">
+              <h1 className="text-4xl sm:text-base md:text-4xl lg:text-5xl font-extrabold text-hoverUnderlineColor">
                 Customer Service&nbsp;
                 <span className="relative text-black redunderline-background z-50 tracking-widest text-4xl sm:text-base md:text-5xl">
                   Opening Hours
@@ -96,15 +114,18 @@ const Page = () => {
             </div>
 
             {/* Star Ratings */}
-            <div className="flex justify-center sm:justify-start items-center mb-2 ">
+            <div className="flex justify-center sm:justify-start items-center  ">
               {informationText &&
                 informationText.map((item, index) => (
-                  <div key={index} className="mb-4 text-center">
+                  <div
+                    key={index}
+                    className="mb-4 text-start flex justify-start  "
+                  >
                     <p
                       dangerouslySetInnerHTML={{
                         __html: item.data, // Render HTML safely
                       }}
-                      className="text-base leading-6"
+                      className="text-base leading-4 "
                     ></p>
                   </div>
                 ))}
@@ -112,39 +133,44 @@ const Page = () => {
 
             {/* Review Count */}
             <div className="flex justify-center sm:justify-start mb-2">
-              <span className="text-4xl sm:text-4xl md:text-4xl lg:text-[48px] font-bold text-hoverUnderlineColor">
-                234,0094+
-              </span>
-            </div>
+              <div className="text-sm sm:text-sm md:text-base lg:text-base ">
+                {informationTiming &&
+                  informationTiming.map((item) => (
+                    <div
+                      key={item.text}
+                      className="flex w-full mb-4 items-start"
+                    >
+                      {/* Timing Label on the left */}
+                      <div className="font-bold mr-4">
+                        {item.timingLabel.split("  ").map((label, index) => (
+                          <div key={index}>{label}</div> // Adds line breaks between different labels
+                        ))}
+                      </div>
 
-            {/* Description */}
-            <div className="mb-2">
-              <span
-                className="text-xs sm:text-sm md:text-lg lg:text-lg"
-                style={{ lineHeight: "1.3" }}
-              >
-                <span className="block sm:w-[300px] md:w-[400px] lg:w-[504px] mx-auto sm:mx-0 text-base">
-                  Our customers trust us to deliver top-quality service.
-                </span>
-                Read more reviews on Google and{" "}
-                <span className="text-green-500">TrustPilot!</span>
-              </span>
-            </div>
+                      {/* Timing Data on the right */}
+                      <div className="flex flex-col">
+                        {item.timingData.split("  ").map((data, index) => (
+                          <div key={index} className="text-hoverUnderlineColor">
+                            {data}
+                          </div> // Adds line breaks between different data timings
+                        ))}
 
-            {/* Learn More Button */}
-            <div className="border border-hoverUnderlineColor bg-hoverUnderlineColor  h-[30px] w-[110px] sm:w-20 md:w-28  sm:h-8 md:h-8 rounded-lg mx-auto sm:mx-0 mt-3">
-              <Link
-                href="/"
-                className="flex justify-center items-center h-full"
-              >
-                <span className=" text-white sm:text-sm md:text-base text-sm">
-                  Learn More
-                </span>
-              </Link>
+                        {/* Displaying item.text below timingData */}
+                      </div>
+                    </div>
+                  ))}
+                <div className="mt-5 ml-0">
+                  For help and support outside of these hours, please email us
+                  or request a callback.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <HowDoesItWorks />
+      <Card />
+      <Policy />
     </>
   );
 };

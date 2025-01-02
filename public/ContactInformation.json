@@ -4,39 +4,42 @@
         {
             "href": "mailto:help@pharmica.uk",
             "label": "Email:",
-            "img": "email-icon.png"
+            "img": "/email-black-icon.png"
     },
     {
         "href": "We'll call you at a time that suits you",
         "label": "Request a Call Back:",
-      "img": "help-icon.png"
+      "img": "/customer-support.png"
     },
     {
       "href": "tel:+441234567890",
       "label": "Phone:",
-      "img": "phone-icon.png"
+      "img": "/phone-icon-black.png"
     },
     {
       "href": "Pharmica 236 Gray's Inn RdLondon WC1X 8HB United Kingdom",
       "label": "Address:",
-      "img": "chat-icon.png"
-    },
-    {
-        "href": "We'll call you at a time that suits you",
-        "label": "Help Center:",
-        "img": "faq-icon.png"
-      },
+      "img": "/address-black-icon.png"
+    }, 
     {
       "href": " 0741 831 0014",
       "label": "Text (SMS):",
-      "img": "faq-icon.png"
+      "img": "/sms-black-icon.png"
     }
     ],
 
     "informationText":[
         {
             "text":"text",
-            "data" :"In our commitment to providing the very best customer support possible, our customer service team is available seven days a week.<br /> You can call or ‘live chat’ with a member of our friendly team between the hours outlined below."
+            "data" :"In our commitment to providing the very best customer support possible, our customer service team is <br /><br /> available seven days a week.<br />  <br />You can call or ‘live chat’ with a member of our friendly team between the hours outlined below."
+
+        }
+    ],
+    "informationTiming":[
+        {
+            "text":" ",
+            "timingLabel":"Monday - Friday:  Saturday:  Sunday:",
+            "timingData":"8am - 6pm   8am - 1pm   8am - 6pm"
 
         }
     ]
