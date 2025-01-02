@@ -8,7 +8,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 1px; /* Align the underline to the bottom of the text */
+  bottom: -4px; /* Align the underline to the bottom of the text */
   height: 14px; /* Height of the background underline */
   background-color: black; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
@@ -36,7 +36,7 @@
   left: 0;
   right: 0;
   bottom: -5px; /* Position the underline slightly below the text */
-  height: 8px; /* Adjust the height of the underline */
+  height: 14px; /* Adjust the height of the underline */
   background-color: black; /* Set the underline color */
   z-index: -1; /* Ensure the underline appears behind the text */
   transform: translateY(2px); /* Move the underline down for better alignment */
@@ -54,7 +54,7 @@
   left: 0;
   right: 0;
   bottom: 9px; /* Move the underline below the text */
-  height: 18px; /* Height of the background underline */
+  height: 12px; /* Height of the background underline */
   background-color: #c62638; /* Background color for the underline */
   z-index: -1; /* Place it behind the text */
   border-radius: 2px; /* Optional: Add slight curve for style */

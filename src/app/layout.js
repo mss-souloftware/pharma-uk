@@ -4,11 +4,11 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/component/Navbar";
 import "./globals.css";
-import Footer from "@/component/Footer/Footer";
+import Footer from "@/component/Footer/Footer"; 
 
 export default function RootLayout({ children }) {
   const [isLoading, setIsLoading] = useState(true);
-
+  
   useEffect(() => {
     // Set a timer to hide the spinner after 2 seconds
     const timer = setTimeout(() => {
@@ -50,8 +50,8 @@ export default function RootLayout({ children }) {
             <header>
               <Navbar />
             </header>
-            <main>
-              {children} {/* To render children in page components */}
+            <main> 
+              {children} {/* To render children in page components */} 
             </main>
 
               <footer>

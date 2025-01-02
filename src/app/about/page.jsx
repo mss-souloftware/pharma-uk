@@ -46,6 +46,7 @@ const Page = () => {
           </button>
         </div>
       </div>
+      
     </div>
   </div>
 
@@ -62,8 +63,8 @@ const Page = () => {
         </h1>
         <div className="grid grid-rows-2 sm:grid-cols-1 xl:grid-cols-[30%_70%]  lg:grid-cols-[40%_60%] lg:grid-rows-1 gap-y-6 sm:gap-y-4 h-auto lg:h-auto">
           {/* Text Section */}
-          <div className="mt-7 pr-20 order-2 lg:order-1">
-            <p className="tracking-wide">
+          <div className="mt-7 pr-20 order-2 lg:order-1  ">
+            <p className="tracking-wide  ">
               <span className="block">
                 This website is operated by Pharmica Ltd. Pharmica Ltd is registered
               </span>
@@ -98,7 +99,7 @@ const Page = () => {
               src="/bg3.png"
               width={400}
               height={60}
-              className="w-full bg-cover h-[260px] sm:h-[300px] lg:h-[260px]"
+              className="w-full bg-cover h-[310px] sm:h-[300px] lg:h-[290px]"
               alt="Building"
             />
             <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -108,104 +109,102 @@ const Page = () => {
     </div>
     
   </div>
-
-  {/* Customer Reviews */}
+{/* Customer Reviews */}
 <div className="bg-gray-100 px-4 sm:px-6 lg:px-8">
-  <div className="w-full grid container mx-auto lg:grid-cols-2 grid-rows-1 gap-y-8 lg:gap-y-0 md:h-72 lg:h-auto">
+  <div className="w-full grid container mx-auto grid-cols-1 sm:grid-cols-2 gap-y-8 lg:gap-y-0">
     {/* Image Section */}
-    <div className="my-12 flex justify-center items-center">
+    <div className="my-4 flex justify-center items-center order-2 sm:order-1">
       <Image
         src="/customerReview.png"
-        width={400}
-        height={60}
+        width={150} // Smaller size for xs devices
+        height={30}
         alt="Customer Review Image"
-        className="ml-0 bg-cover block w-full max-w-md"
+        className="bg-cover block w-full max-w-xs sm:max-w-sm md:max-w-md "
       />
     </div>
 
-   {/* Text Section */}
-<div className="grid grid-rows-5 gap-y-2 md:ml-10 my-8 text-center lg:text-left">
-  {/* Heading */}
-  <div className="mb-4">
-    <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold">
-      Customer&nbsp;
-      <span className="text-2xl sm:text-5xl relative text-black redunderline-background z-50 tracking-widest">
-        Reviews
-      </span>
-    </h1>
-  </div>
+    {/* Text Section */}
+    <div className="grid grid-rows-5 gap-y-2 my-4 text-center sm:text-left order-1 sm:order-2">
+      {/* Heading */}
+      <div className="mb-2">
+        <h1 className="text-4xl sm:text-base md:text-4xl lg:text-5xl font-extrabold">
+          Customer&nbsp;
+          <span className="relative text-black redunderline-background z-50 tracking-widest text-4xl sm:text-base md:text-5xl">
+            Reviews
+          </span>
+        </h1>
+      </div>
 
-  {/* Star Ratings */}
-  <div className="flex justify-center lg:justify-start items-center mb-4">
-    {[...Array(5)].map((_, index) => (
-      <Image
-        key={index}
-        src="/rankStarIcon.png"
-        width={100}
-        height={60}
-        alt="Star Icon"
-        className="w-8 sm:w-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
-      />
-    ))}
-  </div>
+      {/* Star Ratings */}
+      <div className="flex justify-center sm:justify-start items-center mb-2 ">
+        {[...Array(5)].map((_, index) => (
+          <Image
+            key={index}
+            src="/rankStarIcon.png"
+            width={50} // Smaller size for xs devices
+            height={30}
+            alt="Star Icon"
+            className="w-10 sm:w-7 md:w-10 "
+          />
+        ))}
+      </div>
 
-  {/* Review Count */}
-  <div className="flex justify-center lg:justify-start mb-4">
-    <span className="text-3xl sm:text-3xl lg:text-[48px] font-bold text-hoverUnderlineColor">
-      234,0094+
-    </span>
-  </div>
+      {/* Review Count */}
+      <div className="flex justify-center sm:justify-start mb-2">
+        <span className="text-4xl sm:text-4xl md:text-4xl lg:text-[48px] font-bold text-hoverUnderlineColor">
+          234,0094+
+        </span>
+      </div>
 
-  {/* Description */}
-  <div className="mb-4">
-    <span className="text-sm sm:text-base lg:text-lg" style={{ lineHeight: "1.3" }}>
-      <span className="block lg:w-[504px] mx-auto lg:mx-0">
-        Our customers trust us to deliver top-quality service.
-      </span>
-      Read more reviews on Google and{" "}
-      <span className="text-green-500">TrustPilot!</span>
-    </span>
-  </div>
+      {/* Description */}
+      <div className="mb-2">
+        <span className="text-xs sm:text-sm md:text-lg lg:text-lg" style={{ lineHeight: "1.3" }}>
+          <span className="block sm:w-[300px] md:w-[400px] lg:w-[504px] mx-auto sm:mx-0 text-base">
+            Our customers trust us to deliver top-quality service.
+          </span>
+          Read more reviews on Google and{" "}
+          <span className="text-green-500">TrustPilot!</span>
+        </span>
+      </div>
 
-  {/* Learn More Button */}
-  <div className="border border-hoverUnderlineColor bg-hoverUnderlineColor w-36 h-9 rounded-lg mx-auto lg:mx-0 mt-4">
-    <Link href="/" className="flex justify-center items-center h-full">
-      <span className="text-white text-base">Learn More</span>
-    </Link>
+      {/* Learn More Button */}
+      <div className="border border-hoverUnderlineColor bg-hoverUnderlineColor  h-[30px] w-[110px] sm:w-20 md:w-28  sm:h-8 md:h-8 rounded-lg mx-auto sm:mx-0 mt-3">
+        <Link href="/" className="flex justify-center items-center h-full">
+          <span className=" text-white sm:text-sm md:text-base text-sm">Learn More</span>
+        </Link>
+      </div>
+    </div>
   </div>
-</div>
+</div> 
 
-  </div>
-</div>
-
- {/* Pharmacy Regulations */}
+{/* Pharmacy Regulations */}
 <div
   className="bg-cover bg-center bg-no-repeat hidden sm:block" // Hide on mobile, show on larger screens
   style={{
     backgroundImage: "url('/bg.png')",
   }}
 >
-  <div className="container mx-auto grid lg:grid-cols-2 grid-rows-1 gap-8 md:h-72 lg:h-full px-4 sm:px-6 lg:px-8">
+  <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8">
     {/* First Section */}
-    <div className="text-white py-14">
-      <h1 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold leading-relaxed pb-5">
+    <div className="text-white py-8 sm:py-14">
+      <h1 className="text-xl sm:text-2xl lg:text-[36px] font-extrabold leading-relaxed pb-5">
         Pharmacy&nbsp;
         <span className="text-white redunderline-background tracking-widest">
           Regulation
         </span>
       </h1>
       <div className="tracking-wide space-y-3">
-        <p className="max-w-[504px] text-lg sm:text-xl lg:text-[20px] font-semibold" style={{ lineHeight: "1.8" }}>
+        <p className="text-sm sm:text-lg lg:text-[20px] font-semibold max-w-full sm:max-w-[400px] lg:max-w-[504px]" style={{ lineHeight: "1.8" }}>
           The pharmacy is registered with the General Pharmaceutical Council
           with number 9012030. The superintendent pharmacist for Pharmica is:
           Ana Carolina Osorio De Faria Goncalves (GPhC Number: 2088658).
         </p>
         <ul className="space-y-2">
-          <li className="text-lg sm:text-xl text-white">
+          <li className="text-sm sm:text-lg lg:text-xl text-white">
             Dr Munawar Iqbal&nbsp;
             <span className="text-hoverUnderlineColor">(GPhC Number 2059871)</span>
           </li>
-          <li className="text-lg sm:text-xl text-white">
+          <li className="text-sm sm:text-lg lg:text-xl text-white">
             Rehma Gill&nbsp;
             <span className="text-hoverUnderlineColor">(GPhC Number 2225869)</span>
           </li>
@@ -214,10 +213,10 @@ const Page = () => {
     </div>
 
     {/* Second Section */}
-    <div className="grid grid-rows-3 gap-6 md:ml-10 text-white w-full lg:max-w-[504px] justify-start items-center py-14">
+    <div className="grid grid-rows-3 gap-6 sm:gap-8 text-white py-8 sm:py-14 w-full">
       {/* Informational Text */}
       <div>
-        <p className="text-lg sm:text-xl lg:text-[20px] font-semibold" style={{ lineHeight: "1.8" }}>
+        <p className="text-sm sm:text-lg lg:text-[20px] font-semibold" style={{ lineHeight: "1.8" }}>
           For more information or to view registration details, visit the
           General Pharmaceutical Council’s website. Responsible Pharmacist:
         </p>
@@ -227,16 +226,16 @@ const Page = () => {
       <div className="flex justify-start items-center">
         <Image
           src="/registeredPharma.png"
-          width={400}
-          height={60}
+          width={150} // Smaller size for xs devices
+          height={40}
           alt="Registered Pharma"
-          className="w-[166px] h-[66px]"
+          className="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[150px] h-[40px]"
         />
       </div>
 
       {/* Pharmacist Details */}
       <div>
-        <p className="text-lg sm:text-xl lg:text-[20px]">
+        <p className="text-sm sm:text-lg lg:text-xl">
           <span className="block">Rehma Gill&nbsp;</span>
           (GPhC Number 2225869)
         </p>
@@ -246,9 +245,10 @@ const Page = () => {
 </div>
 
 {/* Pharmacy Regulations Mobile */}
-<div className="sm:hidden">  {/* Only visible on mobile */}
+<div className="sm:hidden block">  {/* Only visible on mobile */}
   <PharmacyRegulationsMobile />
 </div>
+
 
 
   {/* How Does It Work */}

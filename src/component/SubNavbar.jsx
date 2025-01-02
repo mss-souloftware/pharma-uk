@@ -4,29 +4,16 @@ import React, { useState, useEffect, useRef } from "react";
 
 const SubNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true)
-  const navbarRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(true) 
 
-  // Close the navbar if the user clicks outside of it
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    };
 
-    // Add event listener
-    document.addEventListener("mousedown", handleClickOutside);
-    
-    // Clean up the event listener when the component is unmounted
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []); 
+  const handleClick = () => {
+    setIsOpen(false)
+    }
+ 
   return (
     <>
-      <div
-        ref={navbarRef} // Attach the ref to the navbar
+      <div 
         className={`container absolute transition-all duration-300 ease-in-out transform ${
           isOpen
             ? "container w-[70%] sm:w-[30%] lg:w-[25%] xl:w-[15%] border-2 absolute mt-7 translate-y-0 opacity-100 border-solid border-black z-50  bg-black shadow-lg rounded-b-lg"
@@ -37,20 +24,20 @@ const SubNavbar = () => {
           <ul  
           className={` flex justify-center space-x-12 p-2`}>
             <li className="relative font-semibold cursor-pointer text-white text-xs group">
-              <Link href="/about" className="relative">
+              <Link href="/about" className="relative" onClick={handleClick}>
                 About
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
 
             <li className="relative  font-semibold cursor-pointer text-white text-xs group">
-            <Link href="/contact" className="relative">
+            <Link href="/contact" className="relative" onClick={handleClick}>
             Contact Us
             </Link>
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li className="relative font-semibold cursor-pointer text-white text-xs group">
-              <Link href="/faqs"  >
+              <Link href="/faqs" onClick={handleClick}>
               FAQ
               </Link>
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
