@@ -66,108 +66,115 @@ const Page = () => {
       {/* Customer Service Opening Hours
        */}
       <div className="bg-gray-100 px-4 sm:px-6 lg:px-8">
-        <div className="w-full grid container mx-auto grid-cols-1 sm:grid-cols-2 gap-y-8 lg:gap-y-0">
+        <div className="w-full grid container mx-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-y-8 lg:gap-y-0">
           {/* Image Section */}
-          <div className="  order-2 sm:order-1 ml-0 ">
-            <div className="flex flex-wrap justify-between my-4">
-              {information &&
-                information.map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex items-center w-full mb-10"
-                  >
-                    {/* Image Section on the left */}
-                    <div className="mr-4">
-                      <Image
-                        src={item.img}
-                        width={20}
-                        height={20}
-                        alt={item.label} // Add alt text for accessibility
-                      />
-                    </div>
+          <div className="  order-2 sm:order-2 xl:order-1 ml-0 ">
+            <hr className="border border-hoverUnderlineColor block xl:hidden" />
+            <div className="flex flex-wrap justify-between my-10 xl:my-4">
+  {information &&
+    information.map((item) => (
+<div
+  key={item.label}
+  className="flex items-center w-full mb-8 md:mb-5 xl:mb-10 justify-center sm:justify-start"
+>
+  {/* Image Section on the left, hidden on mobile */}
+  <div className="mr-4 flex items-center hidden sm:block">
+    <Image
+      src={item.img}
+      width={20}
+      height={20}
+      alt={item.label} // Add alt text for accessibility
+      className="w-3 sm:w-7"
+    />
+  </div>
 
-                    {/* Text Section with Label and Link */}
-                    <div>
-                      <span className="font-bold">{item.label}&nbsp;</span>
-                      <Link
-                        href={item.href}
-                        className="text-hoverUnderlineColor text-base"
-                      >
-                        {item.href}
-                      </Link>
-                    </div>
-                  </div>
-                ))}
-            </div>
+  {/* Text Section with Label and Link */}
+  <div className="flex flex-col sm:flex-row items-center sm:text-left text-center">
+    {/* Icon and Label inline on mobile, image on the left */}
+    <div className="flex items-center sm:mr-2 sm:mb-0 mb-2">
+      <span className="font-bold text-xs sm:text-xl">{item.label}&nbsp;</span>
+    </div>
+
+    {/* Link below label on mobile, inline on larger screens */}
+    <Link
+      href={item.href}
+      className="text-hoverUnderlineColor text-xs md:text-base xl:text-base sm:ml-2 sm:inline-block mt-1 sm:mt-0"
+    >
+      {item.href}
+    </Link>
+  </div>
+</div>
+
+
+    
+    ))}
+</div>
+
           </div>
 
           {/* Text Section */}
-          <div className="grid  gap-y-2 my-4 text-center sm:text-left order-1 sm:order-2">
-            {/* Heading */}
-            <div className=" ">
-              <h1 className="text-4xl sm:text-base md:text-4xl lg:text-5xl font-extrabold text-hoverUnderlineColor">
-                Customer Service&nbsp;
-                <span className="relative text-black redunderline-background z-50 tracking-widest text-4xl sm:text-base md:text-5xl">
-                  Opening Hours
-                </span>
-              </h1>
+          <div className="grid gap-y-2 my-4 text-center sm:text-left order-1 sm:order-1 xl:order-2">
+  {/* Heading */}
+  <div className="sm:mb-5">
+    <h1 className="text-sm sm:text-base md:text-4xl lg:text-5xl font-extrabold text-hoverUnderlineColor">
+      Customer Service&nbsp;
+      <span className="relative text-black redunderline-background z-50 tracking-widest text-sm sm:text-base md:text-5xl">
+        Opening Hours
+      </span>
+    </h1>
+  </div>
+
+  <div className="flex justify-center sm:justify-start items-center">
+    {informationText &&
+      informationText.map((item, index) => (
+        <div key={index} className="mb-4 text-center flex justify-start">
+          <p
+            dangerouslySetInnerHTML={{
+              __html: item.data, // Render HTML safely
+            }}
+            className="text-xs sm:text-base leading-4 sm:text-left"
+          ></p>
+        </div>
+      ))}
+  </div>
+
+  {/* Timing */}
+  <div className="flex justify-center sm:justify-start mb-2">
+    <div className="text-sm sm:text-sm md:text-base lg:text-base">
+      {informationTiming &&
+        informationTiming.map((item) => (
+          <div key={item.text} className="flex w-full mb-4 items-start">
+            {/* Timing Label on the left */}
+            <div className="font-bold mr-4">
+              {item.timingLabel.split("  ").map((label, index) => (
+                <div key={index} className="text-xs sm:text-base" >{label}</div> // Adds line breaks between different labels
+              ))}
             </div>
 
-            {/* Star Ratings */}
-            <div className="flex justify-center sm:justify-start items-center  ">
-              {informationText &&
-                informationText.map((item, index) => (
-                  <div
-                    key={index}
-                    className="mb-4 text-start flex justify-start  "
-                  >
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: item.data, // Render HTML safely
-                      }}
-                      className="text-base leading-4 "
-                    ></p>
-                  </div>
-                ))}
-            </div>
+            {/* Timing Data on the right */}
+            <div className="flex flex-col">
+              {item.timingData.split("  ").map((data, index) => (
+                <div key={index} className="text-hoverUnderlineColor text-xs sm:text-base">
+                  {data}
+                </div> // Adds line breaks between different data timings
+              ))}
 
-            {/* Review Count */}
-            <div className="flex justify-center sm:justify-start mb-2">
-              <div className="text-sm sm:text-sm md:text-base lg:text-base ">
-                {informationTiming &&
-                  informationTiming.map((item) => (
-                    <div
-                      key={item.text}
-                      className="flex w-full mb-4 items-start"
-                    >
-                      {/* Timing Label on the left */}
-                      <div className="font-bold mr-4">
-                        {item.timingLabel.split("  ").map((label, index) => (
-                          <div key={index}>{label}</div> // Adds line breaks between different labels
-                        ))}
-                      </div>
-
-                      {/* Timing Data on the right */}
-                      <div className="flex flex-col">
-                        {item.timingData.split("  ").map((data, index) => (
-                          <div key={index} className="text-hoverUnderlineColor">
-                            {data}
-                          </div> // Adds line breaks between different data timings
-                        ))}
-
-                        {/* Displaying item.text below timingData */}
-                      </div>
-                    </div>
-                  ))}
-                <div className="mt-5 ml-0">
-                  For help and support outside of these hours, please email us
-                  or request a callback.
-                </div>
-              </div>
+              {/* Displaying item.text below timingData */}
             </div>
           </div>
+        ))}
+      <div className="mt-5 ml-0 text-xs sm:text-base">
+        For help and support outside of these hours, please email us or request a callback.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          
         </div>
       </div>
+      
       <HowDoesItWorks />
       <Card />
       <Policy />

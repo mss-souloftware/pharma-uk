@@ -127,9 +127,9 @@ const Page = () => {
     <div className="grid grid-rows-5 gap-y-2 my-4 text-center sm:text-left order-1 sm:order-2">
       {/* Heading */}
       <div className="mb-2">
-        <h1 className="text-4xl sm:text-base md:text-4xl lg:text-5xl font-extrabold">
+        <h1 className="text-xl sm:text-base md:text-4xl lg:text-5xl font-extrabold">
           Customer&nbsp;
-          <span className="relative text-black redunderline-background z-50 tracking-widest text-4xl sm:text-base md:text-5xl">
+          <span className="relative text-black redunderline-background z-50 tracking-widest text-xl sm:text-base md:text-5xl">
             Reviews
           </span>
         </h1>
