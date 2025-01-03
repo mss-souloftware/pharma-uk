@@ -24,12 +24,12 @@ const HowDoesItWorks = () => {
 
   return (
     <div className="container mx-auto h-[30rem] my-24 lg:px-12 ">
-      <h2 className="text-3xl lg:text-[58px] font-bold text-center mb-20 text-black">
-  How Does It&nbsp;
-  <span className="relative text-hoverUnderlineColor underline-background tracking-widest">
-    Work
-  </span>
-</h2>
+      <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-bold text-center mb-20 text-black">
+        How Does It&nbsp;
+        <span className="relative text-hoverUnderlineColor tracking-widest">
+          Work
+        </span>
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {sections.map((section, index) => (
@@ -45,10 +45,10 @@ const HowDoesItWorks = () => {
               className="w-full h-40 object-cover rounded-md mb-4"
             />
 
-            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-2 text-center">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-2 text-center">
               {section.name}
             </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-700 text-center">
+            <p className="text-sm sm:text-base lg:text-base text-gray-700 text-center">
               {section.description}
             </p>
           </div>

@@ -5,6 +5,7 @@ import ContentSection from "./AboutContent";
 import HowDoesItWorks from "./HowDoesItWorks";
 import './ProductList.css'
 import Image from "next/image";
+import ContentSection2 from "./QualifiedTeams";
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
@@ -42,7 +43,7 @@ const Content = () => {
   return (
     <div className="container mx-auto h-auto mt-20 border-2 border-solid border-transparent pl-[1.7rem] pr-[1.7rem]">
       <div>
-        <h1 className="block flex items-center justify-center text-xl lg:text-4xl md:text-3xl sm:text-2xl font-extrabold text-hoverUnderlineColor">
+        <h1 className="block flex items-center justify-center text-xl lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl font-extrabold text-hoverUnderlineColor">
           Find your treatment
         </h1>
         <p className="text-center w-full mx-auto text-xs lg:text-base md:text-base sm:text-base font-extrabold mt-7 text-gray-700">
@@ -84,14 +85,13 @@ const Content = () => {
               {category.name || "Unnamed Category"}
             </span>
           </button>
-
         ))}
       </div>
 
       {/* Display selected category */}
       {selectedCategory && (
         <div className="mt-8">
-          <h3 className="text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
+          <h3 className=" text-xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
             Subcategories under {selectedCategory.name}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
@@ -132,8 +132,12 @@ const Content = () => {
         <HowDoesItWorks />
       </div>
 
-      <div>
+      <div className="mt-28">
         <ContentSection />
+      </div>
+
+      <div className="mt-28">
+              <ContentSection2/>
       </div>
     </div>
   );

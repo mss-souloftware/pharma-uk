@@ -5,7 +5,9 @@ import Image from 'next/image';
 
 const ContentSection = () => {
   return (
-    <div className='mt-16  w-full relative mx-auto block border-2 border-solid border-transparent'>
+    <>
+   
+    <div className='mt-[40rem] sm:mt-[20rem] md:mt-[20rem] lg:mt-0  w-full relative mx-auto block border-2 border-solid border-transparent'>
       <div className='flex flex-col lg:flex-row items-center'>
         {/* Image Section */}
         <div className='lg:w-1/2 w-full order-2 lg:order-1 mt-16'>
@@ -31,13 +33,14 @@ const ContentSection = () => {
           <h3 className='text-xl sm:text-2xl font-bold mb-6 text-hoverUnderlineColor '>
             <Image 
             src="/about-logo.png"
-               width={20}
-               height={20} 
-             alt="" className='h-10 w-10 inline-block' />
-
+               width={40}
+               height={40} 
+             alt="" className=' xl:h-12 xl:w-12 md:h-12 md:w-12 h-7 w-7  xl:mb-8 inline-block '  />
+<span className='text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl'>
             About Us Company
+</span>
           </h3>
-          <h1 className='text-xl md:text-3xl lg:text-4xl font-extrabold mb-8 '>
+          <h1 className='text-xl lg:text-3xl xl:text-3xl md:text-2xl font-extrabold mb-8 '>
             Affordable Health Care Solutions
           </h1>
           <p className='text-base mb-8 text-gray-500 text-sm sm:text-base '>
@@ -49,8 +52,9 @@ const ContentSection = () => {
         </div>
 
       </div>
-      <ContentSection2/>
     </div>
+     
+      </>
   )
 }
 

@@ -61,7 +61,7 @@ const Page = () => {
             Information
           </span>
         </h1>
-        <div className="grid grid-rows-2 sm:grid-cols-1 xl:grid-cols-[30%_70%]  lg:grid-cols-[40%_60%] lg:grid-rows-1 gap-y-6 sm:gap-y-4 h-auto lg:h-auto">
+        <div className="grid grid-rows-2 sm:grid-cols-1 xl:grid-cols-[40%_60%]  lg:grid-cols-[40%_60%] lg:grid-rows-1 gap-y-6 sm:gap-y-4 h-auto lg:h-auto">
           {/* Text Section */}
           <div className="mt-7 pr-20 order-2 lg:order-1  ">
             <p className="tracking-wide  ">

@@ -36,13 +36,13 @@ const Page = () => {
 
   return (
     <section className="bg-white dark:bg-gray-900 container mx-auto">
-  <div className="py-8 max-w-screen-xl sm:py-16 lg:px-6">
+  <div className="py-8 max-w-screen-xl sm:py-16 lg:px-2">
     <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-hoverUnderlineColor dark:text-white text-center sm:text-left">
       Frequently asked questions
     </h2>
     <div className="grid pt-8 text-center sm:text-left border-t border-gray-200 md:gap-16  dark:border-gray-700 md:grid-cols-2 w-full xl:w-[120%] ">
       {faqData.map((faq, index) => (
-        <div key={index} className="flex flex-col items-center sm:items-start mb-10 px-7 xl:px-0 ">
+        <div key={index} className="flex flex-col items-center sm:items-start mb-10 px-0 xl:px-0 ">
           <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
             <svg
               className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"

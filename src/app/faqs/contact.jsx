@@ -68,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-full ml-0 py-12  ">
+    <div className="  ml-0 py-12 xl:w-[120%] ">
       <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center sm:text-start text-hoverUnderlineColor dark:text-white mb-8 px-7 sm:px-0">Can&apos;t find what you are looking for?</h2>
       {formStatus === "success" && (
         <div className="text-green-500 text-center mb-4">Your message has been sent successfully!</div>

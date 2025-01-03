@@ -13,7 +13,7 @@ const SubNavbar = () => {
       <div
         className={`container absolute transition-all duration-300 ease-in-out transform ${
           isOpen
-            ? "container w-[70%] sm:w-[30%] lg:w-[25%] xl:w-[15%] border-2 absolute mt-7 translate-y-0 opacity-100 border-solid border-black z-50  bg-black shadow-lg rounded-b-lg"
+            ? "container w-[70%] sm:w-[40%] lg:w-[25%] xl:w-[15%] border-2 absolute mt-7 translate-y-0 opacity-100 border-solid border-black z-50  bg-black shadow-lg rounded-b-lg"
             : "-translate-y-full opacity-0 pointer-events-none "
         }`}
       >

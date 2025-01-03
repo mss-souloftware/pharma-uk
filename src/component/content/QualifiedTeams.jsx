@@ -5,8 +5,10 @@ import Image from 'next/image';
 
 const ContentSection2 = () => {
   return (
-    <div className="container mx-auto p-4 mt-20">
-       <h1 className='block mx-auto text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-extrabold  text-hoverUnderlineColor mb-16 ' >A fully Qualified team</h1> 
+    <div className="container mx-auto p-4 mt-28">
+       <h1 className='block mx-auto text-center text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-extrabold mb-16 ' >A fully Qualified <span className='text-hoverUnderlineColor'>
+       team
+        </span> </h1> 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {/* Column 1 */}
         <div className="card w-full">

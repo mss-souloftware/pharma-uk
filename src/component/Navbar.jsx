@@ -54,90 +54,86 @@ const Navbar = () => {
     setIsMenuOpen((prevState) => !prevState); // Toggle the mobile menu state
   };
 
-   // Close dropdowns on click outside
-useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (
-      navbarRef.current &&
-      !navbarRef.current.contains(event.target)
-    ) {
-      // Delay dropdown closing slightly
-      setTimeout(() => {
-        setActiveDropdown(null); // Close all dropdowns
-      }, 100); // Adjust timing as needed
-    }
-  };
+  // Close dropdowns on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target)
+      ) {
+        // Delay dropdown closing slightly
+        setTimeout(() => {
+          setActiveDropdown(null); // Close all dropdowns
+        }, 100); // Adjust timing as needed
+      }
+    };
 
-  // Add event listener for clicks
-  document.addEventListener("mousedown", handleClickOutside);
+    // Add event listener for clicks
+    document.addEventListener("mousedown", handleClickOutside);
 
-  // Clean up the event listener when the component is unmounted
-  return () => {
-    document.removeEventListener("mousedown", handleClickOutside);
-  };
-}, [navbarRef]);
-
- 
-
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navbarRef]);
 
   return (
     <>
       <nav className="bg-blackBackground z-50 border-gray-200 dark:bg-blackBackground dark:border-gray-700 relative">
         <Header />
-        <div className=" md:mx-auto md:container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
+        <div className="md:mx-auto md:container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
           <Link
             href="/"
-            className="flex items-center w-14 space-x-2 sm:left-0  sm:w-10 tl:space-x-reverse"
+            className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse"
           >
             <Image
               src="/Logo.png"
               width={100}  // Set width
-                height={30} // Set height
-              className="absolute  w-24 sm:ml-0 sm:w-20  md:w-24 lg:w-24  xl:w-40  "
+              height={30} // Set height
+              className="absolute w-24 sm:ml-0 sm:w-20 md:w-24 lg:w-24 xl:w-40"
               alt="Responsive Logo"
             />
           </Link>
 
           {/* Mobile Menu Toggle (visible only on medium screens and below) */}
           <div className="flex gap-5 relative">
-
-          <div className=" block sm:hidden ">
-      <AddToCart/>
-
-      </div>
-      <div className="block sm:hidden">
-           <MobileUserProfileMenu/> 
-      </div>
-          <button
-            onClick={toggleMobileMenu}
-            className="md:hidden text-white" // 'md:hidden' hides on medium and larger screens
-          >
-            {/* Mobile menu icon */}
-            {!isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-6 h-6"
+            <div className="block sm:hidden">
+              <AddToCart />
+            </div>
+            <div className="block sm:hidden">
+              <MobileUserProfileMenu />
+            </div>
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden text-white" // 'md:hidden' hides on medium and larger screens
+            >
+              {/* Mobile menu icon */}
+              {!isMenuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="w-6 h-6"
                 >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
                   />
-              </svg>
-            ) : (
-              <></>
-            )}
-          </button>    
+                </svg>
+              ) : (
+                <></>
+              )}
+            </button>
           </div>
+
           {/* Navbar Items (hidden on small screens, visible on larger screens) */}
           <div className="w-full md:block md:w-auto mobile-nav-hidden">
             <ul
-              className="hidden md:flex flex-col font-bold sm:text-xs text-xs p-4 md:p-0 mt-4 border  rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 
-          md:border-0 md:bg-blackBackground md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0"
+              className="hidden md:flex flex-col font-bold sm:text-xs text-xs p-4 md:p-0 mt-4 border rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0
+              md:border-0 md:bg-blackBackground md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0"
             >
               {/* Menu items go here */}
               <div
@@ -150,7 +146,7 @@ useEffect(() => {
                   setDropdownOpen={() => handleDropdownToggle("men")}
                   dropdownTitle="Men's Health"
                   links={[
-                    { href: "/dashboard", label: "Condoms" },
+                    { href: "/condoms", label: "Condoms" },
                     { href: "/earnings", label: "Erectile Dysfunction" },
                     { href: "/sign-out", label: "Hair Loss" },
                     { href: "/sign-out", label: "Lube" },
@@ -162,7 +158,6 @@ useEffect(() => {
                   cardStyles="bg-black text-white p-4 rounded-lg"
                   position="absolute left-0 top-full mt-2 z-50"
                 />
-                {/* More dropdowns */}
 
                 {/* Women's Health Dropdown */}
                 <Dropdown
@@ -240,7 +235,7 @@ useEffect(() => {
         </div>
       </nav>
 
-      <div className="flex items-center justify-center relative z-30 ">
+      <div className="flex items-center justify-center relative z-30">
         <SubNavbar />
       </div>
     </>

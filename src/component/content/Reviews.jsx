@@ -59,9 +59,11 @@ const ContentSection3 = () => {
     <>
       <div className="container mx-auto p-4 mt-20 bg-white rounded-2xl ">
         {/* Title */}
-        <div className="block mx-auto text-center text-xl sm:text-2xl md:text-3xl lg:text-3xl text-hoverUnderlineColor mb-8     font-bold mb-6 text-hoverUnderlineColor">
+        <div className="block mx-auto text-center text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-bold mb-6 text-black">
           More than{" "}
-          <h1 className="font-extrabold inline-block ">207,891 reviews</h1>
+          <h1 className="font-extrabold inline-block ">207,891 <span className="text-hoverUnderlineColor">
+          reviews
+            </span>  </h1>
         </div>
 
         {/* Full-width 3-column layout */}
@@ -69,7 +71,7 @@ const ContentSection3 = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-44 bg-white p-8 rounded-lg w-full sm:w-11/12 lg:w-10/12">
             <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw] rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
               {/* Google Text */}
-              <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2">
+              <h2 className=" text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-extrabold text-center mb-2">
                 <span style={{ color: "#4285F4" }}>𝖦</span>
                 𝗈
                 <span style={{ color: "#34A853" }}>𝗈</span>
@@ -102,7 +104,7 @@ const ContentSection3 = () => {
 
             <div className="bg-transparent w-full sm:w-48 md:w-60 lg:w-[10vw]  rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
               {/* Trust Pilot Text */}
-              <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
+              <h2 className=" text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
                 Trust <span className="text-[#50C878]">Pilot</span>
               </h2>
 
@@ -130,7 +132,7 @@ const ContentSection3 = () => {
 
             <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw]  rounded-lg h-auto flex flex-col justify-center  items-center p-4 sm:p-6 md:p-8 col-span-1">
               {/* feefo Text */}
-              <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
+              <h2 className=" text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-extrabold text-center mb-2 flex items-center justify-center">
                 <span style={{ color: "#000" }}>feefo</span>
               </h2>
 
@@ -142,7 +144,7 @@ const ContentSection3 = () => {
                     key={index}
                     src="/trustPilotIcon.png"
                     width={20}
-                    height={20}
+                    height={20} 
                     alt=""
                     className="w-6 sm:w-8 md:w-10 lg:w-12"
                   />
@@ -234,12 +236,12 @@ const ContentSection3 = () => {
                             </div>
 
                             {/* Middle - Card Text */}
-                            <div className="text-base font-bold mb-2 text-center text-sm sm:text-base">
+                            <div className=" font-bold mb-2 text-center text-sm sm:text-base">
                               {card.text}
                             </div>
 
                             {/* Bottom - Green Name */}
-                            <div className="text-hoverUnderlineColor font-bold text-sm sm:text-base text-center">
+                            <div className="text-hoverUnderlineColor font-bold  sm:text-xl text-base text-center">
                               {card.name}
                             </div>
                           </div>
