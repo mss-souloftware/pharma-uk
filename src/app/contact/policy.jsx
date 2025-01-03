@@ -5,7 +5,7 @@ const Policy = () => {
     <div className="container mx-auto px-4 my-20">
       {/* Header Section */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-hoverUnderlineColor mb-8">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-hoverUnderlineColor mb-8">
           Our Policies
         </h1>
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -18,7 +18,7 @@ const Policy = () => {
         
         {/* Policy Section */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h2 className="text-lg md:text-xl font-semibold mb-4 text-hoverUnderlineColor">
+          <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-extrabold mb-4 text-hoverUnderlineColor">
             Policy
           </h2>
           <p className="text-sm md:text-base text-gray-700">
@@ -28,7 +28,7 @@ const Policy = () => {
 
         {/* Privacy Assurance Section */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h2 className="text-lg md:text-xl font-semibold mb-4 text-hoverUnderlineColor">
+          <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-extrabold mb-4 text-hoverUnderlineColor">
             Privacy Assurance
           </h2>
           <p className="text-sm md:text-base text-gray-700">
@@ -38,7 +38,7 @@ const Policy = () => {
 
         {/* Complaints Section */}
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h2 className="text-lg md:text-xl font-semibold mb-4 text-hoverUnderlineColor">
+          <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-extrabold mb-4 text-hoverUnderlineColor">
             Complaints
           </h2>
           <p className="text-sm md:text-base text-gray-700">

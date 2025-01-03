@@ -37,7 +37,7 @@ const Page = () => {
   return (
     <section className="bg-white dark:bg-gray-900 container mx-auto">
   <div className="py-8 max-w-screen-xl sm:py-16 lg:px-2">
-    <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-hoverUnderlineColor dark:text-white text-center sm:text-left">
+    <h2 className="mb-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight font-extrabold text-hoverUnderlineColor dark:text-white text-center sm:text-left">
       Frequently asked questions
     </h2>
     <div className="grid pt-8 text-center sm:text-left border-t border-gray-200 md:gap-16  dark:border-gray-700 md:grid-cols-2 w-full xl:w-[120%] ">
@@ -56,7 +56,7 @@ const Page = () => {
                 clipRule="evenodd"
               ></path>
             </svg>
-            <span className="text-hoverUnderlineColor">{faq.title}</span>
+            <span className="text-hoverUnderlineColor ">{faq.title}</span>
           </h3>
           <p className="text-gray-500 dark:text-gray-400">{faq.content}</p>
         </div>

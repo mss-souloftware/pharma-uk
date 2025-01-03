@@ -84,7 +84,7 @@ const Page = () => {
       width={20}
       height={20}
       alt={item.label} // Add alt text for accessibility
-      className="w-3 sm:w-7"
+      className="w-3 sm:w-4 md:w-5 lg:w-6"
     /> 
   </div>
 
@@ -92,13 +92,13 @@ const Page = () => {
   <div className="flex flex-col sm:flex-row items-center sm:text-left text-center">
     {/* Icon and Label inline on mobile, image on the left */}
     <div className="flex items-center sm:mr-2 sm:mb-0 mb-2">
-      <span className="font-bold text-xs sm:text-xl">{item.label}&nbsp;</span>
+      <span className="text-base lg:text-xl xl:text-2xl md:text-base font-extrabold ">{item.label}&nbsp;</span>
     </div>
 
     {/* Link below label on mobile, inline on larger screens */}
     <Link
       href={item.href}
-      className="text-hoverUnderlineColor text-xs md:text-base xl:text-base sm:ml-2 sm:inline-block mt-1 sm:mt-0"
+      className="text-hoverUnderlineColor  xl:text-base md:text-sm text-xs font-normal sm:ml-2 sm:inline-block mt-1 sm:mt-0"
     >
       {item.href}
     </Link>
@@ -116,9 +116,9 @@ const Page = () => {
           <div className="grid gap-y-2 my-4 text-center sm:text-left order-1 sm:order-1 xl:order-2">
   {/* Heading */}
   <div className="sm:mb-5">
-    <h1 className="text-sm sm:text-base md:text-4xl lg:text-5xl font-extrabold text-hoverUnderlineColor">
+    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-black">
       Customer Service&nbsp;
-      <span className="relative text-black redunderline-background z-50 tracking-widest text-sm sm:text-base md:text-5xl">
+      <span className="relative text-hoverUnderlineColor z-50 tracking-widest  ">
         Opening Hours
       </span>
     </h1>
