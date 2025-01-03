@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ContentSection from "./AboutContent";
 import HowDoesItWorks from "./HowDoesItWorks";
-import './ProductList.css'
+import "./ProductList.css";
 import Image from "next/image";
 import ContentSection2 from "./QualifiedTeams";
 
@@ -95,40 +95,41 @@ const Content = () => {
             Subcategories under {selectedCategory.name}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-  {selectedCategory.subcategories.map((subcategory, index) => (
-    <div
-      key={index}
-      className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-transform duration-300 hover:scale-95 will-change-transform"
-    >
-      {/* Image Section */}
-      <div
-        style={{
-          backgroundImage: `url(${subcategory.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "250px",
-        }}
-        className="w-full"
-      ></div>
+            {selectedCategory.subcategories.map((subcategory, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-transform duration-300 hover:scale-95 will-change-transform"
+              >
+                {/* Image Section */}
+                <div
+                  style={{
+                    backgroundImage: `url(${subcategory.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    height: "250px",
+                  }}
+                  className="w-full"
+                ></div>
 
-      {/* Content Section */}
-      <div className="p-4">
-        <h5 className="text-xl font-semibold text-gray-900">
-          {subcategory.name}
-        </h5>
-        <p className="text-sm text-gray-700 mt-2">{subcategory.description}</p>
+                {/* Content Section */}
+                <div className="p-4">
+                  <h5 className="text-xl font-semibold text-gray-900">
+                    {subcategory.name}
+                  </h5>
+                  <p className="text-sm text-gray-700 mt-2">
+                    {subcategory.description}
+                  </p>
 
-        {/* Button */}
-        <Link href={subcategory.link}>
-          <button className="mt-4 py-2 px-6 bg-hoverUnderlineColor text-white rounded-full font-medium transition-transform transform hover:scale-105 will-change-transform backface-visibility-hidden">
-            Learn More
-          </button>
-        </Link>
-      </div>
-    </div>
-  ))}
-</div>
-
+                  {/* Button */}
+                  <Link href={subcategory.link}>
+                    <button className="mt-4 py-2 px-6 bg-hoverUnderlineColor text-white rounded-full font-medium transition-transform transform hover:scale-105 will-change-transform backface-visibility-hidden">
+                      Learn More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
@@ -141,7 +142,7 @@ const Content = () => {
       </div>
 
       <div className="mt-28">
-              <ContentSection2/>
+        <ContentSection2 />
       </div>
     </div>
   );
