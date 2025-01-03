@@ -58,7 +58,7 @@ const Page = () => {
             </svg>
             <span className="text-hoverUnderlineColor ">{faq.title}</span>
           </h3>
-          <p className="text-gray-500 dark:text-gray-400">{faq.content}</p>
+          <p className="text-gray-500 dark:text-gray-400 px-12 sm:px-0">{faq.content}</p>
         </div>
       ))}
     </div>
