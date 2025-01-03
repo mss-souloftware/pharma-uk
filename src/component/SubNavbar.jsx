@@ -37,7 +37,7 @@ const SubNavbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li className="relative font-semibold cursor-pointer text-white text-xs group">
-              <Link href="/faqs" onClick={handleClick}>
+              <Link href="/faq" className="relative"   onClick={handleClick}>
               FAQ
               </Link>
               <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#DC143C] transition-all duration-300 group-hover:w-full"></span>

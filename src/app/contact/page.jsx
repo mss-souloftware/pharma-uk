@@ -85,7 +85,7 @@ const Page = () => {
       height={20}
       alt={item.label} // Add alt text for accessibility
       className="w-3 sm:w-7"
-    />
+    /> 
   </div>
 
   {/* Text Section with Label and Link */}
