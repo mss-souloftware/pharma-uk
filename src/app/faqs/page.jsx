@@ -1,5 +1,4 @@
-"use client";
-import HowDoesItWorks from "@/component/content/HowDoesItWorks";
+"use client"; 
 import React, { useEffect, useState } from "react";
 import Contact from "./contact";
 
