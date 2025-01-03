@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState,  } from "react";
 
 const SubNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true) 
-
-
+  const [isOpen, setIsOpen] = useState(false); 
   const handleClick = () => {
     setIsOpen(false)
     }
