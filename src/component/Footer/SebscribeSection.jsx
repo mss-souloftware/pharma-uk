@@ -2,7 +2,7 @@ import React from "react";
 
 const SebscribeSection = () => {
   return (
-    <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full h-auto p-1 sm:p-4 md:p-4 bg-hoverUnderlineColor border-2 border-transparent rounded-lg">
+    <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full h-auto p-1 sm:p-4 md:p-4 mt-8 bg-hoverUnderlineColor border-2 border-transparent rounded-lg">
       {/* Text Section */}
       <div className="flex-shrink-0 text-center mx-auto  md:text-left mb-4 md:mb-0">
         <span className="text-xl sm:text-base md:text-xl lg:text-3xl">

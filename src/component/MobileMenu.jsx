@@ -12,12 +12,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
 
   useEffect(() => {
     setIsMenuOpen(mobileMenuOpen);
-  }, [mobileMenuOpen]);
-
-  const handleMenuItemClick = () => {
-    setIsMenuOpen(false); // Close the menu when an item is clicked
-  };
-
+  }, [mobileMenuOpen]); 
   // Toggle dropdown function
   const handleDropdownToggle = (dropdown) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown); // Toggle dropdown
@@ -28,16 +23,16 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
       {/* Hamburger Icon with animation */}
       <div className="md:hidden z-50 relative ">
           <UserProfileMenu/>
-        <button onClick={toggleMobileMenu} className="text-white w-4">
+        <button className="text-white w-4">
           {!isMenuOpen ? (
-            <FaBars size={24} className="text-gray-500 w-4" />
+            <FaBars size={24} className="text-gray-500 w-4" onClick={toggleMobileMenu} />
           ) : (
-            <FaTimes size={24} className="text-gray-500 w-4" />
+            <FaTimes size={24} className="text-gray-500 w-4"onClick={toggleMobileMenu}  />
           )}
         </button>
       </div> 
       {/* Mobile Menu with animation */}
-      <motion.ul
+      <motion.ul 
         className={`md:hidden bg-blackBackground absolute top-12 left-0 w-full p-4 transition-transform ease-in-out duration-100 ${isMenuOpen ? "block" : "hidden"} flex flex-col items-stretch z-10 `} // Add z-50 to ensure it's above other content
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isMenuOpen ? 1 : 0, y: isMenuOpen ? 0 : -20 }}
@@ -68,13 +63,13 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
             >
               <ul className="py-2 text-sm text-gray-300">
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/dashboard" className="block px-4 py-2 hover:text-gray-500">Condoms</Link>
+                  <Link href="/condoms" className="block px-4 py-2 hover:text-gray-500"  onClick={toggleMobileMenu}>Condoms</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/earnings" className="block px-4 py-2 hover:text-gray-500">Erectile Dysfunction</Link>
+                  <Link href="/earnings" className="block px-4 py-2 hover:text-gray-500" onClick={toggleMobileMenu}>Erectile Dysfunction</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                  <Link href="/sign-out" className="block px-4 py-2 hover:text-gray-500">Hair Loss</Link>
+                  <Link href="/sign-out" className="block px-4 py-2 hover:text-gray-500" onClick={toggleMobileMenu}>Hair Loss</Link>
                 </motion.li>
               </ul>
             </motion.div>

@@ -1,12 +1,12 @@
 {
-    "HeaderContent": [
-      {
-        "label":"text",
-        "Title": "Condoms",
-        "subTitle": "Comfortable, reliable and highly-effective contraception",
-        "content": "Condoms are a highly effective and popular choice of contraception for men and women. In addition, they help prevent the transmission of STIs and STDs during sexual intercourse. <br/> As one of the UK’s trusted online pharmacies, all our condoms are manufactured by the most trusted and reputable sexual health brands.",
-        "img": "/CondomsBanner.jpg"
-      }
-    ]
-  }
-  
+  "HeaderContent": [
+    {
+      "label": "text",
+      "title": "Condoms",
+      "subTitle": "Comfortable, reliable and highly-effective contraception",
+      "button":"Start a consulting",
+      "content": "Complete our quick online consultation and select your preferred hair loss treatment.Hair loss is a common condition that can be caused by several factors, such as genetics, hormonal changes stress.Our range of topical and oral hair loss treatments, including Finasteride and Regaine foam and solution, can help treat hair loss and stimulate hair regrowth.",
+      "img": "/ProductImage/condoms/condoms.jpg "
+    }
+  ]
+}

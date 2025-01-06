@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
       colors: {
         primaryText: 'white', // text-white
         secondary: 'gray', // secondary color
@@ -30,5 +31,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [ ]
+
 };

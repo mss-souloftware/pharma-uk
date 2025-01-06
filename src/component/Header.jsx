@@ -46,7 +46,7 @@ const Header = () => {
               width={20}  // Set width
               height={20} // Set height
               alt="Instagram"
-              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform"
+              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform hidden sm:block"
             />
           </Link>
           <Link href="/">
@@ -55,7 +55,7 @@ const Header = () => {
               width={20}  // Set width
               height={20} // Set height
               alt="Facebook"
-              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform"
+              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform hidden sm:block"
             />
           </Link>
           <Link href="/">
@@ -64,7 +64,7 @@ const Header = () => {
               width={20}  // Set width
               height={20} // Set height
               alt="Twitter"
-              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform"
+              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform hidden sm:block"
             />
           </Link>
         </div>
