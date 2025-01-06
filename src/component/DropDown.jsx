@@ -23,7 +23,7 @@ const Dropdown = ({ isDropdownOpen, setDropdownOpen, dropdownTitle, links, cardS
                 <a href={link.href} className="text-white hover:text-secondary group relative">
                   {link.label}
                   <span 
-                    className="absolute left-0 bottom-0 block w-0 h-1 bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
+                    className="absolute left-0 mt-[1px]  block  w-0 h-0.5 bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}

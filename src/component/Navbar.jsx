@@ -147,8 +147,8 @@ const Navbar = () => {
                   dropdownTitle="Men's Health"
                   links={[
                     { href: "/condoms", label: "Condoms" },
-                    { href: "/earnings", label: "Erectile Dysfunction" },
-                    { href: "/sign-out", label: "Hair Loss" },
+                    { href: "/erectileDysfunction", label: "Erectile Dysfunction" },
+                    { href: "/hairLoss", label: "Hair Loss" },
                     { href: "/sign-out", label: "Lube" },
                     { href: "/sign-out", label: "Pain Relief" },
                     { href: "/sign-out", label: "Premature Ejaculation" },
