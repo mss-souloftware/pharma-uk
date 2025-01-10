@@ -30,7 +30,7 @@ const ProductHeader = () => {
               src={fetchData[0].img}   
               alt="Condoms"
               layout="fill"
-              className="rounded-lg shadow-lg object-cover"
+              className="rounded-lg shadow-xl object-cover"
             />
           )}
         </div>
@@ -48,7 +48,7 @@ const ProductHeader = () => {
               {/* Use CustomButton here */}
               <CustomeBtn 
         buttonText="Go to Consulting"
-        buttonLink="/consulting"
+        buttonLink="/consultation"
         imageSrc="/btnArrow.png"
         altText="Consulting Arrow"
       />

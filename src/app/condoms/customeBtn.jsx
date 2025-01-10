@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import "./style/buttonStyle.css";
 
-const CustomeBtn = ({ buttonText, buttonLink = "/consulting", imageSrc, altText, className = "" }) => {
+const CustomeBtn = ({ buttonText, buttonLink = "/consultation", imageSrc, altText, className = "" }) => {
   return (
     <Link
       href={buttonLink}

@@ -1,0 +1,68 @@
+{
+    "Finasteride": [
+      {
+        "id": 1,
+        "heading":"Choose Your Preferred Treatments",
+        "subHeading":"This medicine recommended to you",
+        "name": "Finasteride",
+        "description": "Finasteride has the same active ingredient and is medically equivalent to Propecia, but is available at a lower price.Finasteride inhibits the enzyme which converts testosterone to dihydrotestosterone (DHT), which helps to reverse the balding process and contributes to increased hair growth. The recommended dose is one tablet of Finasteride 1mg once daily with water, with food.The results of Finasteride 1mg treatment may be seen within a few months, although it could take up to a year to notice the full benefit..",
+        "image": "/ProductImage/Mens/Finasteride.jpg",
+        "brandName":"Avianta", 
+        "weekPlan": [
+          { "week": 1, "capsules": 20, "price": 10 },
+          { "week": 2, "capsules": 40, "price": 20 },
+          { "week": 4, "capsules": 60, "price": 30 },
+          { "week": 8, "capsules": 80, "price": 40 },
+          { "week": 12, "capsules": 120, "price": 50 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tadalafil",
+        "description": "Finasteride has the same active ingredient and is medically equivalent to Propecia, but is available at a lower price.Finasteride inhibits the enzyme which converts testosterone to dihydrotestosterone (DHT), which helps to reverse the balding process and contributes to increased hair growth. The recommended dose is one tablet of Finasteride 1mg once daily with water, with food.The results",
+        "image": "/ProductImage/condoms/product1.jpg",  
+        "brandName":"milpharm", 
+        "weekPlan": [
+          { "week": 1, "capsules": 10, "price": 15 },
+          { "week": 2, "capsules": 20, "price": 30 },
+          { "week": 4, "capsules": 36, "price": 45 },
+          { "week": 8, "capsules": 72, "price": 85 },
+          { "week": 12, "capsules": 120, "price": 120 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Minoxidil",
+        "description": "Finasteride has the same active ingredient and is medically equivalent to Propecia, but is available at a lower price.Finasteride inhibits the enzyme which converts testosterone to dihydrotestosterone (DHT), which helps to reverse the balding process and contributes to increased hair growth. The recommended dose is one tablet of Finasteride 1mg once daily with water, with food.The results",
+        "image": "/ProductImage/Mens/Finasteride.jpg",
+        "brandName":"Accord", 
+        "weekPlan": [
+          { "week": 1, "capsules": 15, "price": 12 },
+          { "week": 2, "capsules": 30, "price": 25 },
+          { "week": 4, "capsules": 50, "price": 40 },
+          { "week": 8, "capsules": 90, "price": 70 },
+          { "week": 12, "capsules": 150, "price": 100 }
+        ]
+      } 
+       
+    ],
+    
+    "Regaine_Foam_for_Men": [
+      {
+        "id": 1,
+        "name": "Regaine Foam for Men",
+        "description": "Regaine Foam for Men  has the same active ingredient and is medically equivalent to Propecia, but is available at a lower price.Finasteride inhibits the enzyme which converts testosterone to dihydrotestosterone (DHT), which helps to reverse the balding process and contributes to increased hair growth. The recommended dose is one tablet of Finasteride 1mg once daily with water, with food.The results of Finasteride 1mg treatment may be seen within a few months, although it could take up to a year to notice the full benefit..",
+        "image": "/ProductImage/Mens/Finasteride.jpg",
+        "brandName":"Avianta", 
+        "weekPlan": [
+          { "week": 1, "capsules": 20, "price": 10 },
+          { "week": 2, "capsules": 40, "price": 20 },
+          { "week": 4, "capsules": 60, "price": 30 },
+          { "week": 8, "capsules": 80, "price": 40 },
+          { "week": 12, "capsules": 120, "price": 50 }
+        ]
+      }
+    ]
+  
+  }
+  

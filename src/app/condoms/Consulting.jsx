@@ -64,7 +64,7 @@ const ConsultingCard = () => {
         <div className="my-7  ">
           <CustomeBtn
             buttonText="Go to Consulting"
-            buttonLink="/consulting"
+            buttonLink="/consultation"
             imageSrc="/btnArrow.png"
             altText="Consulting Arrow"
             className="bg-red-500"

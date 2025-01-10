@@ -1,0 +1,70 @@
+  {
+    "mainUser": "Banado",
+    "consultation": [
+      {
+        "section": "About You",
+        "questions": [
+          {
+            "question": "Are you male and aged between 18-65?",
+            "answer": ""
+          },
+          {
+            "question": "Are you suffering from hair loss?",
+            "answer": ""
+          } 
+        ]
+      },
+      {
+        "section": "Your Symptoms",
+        "questions": [
+          {
+            "question": "Have you noticed any visible reduction in hair loss since you began taking Finasteride?",
+            "answer": ""
+          },
+          {
+            "question": "Do you have hair loss in patches, or have an itchy or sore scalp?",
+            "answer": ""
+          } 
+        ]
+      },
+      {
+        "section": "Your Health",
+        "questions": [
+          {
+            "question": "Could your hair loss be explained by any medication, dietary matter or illness?",
+            "answer": ""
+          },
+          {
+            "question": "Are you allergic/hypersensitive to minoxidil, finasteride/propecia, ethanol, propylene glycol or lactose?",
+            "answer": ""
+          } 
+        ]
+      },
+      {
+        "section": "Your Medication",
+        "questions": [
+          {
+            "question": "Have you been taking Finasteride for more than 3 months?",
+            "answer": ""
+          },
+          {
+            "question": "Are you currently taking any medication (over-the-counter or prescription) or any recreational drugs?",
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "section": "Agreement",
+        "questions": [
+          {
+            "question": "Do you understand that if you are prescribed Finasteride and your partner is (or may be) pregnant, they should not handle crushed or broken tablets, and that you should always wear a condom during sex?",
+            "answer": ""
+          },
+          {
+            "question": "Do you understand that if you are prescribed Finasteride, you should inform your GP of this before undergoing a PSA blood test for your prostate?",
+            "answer": ""
+          }
+        ]
+      }
+    ]
+  }

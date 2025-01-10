@@ -1,42 +1,26 @@
 "use client"; // This marks the file as a client-side component
 
-import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef, useContext } from "react"; 
 import Link from "next/link";
 import MobileMenu from "./MobileMenu"; // Import the MobileMenu Component
 import Dropdown from "./DropDown"; // Import the Dropdown Component
 import UserProfileMenu from "./UserProfileMenu";
 import Header from "./Header";
-import AddToCart from "./AddToCart";
 import SubNavbar from "@/component/SubNavbar";
 import Image from "next/image";
 import MobileUserProfileMenu from "./content/MobileUserProfileMenu";
+import { FaCartPlus } from "react-icons/fa";
+import { CartContext } from "@/app/cart/feature/contextProvider";
 
 const Navbar = () => {
+
+  const {cart}=useContext(CartContext);
+
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [cardOpen, setCardOpen] = useState(null); // To track which card is open
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
   const navbarRef = useRef(null);
-
-  // Function to handle the scroll position
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      // You can adjust 100 to the height of your hero section
-      setIsSticky(true); // Activate sticky navbar
-    } else {
-      setIsSticky(false); // Deactivate sticky navbar
-    }
-  };
-
-  // Attach scroll event listener on mount and cleanup on unmount
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  
   const handleDropdownToggle = (dropdown) => {
     if (activeDropdown === dropdown) {
       setActiveDropdown(null);
@@ -57,10 +41,7 @@ const Navbar = () => {
   // Close dropdowns on click outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        navbarRef.current &&
-        !navbarRef.current.contains(event.target)
-      ) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
         // Delay dropdown closing slightly
         setTimeout(() => {
           setActiveDropdown(null); // Close all dropdowns
@@ -88,7 +69,7 @@ const Navbar = () => {
           >
             <Image
               src="/Logo.png"
-              width={100}  // Set width
+              width={100} // Set width
               height={30} // Set height
               className="absolute w-24 sm:ml-0 sm:w-20 md:w-24 lg:w-24 xl:w-40"
               alt="Responsive Logo"
@@ -98,7 +79,7 @@ const Navbar = () => {
           {/* Mobile Menu Toggle (visible only on medium screens and below) */}
           <div className="flex gap-5 relative">
             <div className="block sm:hidden">
-              <AddToCart />
+              <Link href="/cart"></Link>
             </div>
             <div className="block sm:hidden">
               <MobileUserProfileMenu />
@@ -147,7 +128,10 @@ const Navbar = () => {
                   dropdownTitle="Men's Health"
                   links={[
                     { href: "/condoms", label: "Condoms" },
-                    { href: "/erectileDysfunction", label: "Erectile Dysfunction" },
+                    {
+                      href: "/erectileDysfunction",
+                      label: "Erectile Dysfunction",
+                    },
                     { href: "/hairLoss", label: "Hair Loss" },
                     { href: "/sign-out", label: "Lube" },
                     { href: "/sign-out", label: "Pain Relief" },
@@ -215,7 +199,14 @@ const Navbar = () => {
 
               {/* AddToCart */}
               <div>
-                <AddToCart />
+              <Link href="/cart" className="flex items-center">
+              <FaCartPlus className="text-white w-5 h-5" />
+              <span className="ml-2 text-white">
+                <span className="text-hoverUnderlineColor">
+                {cart.products.length || 0}
+                </span>
+                </span>
+            </Link>
               </div>
 
               {/* Profile Icon (UserProfileMenu) aligned to the right */}
