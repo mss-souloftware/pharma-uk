@@ -20,10 +20,10 @@ const Dropdown = ({ isDropdownOpen, setDropdownOpen, dropdownTitle, links, cardS
           <ul>
             {links.map((link, index) => (
               <li key={index} className="p-3 w-40 ">
-                <a href={link.href} className="text-white hover:text-secondary group relative">
+                <a href={link.href} className="text-white hover:text-gray-300 group relative">
                   {link.label}
                   <span 
-                    className="absolute left-0 mt-[1px]  block  w-0 h-0.5 bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
+                    className="absolute left-0 mt-[1px]  block  w-0 h-[1px] bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}

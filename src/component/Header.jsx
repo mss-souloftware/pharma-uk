@@ -2,11 +2,13 @@ import Link from "next/link";
 import React from "react";
 import "./style/Header.css";
 import Image from "next/image";
+import SubNavbar from "./SubNavbar";
 
 const Header = () => {
   return (
     <div className="bg-hoverUnderlineColor">
       <div className="flex container mx-auto md:justify-between bg-hoverUnderlineColor md:pl-2 md:pb-1 p-1 sm:ml-auto">
+        
         {/* Phone and Email Section */}
         <div>
           <div className="phone-email-section sm:ml-3 text-nowrap gap-5 lg:gap-12 md:gap-10 sm:text-xs text-xs md:text-sm flex items-center justify-around">
@@ -37,9 +39,12 @@ const Header = () => {
             </div>
           </div>
         </div>
+      <div className="hidden sm:block ">
+        <SubNavbar />
+      </div>
 
         {/* Social Media Icons */}
-        <div className="social-media-section flex items-center md:pr-5 sm:space-x-4 space-x-1 sm:mr-0 mr-2 md:justify-around m-1">
+        <div className="social-media-section sm:hidden xl:flex items-center md:pr-5 sm:space-x-4 space-x-1 sm:mr-0 mr-2 md:justify-around m-1">
           <Link href="/">
             <Image
               src="/insta-icon.png"

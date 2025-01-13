@@ -229,15 +229,15 @@ const Page = () => {
 
       {/* Image Section */}
       <div className="flex justify-start items-center">
-      <Image
-  src="/registeredPharma.png"
-  width={150}
-  height={40}
-  alt="Registered Pharma"
-  className="w-[80px] sm:w-[80px] md:w-[100px] lg:w-[110px] object-contain"
-/>
+  <Image
+    src="/registeredPharma.png"
+    width={150}
+    height={40}
+    alt="Registered Pharma"
+    className="w-[80px] sm:w-[80px] md:w-[100px] lg:w-[110px] xl:w-[150px] object-contain"
+  />
+</div>
 
-      </div>
 
       {/* Pharmacist Details */}
       <div>

@@ -30,12 +30,12 @@ const Page = () => {
     <>
       {/* Image Section */}
       <div
-        className="relative z-10 flex justify-center items-center w-full h-[38rem] bg-cover bg-center overflow-hidden"
+        className=" relative z-10 flex justify-center items-center w-full h-[38rem] bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: "url('/DoctorImages/doctorImg4.jpg')" }}
       >
         {/* Transparent Overlay */}
         <div className="absolute inset-0 bg-gray-900 bg-opacity-40 z-10"></div>
-        <div className="relative container w-full z-20 flex flex-col text-center sm:text-left justify-center md:justify-start md:left-0 xl:left-8">
+        <div className="relative container w-full z-20 flex flex-col text-center sm:text-left justify-center md:justify-start sm:left-8 sm:pr-10 md:left-8 xl:left-8">
           {/* Heading */}
           <h1 className="text-2xl sm:text-3xl font-bold tracking-wider leading-relaxed text-white xl:mb-5 md:mb-4">
             <span className="block xl:text-5xl md:text-3xl tracking-wide text-xl">
@@ -49,7 +49,7 @@ const Page = () => {
             </span>
           </h1>
           {/* Description */}
-          <div className="justify-start lg:w-[40dvw] pt-2 mb-2 sm:mb-0 block">
+          <div className="justify-start lg:w-[40dvw] pt-2 mb-2 sm:mb-0 block ">
             <span className="text-white text-xs sm:text-base px-1 xl:px-0">
               Pharmica offers a wide range of treatments through our free online
               prescription service. Our ethos is that by providing cutting-edge
@@ -61,12 +61,15 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <SimpleMap />
 
       {/* Customer Service Opening Hours
        */}
-      <div className="bg-gray-100 px-4 sm:px-6 lg:px-8">
-        <div className="w-full grid container mx-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-y-8 lg:gap-y-0">
+      <div className="bg-gray-100 px-4 sm:px-6 lg:px-8 sm:mt-[-30px]">
+
+       <div className="flex justify-center items-center sm:my-6">
+       <SimpleMap />
+</div>
+        <div className="w-full sm:mt-[-13rem] md:mt-[-20rem]  lg:mt-0 grid container mx-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-y-8 lg:gap-y-0">
           {/* Image Section */}
           <div className="  order-2 sm:order-2 xl:order-1 ml-0 ">
             <hr className="border border-hoverUnderlineColor block xl:hidden" />
@@ -78,13 +81,13 @@ const Page = () => {
   className="flex items-center w-full mb-8 md:mb-5 xl:mb-10 justify-center sm:justify-start"
 >
   {/* Image Section on the left, hidden on mobile */}
-  <div className="mr-4 flex items-center hidden sm:block">
+  <div className="mr-4 flex items-center sm:block">
     <Image
       src={item.img}
       width={20}
       height={20}
       alt={item.label} // Add alt text for accessibility
-      className="w-3 sm:w-4 md:w-5 lg:w-6"
+      className="w-3 sm:w-4 md:w-5 lg:w-6 hidden md:block"
     /> 
   </div>
 

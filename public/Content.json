@@ -7,55 +7,55 @@
         {
           "name": "Erectile DysFunction",
           "link": "https://example.com/all-treatment/sub1",
-          "image": "https://media.gettyimages.com/id/1626571894/photo/crop-young-asian-woman-in-holding-her-friend-hand-and-touching-her-head-gently-with.jpg?s=612x612&w=0&k=20&c=Uj0unH9w2C4_GYOxe4Nh476Wnorms07blhzRpse_2Nc=",
+          "image": "/ProductImage/productImg/product1.jpg",
           "description": "Browse through a wide range of treatment options to address various health concerns."
         },
         {
           "name": "Whight Loss",
           "link": "https://example.com/all-treatment/sub2",
-          "image": "https://media.gettyimages.com/id/1792547727/photo/woman-finding-joy-in-every-step.jpg?s=612x612&w=0&k=20&c=kkQyFfWMC5CUPTKInxfcXmKSGOwufKaHgupjJCVWMkM=",
+          "image": "/ProductImage/productImg/product2.jpg",
           "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Hair Loss",
           "link": "https://example.com/popular/sub1",
-          "image": "https://media.gettyimages.com/id/1336278720/photo/man-worried-for-alopecia-checking-hair-for-loss.jpg?s=612x612&w=0&k=20&c=j1LZlqWy8Mn58DEOzGlun7Ym6rw4eIT5R4AC908OuNk=",
+          "image": "/ProductImage/productImg/product3.jpg",
           "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Sexual Health",
           "link": "https://example.com/popular/sub2",
-          "image": "https://media.gettyimages.com/id/91559392/photo/general-practice-doctor-discussing-oral-contraception.jpg?s=612x612&w=0&k=20&c=IYjWFGHsSXQBRQ6knnx3yaWFfeExU6yzqpxBczvX9ho=",
+          "image": "/ProductImage/productImg/product4.jpg",
           "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Men's Health ",
           "link": "https://example.com/mens-health/sub1",
-          "image": "https://media.gettyimages.com/id/1434064839/photo/runner-fitness-and-senior-man-running-listening-to-music-outdoor-in-neighborhood-for-workout.jpg?s=612x612&w=0&k=20&c=QkkFZwtmMdpelcmXiVcOzSD4rca8L40h8i3nhlNafuY=",
+          "image": "/ProductImage/productImg/product5.jpg",
           "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Women's Health ",
           "link": "https://example.com/womens-health/sub1",
-          "image": "https://media.gettyimages.com/id/1359127214/photo/three-woman-workingout.jpg?s=612x612&w=0&k=20&c=_eSm1UX6B3Qtsa-njnPjnZxx3DkGxQxQZ3Q4aHWhfHs=",
+          "image": "/ProductImage/productImg/product6.jpg",
           "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Respiratory",
           "link": "https://example.com/respiratory/sub1",
-          "image": "https://media.gettyimages.com/id/1358954851/photo/shot-of-a-mature-doctor-sitting-with-his-patient-in-the-clinic-and-asking-questions-during-a.jpg?s=612x612&w=0&k=20&c=6juWUy_uERlWFgKQR9V1i8gCox6Q_DtVMCh1pVV8MYU=",
+          "image": "/ProductImage/productImg/product7.jpg",
           "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Period Delay",
           "link": "https://example.com/sexual-health/sub1",
-          "image": "https://media.gettyimages.com/id/916643676/photo/sad-woman-looking-out-of-the-window.jpg?s=612x612&w=0&k=20&c=NoJLLzDdBKHRcE6gsSh6Vel5aBMH_3NzysR1fHaF_Yk=",
+          "image": "/ProductImage/productImg/product9.jpg",
           "description":"Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
           "name": "Pain Releaf",
           "link": "https://example.com/other/sub1",
-          "image": "https://media.gettyimages.com/id/1319068502/photo/doctor-reassuring-supporting-senior-patient-in-hospital.jpg?s=612x612&w=0&k=20&c=rss2Yer8ZgcXb6GHDHQniVoH1QB9P4JXcYTidDJpzdw=",
+          "image": "/ProductImage/productImg/product8.jpg",
           "description":"Treatments for erectile dysfunction to improve intimacy and confidence."
         },
         {
@@ -73,7 +73,7 @@
         {
           "name": "Respiratory",
           "link": "https://example.com/popular/sub1",
-          "image": "https://media.gettyimages.com/id/1358954851/photo/shot-of-a-mature-doctor-sitting-with-his-patient-in-the-clinic-and-asking-questions-during-a.jpg?s=612x612&w=0&k=20&c=6juWUy_uERlWFgKQR9V1i8gCox6Q_DtVMCh1pVV8MYU="
+          "image": "/ProductImage/productImg/product7.jpg"
         },
         {
           "name": "Acne",
@@ -83,12 +83,12 @@
         {
           "name": "Hair Loss",
           "link": "https://example.com/popular/sub2",
-          "image": "https://media.gettyimages.com/id/1336278720/photo/man-worried-for-alopecia-checking-hair-for-loss.jpg?s=612x612&w=0&k=20&c=j1LZlqWy8Mn58DEOzGlun7Ym6rw4eIT5R4AC908OuNk="
+          "image": "/ProductImage/productImg/product3.jpg"
         },
         {
           "name": "Pain Releaf",
           "link": "https://example.com/popular/sub2",
-          "image": "https://media.gettyimages.com/id/1319068502/photo/doctor-reassuring-supporting-senior-patient-in-hospital.jpg?s=612x612&w=0&k=20&c=rss2Yer8ZgcXb6GHDHQniVoH1QB9P4JXcYTidDJpzdw="
+          "image": "/ProductImage/productImg/product8.jpg"
         }
       ]
     },
@@ -99,7 +99,7 @@
         {
           "name": "Men's Health ",
           "link": "https://example.com/mens-health/sub1",
-          "image": "https://media.gettyimages.com/id/1434064839/photo/runner-fitness-and-senior-man-running-listening-to-music-outdoor-in-neighborhood-for-workout.jpg?s=612x612&w=0&k=20&c=QkkFZwtmMdpelcmXiVcOzSD4rca8L40h8i3nhlNafuY="
+          "image": "/ProductImage/productImg/product5.jpg"
         }
       ]
     },
@@ -110,7 +110,7 @@
         {
           "name": "Women's Health",
           "link": "https://example.com/womens-health/sub1",
-          "image": "https://media.gettyimages.com/id/1359127214/photo/three-woman-workingout.jpg?s=612x612&w=0&k=20&c=_eSm1UX6B3Qtsa-njnPjnZxx3DkGxQxQZ3Q4aHWhfHs="
+          "image": "/ProductImage/productImg/product6.jpg"
         }
       ]
     },
@@ -121,7 +121,7 @@
         {
           "name": "Respiratory",
           "link": "https://example.com/respiratory/sub1",
-          "image": "https://media.gettyimages.com/id/1358954851/photo/shot-of-a-mature-doctor-sitting-with-his-patient-in-the-clinic-and-asking-questions-during-a.jpg?s=612x612&w=0&k=20&c=6juWUy_uERlWFgKQR9V1i8gCox6Q_DtVMCh1pVV8MYU="
+          "image": "/ProductImage/productImg/product7.jpg"
         }
       ]
     },
@@ -130,9 +130,9 @@
       "image":"/productIcon/sexualHealth.png",
       "subcategories": [
         {
-          "name": "Sexual Health Sub 1",
+          "name": "Sexual Health",
           "link": "https://example.com/sexual-health/sub1",
-          "image": "https://media.gettyimages.com/id/91559392/photo/general-practice-doctor-discussing-oral-contraception.jpg?s=612x612&w=0&k=20&c=IYjWFGHsSXQBRQ6knnx3yaWFfeExU6yzqpxBczvX9ho="
+          "image": "/ProductImage/productImg/product4.jpg"
         }
       ]
     },

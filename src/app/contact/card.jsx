@@ -2,12 +2,13 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:mt-0  mt-[40rem] md:mt-[40%] h-auto bg-gray-50">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:mt-0 mt-[40rem] md:mt-[40%] h-auto bg-gray-50">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-10 lg:gap-12">
         {[...Array(6)].map((_, index) => (
           <div
             key={index}
-            className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-gray-100"
+            className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 cursor-pointer 
+            hover:shadow-xl hover:bg-gray-200 transition-colors duration-500 ease-in-out"
           >
             <div className="text-left">
               <h1 className="text-2xl md:text-3xl font-bold text-hoverUnderlineColor mb-4">

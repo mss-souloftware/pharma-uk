@@ -4,21 +4,25 @@ import React, { useState, useEffect, useContext } from "react";
 import { CartContext } from "../cart/feature/contextProvider";
 
 const ProductsCard = () => {
-  const [products, setProducts] = useState([]); // Make sure it's an empty array
+  const [products, setProducts] = useState([]); // Ensure it's an empty array
   const { cart, dispatch } = useContext(CartContext); // Destructure as an object
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/CondomsProductContent.json");
+        const res = await fetch("/ProductContent.json");
         const data = await res.json();
-        setProducts(data.products || []); // Ensure data.products is an array
+        setProducts(data.Condoms || []); // Ensure data.products is an array
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
     fetchData();
   }, []);
+
+  const handleAddToCart = (product) => {
+    dispatch({ type: "Add", product: product });
+  };
 
   return (
     <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12 md:px-5">
@@ -27,7 +31,8 @@ const ProductsCard = () => {
           products.map((product, index) => (
             <div
               key={product.id || index}
-              className="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-xl hover:shadow-gray-500 dark:border-gray-500 dark:bg-gray-800"
+              className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-xl hover:shadow-gray-500 dark:border-gray-500 dark:bg-gray-800 cursor-pointer"
+              onClick={() => handleAddToCart(product)} // Add to cart when clicked anywhere on the card
             >
               <div className="h-56 w-full mb-4">
                 <a href="#">
@@ -49,19 +54,20 @@ const ProductsCard = () => {
                   {product.title}
                 </a>
                 <p className="text-gray-600 mt-5 text-center sm:text-left">
-                  {product.description}
+                {product.description.length > 20 ? product.description.substring(0, 70) + "..." : product.description}
                 </p>
-
-                <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 bg-hoverUnderlineColor justify-evenly">
-                  <p className="text-2xl font-normal text-white dark:text-white text-center sm:text-center">
-                    <button
-                      onClick={() => dispatch({ type: "Add", product: product })}
-                    >
-                      <span className="text-sm pr-2">from</span> ${product.price}
-                    </button>
-                  </p>
-                </div>
               </div>
+              
+              <button
+                onClick={(e) => {  
+                  handleAddToCart(product);
+                }}
+                className="w-full mt-4 flex flex-col sm:flex-row items-center gap-4 bg-hoverUnderlineColor justify-evenly py-2"
+              >
+                <p className="text-2xl font-normal text-white dark:text-white text-center sm:text-center">
+                  <span className="text-sm pr-2">from</span> ${product.price}
+                </p>
+              </button>
             </div>
           ))
         ) : (

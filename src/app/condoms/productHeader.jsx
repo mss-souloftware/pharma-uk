@@ -11,7 +11,7 @@ const ProductHeader = () => {
       try {
         const res = await fetch("/ProductHeaderContent.json");
         const data = await res.json();
-        setFetchData(data.HeaderContent);
+        setFetchData(data.Condoms);
       } catch (error) {
         console.error("Error fetching data:", error);
       }

@@ -5,12 +5,12 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu"; // Import the MobileMenu Component
 import Dropdown from "./DropDown"; // Import the Dropdown Component
 import UserProfileMenu from "./UserProfileMenu";
-import Header from "./Header";
-import SubNavbar from "@/component/SubNavbar";
+import Header from "./Header"; 
 import Image from "next/image";
 import MobileUserProfileMenu from "./content/MobileUserProfileMenu";
 import { FaCartPlus } from "react-icons/fa";
 import { CartContext } from "@/app/cart/feature/contextProvider";
+import SubNavbar from "./SubNavbar";
 
 const Navbar = () => {
 
@@ -225,10 +225,11 @@ const Navbar = () => {
           )}
         </div>
       </nav>
+      <div className="sm:hidden bg-black z-50 flex justify-center items-center">
+  <SubNavbar />
+</div>
 
-      <div className="flex items-center justify-center relative z-30">
-        <SubNavbar />
-      </div>
+
     </>
   );
 };

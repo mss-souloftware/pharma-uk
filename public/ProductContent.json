@@ -1,0 +1,360 @@
+{
+ "Condoms": [
+    {
+      "id": "1",
+      "title": "HIV Prevention",
+      "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
+      "imageUrl": "/ProductImage/condoms/product1.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Protect Against STIs",
+      "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+      "imageUrl": "/ProductImage/condoms/product2.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Herpes Prevention",
+      "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
+      "imageUrl": "/ProductImage/condoms/product3.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Prevention of Unplanned Pregnancies",
+      "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
+      "imageUrl": "/ProductImage/condoms/product4.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Protection from HPV",
+      "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
+      "imageUrl": "/ProductImage/condoms/product5.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Condoms for Safe Sex",
+      "description": "Condoms provide a simple yet effective way to practice safe sex, preventing both STIs and unintended pregnancies.",
+      "imageUrl": "/ProductImage/condoms/product6.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Preventing Syphilis",
+      "description": "Condom use during sex is a key factor in preventing syphilis, an STI that can lead to serious health complications.",
+      "imageUrl": "/ProductImage/condoms/product7.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Condoms for Your Health",
+      "description": "Using condoms consistently reduces the risk of various STIs and helps maintain sexual health.",
+      "imageUrl": "/ProductImage/condoms/product8.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Chlamydia Protection",
+      "description": "Regular use of condoms reduces the chance of contracting or transmitting chlamydia, a bacterial infection.",
+      "imageUrl": "/ProductImage/condoms/product9.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Condoms and Your Sexual Wellness",
+      "description": "Protect your sexual wellness with condoms, a simple and effective method for reducing STI risk and promoting health.",
+      "imageUrl": "/ProductImage/condoms/product10.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    }
+  ],
+  
+  "ErectileDysfunction": [
+  {
+    "id": "21",
+    "title": "Enhanced Vitality Formula",
+    "description": "A unique formula designed to boost vitality and improve overall energy levels. Perfect for a more active lifestyle.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product1.jpg",
+    "price": "39.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 10 },
+      { "week": 2, "capsules": 20 },
+      { "week": 4, "capsules": 40 },
+      { "week": 8, "capsules": 80 },
+      { "week": 12, "capsules": 120 }
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Pure Confidence Capsules",
+    "description": "Formulated to help boost confidence and enhance performance, promoting better mental clarity and physical satisfaction.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product2.jpg",
+    "price": "34.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 10 },
+      { "week": 2, "capsules": 20 },
+      { "week": 4, "capsules": 35 },
+      { "week": 8, "capsules": 70 },
+      { "week": 12, "capsules": 110 }
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Gentle Strength Solution",
+    "description": "A soothing yet effective solution to support your body’s natural strength, helping you regain balance and vitality.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product3.jpg",
+    "price": "32.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 12 },
+      { "week": 2, "capsules": 24 },
+      { "week": 4, "capsules": 48 },
+      { "week": 8, "capsules": 96 },
+      { "week": 12, "capsules": 144 }
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Performance Boost Plus",
+    "description": "Maximize your potential with this performance-enhancing supplement designed for overall well-being and sexual health.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product4.jpg",
+    "price": "45.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 10 },
+      { "week": 2, "capsules": 20 },
+      { "week": 4, "capsules": 40 },
+      { "week": 8, "capsules": 80 },
+      { "week": 12, "capsules": 120 }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Active Life Capsules",
+    "description": "Revitalize your life with these capsules that support energy, stamina, and overall sexual health.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product5.jpg",
+    "price": "38.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 15 },
+      { "week": 2, "capsules": 25 },
+      { "week": 4, "capsules": 50 },
+      { "week": 8, "capsules": 100 },
+      { "week": 12, "capsules": 150 }
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Powerful Endurance Blend",
+    "description": "This blend of natural ingredients supports enhanced endurance, focusing on strengthening vital energy and stamina.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product6.jpg",
+    "price": "40.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 12 },
+      { "week": 2, "capsules": 22 },
+      { "week": 4, "capsules": 44 },
+      { "week": 8, "capsules": 88 },
+      { "week": 12, "capsules": 132 }
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Ultimate Focus Capsules",
+    "description": "A natural supplement aimed at improving focus, concentration, and physical performance, helping you feel more confident.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product7.jpg",
+    "price": "42.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 12 },
+      { "week": 2, "capsules": 24 },
+      { "week": 4, "capsules": 48 },
+      { "week": 8, "capsules": 96 },
+      { "week": 12, "capsules": 144 }
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Herbal Harmony",
+    "description": "Discover the power of herbal ingredients that promote natural balance and support overall health and well-being.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product8.jpg",
+    "price": "36.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 10 },
+      { "week": 2, "capsules": 20 },
+      { "week": 4, "capsules": 40 },
+      { "week": 8, "capsules": 80 },
+      { "week": 12, "capsules": 120 }
+    ]
+  },
+  {
+    "id": "29",
+    "title": "Strong Mind and Body",
+    "description": "A comprehensive solution to help you build strength, both mentally and physically, to perform at your best.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product9.jpg",
+    "price": "43.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 12 },
+      { "week": 2, "capsules": 24 },
+      { "week": 4, "capsules": 48 },
+      { "week": 8, "capsules": 96 },
+      { "week": 12, "capsules": 144 }
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Natural Rejuvenation",
+    "description": "A rejuvenating product focused on restoring youthful vitality and improving sexual performance with natural ingredients.",
+    "imageUrl": "/ProductImage/ErectileDysfunction/product10.jpg",
+    "price": "41.00",
+    "weekPlan": [
+      { "week": 1, "capsules": 10 },
+      { "week": 2, "capsules": 20 },
+      { "week": 4, "capsules": 40 },
+      { "week": 8, "capsules": 80 },
+      { "week": 12, "capsules": 120 }
+    ]
+  }
+],
+  
+  "Hair Loss": [
+    {
+      "id": "21",
+      "title": "UI/UX Review Check",
+      "description": "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to nightlife in Barcelona.",
+      "imageUrl": "/ProductImage/hairloss/product1.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Modern Architecture",
+      "description": "Explore the beauty of modern architecture, situated in the heart of the city with incredible design.",
+      "imageUrl": "/ProductImage/hairloss/product1.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Nature Escape",
+      "description": "Escape into nature, explore green forests, rivers, and hills. Perfect for a peaceful retreat away from city life.",
+      "imageUrl": "/ProductImage/hairloss/product1.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Nature Escape",
+      "description": "Escape into nature, explore green forests, rivers, and hills. Perfect for a peaceful retreat away from city life.",
+      "imageUrl": "/ProductImage/hairloss/product1.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20, "price": 30 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Nature Escape",
+      "description": "Escape into nature, explore green forests, rivers, and hills. Perfect for a peaceful retreat away from city life.",
+      "imageUrl": "/ProductImage/hairloss/product1.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    }
+  ]
+}
