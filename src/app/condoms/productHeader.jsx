@@ -10,7 +10,7 @@ const ProductHeader = () => {
   useEffect(() => {
     const dataFetched = async () => {
       try {
-        const res = await fetch("/ProductHeaderContent.json");
+        const res = await fetch("/productHeaderContent.json");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
         setFetchData(data.Condoms); // This will set data for Condoms, you can change this dynamically as per product
