@@ -10,15 +10,16 @@ const ProductHeader = () => {
     const dataFetched = async () => {
       try {
         const res = await fetch("/ProductHeaderContent.json");
+        if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
         setFetchData(data.Condoms);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setIsError(true);
       }
     };
     dataFetched();
   }, []);
- 
   return (
     <div className="container mx-auto w-full h-auto mt-10 px-4 sm:px-6 lg:px-8">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">

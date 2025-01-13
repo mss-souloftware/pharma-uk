@@ -24,7 +24,7 @@ const Navbar = () => {
   const handleDropdownToggle = (dropdown) => {
     if (activeDropdown === dropdown) {
       setActiveDropdown(null);
-      setCardOpen(null); // Close the associated card
+      setCardOpen(null); // Close the associated card 
       setActiveDropdown((prevDropdown) =>
         prevDropdown === dropdown ? null : dropdown
       );
