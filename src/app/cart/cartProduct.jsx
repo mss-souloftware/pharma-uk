@@ -1,32 +1,30 @@
-import Image from 'next/image';
-import React from 'react';
-import WeeklyPlan from './feature/weeklyPlan';
+"use client"
+import Image from "next/image";
+import React, { useState } from "react";
+import WeeklyPlan from "./feature/weeklyPlan";
 
-const CartProduct = ({
-  product,
-  onIncrease,
-  onDecrease,
-  onRemove,
-  deliveryCharge,
-}) => { 
-  const totalPrice = product.price * product.quantity;  
-  const totalProductPrice = totalPrice + deliveryCharge; // Including delivery charge
+const CartProduct = ({ product, onIncrease, onDecrease, onRemove, deliveryCharge, selectedWeek, onPlanClick }) => {
+  const totalPrice = product.price * product.quantity;
+  const totalProductPrice = totalPrice + deliveryCharge;
+
+  // Fallback image handling
+  const validImageUrl = product.imageUrl && product.imageUrl.trim() !== "" ? product.imageUrl : "/fallback-image.jpg";
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row border-b border-gray-400 py-4 mb-10 ">
-        {/* Product Image */}
+      <div className="flex flex-col md:flex-row border-b border-gray-400 py-4 mb-10">
         <div className="flex-shrink-0">
-          <Image
-            src={product.imageUrl}
-            alt="Product Image"
-            width={150}
-            height={150}
-            className="w-32 h-32 lg:w-[15rem] lg:h-[15rem] object-cover rounded-lg"
-          />
+          {validImageUrl && ( 
+            <Image 
+              src={validImageUrl}
+              alt="Product Image"
+              width={150}
+              height={150}
+              className="w-32 h-32 lg:w-[15rem] lg:h-[15rem] object-cover rounded-lg"
+            />
+          )}
         </div>
 
-        {/* Product Details */}
         <div className="mt-4 md:mt-0 md:ml-6 flex-grow">
           <h2 className="text-lg font-bold">{product.title}</h2>
           <p className="mt-2 text-gray-600">{product.description}</p>
@@ -35,20 +33,12 @@ const CartProduct = ({
             Trust <span className="text-[#50C878]">Pilot</span>
           </p>
 
-          {/* Star Rating */}
           <div className="flex items-center my-3">
             {[...Array(5)].map((_, index) => (
-              <Image
-                key={index}
-                src="/trustPilotIcon.png"
-                height={29}
-                width={29}
-                alt="starIcon"
-              />
+              <Image key={index} src="/trustPilotIcon.png" height={29} width={29} alt="starIcon" />
             ))}
           </div>
 
-          {/* Quantity Controls */}
           <div className="mt-4 flex items-center">
             <span className="mr-2 text-gray-600">Quantity:</span>
             <div className="flex items-center">
@@ -73,19 +63,21 @@ const CartProduct = ({
             <span className="ml-auto font-bold">${totalProductPrice.toFixed(2)}</span>
           </div>
 
-          {/* Remove Product Button */}
           <div className="mt-3 flex justify-between items-center">
             <button className="text-red-600 hover:underline" onClick={onRemove}>
               Remove
             </button>
           </div>
 
-          {/* Weekly Plan Component */}
+          {/* Pass the selected week and handle click inside WeeklyPlan */}
+          <WeeklyPlan 
+            weekPlan={product.weekPlan} 
+            selectedWeek={selectedWeek}
+            onPlanClick={onPlanClick} 
+          />
         </div>
       </div>
-          <WeeklyPlan weekPlan={product.weekPlan}  onFilter={() => {}} />
 
-      {/* Display product delivery charge */}
       <div className="text-center text-sm text-gray-600 mt-2">
         <strong>Delivery Charge:</strong> ${deliveryCharge.toFixed(2)}
       </div>

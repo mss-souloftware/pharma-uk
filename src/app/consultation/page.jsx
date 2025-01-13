@@ -49,7 +49,7 @@ const Page = () => {
       <div className="py-8 max-w-screen-xl sm:py-16 lg:px-7">
         <h2 className="mb-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight font-extrabold text-black dark:text-white text-center sm:text-left">
           Medical Assessment for{" "}
-          <span className="text-hoverUnderlineColor">Hair Loss</span>
+          <span className="text-hoverUnderlineColor">Condoms</span>
         </h2>
         <h4 className="text-lg mb-10 font-normal text-gray-600 ">
           To help us supply you with the most suitable treatment, please
@@ -64,7 +64,7 @@ const Page = () => {
             </h3>
 
             {/* Grid for questions and answers */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4 text-center sm:text-left border-t border-gray-200 dark:border-gray-700 w-full xl:w-[125%] ">
+            <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 pt-4 text-center sm:text-left border-t border-gray-200 dark:border-gray-700 w-full xl:w-[125%] ">
               {section.questions.map((question, questionIndex) => (
                 <div
                   key={questionIndex}

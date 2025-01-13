@@ -17,7 +17,7 @@ const cartReducer = (state, action) => {
         return { ...state, products: updatedProducts };
       }
 
-      return {
+      return { 
         ...state,
         products: [...products, { ...action.product, quantity: 1 }],
       };

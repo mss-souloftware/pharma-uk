@@ -1,3 +1,4 @@
+"use client"
 import React, { useReducer, createContext } from 'react';
 import cartReducer from './cartReducer';
 

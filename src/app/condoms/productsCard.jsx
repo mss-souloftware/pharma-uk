@@ -43,12 +43,12 @@ const ProductsCard = () => {
                     src={product.imageUrl}
                     alt={product.title}
                   />
-                </a>
+                </a> 
               </div>
 
               <div className="pt-6 text-center sm:text-left">
                 <a
-                  href="#"
+                  
                   className="text-lg font-semibold text-hoverUnderlineColor hover:underline dark:text-white"
                 >
                   {product.title}
