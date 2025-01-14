@@ -5,20 +5,28 @@ import CustomeBtn from "../condoms/customeBtn";
 
 const ProductHeader = () => { 
   const [fetchData, setFetchData] = useState([]);
+   const [isError, setIsError] = useState(false);  
 
   useEffect(() => {
-    const dataFetched = async () => {
-      try {
-        const res = await fetch("/ProductHeaderContent.json");
-        const data = await res.json();
-        setFetchData(data.ErectileDysfunction);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    dataFetched();
-  }, []);
+     const dataFetched = async () => {
+       try {
+         const res = await fetch("/productHeaderContent.json");
+         if (!res.ok) throw new Error("Failed to fetch");
+         const data = await res.json();
+         setFetchData(data.ErectileDysfunction); 
+       } catch (error) {
+         console.error("Error fetching data:", error);
+         setIsError(true);  
+       }
+     };
+     dataFetched();
+   }, []);
  
+   if (isError) {
+     return <div>Failed to load content. Please try again later.</div>; // Handle the error gracefully
+   }
+  
+  // setFetchData(data.ErectileDysfunction);
   return (
     <div className="container mx-auto w-full h-auto mt-10 px-4 sm:px-6 lg:px-8">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center">
