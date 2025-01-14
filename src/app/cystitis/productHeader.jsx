@@ -1,8 +1,8 @@
-// Condoms
+// cystitis
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";   
-import CustomeBtn from "./customeBtn";
+import React, { useEffect, useState } from "react";  
+import CustomeBtn from "../condoms/customeBtn";
 
 const ProductHeader = () => { 
   const [fetchData, setFetchData] = useState([]);
