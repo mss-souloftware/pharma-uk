@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Card = () => {
@@ -6,13 +7,15 @@ const Card = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-10 lg:gap-12">
         {[...Array(6)].map((_, index) => (
           <div
-            key={index}
-            className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 cursor-pointer 
-            hover:shadow-xl hover:bg-gray-200 transition-colors duration-500 ease-in-out"
+          key={index}
+          className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 cursor-pointer 
+          hover:shadow-xl hover:bg-gray-200 ease-in-out"
           >
-            <div className="text-left">
-              <h1 className="text-2xl md:text-3xl font-bold text-hoverUnderlineColor mb-4">
+              <Link href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/">
+            <div className="text-left group">
+              <h1 className="text-2xl md:text-3xl font-bold text-hoverUnderlineColor mb-4 relative group-hover:text-red-600">
                 Call NHS 111
+                <span className="absolute left-0 mt-[1px] block w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
               </h1>
               <p className="text-sm md:text-base py-5 text-gray-800">
                 Call NHS 111 if you urgently need medical help or advice but it&apos;s not a life-threatening situation.
@@ -32,6 +35,7 @@ const Card = () => {
                 </li>
               </ul>
             </div>
+            </Link>
           </div>
         ))}
       </div>

@@ -285,76 +285,290 @@
   }
 ],
   
-  "Hair Loss": [
+ "HairLoss": [
     {
-      "id": "21",
-      "title": "UI/UX Review Check",
-      "description": "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to nightlife in Barcelona.",
-      "imageUrl": "/ProductImage/hairloss/product1.jpg",
-      "price": "29.00",
+      "id": "1",
+      "title": "Anti-Hair Fall Shampoo",
+      "description": "A shampoo designed to reduce hair fall and strengthen hair from the roots.",
+      "imageUrl": "/ProductImage/hairLoss/product1.jpg",
+      "price": "19.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Hair Regrowth Oil",
+      "description": "An oil blend that promotes hair regrowth and reduces thinning.",
+      "imageUrl": "/ProductImage/hairloss/product2.jpg",
+      "price": "25.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Hair Growth Capsules",
+      "description": "Daily capsules packed with essential nutrients for promoting hair growth.",
+      "imageUrl": "/ProductImage/hairloss/product3.jpg",
+      "price": "30.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hair Strengthening Serum",
+      "description": "A serum to strengthen hair and prevent breakage.",
+      "imageUrl": "/ProductImage/hairloss/product4.jpg",
+      "price": "22.50",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Herbal Hair Mask",
+      "description": "A nourishing mask to rejuvenate hair and reduce hair loss.",
+      "imageUrl": "/ProductImage/hairloss/product5.jpg",
+      "price": "18.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Hair Loss Prevention Kit",
+      "description": "A complete kit containing shampoo, conditioner, and serum to prevent hair loss.",
+      "imageUrl": "/ProductImage/hairloss/product6.jpg",
+      "price": "45.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Scalp Revitalizer",
+      "description": "A scalp treatment to stimulate hair follicles and promote hair regrowth.",
+      "imageUrl": "/ProductImage/hairloss/product7.jpg",
+      "price": "27.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Hair Thickening Conditioner",
+      "description": "A conditioner that helps thicken hair and reduce hair loss.",
+      "imageUrl": "/ProductImage/hairloss/product8.jpg",
+      "price": "20.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Biotin Hair Spray",
+      "description": "A biotin-enriched spray to strengthen hair and reduce breakage.",
+      "imageUrl": "/ProductImage/hairloss/product9.jpg",
+      "price": "15.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Natural Hair Repair Cream",
+      "description": "A natural cream to repair damaged hair and reduce hair fall.",
+      "imageUrl": "/ProductImage/hairloss/product10.jpg",
+      "price": "24.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    }
+  ],
+  "Lube": [
+    {
+      "id": "1",
+      "title": "Joint Lubrication Capsules",
+      "description": "Capsules designed to improve joint lubrication and reduce stiffness.",
+      "imageUrl": "/ProductImage/lube/product1.jpg",
+      "price": "25.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Knee Lubrication Gel",
+      "description": "A topical gel that provides relief and improves joint flexibility.",
+      "imageUrl": "/ProductImage/lube/product2.jpg",
+      "price": "18.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Arthritis Relief Cream",
+      "description": "A cream that reduces inflammation and lubricates joints for better mobility.",
+      "imageUrl": "/ProductImage/lube/product3.jpg",
+      "price": "22.50",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hip Joint Lubrication Spray",
+      "description": "A spray designed to reduce friction in hip joints and ease pain.",
+      "imageUrl": "/ProductImage/lube/product4.jpg",
+      "price": "19.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Natural Joint Lubricant",
+      "description": "A natural supplement to improve joint lubrication and overall joint health.",
+      "imageUrl": "/ProductImage/lube/product5.jpg",
+      "price": "24.99",
       "weekPlan": [
         { "week": 1, "capsules": 10 },
         { "week": 2, "capsules": 20 },
-        { "week": 4, "capsules": 36 },
-        { "week": 8, "capsules": 72 },
+        { "week": 4, "capsules": 40 },
+        { "week": 8, "capsules": 80 },
         { "week": 12, "capsules": 120 }
       ]
     },
     {
-      "id": "22",
-      "title": "Modern Architecture",
-      "description": "Explore the beauty of modern architecture, situated in the heart of the city with incredible design.",
-      "imageUrl": "/ProductImage/hairloss/product1.jpg",
-      "price": "29.00",
+      "id": "6",
+      "title": "Knee Pain Relief Balm",
+      "description": "A balm that provides instant relief and helps lubricate the knee joints.",
+      "imageUrl": "/ProductImage/lube/product6.jpg",
+      "price": "20.00",
       "weekPlan": [
-        { "week": 1, "capsules": 10 },
-        { "week": 2, "capsules": 20 },
-        { "week": 4, "capsules": 36 },
-        { "week": 8, "capsules": 72 },
-        { "week": 12, "capsules": 120 }
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
       ]
     },
     {
-      "id": "23",
-      "title": "Nature Escape",
-      "description": "Escape into nature, explore green forests, rivers, and hills. Perfect for a peaceful retreat away from city life.",
-      "imageUrl": "/ProductImage/hairloss/product1.jpg",
-      "price": "29.00",
+      "id": "7",
+      "title": "Joint Support Gummies",
+      "description": "Tasty gummies packed with ingredients that improve joint lubrication.",
+      "imageUrl": "/ProductImage/lube/product7.jpg",
+      "price": "17.99",
       "weekPlan": [
-        { "week": 1, "capsules": 10 },
-        { "week": 2, "capsules": 20 },
-        { "week": 4, "capsules": 36 },
-        { "week": 8, "capsules": 72 },
-        { "week": 12, "capsules": 120 }
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
       ]
     },
     {
-      "id": "24",
-      "title": "Nature Escape",
-      "description": "Escape into nature, explore green forests, rivers, and hills. Perfect for a peaceful retreat away from city life.",
-      "imageUrl": "/ProductImage/hairloss/product1.jpg",
-      "price": "29.00",
+      "id": "8",
+      "title": "Elbow Joint Lubrication Cream",
+      "description": "A cream designed to reduce elbow joint pain and improve mobility.",
+      "imageUrl": "/ProductImage/lube/product8.jpg",
+      "price": "21.50",
       "weekPlan": [
-        { "week": 1, "capsules": 10 },
-        { "week": 2, "capsules": 20, "price": 30 },
-        { "week": 4, "capsules": 36 },
-        { "week": 8, "capsules": 72 },
-        { "week": 12, "capsules": 120 }
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
       ]
     },
     {
-      "id": "25",
-      "title": "Nature Escape",
-      "description": "Escape into nature, explore green forests, rivers, and hills. Perfect for a peaceful retreat away from city life.",
-      "imageUrl": "/ProductImage/hairloss/product1.jpg",
-      "price": "29.00",
+      "id": "9",
+      "title": "Shoulder Pain Relief Spray",
+      "description": "A spray that reduces friction in shoulder joints and provides pain relief.",
+      "imageUrl": "/ProductImage/lube/product9.jpg",
+      "price": "23.00",
       "weekPlan": [
-        { "week": 1, "capsules": 10 },
-        { "week": 2, "capsules": 20 },
-        { "week": 4, "capsules": 36 },
-        { "week": 8, "capsules": 72 },
-        { "week": 12, "capsules": 120 }
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Joint Health Supplement Powder",
+      "description": "A powder supplement that helps improve joint lubrication and flexibility.",
+      "imageUrl": "/ProductImage/lube/product10.jpg",
+      "price": "26.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
       ]
     }
   ]
+
+
 }

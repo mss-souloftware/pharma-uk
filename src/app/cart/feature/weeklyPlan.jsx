@@ -9,7 +9,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
     if (weeklyPlanRef.current && !weeklyPlanRef.current.contains(event.target)) {
       setShowContactButton(false);
     }
-  };
+  };                       
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -48,7 +48,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
               }`}
             >
               {treatment.name}
-            </button>
+            </button>  
           ))
         ) : (
           <p>No Weekly Plan Available</p>

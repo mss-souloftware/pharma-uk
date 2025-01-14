@@ -9,7 +9,7 @@ import ContentSection2 from "./QualifiedTeams";
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null); 
   const [error, setError] = useState(null);
   const [activeCategory, setActiveCategory] = useState(null);
 

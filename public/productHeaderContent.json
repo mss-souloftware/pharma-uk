@@ -19,14 +19,14 @@
       "img": "/ProductImage/ErectileDysfunction/ErectileDysfunction.jpg"
     }
   ],
-  "Hair Loss": [
+  "HairLoss": [
     {
       "label": "text",
       "title": "Hair Loss",
       "subTitle": "Solutions to combat hair loss and stimulate regrowth",
       "button": "Start a consulting",
       "content": "Hair loss is a common condition that can be caused by various factors such as genetics, stress, or hormonal changes. Our treatments, including Finasteride and Regaine, help stimulate hair regrowth and prevent further hair loss.",
-      "img": "/ProductImage/hairloss/s.jpg"
+      "img": "/ProductImage/productImg/productHeader.jpg"
     }
   ],
   "Lube": [
@@ -36,17 +36,17 @@
       "subTitle": "Enhance your experience with premium lubes",
       "button": "Start a consulting",
       "content": "Lube is essential for comfortable and enjoyable intimate moments. We offer a variety of lubricants for different preferences, including water-based and silicone-based formulas.",
-      "img": "/ProductImage/lube/s.jpg"
+      "img": "/ProductImage/productImg/LubeHeader1.jpg"
     }
   ],
-  "Pain Relief": [
+  "PainRelief": [
     {
       "label": "text",
       "title": "Pain Relief",
       "subTitle": "Effective solutions for managing pain",
       "button": "Start a consulting",
       "content": "Whether you’re dealing with muscle pain or chronic discomfort, our range of pain relief products is designed to provide you with the relief you need. Explore our topical creams, balms, and oral medications.",
-      "img": "/ProductImage/painrelief/s.jpg"
+      "img": "/ProductImage/productImg/painReliefHeader.jpg"
     }
   ],
   "Premature Ejaculation": [

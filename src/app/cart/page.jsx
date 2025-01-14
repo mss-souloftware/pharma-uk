@@ -92,7 +92,7 @@ const Page = () => {
           </div>
         </div>
 
-        {/* Show Contact Information button once any product has a selected week */}
+        {/* Show Contact Information button once any product has a selected week */} 
         {showContactButton && (
           <div className="justify-center flex my-7 transition-all duration-500 opacity-100">
             <Link href="/cartAddress">

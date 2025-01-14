@@ -1,11 +1,11 @@
 "use client"; // This marks the file as a client-side component
 
-import { useState, useEffect, useRef, useContext } from "react"; 
+import { useState, useEffect, useRef, useContext } from "react";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu"; // Import the MobileMenu Component
 import Dropdown from "./DropDown"; // Import the Dropdown Component
 import UserProfileMenu from "./UserProfileMenu";
-import Header from "./Header"; 
+import Header from "./Header";
 import Image from "next/image";
 import MobileUserProfileMenu from "./content/MobileUserProfileMenu";
 import { FaCartPlus } from "react-icons/fa";
@@ -13,18 +13,17 @@ import { CartContext } from "@/app/cart/feature/contextProvider";
 import SubNavbar from "./SubNavbar";
 
 const Navbar = () => {
-
-  const {cart}=useContext(CartContext);
+  const { cart } = useContext(CartContext);
 
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [cardOpen, setCardOpen] = useState(null); // To track which card is open
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navbarRef = useRef(null);
-  
+
   const handleDropdownToggle = (dropdown) => {
     if (activeDropdown === dropdown) {
       setActiveDropdown(null);
-      setCardOpen(null); // Close the associated card 
+      setCardOpen(null); // Close the associated card
       setActiveDropdown((prevDropdown) =>
         prevDropdown === dropdown ? null : dropdown
       );
@@ -68,7 +67,7 @@ const Navbar = () => {
             className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse"
           >
             <Image
-              src="/Logo.png"
+              src="/footerLogo.png"
               width={100} // Set width
               height={30} // Set height
               className="absolute w-24 sm:ml-0 sm:w-20 md:w-24 lg:w-24 xl:w-40"
@@ -78,12 +77,21 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle (visible only on medium screens and below) */}
           <div className="flex gap-5 relative">
+            {/* AddToCart */}
             <div className="block sm:hidden">
-              <Link href="/cart"></Link>
+              <Link href="/cart" className="flex items-center ">
+                <FaCartPlus className="text-white w-5 h-5" />
+                <span className="ml-2 text-white">
+                  <span className="text-hoverUnderlineColor">
+                    {cart.products.length || 0}
+                  </span>
+                </span>
+              </Link>
             </div>
             <div className="block sm:hidden">
               <MobileUserProfileMenu />
             </div>
+
             <button
               onClick={toggleMobileMenu}
               className="md:hidden text-white" // 'md:hidden' hides on medium and larger screens
@@ -133,8 +141,8 @@ const Navbar = () => {
                       label: "Erectile Dysfunction",
                     },
                     { href: "/hairLoss", label: "Hair Loss" },
-                    { href: "/sign-out", label: "Lube" },
-                    { href: "/sign-out", label: "Pain Relief" },
+                    { href: "/lube", label: "Lube" },
+                    { href: "/painRelief", label: "Pain Relief" },
                     { href: "/sign-out", label: "Premature Ejaculation" },
                   ]}
                   cardOpen={cardOpen}
@@ -198,15 +206,15 @@ const Navbar = () => {
               </div>
 
               {/* AddToCart */}
-              <div>
-              <Link href="/cart" className="flex items-center">
-              <FaCartPlus className="text-white w-5 h-5" />
-              <span className="ml-2 text-white">
-                <span className="text-hoverUnderlineColor">
-                {cart.products.length || 0}
-                </span>
-                </span>
-            </Link>
+              <div className="hidden sm:block">
+                <Link href="/cart" className="flex items-center">
+                  <FaCartPlus className="text-white w-5 h-5" />
+                  <span className="ml-2 text-white">
+                    <span className="text-hoverUnderlineColor">
+                      {cart.products.length || 0}
+                    </span>
+                  </span>
+                </Link>
               </div>
 
               {/* Profile Icon (UserProfileMenu) aligned to the right */}
@@ -226,10 +234,8 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="sm:hidden bg-black z-50 flex justify-center items-center">
-  <SubNavbar />
-</div>
-
-
+        <SubNavbar />
+      </div>
     </>
   );
 };

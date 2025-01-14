@@ -1,6 +1,7 @@
+// Condoms
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react"; 
+import React, { useEffect, useState } from "react";  
 import CustomeBtn from "./customeBtn";
 
 const ProductHeader = () => { 
@@ -51,7 +52,7 @@ const ProductHeader = () => {
               <p className="text-lg text-gray-600">{item.subTitle}</p>
 
               {/* Use CustomButton here */}
-              <CustomeBtn 
+              <CustomeBtn
                 buttonText="Go to Consulting"
                 buttonLink="/consultation"
                 imageSrc="/btnArrow.png"

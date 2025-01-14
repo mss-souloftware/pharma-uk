@@ -9,7 +9,7 @@ const CartProduct = ({ product, onIncrease, onDecrease, onRemove, deliveryCharge
 
   // Fallback image handling
   const validImageUrl = product.imageUrl && product.imageUrl.trim() !== "" ? product.imageUrl : "/fallback-image.jpg";
-
+ 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row border-b border-gray-400 py-4 mb-10">
