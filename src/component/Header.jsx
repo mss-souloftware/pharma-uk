@@ -14,7 +14,7 @@ const Header = () => {
           <div className="phone-email-section sm:ml-3 text-nowrap gap-5 lg:gap-12 md:gap-10 sm:text-xs text-xs md:text-sm flex items-center justify-around">
             <div className="flex justify-center">
               <Image
-                src="/phone-icon.png"
+                src="/icons/phone-icon.png"
                 alt="Phone"
                 width={20}  // Set width
                 height={20} // Set height
@@ -27,7 +27,7 @@ const Header = () => {
 
             <div className="flex justify-center">
               <Image
-                src="/email-icon.png"
+                src="/icons/email-icon.png"
                 alt="Email"
                 width={20}  // Set width
                 height={20} // Set height
@@ -43,36 +43,7 @@ const Header = () => {
         <SubNavbar />
       </div>
 
-        {/* Social Media Icons */}
-        <div className="social-media-section sm:hidden xl:flex items-center md:pr-5 sm:space-x-4 space-x-1 sm:mr-0 mr-2 md:justify-around m-1">
-          <Link href="/">
-            <Image
-              src="/insta-icon.png"
-              width={20}  // Set width
-              height={20} // Set height
-              alt="Instagram"
-              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform hidden sm:block"
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              src="/facebook-icon.png"
-              width={20}  // Set width
-              height={20} // Set height
-              alt="Facebook"
-              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform hidden sm:block"
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              src="/twitter-icon.png"
-              width={20}  // Set width
-              height={20} // Set height
-              alt="Twitter"
-              className="w-3 md:w-4 mt-1 hover:scale-110 transition-transform hidden sm:block"
-            />
-          </Link>
-        </div>
+       
       </div>
     </div>
   );

@@ -36,21 +36,21 @@ export default function Footer() {
             {/* Social icons aligned to the right */}
             <div className="flex justify-end space-x-4 w-auto">
               <Image
-                src="/insta-icon.png"
+                src="/icons/insta-icon.png"
                 height={20}
                 width={20}
                 alt="Instagram"
                 className="w-6 h-6"
               />
               <Image
-                src="/facebook-icon.png"
+                src="/icons/facebook-icon.png"
                 height={20}
                 width={20}
                 alt="Facebook"
                 className="w-6 h-6"
               />
               <Image
-                src="/twitter-icon.png"
+                src="/icons/twitter-icon.png"
                 height={20}
                 width={20}
                 alt="Twitter"

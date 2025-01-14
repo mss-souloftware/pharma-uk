@@ -31,7 +31,7 @@ const UserProfileMenu = () => {
       >
         {/* Replace with actual user image or placeholder */}
         <Image
-          src="/user-icon.png" // Example image, replace with user image source
+          src="/icons/user.png" // Example image, replace with user image source
           alt="User Profile"
           width={20} // Set width
           height={20} // Set height

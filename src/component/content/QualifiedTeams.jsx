@@ -42,7 +42,7 @@ const ContentSection2 = () => {
               </div>
 
               {/* Social Media Icons */}
-              <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-hoverUnderlineColor py-3">
+              <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-hoverUnderlineColor py-3">
                 <Link href={member.socialLinks.instagram} target="_blank">
                   <Image
                     src="/insta-icon.png"
