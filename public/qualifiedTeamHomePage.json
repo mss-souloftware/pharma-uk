@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Lorem Ipsum",
+      "gphcNumber": "201393442",
+      "image": "/team-img1.jpg",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com",
+        "facebook": "https://www.facebook.com",
+        "twitter": "https://www.twitter.com"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jacquiline",
+      "gphcNumber": "201393442",
+      "image": "/team-img2.jpg",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com",
+        "facebook": "https://www.facebook.com",
+        "twitter": "https://www.twitter.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Leos Morgan",
+      "gphcNumber": "201393442",
+      "image": "/team-img3.jpg",
+      "socialLinks": {
+        "instagram": "https://www.instagram.com",
+        "facebook": "https://www.facebook.com",
+        "twitter": "https://www.twitter.com"
+      }
+    },
+    {
+        "id": 4,
+        "name": "Leos Morgan",
+        "gphcNumber": "201393442",
+        "image": "/team-img3.jpg",
+        "socialLinks": {
+          "instagram": "https://www.instagram.com",
+          "facebook": "https://www.facebook.com",
+          "twitter": "https://www.twitter.com"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Leos Morgan",
+        "gphcNumber": "201393442",
+        "image": "/team-img3.jpg",
+        "socialLinks": {
+          "instagram": "https://www.instagram.com",
+          "facebook": "https://www.facebook.com",
+          "twitter": "https://www.twitter.com"
+        }
+      }
+  ]
+  

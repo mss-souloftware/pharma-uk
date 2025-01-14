@@ -36,7 +36,7 @@ const Page = () => {
   const totalItems = products.reduce((sum, product) => sum + product.quantity, 0);
 
   // Check if at least one product has a selected week
-  const showContactButton = Object.values(selectedWeeks).some((week) => week);
+  const showContactButton = Object.values(selectedWeeks).some((week) => week); 
 
   return (
     <section className="py-8 md:py-16 relative">
@@ -51,7 +51,7 @@ const Page = () => {
             const productDeliveryCharge = product.deliveryCharge || 15.0;
 
             return (
-              <div
+              <div 
                 key={index}
                 className="grid grid-cols-1 gap-6 py-6 border-t border-gray-200"
               >
