@@ -58,5 +58,15 @@
       "content": "Premature ejaculation is a common concern for many men. Our solutions include therapies and medications that can help you control and prolong your performance, leading to a more satisfying experience.",
       "img": "/ProductImage/productImg/Premature.jpg"
     }
+  ],
+  "Cystitis": [
+    {
+      "label": "text",
+      "title": "Cystitis",
+      "subTitle": "Cystitis, an inflammation of the bladder commonly caused by bacterial infections, leads to symptoms such as frequent urination, burning sensations, and pelvic discomfort",
+      "button": "Start a consulting",
+      "content": "Cystitis, an inflammation of the bladder commonly caused by bacterial infections, burning sensations, and pelvic discomfort. To alleviate these symptoms and support urinary tract health, several over-the-counter products are available.",
+      "img": "/ProductImage/Cystitis/headerContent/headerContent.jpg"
+    }
   ]
 }
