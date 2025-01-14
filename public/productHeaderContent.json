@@ -68,5 +68,16 @@
       "content": "Cystitis, an inflammation of the bladder commonly caused by bacterial infections, burning sensations, and pelvic discomfort. To alleviate these symptoms and support urinary tract health, several over-the-counter products are available.",
       "img": "/ProductImage/Cystitis/headerContent/headerContent.jpg"
     }
-  ]
+  ], 
+    "contraceptivePill": [
+      {
+        "label": "Cystitis Relief Sachets",
+        "title": "Cystitis Relief Sachets",
+        "subTitle": "Effective treatment for relieving the symptoms of cystitis by reducing the acidity of urine and alleviating pain.",
+        "button": "Buy Now",
+        "content": "Cystitis Relief Sachets are specially formulated to reduce the acidity of your urine, helping to ease the burning sensation and discomfort caused by cystitis. These sachets work by neutralizing the acid in your bladder, providing fast and effective relief.",
+        "img": "/ProductImage/Cystitis/headerContent/headerContent.jpg"
+      }
+    ] 
+  
 }

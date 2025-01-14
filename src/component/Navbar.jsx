@@ -158,7 +158,7 @@ const Navbar = () => {
                   dropdownTitle="Women's Health"
                   links={[
                     { href: "/cystitis", label: "Cystitis" },
-                    { href: "/earnings", label: "Contraceptive Pill" },
+                    { href: "/contraceptivePill", label: "Contraceptive Pill" },
                     { href: "/sign-out", label: "Feminine Care" },
                     { href: "/sign-out", label: "Hair Loss" },
                     { href: "/sign-out", label: "Menopause" },
