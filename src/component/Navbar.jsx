@@ -143,7 +143,7 @@ const Navbar = () => {
                     { href: "/hairLoss", label: "Hair Loss" },
                     { href: "/lube", label: "Lube" },
                     { href: "/painRelief", label: "Pain Relief" },
-                    { href: "/sign-out", label: "Premature Ejaculation" },
+                    { href: "/prematureEjaculation", label: "Premature Ejaculation" },
                   ]}
                   cardOpen={cardOpen}
                   setCardOpen={setCardOpen}
@@ -239,5 +239,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;

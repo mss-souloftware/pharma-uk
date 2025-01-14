@@ -49,14 +49,14 @@
       "img": "/ProductImage/productImg/painReliefHeader.jpg"
     }
   ],
-  "Premature Ejaculation": [
+  "PrematureEjaculation": [
     {
       "label": "text",
       "title": "Premature Ejaculation",
       "subTitle": "Overcome premature ejaculation with tailored treatments",
       "button": "Start a consulting",
       "content": "Premature ejaculation is a common concern for many men. Our solutions include therapies and medications that can help you control and prolong your performance, leading to a more satisfying experience.",
-      "img": "/ProductImage/prematureejaculation/s.jpg"
+      "img": "/ProductImage/productImg/Premature.jpg"
     }
   ]
 }

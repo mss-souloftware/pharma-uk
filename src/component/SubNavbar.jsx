@@ -4,9 +4,9 @@ import Link from "next/link";
 const SubNavbar = () => {
   return (
     <>
-      <div className="container sm:w-auto w-[20rem] flex justify-center sm:ml-[2rem] border-solid  sm:border-black xl:ml-[40rem] sm:bg-black  md:mt-[-4px] shadow-lg rounded-b-lg">
+      <div className="container sm:w-auto w-[20rem] flex justify-center sm:ml-[2rem] border-solid xl:ml-[20rem]  sm:border-black sm:bg-black md:mt-[-3px] shadow-lg rounded-b-lg">
         <div>
-          <ul className="flex justify-center space-x-12 p-2 md:px-7 relative">
+          <ul className="flex justify-center space-x-12 p-2 md:px-7 relative lg:w-[17rem]  ">
             <li className="relative font-semibold cursor-pointer text-white text-xs group">
               <Link href="/about" className="relative">
                 About
