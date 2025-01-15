@@ -9,7 +9,7 @@ import ContentSection2 from "./QualifiedTeams";
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null); 
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const [error, setError] = useState(null);
   const [activeCategory, setActiveCategory] = useState(null);
 
@@ -80,7 +80,9 @@ const Content = () => {
               width={20}
               height={20}
               className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 ml-2 sm:ml-0 sm:mr-2"
+              priority
             />
+
             <span className="truncate w-24">
               {category.name || "Unnamed Category"}
             </span>
@@ -88,57 +90,56 @@ const Content = () => {
         ))}
       </div>
 
-     {/* Display selected category */}
-{selectedCategory && (
-  <div className="mt-8">
-    <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
-      Subcategories under {selectedCategory.name}
-    </h3>
-    
-    {/* Responsive Grid Layout */}
-    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      {selectedCategory.subcategories.map((subcategory, index) => (
-        <div
-          key={index}
-          className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-transform duration-300 hover:scale-95"
-        >
-          {/* Image Section */}
-          <div
-            style={{
-              backgroundImage: `url(${subcategory.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: "200px", // Adjust height for responsiveness
-            }}
-            className="w-full"
-          ></div>
+      {/* Display selected category */}
+      {selectedCategory && (
+        <div className="mt-8">
+          <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
+            Subcategories under {selectedCategory.name}
+          </h3>
 
-          {/* Content Section */}
-          <div className="p-4">
-            <h5 className="text-lg md:text-xl font-semibold text-gray-900">
-              {subcategory.name}
-            </h5>
-            <p className="text-sm md:text-base text-gray-700 mt-2">
-              {subcategory.description
-                ? subcategory.description.length > 60
-                  ? subcategory.description.substring(0, 60) + "..."
-                  : subcategory.description
-                : "No description available."}
-            </p>
+          {/* Responsive Grid Layout */}
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {selectedCategory.subcategories.map((subcategory, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-transform duration-300 hover:scale-95"
+              >
+                {/* Image Section */}
+                <div
+                  style={{
+                    backgroundImage: `url(${subcategory.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center", 
+                    height: "200px", // Adjust height for responsiveness
+                  }}
+                  className="w-full"
+                ></div>
 
-            {/* Button */}
-            <Link href={subcategory.link}>
-              <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-                <span className="text-sm lg:text-base">View Product</span>
-              </button>
-            </Link>
+                {/* Content Section */}
+                <div className="p-4">
+                  <h5 className="text-lg md:text-xl font-semibold text-gray-900">
+                    {subcategory.name}
+                  </h5>
+                  <p className="text-sm md:text-base text-gray-700 mt-2">
+                    {subcategory.description
+                      ? subcategory.description.length > 60
+                        ? subcategory.description.substring(0, 60) + "..."
+                        : subcategory.description
+                      : "No description available."}
+                  </p>
+
+                  {/* Button */}
+                  <Link href={subcategory.link}>
+                    <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                      <span className="text-sm lg:text-base">View Product</span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-)}
-
+      )}
 
       <div className="mt-28">
         <HowDoesItWorks />
