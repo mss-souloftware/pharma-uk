@@ -1,5 +1,4 @@
 "use client"; // This marks the file as a client-side component
-
 import { useState, useEffect, useRef, useContext } from "react";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu"; // Import the MobileMenu Component

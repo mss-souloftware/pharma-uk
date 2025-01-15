@@ -88,57 +88,57 @@ const Content = () => {
         ))}
       </div>
 
-      {/* Display selected category */}
-      {selectedCategory && (
-        <div className="mt-8">
-          <h3 className=" text-xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
-            Subcategories under {selectedCategory.name}
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-            {selectedCategory.subcategories.map((subcategory, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-transform duration-300 hover:scale-95 will-change-transform"
-              >
-                {/* Image Section */}
-                <div
-                  style={{
-                    backgroundImage: `url(${subcategory.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    height: "250px",
-                  }}
-                  className="w-full"
-                ></div>
+     {/* Display selected category */}
+{selectedCategory && (
+  <div className="mt-8">
+    <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 text-hoverUnderlineColor">
+      Subcategories under {selectedCategory.name}
+    </h3>
+    
+    {/* Responsive Grid Layout */}
+    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      {selectedCategory.subcategories.map((subcategory, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-xl shadow-lg overflow-hidden relative transform transition-transform duration-300 hover:scale-95"
+        >
+          {/* Image Section */}
+          <div
+            style={{
+              backgroundImage: `url(${subcategory.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "200px", // Adjust height for responsiveness
+            }}
+            className="w-full"
+          ></div>
 
-                {/* Content Section */}
-                <div className="p-4">
-                  <h5 className="text-xl font-semibold text-gray-900">
-                    {subcategory.name}
-                  </h5>
-                  <p className="text-sm text-gray-700 mt-2">
-  {subcategory.description
-    ? subcategory.description.length > 20
-      ? subcategory.description.substring(0, 60) + "..."
-      : subcategory.description
-    : "No description available."}
-</p>
+          {/* Content Section */}
+          <div className="p-4">
+            <h5 className="text-lg md:text-xl font-semibold text-gray-900">
+              {subcategory.name}
+            </h5>
+            <p className="text-sm md:text-base text-gray-700 mt-2">
+              {subcategory.description
+                ? subcategory.description.length > 60
+                  ? subcategory.description.substring(0, 60) + "..."
+                  : subcategory.description
+                : "No description available."}
+            </p>
 
-
-                  {/* Button */}
-                  <Link href={subcategory.link}>
-                    <button className="py-4 xl:px-6 sm:py-4 xl:py-6 md:px-6 md:py-5 lg:py-2 mt-2 sm:w-[20%] w-[30vw] sm:h-[4vh] h-[4vh]  md:w-[20%] md:h-[3vh] lg:h-[3vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300 flex items-center justify-center">
-                      <span className="flex justify-center text-center text-sm lg:text-base ">
-                      View Product
-                      </span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            ))}
+            {/* Button */}
+            <Link href={subcategory.link}>
+              <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                <span className="text-sm lg:text-base">View Product</span>
+              </button>
+            </Link>
           </div>
         </div>
-      )}
+      ))}
+    </div>
+  </div>
+)}
+
 
       <div className="mt-28">
         <HowDoesItWorks />
