@@ -117,9 +117,13 @@ const Content = () => {
                     {subcategory.name}
                   </h5>
                   <p className="text-sm text-gray-700 mt-2">
-                  {subcategory.description.length > 20 ? subcategory.description.substring(0, 60) + "..." : subcategory.description}
+  {subcategory.description
+    ? subcategory.description.length > 20
+      ? subcategory.description.substring(0, 60) + "..."
+      : subcategory.description
+    : "No description available."}
+</p>
 
-                  </p>
 
                   {/* Button */}
                   <Link href={subcategory.link}>

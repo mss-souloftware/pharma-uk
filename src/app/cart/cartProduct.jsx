@@ -70,11 +70,11 @@ const CartProduct = ({ product, onIncrease, onDecrease, onRemove, deliveryCharge
           </div>
 
           {/* Pass the selected week and handle click inside WeeklyPlan */}
-          <WeeklyPlan 
+          {/* <WeeklyPlan 
             weekPlan={product.weekPlan} 
             selectedWeek={selectedWeek}
             onPlanClick={onPlanClick} 
-          />
+          /> */}
         </div>
       </div>
 

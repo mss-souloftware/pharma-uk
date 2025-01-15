@@ -994,6 +994,149 @@
           { "week": 12, "capsules": 168 }
         ]
       }
-    ]
+    ], 
+      "FeminineCare": [
+        {
+          "id": "1",
+          "title": "Cystitis Relief Sachets",
+          "description": "Sachets to relieve cystitis symptoms by neutralizing urine acidity.",
+          "imageUrl": "/ProductImage/hairloss/product10.jpg",
+          "price": "15.99",
+          "weekPlan": [
+            { "week": 1, "sachets": 14 },
+            { "week": 2, "sachets": 28 },
+            { "week": 4, "sachets": 56 },
+            { "week": 8, "sachets": 112 },
+            { "week": 12, "sachets": 168 }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Cystitis Prevention Capsules",
+          "description": "Capsules to prevent recurring cystitis by promoting a healthy bladder.",
+          "imageUrl": "/ProductImage/hairloss/product9.jpg",
+          "price": "20.50",
+          "weekPlan": [
+            { "week": 1, "capsules": 10 },
+            { "week": 2, "capsules": 20 },
+            { "week": 4, "capsules": 40 },
+            { "week": 8, "capsules": 80 },
+            { "week": 12, "capsules": 120 }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Cranberry Extract Tablets",
+          "description": "Natural cranberry tablets to support urinary tract health and reduce cystitis risk.",
+          "imageUrl": "/ProductImage/hairloss/product8.jpg",
+          "price": "12.99",
+          "weekPlan": [
+            { "week": 1, "tablets": 14 },
+            { "week": 2, "tablets": 28 },
+            { "week": 4, "tablets": 56 },
+            { "week": 8, "tablets": 112 },
+            { "week": 12, "tablets": 168 }
+          ]
+        },
+        {
+          "id": "4",
+          "title": "Bladder Health Tea",
+          "description": "Herbal tea blend designed to support bladder health and reduce cystitis symptoms.",
+          "imageUrl": "/ProductImage/hairloss/product7.jpg",
+          "price": "8.50",
+          "weekPlan": [
+            { "week": 1, "packs": 1 },
+            { "week": 2, "packs": 2 },
+            { "week": 4, "packs": 4 },
+            { "week": 8, "packs": 8 },
+            { "week": 12, "packs": 12 }
+          ]
+        },
+        {
+          "id": "5",
+          "title": "Urinary Tract Probiotic",
+          "description": "Probiotic capsules to promote a healthy urinary tract and prevent infections.",
+          "imageUrl": "/ProductImage/hairloss/product6.jpg",
+          "price": "18.75",
+          "weekPlan": [
+            { "week": 1, "capsules": 10 },
+            { "week": 2, "capsules": 20 },
+            { "week": 4, "capsules": 40 },
+            { "week": 8, "capsules": 80 },
+            { "week": 12, "capsules": 120 }
+          ]
+        },
+        {
+          "id": "6",
+          "title": "Cystitis Pain Relief Spray",
+          "description": "Topical spray for instant pain relief from cystitis symptoms.",
+          "imageUrl": "/ProductImage/hairloss/product5.jpg",
+          "price": "14.99",
+          "weekPlan": [
+            { "week": 1, "sprays": 1 },
+            { "week": 2, "sprays": 2 },
+            { "week": 4, "sprays": 4 },
+            { "week": 8, "sprays": 8 },
+            { "week": 12, "sprays": 12 }
+          ]
+        },
+        {
+          "id": "7",
+          "title": "D-Mannose Powder",
+          "description": "D-Mannose powder to help flush out bacteria and reduce cystitis episodes.",
+          "imageUrl": "/ProductImage/hairloss/product4.jpg",
+          "price": "19.99",
+          "weekPlan": [
+            { "week": 1, "packs": 1 },
+            { "week": 2, "packs": 2 },
+            { "week": 4, "packs": 4 },
+            { "week": 8, "packs": 8 },
+            { "week": 12, "packs": 12 }
+          ]
+        },
+        {
+          "id": "8",
+          "title": "Urinary Alkalizer Tablets",
+          "description": "Tablets to reduce urine acidity and relieve burning sensations.",
+          "imageUrl": "/ProductImage/hairloss/product3.jpg",
+          "price": "11.50",
+          "weekPlan": [
+            { "week": 1, "tablets": 14 },
+            { "week": 2, "tablets": 28 },
+            { "week": 4, "tablets": 56 },
+            { "week": 8, "tablets": 112 },
+            { "week": 12, "tablets": 168 }
+          ]
+        },
+        {
+          "id": "9",
+          "title": "Cystitis Soothing Balm",
+          "description": "A balm to apply externally for soothing relief from cystitis discomfort.",
+          "imageUrl": "/ProductImage/hairloss/product2.jpg",
+          "price": "13.25",
+          "weekPlan": [
+            { "week": 1, "balms": 1 },
+            { "week": 2, "balms": 2 },
+            { "week": 4, "balms": 4 },
+            { "week": 8, "balms": 8 },
+            { "week": 12, "balms": 12 }
+          ]
+        },
+        {
+          "id": "10",
+          "title": "Bladder Health Supplement",
+          "description": "A daily supplement to support bladder health and reduce the risk of infections.",
+          "imageUrl": "/ProductImage/hairloss/product1.jpg",
+          "price": "22.00",
+          "weekPlan": [
+            { "week": 1, "capsules": 14 },
+            { "week": 2, "capsules": 28 },
+            { "week": 4, "capsules": 56 },
+            { "week": 8, "capsules": 112 },
+            { "week": 12, "capsules": 168 }
+          ]
+        }
+      ] 
+    
   
  }  

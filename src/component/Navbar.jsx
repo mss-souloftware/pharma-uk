@@ -159,10 +159,10 @@ const Navbar = () => {
                   links={[
                     { href: "/cystitis", label: "Cystitis" },
                     { href: "/contraceptivePill", label: "Contraceptive Pill" },
-                    { href: "/sign-out", label: "Feminine Care" },
-                    { href: "/sign-out", label: "Hair Loss" },
-                    { href: "/sign-out", label: "Menopause" },
-                    { href: "/sign-out", label: "Migraine" },
+                    { href: "/FeminineCare", label: "Feminine Care" },
+                    { href: "/womenHairLoss", label: "Hair Loss" },
+                    { href: "/Menopause", label: "Menopause" },
+                    { href: "/Migraine", label: "Migraine" },
                   ]}
                   cardOpen={cardOpen}
                   setCardOpen={setCardOpen}
@@ -176,10 +176,10 @@ const Navbar = () => {
                   setDropdownOpen={() => handleDropdownToggle("respiratory")}
                   dropdownTitle="Respiratory & Digestive"
                   links={[
-                    { href: "/dashboard", label: "Asthma" },
-                    { href: "/earnings", label: "Allergies" },
-                    { href: "/sign-out", label: "Cough" },
-                    { href: "/sign-out", label: "Indigestion" },
+                    { href: "/Asthma", label: "Asthma" },
+                    { href: "/Allergies", label: "Allergies" },
+                    { href: "/Cough", label: "Cough" },
+                    { href: "/Indigestion", label: "Indigestion" },
                   ]}
                   cardOpen={cardOpen}
                   setCardOpen={setCardOpen}
@@ -193,10 +193,10 @@ const Navbar = () => {
                   setDropdownOpen={() => handleDropdownToggle("general")}
                   dropdownTitle="General Health"
                   links={[
-                    { href: "/dashboard", label: "Asthma" },
-                    { href: "/earnings", label: "Allergies" },
-                    { href: "/sign-out", label: "Cough" },
-                    { href: "/sign-out", label: "Indigestion" },
+                    { href: "/acne", label: "Acne" },
+                    { href: "/adenomyosis", label: "Adenomyosis" },
+                    { href: "/anxiety", label: "Anxiety" },
+                    { href: "/appendicitis", label: "Appendicitis" },
                   ]}
                   cardOpen={cardOpen}
                   setCardOpen={setCardOpen}
