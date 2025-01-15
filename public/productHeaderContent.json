@@ -46,7 +46,7 @@
       "subTitle": "Effective solutions for managing pain",
       "button": "Start a consulting",
       "content": "Whether you’re dealing with muscle pain or chronic discomfort, our range of pain relief products is designed to provide you with the relief you need. Explore our topical creams, balms, and oral medications.",
-      "img": "/ProductImage/productImg/painReliefHeader.jpg"
+      "img": "/ProductImage/painRelief/header.jpg"
     }
   ],
   "PrematureEjaculation": [
@@ -176,7 +176,7 @@
     "subTitle": "Effective treatment options for managing the symptoms of adenomyosis.",
     "button": "Buy Now",
     "content": "Adenomyosis Relief products are designed to help reduce heavy menstrual bleeding, cramping, and pelvic pain caused by adenomyosis. These treatments aim to manage symptoms and improve overall comfort.",
-    "img": "/ProductImage/adenomyosis/headerContent.jpg"
+    "img": "/ProductImage/adenomyosis/header.jpg"
   }
 ],
 "Anxiety": [ 
@@ -186,7 +186,7 @@
     "subTitle": "Effective treatment to help manage anxiety and promote calmness.",
     "button": "Buy Now",
     "content": "Anxiety Relief products are designed to help reduce feelings of stress, tension, and worry. These treatments can promote a sense of calm and improve mental well-being, supporting you in managing anxiety symptoms effectively.",
-    "img": "/ProductImage/anxiety/headerContent.jpg"
+    "img": "/ProductImage/anxietyRelief/header.jpg"
   }
 ],
 "Appendicitis": [
@@ -196,7 +196,7 @@
     "subTitle": "Effective support for managing discomfort and symptoms associated with appendicitis.",
     "button": "Buy Now",
     "content": "Appendicitis Relief products are designed to help ease abdominal pain and reduce inflammation. These products support digestive health and help alleviate discomfort while you seek medical attention.",
-    "img": "/ProductImage/appendicitis/headerContent.jpg"
+    "img": "/ProductImage/Indigestion/header.jpg"
   }
 ]
 

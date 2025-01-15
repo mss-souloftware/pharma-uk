@@ -14,7 +14,7 @@ const ProductHeader = () => {
         const res = await fetch("/productHeaderContent.json");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
-        setFetchData(data.Anxiety); // This will set data for Condoms, you can change this dynamically as per product
+        setFetchData(data.Appendicitis); // This will set data for Condoms, you can change this dynamically as per product
       } catch (error) {
         console.error("Error fetching data:", error);
         setIsError(true); // Set error state

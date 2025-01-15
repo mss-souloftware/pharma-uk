@@ -142,7 +142,10 @@ const Navbar = () => {
                     { href: "/hairLoss", label: "Hair Loss" },
                     { href: "/lube", label: "Lube" },
                     { href: "/painRelief", label: "Pain Relief" },
-                    { href: "/prematureEjaculation", label: "Premature Ejaculation" },
+                    {
+                      href: "/prematureEjaculation",
+                      label: "Premature Ejaculation",
+                    },
                   ]}
                   cardOpen={cardOpen}
                   setCardOpen={setCardOpen}
@@ -195,7 +198,7 @@ const Navbar = () => {
                     { href: "/acne", label: "Acne" },
                     { href: "/adenomyosis", label: "Adenomyosis" },
                     { href: "/anxiety", label: "Anxiety" },
-                    { href: "/appendicitis", label: "Appendicitis" },
+                    { href: "/Appendicitis", label: "Appendicitis" },
                   ]}
                   cardOpen={cardOpen}
                   setCardOpen={setCardOpen}

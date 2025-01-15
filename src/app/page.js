@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <>
       <Hero />
-      <Content />
+      <Content /> 
     </>
   );
 };

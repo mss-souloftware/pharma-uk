@@ -38,13 +38,7 @@ const Page = () => {
           affordable health care experience. Our service is safe, discreet, and
           convenient. All medicines are dispensed from our Central
           London-based registered pharmacy.
-        </span>
-        {/* Button or Call to Action */}
-        <div className="xl:mt-5 sm:mt-6 md:mt-4 flex justify-center items-center w-full sm:justify-start ">
-          <button className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 lg:px-8 lg:py-2 mt-2 w-[30vw] sm:w-1/5 lg:w-48 sm:h-[6vh] h-[4vh] lg:h-[4vh] xl:h-[5vh] text-xs sm:text-sm lg:text-base text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] transition-transform duration-300 ease-in-out sm:leading-[1rem]">
-            Learn More
-          </button>
-        </div>
+        </span> 
       </div>
       
     </div>

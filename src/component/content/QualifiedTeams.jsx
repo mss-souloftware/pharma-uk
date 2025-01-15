@@ -42,32 +42,19 @@ const ContentSection2 = () => {
               </div>
 
               {/* Social Media Icons */}
-              <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-hoverUnderlineColor py-3">
-                <Link href={member.socialLinks.instagram} target="_blank">
-                  <Image
-                    src="/insta-icon.png"
-                    width={20}
-                    height={20}
-                    alt="Instagram Icon"
-                  />
-                </Link>
-                <Link href={member.socialLinks.facebook} target="_blank">
-                  <Image
-                    src="/facebook-icon.png"
-                    width={20}
-                    height={20}
-                    alt="Facebook Icon"
-                  />
-                </Link>
-                <Link href={member.socialLinks.twitter} target="_blank">
-                  <Image
-                    src="/twitter-icon.png"
-                    width={20}
-                    height={20}
-                    alt="Twitter Icon"
-                  />
-                </Link>
-              </div>
+              {/* Social Media Icons */}
+<div className="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-hoverUnderlineColor py-3">
+  {member.socialLinks.map((link, index) => (
+    <Link key={index} href={link.url} target="_blank">
+      <Image
+        src={link.icon}
+        width={20}
+        height={20}
+        alt={`${link.platform} Icon`}
+      />
+    </Link>
+  ))}
+</div>
             </div>
 
             {/* Doctor's Name */}
