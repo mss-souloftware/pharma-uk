@@ -7,25 +7,22 @@ export const CartContext = createContext();
 
 // ContextProvider component
 const ContextProvider = ({ children }) => {
-  const initialState = { 
-    products: JSON.parse(localStorage.getItem("cart")) || [] // Load cart from local storage
-  };
+  const [cart, dispatch] = useReducer(cartReducer, { products: [] });
 
-  const [cart, dispatch] = useReducer((state, action) => {
-    const updatedState = cartReducer(state, action);
-
-    // Sync state with local storage after every dispatch
-    localStorage.setItem("cart", JSON.stringify(updatedState.products));
-    return updatedState;
-  }, initialState);
-
-  // Sync state with local storage on initial load
+  // Load cart from local storage in the browser environment
   useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cart"));
-    if (storedCart) {
+    if (typeof window !== "undefined") {
+      const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
       dispatch({ type: "Load", products: storedCart });
     }
   }, []);
+
+  // Sync cart state with local storage on updates
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("cart", JSON.stringify(cart.products));
+    }
+  }, [cart.products]);
 
   return (
     <CartContext.Provider value={{ cart, dispatch }}>
