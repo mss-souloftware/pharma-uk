@@ -28,9 +28,7 @@ const HowDoesItWorks = () => {
     <div className="absolute inset-0">
       <Image
         src="/bg1.png"
-        alt="background"
-        layout="cover"
-        objectFit="cover"
+        alt="background"  
         className="z-0"
         height={100}
         width={120}

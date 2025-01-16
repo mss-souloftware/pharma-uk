@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import "./page.css";
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"; 
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import QualifiedTeamAboutPage from "@/component/qualifiedTeamAboutPage";
 import PharmacyRegulationsMobile from "@/component/PharmacyRegulationsMobile";
@@ -281,18 +280,18 @@ const Page = () => {
         </div>
 
         {/* Content Component for Desktop */}
-        <div className="container mx-auto hidden lg:block">
+        <div className="container mx-auto sm:mb-[27rem] lg:mb-0 hidden sm:block">
           <HowDoesItWorks />
         </div>
 
         {/* Content Component for Mobile */}
-        <div className="container mx-auto block lg:hidden">
+        <div className="container mx-auto block sm:hidden">
           <HowDoesItWorksMobile />
         </div>
       </div>
 
       {/* Our Qualified Team */}
-      <div className="my-64 sm:my-0 mb-[-20] sm:mb-0">
+      <div className="  sm:my-0 mb-[-20px] sm:mb-0">
         <div className="w-full  border border-black bg-black px-4 sm:px-6 lg:px-8  sm:py-0 ">
           <div className="container mx-auto  ">
             <QualifiedTeamAboutPage />

@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import ContentSection from "./AboutContent";
 import HowDoesItWorks from "./HowDoesItWorks";
 import "./ProductList.css";
 import Image from "next/image";
 import ContentSection2 from "./QualifiedTeams";
+import HowDoesItWorksMobile from "../HowDoesItWorksMobile";
+import ContentSection3 from "./CustomerReviews";
+import QualifiedTeams from "./QualifiedTeams";
 
 const Content = () => {
   const [categories, setCategories] = useState([]);
@@ -109,7 +111,7 @@ const Content = () => {
                   style={{
                     backgroundImage: `url(${subcategory.image})`,
                     backgroundSize: "cover",
-                    backgroundPosition: "center", 
+                    backgroundPosition: "center",
                     height: "200px", // Adjust height for responsiveness
                   }}
                   className="w-full"
@@ -141,18 +143,13 @@ const Content = () => {
         </div>
       )}
 
-      <div className="mt-28">
-        
+      <div className="block sm:hidden">
+        <HowDoesItWorksMobile />
+      </div>
+      <div className="mt-28 hidden sm:block">
         <HowDoesItWorks />
       </div>
-
-      <div className="mt-28">
-        <ContentSection />
-      </div>
-
-      <div className="mt-28">
-        <ContentSection2 />
-      </div>
+      <QualifiedTeams/>
     </div>
   );
 };

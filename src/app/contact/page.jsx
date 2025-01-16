@@ -6,6 +6,7 @@ import Image from "next/image";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import Card from "./card";
 import Policy from "./policy";
+import HowDoesItWorksMobile from "@/component/HowDoesItWorksMobile";
 
 const Page = () => {
   const [information, setInformation] = useState(null);
@@ -177,8 +178,12 @@ const Page = () => {
           
         </div>
       </div>
-      
+      <div className="block sm:hidden">
+        <HowDoesItWorksMobile/>
+      </div>
+      <div className="hidden sm:block">
       <HowDoesItWorks />
+      </div>
       <Card />
       <Policy />
     </>

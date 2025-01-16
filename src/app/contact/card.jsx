@@ -3,7 +3,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:mt-0 mt-[40rem] md:mt-[40%] h-auto bg-gray-50">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:mt-0   md:mt-[40%] h-auto bg-gray-50">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-10 lg:gap-12">
         {[...Array(6)].map((_, index) => (
           <div

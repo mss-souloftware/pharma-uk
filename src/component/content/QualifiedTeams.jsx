@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import ContentSection3 from './Reviews';
-
-const ContentSection2 = () => {
+import Image from 'next/image';   
+import ContentSection3 from './reviews';
+import ReviewsByPlatforms from './ReviewsByPlatforms';
+const QualifiedTeams = () => {
   const [teamData, setTeamData] = useState([]);
 
   // Fetch the data from the JSON file
@@ -31,30 +31,29 @@ const ContentSection2 = () => {
               </div>
 
               {/* Image */}
-              <div className="card__front absolute inset-0 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden transition-transform duration-500 transform group-hover:scale-105">
+              <div className="card__front absolute inset-0 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden transition-transform duration-500 transform group-hover:scale-101">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  height={150}
+                  width={400}
+                  className="transition-transform duration-500 group-hover:scale-105 object-cover w-full h-full"
                 />
               </div>
 
               {/* Social Media Icons */}
-              {/* Social Media Icons */}
-<div className="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-hoverUnderlineColor py-3">
-  {member.socialLinks.map((link, index) => (
-    <Link key={index} href={link.url} target="_blank">
-      <Image
-        src={link.icon}
-        width={20}
-        height={20}
-        alt={`${link.platform} Icon`}
-      />
-    </Link>
-  ))}
-</div>
+              <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-hoverUnderlineColor py-3">
+                {member.socialLinks.map((link, index) => (
+                  <Link key={index} href={link.url} target="_blank">
+                    <Image
+                      src={link.icon}
+                      width={20}
+                      height={20}
+                      alt={`${link.platform} Icon`}
+                    />
+                  </Link>
+                ))}
+              </div>
             </div>
 
             {/* Doctor's Name */}
@@ -64,10 +63,11 @@ const ContentSection2 = () => {
           </div>
         ))}
       </div>
-
-      <ContentSection3 />
+      <div>
+        <ReviewsByPlatforms/>
+      </div> 
     </div>
   );
 };
 
-export default ContentSection2;
+export default QualifiedTeams;

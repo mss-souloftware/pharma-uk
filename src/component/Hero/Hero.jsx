@@ -24,7 +24,7 @@ const Hero = () => {
           </span>
         </h1>
 
-        <div className="heroSubText grid container grid-cols-2 xl:text-base md:text-sm text-xs w-[100%] sm:w-[55%] md:w-[50%] lg:w-[45%] lg:grid-cols-2 gap-0 sm:gap-2 ml-0 md:gap-4 sm:justify-center lg:ml-0  md:items-start sm:items-start  xl:w-[calc(100%-70%)] mx-auto">
+        <div className="heroSubText grid container grid-cols-2 xl:text-base md:text-sm text-xs w-[100%] sm:w-[55%] md:w-[50%] lg:w-[45%] lg:grid-cols-2 gap-0 sm:gap-2 ml-0 md:gap-4 sm:justify-center lg:ml-0  md:items-start sm:items-start  xl:w-[calc(100%-65%)] mx-auto">
           <div className="heroSubText pt-2 flex mb-2 sm:mb-0">
             <Image src="/tick.png" width={20} height={20} alt="" className="w-3 h-4 size-3 md:pr-1 md:mt-1" />
             <span className="text-white"> UK registered pharmacy </span>
@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column */}
-          <div className="flex sm:items-center xl:text-left justify-center items-center flex-col sm:flex-row sm:w-[100%] sm:h-[95%]">
+          <div className="flex sm:items-center xl:text-left justify-center items-center flex-col md:ml-[2rem] lg:ml-0 xl:ml-[3rem] sm:flex-row sm:w-[100%] sm:h-[95%]">
             <div className="xl:h-[10vh] sm:h-[10vh] md:h-[8vh] w-[1px] bg-white md:mx-auto"></div>
             <span className="flex  sm:justify-start sm:items-start flex-wrap text-white font-medium text-base sm:ml-2 md:ml-6 md:w-[100%]">
               <span className="my-5 sm:my-0 text-center sm:text-left text-xs sm:text-xs leading-tight sm:ml-0 md:text-sm md:w-[100%] md:text-left">

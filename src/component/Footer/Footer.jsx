@@ -175,7 +175,7 @@ export default function Footer() {
                 <ul className="space-y-4">
                   <li className="flex items-center justify-center md:justify-start">
                     <Image
-                      src="/phone-icon.png"
+                      src="/icons/phoneIcon.png"
                       width={20}
                       height={20}
                       className="w-5 h-5 mr-2"
@@ -187,7 +187,7 @@ export default function Footer() {
                   </li>
                   <li className="flex items-center justify-center md:justify-start">
                     <Image
-                      src="/email-icon.png"
+                      src="/icons/emailIcon.png"
                       width={20}
                       height={20}
                       className="w-5 h-5 mr-2"
