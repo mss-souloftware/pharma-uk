@@ -37,7 +37,7 @@ const Page = () => {
 
   // Check if at least one product has a selected week
   const showContactButton = Object.values(selectedWeeks).some((week) => week); 
-
+  
   return (
     <section className="py-8 md:py-16 relative">
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">

@@ -1,5 +1,11 @@
 const cartReducer = (state, action) => {
   switch (action.type) {
+    case "Load":
+      return {
+        ...state,
+        products: action.products || [],
+      };
+
     case "Add":
       const products = state.products || [];
       const existingProductIndex = products.findIndex(
@@ -25,13 +31,15 @@ const cartReducer = (state, action) => {
     case "Remove":
       return {
         ...state,
-        products: state.products.filter(product => product.id !== action.product.id),
+        products: state.products.filter(
+          (product) => product.id !== action.product.id
+        ),
       };
 
     case "Increase":
       return {
         ...state,
-        products: state.products.map(product => 
+        products: state.products.map((product) => 
           product.id === action.product.id 
             ? { ...product, quantity: product.quantity + 1 } 
             : product
@@ -41,7 +49,7 @@ const cartReducer = (state, action) => {
     case "Decrease":
       return {
         ...state,
-        products: state.products.map(product => 
+        products: state.products.map((product) => 
           product.id === action.product.id && product.quantity > 1
             ? { ...product, quantity: product.quantity - 1 }
             : product
