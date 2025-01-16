@@ -142,6 +142,7 @@ const Content = () => {
       )}
 
       <div className="mt-28">
+        
         <HowDoesItWorks />
       </div>
 

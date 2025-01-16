@@ -58,11 +58,12 @@ const Hero = () => {
             </div>
 
             {/* Star Images */}
-            <div className="flex items-center xl:space-x-5 md:space-x-4 space-x-1 sm:space-x-2">
-              <Image src="/star.png" alt="star" width={20} height={20} className="w-4 sm:w-4 md:w-5 xl:w-6 text-white" />
-              <Image src="/star.png" alt="star" width={20} height={20} className="w-4 sm:w-4 md:w-5 xl:w-6 text-white" />
-              <Image src="/star.png" alt="star" width={20} height={20} className="w-4 sm:w-4 md:w-5 xl:w-6 text-white" />
-              <Image src="/star.png" alt="star" width={20} height={20} className="w-4 sm:w-4 md:w-5 xl:w-6 text-white" />
+            <div className="flex items-center xl:space-x-5 md:space-x-4 space-x-1 sm:space-x-2"> 
+            {
+              [...Array(5)].map((_,index)=>(
+                <Image key={index} src="/icons/star.png" height={29} width={29} alt="star-icon" className="w-4 sm:w-4 md:w-5 xl:w-6" />
+              ))
+            }
             </div>
           </div>
 
