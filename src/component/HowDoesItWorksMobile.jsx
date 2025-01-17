@@ -47,11 +47,11 @@ const HowDoesItWorksMobile = () => {
   };
 
   return (
-    <div className="container mx-auto h-[25rem] lg:px-12 my-[8rem] relative">
-      <h2 className="text-3xl lg:text-[58px] font-bold text-center mb-20 text-black">
+    <div className="container mx-auto h-[25rem] lg:px-12 my-[5rem] relative">
+      <h2 className=" text-xl lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl font-bold text-center  mb-10 text-black">
         How Does It&nbsp;
-        <span className="relative text-hoverUnderlineColor Secondunderline-background tracking-widest">
-          Work
+        <span className="text-hoverUnderlineColor">
+         Work
         </span>
       </h2>
 
@@ -100,57 +100,54 @@ const HowDoesItWorksMobile = () => {
 
       {/* Custom Navigation Arrows */}
       <button
-  type="button"
-  className={`absolute mt-10 top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none ${isFirstSlide ? "hidden" : ""}`}
-  onClick={handlePrev}
->
-  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 dark:bg-gray-800/30 group-hover:bg-hoverRedUnderlineColor dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-    <svg
-      className="w-2 h-4 text-white group-hover:text-hoverUnderlineColor dark:text-gray-800 group-hover:dark:text-white rtl:rotate-180"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 6 10"
-    >
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M5 1 1 5l4 4"
-      />
-    </svg>
-    <span className="sr-only">Previous</span>
-  </span>
-</button>
+        type="button"
+        className={`absolute mt-10 top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none ${isFirstSlide ? "hidden" : ""}`}
+        onClick={handlePrev}
+      >
+        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 dark:bg-gray-800/30 group-hover:bg-hoverRedUnderlineColor dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg
+            className="w-2 h-4 text-white group-hover:text-hoverUnderlineColor dark:text-gray-800 group-hover:dark:text-white rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 1 1 5l4 4"
+            />
+          </svg>
+          <span className="sr-only">Previous</span>
+        </span>
+      </button>
 
-
-<button
-  type="button"
-  className={`absolute mt-10 top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none ${isLastSlide ? "hidden" : ""}`}
-  onClick={handleNext}
->
-  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 dark:bg-gray-800/30 group-hover:bg-hoverRedUnderlineColor dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-    <svg
-      className="w-2 h-4 text-white group-hover:text-hoverUnderlineColor dark:text-gray-800 group-hover:dark:text-white rtl:rotate-180"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 6 10"
-    >
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="m1 9 4-4-4-4"
-      />
-    </svg>
-    <span className="sr-only">Next</span>
-  </span>
-</button>
-
-
+      <button
+        type="button"
+        className={`absolute mt-10 top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none ${isLastSlide ? "hidden" : ""}`}
+        onClick={handleNext}
+      >
+        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 dark:bg-gray-800/30 group-hover:bg-hoverRedUnderlineColor dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg
+            className="w-2 h-4 text-white group-hover:text-hoverUnderlineColor dark:text-gray-800 group-hover:dark:text-white rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+          <span className="sr-only">Next</span>
+        </span>
+      </button>
     </div>
   );
 };

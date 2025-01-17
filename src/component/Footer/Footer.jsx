@@ -24,7 +24,7 @@ export default function Footer() {
         >
           <SebscribeSection />
           {/* Social network icons container */}
-          <div className="flex items-center justify-between border-b-2 border-hoverUnderlineColor p-6">
+          <div className="flex items-center sm:justify-between border-b-2 border-hoverUnderlineColor p-6">
             {/* Left text */}
 
             <div className="mr-12 hidden lg:block">

@@ -37,7 +37,7 @@ const HowDoesItWorks = () => {
   
     {/* Content */}
     <div className="relative z-10">
-      <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-bold text-center mb-20 text-black">
+      <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-bold text-center sm:mb-12 xl:mb-16 text-black">
         How Does It&nbsp;
         <span className="relative text-hoverUnderlineColor tracking-widest">
           Work

@@ -65,7 +65,7 @@ const ConsultingCard = () => {
           <CustomeBtn
             buttonText="Go to Consulting"
             buttonLink="/consultation"
-            imageSrc="/btnArrow.png"
+            imageSrc="/icons/arrowIcon.png"
             altText="Consulting Arrow"
             className="bg-red-500"
           />
@@ -81,7 +81,7 @@ const ConsultingCard = () => {
                   width={20}
                   src={item.img}
                   alt={item.text}
-                  className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8"
+                  className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8  ml-2"
                 />
               )}
               <p className="text-sm text-white">{item.text}</p>

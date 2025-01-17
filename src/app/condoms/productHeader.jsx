@@ -55,8 +55,9 @@ const ProductHeader = () => {
               <CustomeBtn
                 buttonText="Go to Consulting"
                 buttonLink="/consultation"
-                imageSrc="/btnArrow.png"
+                imageSrc="/icons/arrowIcon.png"
                 altText="Consulting Arrow"
+                className=""
               />
 
               <p className="xl:text-xl md:text-base text-sm font-normal max-w-full text-gray-600 mt-4 leading-8">

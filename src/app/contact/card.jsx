@@ -5,7 +5,7 @@ const Card = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:mt-0   md:mt-[40%] h-auto bg-gray-50">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-10 lg:gap-12">
-        {[...Array(6)].map((_, index) => (
+        {[...Array(3)].map((_, index) => (
           <div
           key={index}
           className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 cursor-pointer 

@@ -172,9 +172,11 @@ const Page = () => {
 
             {/* Learn More Button */}
             <div className="flex items-center justify-center sm:justify-start w-full sm:mt-6 md:mt-4  ">
-              <button className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 lg:px-8 lg:py-2 mt-2 w-[30vw] sm:w-1/5 lg:w-48 sm:h-[6vh] h-[4vh] lg:h-[5vh] text-xs sm:text-sm lg:text-base text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] transition-transform duration-300 ease-in-out">
-                Learn More
-              </button>
+            <button className="py-4 xl:px-6 sm:py-4 xl:py-6 md:px-6 md:py-5 lg:py-5 mt-2 sm:w-[20%] w-[30vw] sm:h-[4vh] h-[4vh]  md:w-[20%] md:h-[3vh] lg:h-[4vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300 flex items-center justify-center">
+            <span className="flex justify-center text-center text-sm lg:text-base ">
+             Reviews
+            </span>
+          </button>
             </div>
           </div>
         </div>

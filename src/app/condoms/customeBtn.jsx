@@ -15,7 +15,7 @@ const CustomeBtn = ({ buttonText, buttonLink = "/consultation", imageSrc, altTex
         alt={altText}
         height={29}
         width={20}
-        className="relative"
+        className="relative lg:w-8 ml-2"
       />
     </Link>
   );
