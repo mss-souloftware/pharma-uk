@@ -45,10 +45,10 @@ const Content = () => {
   return (
     <div className="container mx-auto h-auto mt-20 border-2 border-solid border-transparent pl-[1.7rem] pr-[1.7rem]">
       <div>
-        <h1 className="block flex items-center justify-center text-xl lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl font-extrabold text-hoverUnderlineColor">
+        <h1 className="flex items-center justify-center text-xl lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl font-extrabold text-hoverUnderlineColor">
           Find your treatment
         </h1>
-        <p className="text-center w-full mx-auto text-xs lg:text-base md:text-base sm:text-base font-extrabold mt-7 text-gray-700">
+        <p className="text-center w-[80%] mx-auto text-xs lg:text-base md:text-base sm:text-base font-extrabold mt-7 text-gray-700">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim earum
           quaerat dicta animi libero asperiores ut dolores, architecto numquam,
           culpa commodi excepturi. Lorem ipsum dolor sit, amet consectetur
@@ -133,7 +133,7 @@ const Content = () => {
                   {/* Button */}
                   <Link href={subcategory.link}>
                     <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-                      <span className="text-sm lg:text-base">View Product</span>
+                      <span className="text-sm lg:text-base">Goto Consulting</span>
                     </button>
                   </Link>
                 </div>
@@ -144,7 +144,7 @@ const Content = () => {
       )}
 
       <div className="block sm:hidden">
-        <HowDoesItWorksMobile />
+        <HowDoesItWorksMobile /> 
       </div>
       <div className="mt-28 hidden sm:block">
         <HowDoesItWorks />

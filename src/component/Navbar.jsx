@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="md:mx-auto md:container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 scale-x-96">
           <Link
             href="/"
-            className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse"
+            className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse "
           >
             <Image
               src="/footerLogo.png"

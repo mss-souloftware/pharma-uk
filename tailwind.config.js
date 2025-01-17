@@ -29,6 +29,7 @@ module.exports = {
         '7xl': '4.5rem', // 72px
         '8xl': '6rem', // 96px
       },
+      
     },
   },
   plugins: []

@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Reviews from "./reviews";
+import ReviewsMobileScreen from "./reviewsMobileScreen";
 
 const ReviewsByPlatforms = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -245,8 +246,11 @@ const ReviewsByPlatforms = () => {
         )}
       </div>
       {/* Content Section 4 */}
-      <div>
+      <div className="hidden sm:block">
         <Reviews />
+      </div>
+      <div className="block sm:hidden">
+        <ReviewsMobileScreen/>
       </div>
     </>
   );
