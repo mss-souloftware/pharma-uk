@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const QualifiedTeamAboutPage = () => {
+  
   return (
     <div className="bg-black">
     <div className="container mx-auto px-4 sm:px-2 lg:px-8 w-full my-10 md:my-14 lg:my-0">
@@ -11,7 +12,7 @@ const QualifiedTeamAboutPage = () => {
         
         {/* First Section */}
         <div className="my-10 lg:my-20 w-full text-center lg:text-left ">
-          <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-relaxed">
+          <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-relaxed">
             Our&nbsp;
             <span className="text-hoverUnderlineColor underline-background tracking-widest ">
               Qualified&nbsp;
@@ -41,7 +42,7 @@ const QualifiedTeamAboutPage = () => {
                 className="w-full h-auto object-cover"
               />
               <div className="bg-gray-200 py-2">
-                <h1 className="text-sm sm:text-base lg:text-xl font-extrabold text-black">
+                <h1 className="text-sm sm:text-base lg:text-xl font-normal text-black">
                   Dr. Dane Smith
                 </h1>
                 <h3 className="text-xs sm:text-sm font-normal text-black">
@@ -63,10 +64,10 @@ const QualifiedTeamAboutPage = () => {
                 className="w-full h-auto object-cover"
               />
               <div className="bg-gray-200 py-2">
-                <h1 className="text-sm   sm:text-base lg:text-xl  font-extrabold text-black">
+                <h1 className="text-sm   sm:text-base lg:text-xl  font-normal text-black">
                   Dr. Dane Smith
                 </h1>
-                <h3 className="text-xs sm:text-sm font-normal text-black">
+                <h3 className="text-xs sm:text-sm font-light text-black">
                   Pharmacy Manager
                 </h3>
               </div>
@@ -85,10 +86,10 @@ const QualifiedTeamAboutPage = () => {
                 className="w-full h-auto object-cover"
               />
               <div className="bg-gray-200 py-2">
-                <h1 className="text-sm  sm:text-base lg:text-xl  font-extrabold text-black">
+                <h1 className="text-sm  sm:text-base lg:text-xl  font-normal text-black">
                   Dr. Dane Smith
                 </h1>
-                <h3 className="text-xs sm:text-sm font-normal text-black">
+                <h3 className="text-xs sm:text-sm font-light text-black">
                   Pharmacy Manager
                 </h3>
               </div>

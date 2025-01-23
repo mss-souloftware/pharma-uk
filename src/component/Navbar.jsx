@@ -66,11 +66,15 @@ const Navbar = () => {
             className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse "
           >
             <Image
-              src="/footerLogo.png"
-              width={100} // Set width
-              height={30} // Set height
-              className="absolute w-24 sm:ml-0 sm:w-20 md:w-24 lg:w-24 xl:w-40"
-              alt="Responsive Logo"
+             src="/footerLogo.png"
+             width={400}  // Make sure this is the original, high-resolution size of your logo
+             height={120}
+             className="absolute w-24 sm:w-20 md:w-24 lg:w-24 xl:w-40"
+             alt="Responsive Logo"
+             style={{ imageRendering: "crisp-edges" }} // Ensure the logo is sharp
+             quality={100}
+             priority={true}
+             layout="intrinsic"
             />
           </Link>
 
@@ -120,7 +124,7 @@ const Navbar = () => {
           {/* Navbar Items (hidden on small screens, visible on larger screens) */}
           <div className="w-full md:block md:w-auto mobile-nav-hidden">
             <ul
-              className="hidden md:flex flex-col font-bold sm:text-xs text-xs p-4 md:p-0 mt-4 border rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0
+              className="hidden md:flex flex-col font-normal sm:text-xs text-xs p-4 md:p-0 mt-4 border rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0
               md:border-0 md:bg-blackBackground md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0"
             >
               {/* Menu items go here */}

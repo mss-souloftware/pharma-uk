@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply the imported Google Fonts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Poppins', 'Open Sans', 'Roboto Serif', sans-serif;
 }
 
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;  
-  scroll-behavior: smooth; 
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
 
 /* Tailwind CSS customizations */
 .nav {

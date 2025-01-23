@@ -1,7 +1,7 @@
 "use client";
 import React, { useReducer, createContext, useEffect } from "react";
 import cartReducer from "./cartReducer";
-
+ 
 // Initialize the context
 export const CartContext = createContext();
 

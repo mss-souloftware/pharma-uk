@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Text Content with Fade-in Animation */}
       <div className="relative container z-20 sm:ml-6 md:ml-0 flex flex-col text-center sm:text-left justify-center md:justify-start md:left-8">
         {/* Heading */}
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white ">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white ">
           <span className="block xl:text-5xl md:text-3xl ">
             Get high-quality service
           </span>
@@ -49,9 +49,9 @@ const Hero = () => {
           <div className="flex flex-col space-y-2 sm:space-y-2 justify-center items-center sm:items-start md:w-36">
             {/* Name and Rating */}
             <div className="flex justify-between items-center xl:w-[30%] gap-4 ">
-              <span className="text-white text-base sm:text-xl md:text-xl lg:text-3xl font-extrabold">
+              <span className="text-white text-base sm:text-xl md:text-xl lg:text-3xl font-semibold">
                 <span className=" text-hoverUnderlineColor md:text-2xl">𝙸𝚏𝚎𝚎𝚑𝚜𝚑𝚢</span>
-                <span className="text-white text-base sm:text-base md:text-base lg:text-base font-semibold sm:ml-[10%] sm:text-font-normal">
+                <span className="text-white text-base sm:text-base md:text-base lg:text-base font-normal sm:ml-[10%] sm:text-font-normal">
                   4.7
                 </span>
               </span>
@@ -70,8 +70,8 @@ const Hero = () => {
           {/* Right Column */}
           <div className="flex sm:items-center xl:text-left justify-center items-center flex-col md:ml-[2rem] xl:mt-2 lg:ml-0  sm:flex-row sm:w-[100%] sm:h-[95%]">
             <div className="xl:h-[7vh] sm:h-[10vh] md:h-[7vh] w-[1px] bg-white md:mx-auto"></div>
-            <span className="flex  sm:justify-start sm:items-start flex-wrap text-white font-medium text-base sm:ml-2 md:ml-6 md:w-[100%]">
-              <span className="my-5 sm:my-0 text-center sm:text-left text-xs sm:text-xs leading-tight sm:ml-0 md:text-sm md:w-[100%] md:text-left">
+            <span className="flex  sm:justify-start sm:items-start flex-wrap text-white font-normal text-base sm:ml-2 md:ml-6 md:w-[100%]">
+              <span className="my-5 sm:my-0 font-normal text-center sm:text-left text-xs sm:text-xs leading-tight sm:ml-0 md:text-sm md:w-[100%] md:text-left">
                 The Winner of the Feefo Platinum Trusted Service Award in 2024
               </span>
             </span>
@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Button or Call to Action */}
         <div className="xl:mt-2 sm:mt-6 md:mt-4 justce">
           <Link href='/about'>
-          <button className="py-4 xl:px-6 sm:py-4 xl:py-6 md:px-6 md:py-5 lg:py-5 mt-2 sm:w-[20%] w-[30vw] sm:h-[4vh] h-[4vh]  md:w-[20%] md:h-[3vh] lg:h-[4vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300 flex items-center justify-center">
+          <button className="py-4 xl:px-6 sm:py-4 xl:py-6 md:px-6 md:py-5 lg:py-5 mt-2 sm:w-[20%] w-[30vw] sm:h-[4vh] h-[4vh]  md:w-[20%] md:h-[3vh] lg:h-[4vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-normal rounded-lg shadow-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300 flex items-center justify-center">
             <span className="flex justify-center text-center text-sm lg:text-base ">
             About US
             </span>

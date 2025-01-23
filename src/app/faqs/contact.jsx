@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <div className="  ml-0 py-12 xl:w-[120%] ">
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center sm:text-start text-hoverUnderlineColor dark:text-white mb-8 px-7 sm:px-0">Can&apos;t find what you are looking for?</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center sm:text-start text-hoverUnderlineColor dark:text-white mb-8 px-7 sm:px-0">Can&apos;t find what you are looking for?</h2>
       {formStatus === "success" && (
         <div className="text-green-500 text-center mb-4">Your message has been sent successfully!</div>
       )}
@@ -80,7 +80,7 @@ const Contact = () => {
 
         <div>
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="name" className="block text-sm font-normal text-gray-700 dark:text-gray-300">
             Your Name
           </label>
           <input
@@ -96,7 +96,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="email" className="block text-sm font-normal text-gray-700 dark:text-gray-300">
             Your Email
           </label>
           <input
@@ -113,7 +113,7 @@ const Contact = () => {
 
             </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="message" className="block text-sm font-normal text-gray-700 dark:text-gray-300">
             Your Message
           </label>
           <textarea
@@ -131,7 +131,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full py-3 px-6 bg-hoverUnderlineColor text-white rounded-lg shadow-md focus:outline-none hover:bg-hoverUnderlineColor transition duration-300 ease-in-out ${
+            className={`w-full py-3 px-6 bg-hoverUnderlineColor text-white font-normal rounded-lg shadow-md focus:outline-none hover:bg-hoverUnderlineColor transition duration-300 ease-in-out ${
               isSubmitting ? "cursor-not-allowed opacity-50" : ""
             }`}
           >

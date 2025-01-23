@@ -4,7 +4,7 @@
         {
             "href": "mailto:help@pharmica.uk",
             "label": "Email:",
-            "img": "/email-black-icon.png"
+            "img": "/icons/email.png"
     },
     {
         "href": "We'll call you at a time that suits you",
@@ -14,17 +14,17 @@
     {
       "href": "tel:+441234567890",
       "label": "Phone:",
-      "img": "/phone-icon-black.png"
+      "img": "/icons/phoneicn.png"
     },
     {
       "href": "Pharmica 236 Gray's Inn RdLondon WC1X 8HB UK",
       "label": "Address:",
-      "img": "/address-black-icon.png"
+      "img": "/icons/address.png"
     }, 
     {
       "href": " 0741 831 0014",
       "label": "Text (SMS):",
-      "img": "/sms-black-icon.png"
+      "img": "/icons/text.png"
     }
     ],
 

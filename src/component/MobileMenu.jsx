@@ -12,7 +12,7 @@ const MobileMenu = ({ mobileMenuOpen, toggleMobileMenu }) => {
 
   useEffect(() => {
     setIsMenuOpen(mobileMenuOpen);
-  }, [mobileMenuOpen]); 
+  }, [mobileMenuOpen]); // Adding mobileMenuOpen as a dependency
   // Toggle dropdown function
   const handleDropdownToggle = (dropdown) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown); // Toggle dropdown

@@ -43,7 +43,7 @@ const Policy = () => {
     <div className="container mx-auto px-4 my-20">
       {/* Header Section */}
       <div className="text-center mb-10">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-hoverUnderlineColor mb-8">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-hoverUnderlineColor mb-8">
           Our Policies
         </h1>
         <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
@@ -70,10 +70,10 @@ const Policy = () => {
           {policies.map((policy, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-extrabold mb-4 text-hoverUnderlineColor">
+                <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-normal mb-4 text-hoverUnderlineColor">
                   {policy.title}
                 </h2>
-                <p className="text-sm md:text-base text-gray-700">
+                <p className="text-sm md:text-base text-gray-700 font-light">
                   {policy.description}
                 </p>
               </div>
@@ -87,10 +87,10 @@ const Policy = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-extrabold mb-4 text-hoverUnderlineColor">
+              <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-semibold mb-4 text-hoverUnderlineColor">
                 {policy.title}
               </h2>
-              <p className="text-sm md:text-base text-gray-700">
+              <p className="text-sm md:text-base text-gray-700 font-light">
                 {policy.description}
               </p>
             </div>

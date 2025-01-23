@@ -4,18 +4,27 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import Skeleton from "react-loading-skeleton"; // Import the Skeleton loader
+import "react-loading-skeleton/dist/skeleton.css"; // Import CSS for Skeleton
 import ReviewsByPlatforms from "./ReviewsByPlatforms";
 
 const QualifiedTeams = () => {
   const [teamData, setTeamData] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // Add loading state
 
   // Fetch the data from the JSON file
   useEffect(() => {
     fetch("/qualifiedTeamHomePage.json")
       .then((response) => response.json())
-      .then((data) => setTeamData(data))
-      .catch((error) => console.error("Error fetching team data:", error));
+      .then((data) => {
+        setTeamData(data);
+        setIsLoading(false); // Set loading to false after data is fetched
+      })
+      .catch((error) => {
+        console.error("Error fetching team data:", error);
+        setIsLoading(false); // Set loading to false even in case of error
+      });
   }, []);
 
   // Detect screen size
@@ -35,13 +44,29 @@ const QualifiedTeams = () => {
   return (
     <>
       <div className="container mx-auto p-4">
-        <h1 className="block mx-auto text-center text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-extrabold mb-10 sm:mb-12 xl:mb-16">
+        <h1 className="block mx-auto text-center text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold mb-10 sm:mb-12 xl:mb-16">
           A fully Qualified{" "}
           <span className="text-hoverUnderlineColor">team</span>
         </h1>
 
-        {/* Conditionally render Swiper or Grid */}
-        {isMobile ? (
+        {/* Conditionally render Swiper or Grid based on loading state */}
+        {isLoading ? (
+          // Show skeleton loader while data is loading
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {Array(5).fill().map((_, index) => (
+              <div key={index} className="card w-full">
+                <div className="card__content text-center relative h-[300px] p-4 text-hoverUnderlineColor font-normal rounded-lg shadow-lg overflow-hidden group">
+                  {/* Skeleton for Image */}
+                  <Skeleton height={150} width={400} className="mb-4" />
+                  {/* Skeleton for GPhC Number */}
+                  <Skeleton height={20} width="80%" className="mb-2" />
+                  {/* Skeleton for name */}
+                  <Skeleton height={20} width="60%" className="mb-4" />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : isMobile ? (
           <Swiper
             spaceBetween={20}
             slidesPerView={1} // Show one slide at a time
@@ -59,7 +84,7 @@ const QualifiedTeams = () => {
               <SwiperSlide key={member.id}>
                 <div className="card w-full">
                   <div className="card__content text-center relative h-[300px] p-4 text-hoverUnderlineColor font-bold rounded-lg shadow-lg overflow-hidden group">
-                    <div className="absolute top-0 right-0 z-50 bg-hoverUnderlineColor bg-opacity-80 text-sm font-medium text-white p-2 rounded-lg shadow">
+                    <div className="absolute top-0 right-0 z-50 bg-hoverUnderlineColor bg-opacity-80 text-sm font-thin text-white p-2 rounded-lg shadow">
                       <p>GPhC Number: {member.gphcNumber}</p>
                     </div>
                     <div className="card__front absolute inset-0 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden transition-transform duration-500 transform group-hover:scale-101">
@@ -84,7 +109,7 @@ const QualifiedTeams = () => {
                       ))}
                     </div>
                   </div>
-                  <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">
+                  <h2 className="xl:text-xl md:text-base text-sm font-normal mt-4">
                     {member.name}
                   </h2>
                 </div>
@@ -95,8 +120,8 @@ const QualifiedTeams = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {teamData.map((member) => (
               <div key={member.id} className="card w-full">
-                <div className="card__content text-center relative h-[300px] p-4 text-hoverUnderlineColor font-bold rounded-lg shadow-lg overflow-hidden group">
-                  <div className="absolute top-0 right-0 z-50 bg-hoverUnderlineColor bg-opacity-80 text-sm font-medium text-white p-2 rounded-lg shadow">
+                <div className="card__content text-center relative h-[300px] p-4 text-hoverUnderlineColor font-normal rounded-lg shadow-lg overflow-hidden group">
+                  <div className="absolute top-0 right-0 z-50 bg-hoverUnderlineColor bg-opacity-80 text-sm font-normal text-white p-2 rounded-lg shadow">
                     <p>GPhC Number: {member.gphcNumber}</p>
                   </div>
                   <div className="card__front absolute inset-0 bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden transition-transform duration-500 transform group-hover:scale-101">
@@ -121,14 +146,16 @@ const QualifiedTeams = () => {
                     ))}
                   </div>
                 </div>
-                <h2 className="xl:text-xl md:text-base text-sm font-semibold mt-4">
+                <h2 className="xl:text-xl md:text-base text-sm font-normal mt-4">
                   {member.name}
                 </h2>
               </div>
             ))}
           </div>
         )}
+
         <div>
+          {/* Assuming ReviewsByPlatforms is another component */}
           <ReviewsByPlatforms />
         </div>
       </div>

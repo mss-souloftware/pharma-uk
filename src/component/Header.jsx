@@ -19,7 +19,7 @@ const Header = () => {
     height={20} 
     className=" ml-1 mr-1 md:ml-0 mt-1 md:mr-2 sm:mt-1 object-contain logoImg sm:w-3 md:w-4 lg:w-5 w-3"
   />
-  <span className="text-white mt-1 text-xs sm:text-sm md:text-base lg:text-lg">
+  <span className="text-white mt-1 font-normal text-xs sm:text-sm md:text-base lg:text-lg">
     Phone: +163--654123
   </span>
 </div>
@@ -32,7 +32,7 @@ const Header = () => {
     height={20} // Set height
     className="mr-1 md:mr-2 mt-1 logoImg sm:w-3 object-contain md:w-4 lg:w-5 w-3"
   />
-  <span className="text-white mt-1 text-xs sm:text-sm md:text-base lg:text-lg">
+  <span className="text-white mt-1 font-normal text-xs sm:text-sm md:text-base lg:text-lg">
     Email: David@gmial.com
   </span>
 </div>

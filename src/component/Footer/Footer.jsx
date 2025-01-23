@@ -12,6 +12,7 @@ export default function Footer() {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+
         }}
       >
         <footer
@@ -68,13 +69,16 @@ export default function Footer() {
                   href="/"
                   className="flex justify-center md:justify-start items-center space-x-0 ml-0 "
                 >
-                  <Image
-                    src="/footerLogo.png"
-                    width={100}
-                    height={50} 
-                    className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
-                    alt="Responsive Logo"
-                  />
+              <Image
+  src="/footerLogo.png"
+  width={200}  // Use a larger image size
+  height={100} // Use a larger image size
+  className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
+  alt="Responsive Logo"
+  quality={100} // Maximize image quality
+  priority={true} // Load it early for better performance
+  layout="intrinsic" // Let Next.js handle the scaling while preserving aspect ratio
+/>
                 </Link>
                 <p className="mt-3 sm:mt-3 md:mt-0 text-sm sm:text-base md:text-lg lg:text-base text-white leading-relaxed">
                   Here you can use rows and columns to organize your footer
@@ -85,7 +89,7 @@ export default function Footer() {
 
               {/* Popular Treatments section */}
               <div>
-                <h6 className="mb-4 text-center md:text-left font-semibold uppercase">
+                <h6 className="mb-4 text-center md:text-left font-normal uppercase">
                   Popular Treatments
                 </h6>
                 <ul className="space-y-4">
@@ -142,7 +146,7 @@ export default function Footer() {
 
               {/* Learn More section */}
               <div>
-                <h6 className="mb-4 text-center md:text-left font-semibold uppercase">
+                <h6 className="mb-4 text-center md:text-left font-normal uppercase">
                   Learn More
                 </h6>
                 <ul className="space-y-4">

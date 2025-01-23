@@ -5,8 +5,8 @@ import CustomeBtn from "./customeBtn";
 
 const ProductHeader = () => {
   const [fetchData, setFetchData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
-  const [isError, setIsError] = useState(false); // Add error state for better error handling
+  const [isLoading, setIsLoading] = useState(true); // Loading state
+  const [isError, setIsError] = useState(false); // Error handling state
 
   useEffect(() => {
     const dataFetched = async () => {
@@ -14,8 +14,8 @@ const ProductHeader = () => {
         const res = await fetch("/productHeaderContent.json");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
-        setFetchData(data.Condoms); // This will set data for Condoms
-        setIsLoading(false); // Data fetched, stop loading
+        setFetchData(data.Condoms); // Setting the data for Condoms
+        setIsLoading(false); // Stop loading when data is fetched
       } catch (error) {
         console.error("Error fetching data:", error);
         setIsError(true); // Set error state
@@ -26,7 +26,7 @@ const ProductHeader = () => {
   }, []);
 
   if (isError) {
-    return <div>Failed to load content. Please try again later.</div>; // Handle error gracefully
+    return <div className="text-center text-red-500">Failed to load content. Please try again later.</div>; // Error message
   }
 
   return (
@@ -39,7 +39,7 @@ const ProductHeader = () => {
           ) : (
             fetchData.length > 0 && (
               <Image
-                src={fetchData[0].img} // Make sure this path exists in public folder
+                src={fetchData[0].img} // Ensure this path exists in public folder
                 alt={fetchData[0].title} // Alt text dynamically
                 layout="fill"
                 className="rounded-lg shadow-xl object-cover"
@@ -51,8 +51,8 @@ const ProductHeader = () => {
         {/* Text Section */}
         <div className="flex flex-col justify-start items-start space-y-4">
           {isLoading
-            ? Array.from({ length: 3 }).map((_, index) => (
-                <div key={index} className="w-full">
+            ? Array.from({ length: 1 }).map((_, index) => (
+                <div key={index} className="w-full space-y-4">
                   <div className="w-3/4 h-8 bg-gray-200 animate-pulse mb-4 rounded"></div> {/* Title Skeleton */}
                   <div className="w-5/6 h-6 bg-gray-200 animate-pulse mb-2 rounded"></div> {/* Subtitle Skeleton */}
                   <div className="w-1/2 h-10 bg-gray-200 animate-pulse mb-6 rounded"></div> {/* Button Skeleton */}
@@ -67,7 +67,7 @@ const ProductHeader = () => {
                   </h1>
                   <p className="text-lg text-gray-600">{item.subTitle}</p>
 
-                  {/* Use CustomButton here */}
+                  {/* Custom Button */}
                   <CustomeBtn
                     buttonText="Go to Consulting"
                     buttonLink="/consultation"
