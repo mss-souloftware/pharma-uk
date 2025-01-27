@@ -32,10 +32,10 @@ const HowDoesItWorks = () => {
       {Array(3).fill().map((_, index) => (
         <div
           key={index}
-          className="flex flex-col items-center bg-gray-50 p-4 transition-all"
+          className="flex flex-col items-center bg-gray-800 p-6 rounded-lg transition-all shadow-lg hover:scale-105"
         >
           {/* Skeleton Image */}
-          <Skeleton height={160} width="100%" className="mb-4" />
+          <Skeleton height={160} width="100%" className="mb-4 rounded-md" />
 
           {/* Skeleton Title */}
           <Skeleton width="60%" height={20} className="mb-2" />
@@ -48,10 +48,10 @@ const HowDoesItWorks = () => {
   );
 
   return (
-    <div className="container mx-auto h-[30rem] my-24 lg:px-12 relative">
+    <div className="container mx-auto h-auto my-24 lg:px-12 relative">
       {/* Content */}
       <div className="relative z-10">
-        <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold text-center sm:mb-12 xl:mb-16 text-black">
+        <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold text-center sm:mb-12 xl:mb-16 text-hoverUnderlineColor">
           How Does It&nbsp;
           <span className="relative text-hoverUnderlineColor tracking-widest">
             Work
@@ -63,7 +63,7 @@ const HowDoesItWorks = () => {
             {sections.map((section, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center bg-gray-50 p-4 transition-all"
+                className="flex flex-col items-center bg-gray-800 p-6 rounded-lg transition-all shadow-lg hover:scale-105 hover:bg-gray-900"
               >
                 <Image
                   src={section.image}
@@ -72,10 +72,10 @@ const HowDoesItWorks = () => {
                   height={160}
                   className="w-full h-40 object-cover rounded-md mb-4"
                 />
-                <h3 className="text-base sm:text-lg lg:text-xl font-normal text-gray-900 mb-2 text-center">
+                <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-white mb-2 text-center">
                   {section.name}
                 </h3>
-                <p className="text-sm font-light sm:text-base lg:text-base text-gray-700 text-center">
+                <p className="text-sm font-light sm:text-base lg:text-base text-gray-300 text-center">
                   {section.description}
                 </p>
               </div>

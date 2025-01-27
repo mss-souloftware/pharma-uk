@@ -1,9 +1,10 @@
-"use client";
-import Image from "next/image";
+"use client"
 import React, { useState, useEffect, useContext } from "react";
 import { CartContext } from "../cart/feature/contextProvider";
 import Skeleton from "react-loading-skeleton"; // Import Skeleton loader
-import "react-loading-skeleton/dist/skeleton.css"; // Import skeleton CSS
+import "react-loading-skeleton/dist/skeleton.css"; // Import skeleton CSS  
+import Image from "next/image";
+import { ToastContainer } from "react-toastify";
 
 const ProductsCard = () => {
   const [products, setProducts] = useState([]);
@@ -26,92 +27,83 @@ const ProductsCard = () => {
   }, []);
 
   const handleAddToCart = (product) => {
-    dispatch({ type: "Add", product: product });
+    dispatch({ type: "Add", product: product }); 
   };
-
+  
   return (
-    <section className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12 md:px-5">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <section className="py-8 antialiased dark:bg-gray-900 md:py-12 md:px-5">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {loading ? (
-          // Show Skeleton loader while loading
-          Array(10)
-            .fill()
-            .map((_, index) => (
-              <div key={index} className="relative rounded-t-full rounded-b-lg border border-gray-200 bg-white p-6 shadow-xl">
-                {/* Skeleton for Image */}
-                <Skeleton height={250} width="100%" className="mb-6 rounded-t-full" />
-                {/* Skeleton for Title */}
-                <Skeleton height={30} width="80%" className="mb-4" />
-                {/* Skeleton for Description */}
-                <Skeleton height={20} width="100%" className="mb-4" />
-                {/* Skeleton for Button and Price */}
-                <div className="mt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-                  <Skeleton height={40} width="30%" />
-                  <Skeleton height={25} width="40%" />
-                </div>
+          // Render skeleton loaders while loading
+          Array.from({ length: 6 }).map((_, index) => (
+            <div
+              className="relative border border-solid border-gray-300 rounded-lg shadow-sm p-4 flex flex-col"
+              key={index}
+            >
+              <Skeleton
+                height={150} // Adjust height as needed
+                width="100%" // Full width for the skeleton
+                className="rounded-lg"
+                baseColor="#e0e0e0" // Base color for skeleton
+                highlightColor="#f5f5f5" // Highlight color for skeleton
+              />
+              <div className="flex flex-col flex-grow justify-between mt-2">
+                <Skeleton height={20} />
+                <Skeleton height={15} />
+                <Skeleton height={20} width={`50%`} />
               </div>
-            ))
-        ) : (
-          // Once data is loaded, show actual product cards
-          products.length > 0 ? (
-            products.map((product, index) => (
-              <div
-                key={product.id || index}
-                className="relative rounded-t-full rounded-b-lg border border-gray-200 bg-white p-6 shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl hover:shadow-gray-600 dark:border-gray-500 dark:bg-gray-800 cursor-pointer"
-                onClick={() => handleAddToCart(product)} // Add to cart when clicked anywhere on the card
-              >
-                {/* Image Section */}
-                <div className="w-full h-56 mb-6 overflow-hidden rounded-t-full relative">
-                  <a href="#">
-                    <Image
-                      height={250}
-                      width={400}
-                      className="w-full h-full object-cover rounded-t-full group-hover:scale-110 transition-transform duration-300"
-                      src={product.imageUrl}
-                      alt={product.title}
-                    />
-                  </a>
-                  {/* Image Overlay for Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black opacity-40 group-hover:opacity-30 transition-opacity"></div>
-                </div>
+            </div>
+          ))
+        ) : products.length > 0 ? (
+          products.map((product, index) => (
+            <div
+              className="relative border border-solid border-gray-300 rounded-lg shadow-sm hover:shadow-2xl hover:scale-[1.00] hover:-translate-y-1 transform transition-all duration-300 grid grid-cols-1 sm:grid-cols-2 gap-x-4 items-stretch h-[24rem] sm:h-[12rem] overflow-hidden bg-white hover:bg-gray-50"
+              key={index}
+            >
+              {/* Image Section */}
+              <div className="flex justify-center items-center relative overflow-hidden">
+                <Image
+                  src={product.imageUrl}
+                  alt="productImg"
+                  height={100}
+                  width={200}
+                  className="object-cover h-full w-full p-4" // Ensures the image fully fits and stays inside the box
+                />
+              </div>
 
-                {/* Content Section */}
-                <div className="pt-4 text-center sm:text-left">
-                  <a
-                    className="text-2xl font-extrabold text-hoverUnderlineColor hover:underline dark:text-white tracking-tight leading-tight"
-                  >
-                    {product.title}
-                  </a>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-2 sm:mt-4">
-                    {product.description.length > 20
-                      ? product.description.substring(0, 70) + "..."
-                      : product.description}
-                  </p>
-                </div>
+              {/* Content Section */}
+              <div className="flex flex-col justify-between px-4 py-6 relative">
+                <h1 className="text-base font-semibold">
+                  {product.title.length > 20
+                    ? product.title.substring(0, 20) + "..."
+                    : product.title}
+                </h1>
+                <p className="text-xs font-light text-justify">
+                  {product.description.length > 70
+                    ? product.description.substring(0, 70) + "..."
+                    : product.description}
+                </p>
+                <p className="text-base font-semibold">${product.price}</p>
 
-                {/* Price and Button Section */}
-                <div className="mt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div className="flex justify-between items-center mt-2">
                   <button
                     onClick={(e) => {
                       handleAddToCart(product);
-                      e.stopPropagation(); // Prevent click event on card
+                      e.stopPropagation(); // Prevent click event on the card
                     }}
-                    className="w-full sm:w-auto py-3 px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                    className="py-2 px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
                   >
-                    <p className="text-lg font-normal">Add to Cart</p>
+                    <p className="text-base font-light">Add to Cart</p>
                   </button>
-                  <div className="mt-2 sm:mt-0 flex justify-center items-center text-lg font-normal text-gray-800 dark:text-white">
-                    <span className="text-sm">from</span>
-                    <p className="ml-2 text-xl">${product.price}</p>
-                  </div>
                 </div>
               </div>
-            ))
-          ) : (
-            <p className="text-center text-gray-600 dark:text-white">No products available.</p>
-          )
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-gray-600 dark:text-white">No products available.</p>
         )}
       </div>
+      <ToastContainer/>
     </section>
   );
 };

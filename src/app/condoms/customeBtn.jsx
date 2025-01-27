@@ -7,7 +7,7 @@ const CustomeBtn = ({ buttonText, buttonLink = "/consultation", imageSrc, altTex
   return (
     <Link
       href={buttonLink}
-      className={`custom-zoom-button text-white bg-hoverUnderlineColor xl:w-64 lg:text-base xl:text-xl rounded-xl py-1 w-52 justify-evenly items-center mt-4 shadow-xl flex flex-row ${className}`}
+      className={`custom-zoom-button text-white bg-hoverUnderlineColor xl:w-54 lg:text-base xl:text-base rounded-xl py-1 w-52 justify-evenly items-center mt-3 shadow-xl flex flex-row ${className}`}
     >
       <span>{buttonText}</span>
       <Image
@@ -15,7 +15,7 @@ const CustomeBtn = ({ buttonText, buttonLink = "/consultation", imageSrc, altTex
         alt={altText}
         height={29}
         width={20}
-        className="relative lg:w-8 ml-2"
+        className="relative lg:w-5 ml-2"
       />
     </Link>
   );

@@ -32,9 +32,9 @@ function TestimonialCard({ img, description, client, title, clientInfo }) {
       </CardHeader>
       <CardBody className="flex flex-col items-center gap-4">
         <div className="w-24 h-24 overflow-hidden rounded-full shadow-md">
-          <Image src={img} alt={client} height={29} width={29} className="w-full h-full object-cover" />
+          <Image src={img} alt={client} height={100} width={100} className="w-full h-full object-cover" />
         </div>
-        <Typography variant="body2" className="text-gray-600 text-center">
+        <Typography variant="body2" className="text-gray-600 text-center md:px-[5rem] lg:px-[10rem] xl:px-[20rem]">
           {description}
         </Typography>
         <Typography variant="small" color="blue-gray" className="italic text-gray-500">

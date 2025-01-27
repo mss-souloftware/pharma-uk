@@ -13,37 +13,45 @@ const Page = () => {
   return (
     <div>
       {/* Image Section */}
-      <div
-        className="relative z-10 flex justify-center items-center w-full h-[38rem] bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('/DoctorImages/doctorImg4.jpg')" }}
-      >
-        {/* Transparent Overlay */}
-        <div className="absolute inset-0 bg-gray-900 bg-opacity-40 z-10"></div>
-        <div className="relative container w-full z-20 flex flex-col text-center sm:text-left justify-center md:justify-start md:left-0 xl:left-8 md:left-8">
-          {/* Heading */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold tracking-wider leading-relaxed text-white md:mb-3">
-            <span className="block xl:text-5xl md:text-3xl tracking-wide text-xl">
-              The UK&apos;s Trusted
-            </span>
-            <span className="block text-xl   xl:text-5xl md:text-3xl tracking-wide">
-              Online Pharmacy
-            </span>
-            <span className=" text-xl xl:text-5xl md:text-3xl tracking-wide">
-              Since 2015
-            </span>
-          </h1>
-          <div className="justify-start lg:w-[40dvw] pt-2 mb-2 sm:mb-0 block">
-            <span className="text-white font-normal text-xs sm:text-base px-1 xl:px-0">
-              Pharmica offers a wide range of treatments through our free online
-              prescription service. Our ethos is that by providing cutting-edge
-              technology to automate and innovate, we can deliver a safer, more
-              affordable health care experience. Our service is safe, discreet,
-              and convenient. All medicines are dispensed from our Central
-              London-based registered pharmacy.
-            </span>
-          </div>
-        </div>
-      </div>
+      <div className="relative flex justify-center items-center w-full h-[38rem] bg-cover bg-center overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/aboutBg.jpg"
+        alt="background"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        quality={100} // Ensures the image is sharp
+        className="absolute inset-0 -z-10"
+      />
+
+      {/* Transparent Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-900 to-transparent opacity-80"></div>
+
+      {/* Text Content */}
+      <div className="relative justify-start container mx-auto px-6 text-center sm:text-left text-white z-20">
+  {/* Heading */}
+  <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight drop-shadow-lg shine-effect capitalize ">
+    <span className="block">The UK&apos;s Trusted</span>
+    <span className="block">Online Pharmacy</span>
+    <span className="block">Since 2015</span>
+  </h1>
+
+  {/* Red Horizontal Line */}
+  <div className="md:w-[40rem] border-t-4 border-hoverUnderlineColor my-6"></div>
+
+  {/* Description */}
+  <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed mb-6 lg:pr-64 ">
+    Pharmica offers a wide range of treatments through our free online
+    prescription service. Our ethos is that by providing cutting-edge
+    technology to automate and innovate, we can deliver a safer, more
+    affordable healthcare experience. Our service is safe, discreet, and
+    convenient. All medicines are dispensed from our Central London-based
+    registered pharmacy.
+  </p>
+</div>
+
+    </div>
 
       {/* Main Content Section */}
     <CompanyInformation/>

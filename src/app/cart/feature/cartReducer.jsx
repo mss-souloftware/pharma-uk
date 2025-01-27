@@ -1,3 +1,5 @@
+import { toast } from "react-toastify"; // Import notification library
+
 const cartReducer = (state, action) => {
   switch (action.type) {
     case "Load":
@@ -13,6 +15,7 @@ const cartReducer = (state, action) => {
       );
 
       if (existingProductIndex >= 0) {
+        // No need to notify for increase in quantity
         const updatedProducts = products.map((product, index) => {
           if (index === existingProductIndex) {
             return { ...product, quantity: product.quantity + 1 };
@@ -23,12 +26,30 @@ const cartReducer = (state, action) => {
         return { ...state, products: updatedProducts };
       }
 
+      toast.success(
+        <div>
+          <span style={{ color: "red", fontWeight: "bold" }}>
+            {action.product.title}
+          </span>{" "}
+          added to the cart!
+        </div>,
+        {
+          position: "top-right",
+          autoClose: 1000,
+        }
+      );
+
       return { 
         ...state,
         products: [...products, { ...action.product, quantity: 1 }],
       };
 
     case "Remove":
+      toast.info(`${action.product.title} removed from the cart!`, {
+        position: "top-right",
+        autoClose: 1000,
+      });
+
       return {
         ...state,
         products: state.products.filter(
@@ -37,6 +58,7 @@ const cartReducer = (state, action) => {
       };
 
     case "Increase":
+      // Don't show toast for quantity increase
       return {
         ...state,
         products: state.products.map((product) => 
@@ -47,6 +69,18 @@ const cartReducer = (state, action) => {
       };
 
     case "Decrease":
+      // Don't show toast for quantity decrease
+      const decreasingProduct = state.products.find(
+        (product) => product.id === action.product.id
+      );
+
+      if (decreasingProduct && decreasingProduct.quantity === 1) {
+        toast.warning(`${action.product.title} is at minimum quantity.`, {
+          position: "top-right",
+          autoClose: 1000,
+        });
+      }
+
       return {
         ...state,
         products: state.products.map((product) => 

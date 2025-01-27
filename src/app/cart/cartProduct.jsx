@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import WeeklyPlan from "./feature/weeklyPlan";
+import { ToastContainer } from "react-toastify";
 
 const CartProduct = ({
   product,
@@ -89,19 +90,13 @@ const CartProduct = ({
               Remove
             </button>
           </div>
-
-          {/* Pass the selected week and handle click inside WeeklyPlan */}
-          {/* <WeeklyPlan 
-            weekPlan={product.weekPlan} 
-            selectedWeek={selectedWeek}
-            onPlanClick={onPlanClick} 
-          /> */}
         </div>
       </div>
 
       <div className="text-center text-sm text-gray-600 mt-2">
         <strong>Delivery Charge:</strong> ${deliveryCharge.toFixed(2)}
       </div>
+      <ToastContainer/>
     </div>
   );
 };
