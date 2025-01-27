@@ -2,6 +2,7 @@ import Image from "next/image";
 import "../../app/about/page.css";
 import React, { useEffect, useState } from "react";
 import Skeleton from 'react-loading-skeleton';  // Import the skeleton loader library
+import ProductVisual from "./product/productVisual";
 
 const HowDoesItWorks = () => {
   const [sections, setSections] = useState([]);
@@ -51,12 +52,16 @@ const HowDoesItWorks = () => {
     <div className="container mx-auto h-auto my-24 lg:px-12 relative">
       {/* Content */}
       <div className="relative z-10">
-        <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold text-center sm:mb-12 xl:mb-16 text-hoverUnderlineColor">
+        <h2 className="text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold text-center sm:mb-12 text-hoverUnderlineColor">
           How Does It&nbsp;
           <span className="relative text-hoverUnderlineColor tracking-widest">
             Work
           </span>
         </h2>
+
+        {/* Product Visual Section */}
+        <ProductVisual />
+
         {/* Display skeleton or content depending on loading state */}
         {isLoading ? renderSkeleton() : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

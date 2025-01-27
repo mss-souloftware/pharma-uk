@@ -3,6 +3,8 @@ import React from 'react'
 
 const CustomerReviews = () => {
   return (
+    <>
+      <h1 className='text-7xl font-semibold leading-relaxed container mx-auto text-gray-800 my-6 '>What Our Client About Says</h1>
     <div className="bg-gray-100 px-4 sm:px-6 lg:px-8">
       <div className="w-full grid container mx-auto grid-cols-1 sm:grid-cols-2 gap-y-8 lg:gap-y-0">
         
@@ -29,7 +31,7 @@ const CustomerReviews = () => {
     {[...Array(5)].map((_, index) => (
       <Image
         key={index}
-        src="/rankStarIcon.png"
+        src="/icons/staricn.png"
         alt="Star Icon"
         width={29}
         height={29}
@@ -47,6 +49,7 @@ const CustomerReviews = () => {
 
       </div>
     </div>
+    </>
   )
 }
 

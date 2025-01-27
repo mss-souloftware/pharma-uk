@@ -119,7 +119,7 @@ const QualifiedTeams = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {teamData.map((member) => (
               <div key={member.id} className="card w-full">
-                <div className="card__content text-center relative h-[300px] p-4 bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden group">
+                <div className="card__content text-center relative h-[300px] p-2 bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden group">
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-80 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <div>
                       <p className="text-sm text-red-500 mb-2">

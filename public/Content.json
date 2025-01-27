@@ -56,7 +56,7 @@
     },  
     {
       "name": "Popular", 
-      "image": "/productIcon/popular.png",
+      "image": "/productIcon/popular1.png",
       "subcategories": [
         {
           "name": "Respiratory",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Men's Health",
-      "image":"/productIcon/men's.png", 
+      "image":"/productIcon/men.png", 
       "subcategories": [
         {
           "name": "Men's Health ",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Sexual Health", 
-      "image":"/productIcon/sexualHealth.png",
+      "image":"/productIcon/sexual.png",
       "subcategories": [
         {
           "name": "Sexual Health",

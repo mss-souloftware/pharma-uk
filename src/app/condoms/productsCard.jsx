@@ -67,31 +67,31 @@ const ProductsCard = () => {
                   alt="productImg"
                   height={100}
                   width={200}
-                  className="object-cover h-full w-full p-4" // Ensures the image fully fits and stays inside the box
+                  className="object-cover h-full w-full p-6" // Ensures the image fully fits and stays inside the box
                 />
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-between px-4 py-6 relative">
-                <h1 className="text-base font-semibold">
+              <div className="flex flex-col justify-between px-4 py-2 relative">
+                <h1 className="text-sm font-semibold">
                   {product.title.length > 20
                     ? product.title.substring(0, 20) + "..."
                     : product.title}
                 </h1>
-                <p className="text-xs font-light text-justify">
+                <p className="text-xs font-light ">
                   {product.description.length > 70
                     ? product.description.substring(0, 70) + "..."
                     : product.description}
                 </p>
-                <p className="text-base font-semibold">${product.price}</p>
+                <p className="text-sm font-semibold">${product.price}</p>
 
-                <div className="flex justify-between items-center mt-2">
+                <div className="flex  items-center ">
                   <button
                     onClick={(e) => {
                       handleAddToCart(product);
                       e.stopPropagation(); // Prevent click event on the card
                     }}
-                    className="py-2 px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                    className="py-2 px-4 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
                   >
                     <p className="text-base font-light">Add to Cart</p>
                   </button>

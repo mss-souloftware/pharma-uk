@@ -57,15 +57,11 @@ const CategoryProduct = () => {
       <button
         key={index}
         onClick={() => handleCategoriesClick(category)}
-        className={`flex justify-start items-center text-sm
-          w-full sm:w-28 md:w-32 lg:w-44 
-          h-8 sm:h-8 md:h-10 lg:h-12 
-          border-2 border-solid border-hoverUnderlineColor 
-          rounded-full transition-all duration-300 ${
-            selectedCategory === category
-              ? "bg-hoverUnderlineColor text-white"
-              : "bg-black text-white"
-          }`}
+        className={`flex justify-start items-center text-sm w-full sm:w-28 md:w-32 lg:w-44 h-8 sm:h-8 md:h-10 lg:h-12 border-2 border-solid border-hoverUnderlineColor rounded-full transition-all duration-300 ${
+          selectedCategory === category
+            ? "bg-hoverUnderlineColor text-white"
+            : "bg-black text-white"
+        }`}
       >
         <Image
           src={category.image}
@@ -75,9 +71,7 @@ const CategoryProduct = () => {
           className="w-4 h-4 sm:w-4 ml-2 sm:mx-3"
           priority
         />
-        <span className="truncate w-24">
-          {category.name || "Unnamed Category"}
-        </span>
+        <span className="truncate w-24">{category.name || "Unnamed Category"}</span>
       </button>
     ));
 
@@ -110,7 +104,7 @@ const CategoryProduct = () => {
               </p>
               <Link href={subcategory.link}>
                 <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white font-normal rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-hoverUnderlineColor">
-                  <span className="text-sm lg:text-base">Goto Consulting</span>
+                  <span className="text-sm lg:text-base">Get to Consulting</span>
                 </button>
               </Link>
             </div>
@@ -120,8 +114,8 @@ const CategoryProduct = () => {
   };
 
   return (
-    <>
-      {/* Categories Button */}
+    <div className="container mx-auto my-8 px-4">
+      {/* Categories Button Section */}
       <div className="flex overflow-x-auto space-x-2 md:space-x-3 sm:space-x-2 py-4 sm:py-6 md:py-4 mt-8 justify-between w-full scrollbar-thin scrollbar-thumb-hoverUnderlineColor scrollbar-track-gray-200 scrollbar-rounded-lg">
         {isLoading ? renderSkeleton(5) : renderCategories()}
       </div>
@@ -131,16 +125,14 @@ const CategoryProduct = () => {
         <div className="mt-8">
           <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-normal text-center mb-8 text-hoverUnderlineColor">
             Subcategories Under{" "}
-            <span className="text-hoverUnderlineColor">
-              {selectedCategory.name}
-            </span>
+            <span className="text-hoverUnderlineColor">{selectedCategory.name}</span>
           </h3>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
             {isLoading ? renderSkeleton(5) : renderSubcategories()}
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

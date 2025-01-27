@@ -18,7 +18,7 @@ const Heading = () => {
   return (
     <>
      <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-lg shine-effect capitalize"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white tracking-tight drop-shadow-lg shine-effect capitalize"
           initial="hidden"
           animate="visible"
         >
@@ -28,7 +28,7 @@ const Heading = () => {
           ].map((line, index) => (
             <motion.span
               key={index}
-              className="block xl:text-7xl md:text-4xl"
+              className="block xl:text-6xl md:text-4xl"
               custom={index} // Pass index for staggered animation
               variants={textAnimation}
             >

@@ -1,22 +1,17 @@
-"use client";
-import React, { useEffect, useState } from "react";
+"use client"; 
 import HowDoesItWorks from "../HowDoesItWorks";
 import "./ProductList.css"; 
 import HowDoesItWorksMobile from "../../HowDoesItWorksMobile"; 
 import QualifiedTeams from "../QualifiedTeams"; 
 import ProductHeading from "./productHeading";
 import CategoryProduct from "./CategoryProduct";
-import ProductVideo from "./productVisual";
 
 const Content = () => {
 
   return (
     <div className="container mx-auto h-auto mt-20 border-2 border-solid border-transparent pl-[1.7rem] pr-[1.7rem]">
   <ProductHeading/>
-<CategoryProduct/>
-<div>
-  <ProductVideo/>
-</div>
+<CategoryProduct/> 
       <div className="block sm:hidden">
         <HowDoesItWorksMobile />
       </div>
