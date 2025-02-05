@@ -4,47 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Skeleton from "react-loading-skeleton";
 
-const CategoryList = ({ categories, selectedCategory, onSelectCategory, isLoading }) => {
-  const renderSkeleton = (count) =>
-    Array(count)
-      .fill()
-      .map((_, index) => (
-        <div key={index} className="flex justify-center items-center py-2 w-full sm:w-28 md:w-32 lg:w-44">
-          <Skeleton width={20} height={20} />
-        </div>
-      ));
-
-  return (
-    <div className="flex overflow-x-auto border-4 border-gray-200 rounded-3xl space-x-2 mt-8 justify-evenly w-auto scrollbar-thin scrollbar-thumb-gray-100 scrollbar-track-gray-200">
-  {isLoading
-    ? renderSkeleton(5)
-    : categories.map((category, index) => (
-      <button
-        key={index}
-        onClick={() => onSelectCategory(category)}
-        className={`flex justify-center items-center m-1 text-sm w-full sm:w-36 md:w-48 lg:w-52 h-14 sm:h-14 md:h-16 lg:h-16 rounded-full transition-all duration-300 ${
-          selectedCategory === category ? "bg-hoverUnderlineColor text-white" : "bg-transparent text-gray-800"
-        }`}
-      >
-        <div className="flex items-center justify-center space-x-2">
-          <Image
-            src={category.image}
-            alt={category.name || "Unnamed Category"}
-            width={320}
-            height={320}
-            className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8"
-            priority
-            quality={100}
-          />
-          <span className="text-center font-semibold text-sm  whitespace-nowrap w-auto">{category.name || "Unnamed Category"}</span>
-        </div>
-      </button>
-    ))}
-</div>
-
-  );
-};
-
 const CategoryProduct = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);

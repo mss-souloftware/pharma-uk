@@ -80,7 +80,39 @@
         }
       ]
     },
-    
+    {
+      "name": "Men's Health",
+      "image":"/productIcon/men's.png", 
+      "subcategories": [
+        {
+          "name": "Men's Health ",
+          "link": "https://example.com/mens-health/sub1",
+          "image": "/ProductImage/productImg/product5.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Women's Health", 
+      "image":"/productIcon/women.png",
+      "subcategories": [
+        {
+          "name": "Women's Health",
+          "link": "https://example.com/womens-health/sub1",
+          "image": "/ProductImage/productImg/product6.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Respiratory", 
+      "image":"/productIcon/respiratory.png",
+      "subcategories": [
+        {
+          "name": "Respiratory",
+          "link": "https://example.com/respiratory/sub1",
+          "image": "/ProductImage/productImg/product7.jpg"
+        }
+      ]
+    },
     {
       "name": "Sexual Health", 
       "image":"/productIcon/sexual.png",

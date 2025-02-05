@@ -16,16 +16,28 @@ const Heading = () => {
   };
 
   return (
-    <motion.h1
-      className="text-lg sm:text-2xl md:text-4xl xl:text-6xl font-bold text-black tracking-tight drop-shadow-lg capitalize 
-                 text-center sm:text-left max-w-[90%] sm:max-w-[70%] md:max-w-[60%] leading-6"
-      initial="hidden"
-      animate="visible"
-      variants={textAnimation}
-    >
-      Welcome to your trusted UK Online Pharmacy
-    </motion.h1>
-  );
-};
+    <>
+     <motion.h1
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-lg shine-effect capitalize"
+          initial="hidden"
+          animate="visible"
+        >
+          {[
+            "Get High-Quality Service",
+            "With Quality Medicine",
+          ].map((line, index) => (
+            <motion.span
+              key={index}
+              className="block xl:text-7xl md:text-4xl"
+              custom={index} // Pass index for staggered animation
+              variants={textAnimation}
+            >
+              {line}
+            </motion.span>
+          ))}
+        </motion.h1> 
+    </>
+  )
+}
 
 export default Heading;
