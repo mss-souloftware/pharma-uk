@@ -8,22 +8,29 @@ import Button from "../Button";
 
 const Hero = () => {
   return (
-    <div
-      className="relative z-10 flex justify-center items-center w-full h-[38rem] bg-cover bg-center overflow-hidden bg-no-repeat 
-    brightness-110 contrast-125 saturate-150"
-      style={{ backgroundImage: "url('/background.jpg')" }}
-    >
-      {/* Transparent Overlay */}
-      <div className="absolute inset-0 bg-gray-900 bg-opacity-40 z-10"></div>
-
-      {/* Text Content with Fade-in Animation */}
-      <div className="relative container z-20 sm:ml-6 md:ml-0 flex flex-col text-center sm:text-left justify-center md:justify-start md:left-8">
-        <Heading/>
-<SubText/>
-<Button/>
+    <>
+    <div 
+      className="relative xl:h-screen w-full bg-cover bg-no-repeat bg-center flex items-center"
+      style={{
+        backgroundImage: "url('/hero/background (1).svg')",
+      }}
+      >
+      <div className="container mx-auto flex flex-col items-center lg:items-start text-center lg:text-left px-8 py-20  gap-5 ">
+         
+        <Heading className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  leading-9 " />
+        
+        
+        <SubText className="text-lg sm:text-xl md:text-2xl text-gray-800 mt-7 max-w-2xl " />
+        
+        
+        <div className="mt-6">
+          <Button />
+        </div>
       </div>
     </div>
 
+ 
+      </>
   );
 };
 
