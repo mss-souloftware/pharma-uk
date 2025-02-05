@@ -3,7 +3,7 @@ import HowDoesItWorks from "../HowDoesItWorks";
 import "./ProductList.css";
 import HowDoesItWorksMobile from "../../HowDoesItWorksMobile";
 import QualifiedTeams from "../QualifiedTeams";
-import ProductHeading from "./productHeading";
+import ProductHeading from "./ProductHeading";
 import CategoryProduct from "@/component/content/product/CategoryProduct";
 
 const Content = () => {
