@@ -1,0 +1,30 @@
+{
+    "consulting": [
+      {
+        "title": "Start Your Online Consultation",
+        "description": "Fill in our online questionnaire so our medical team can show you eligible hair loss treatments.",
+        "imageUrl": "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        
+        "icons": [
+            {
+                "img": "/consulting/quickTime.png",
+                "text": "Takes less than 2 minutes"
+              },
+              
+          {
+            "img": "/consulting/secure.png",
+            "text": "Confidential and secure"
+          },
+          {
+            "img": "/consulting/addToCart.png",
+            "text": "Quick and easy checkout"
+          },
+          {
+            "img": "/consulting/userIcon.png",
+            "text": "1.5 million+ customers"
+          }
+        ]
+      }
+    ]
+  }
+  

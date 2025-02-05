@@ -1,0 +1,4 @@
+.image_box:hover ~ .text_box {
+  transform: translateY(-11rem); /* Moves the text box inside the card */   
+  background-color: white;
+}

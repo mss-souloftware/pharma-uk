@@ -1,66 +1,4 @@
-.cube div span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: 2px solid #DC143C; /* Lighter border color (light gray) */
-  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-  transition: transform 1s ease-in-out;
-}
-
-.topD {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background: transparent;
-  border: 2px solid #B0BEC5; /* Lighter border color */
-  transform: rotateX(90deg) translateZ(150px);
-}
-
-.topD::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background: transparent;
-  border: 2px solid #B0BEC5; /* Lighter border color */
-  transform: translateZ(-400px);
-  filter: blur(20px);
-  box-shadow: 0 0 60px rgba(176, 190, 197, 0.2), /* Light glow */
-    0 0 100px rgba(176, 190, 197, 0.4), 0 0 200px rgba(176, 190, 197, 0.6);
-}
-
-.cube2 div span {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 65%;
-  height: 65%;
-  background: transparent;
-  border: 2px solid #f5335a; /* Lighter border color */
-  transform: rotateY(calc(90deg * var(--i))) translateZ(62px);
-}
-
-.cube3 div span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  transform: rotateY(calc(90deg * var(--i))) translateZ(14px);
-  box-shadow: 0px 0px 7px #ee758d; /* Lighter shadow for the cube */
-}
-
-/* Hero.module.css */ 
-
-/* Keyframe animation definitions */
+  
 
 @keyframes slideIn {
   0% {
@@ -92,3 +30,73 @@
 .animateSlidein500 {
   animation: slideInDelay 1.5s ease-out forwards 0.5s; /* Adds delay */
 }
+
+
+/* Target screens smaller than 600px */
+/* Target screens smaller than 600px */ 
+@media (max-width: 600px) {
+  .heroSubText {
+    text-align: center;  /* Center the text */
+  }
+
+  .heroSubText .text-white {
+    font-size: 0.875rem;  /* Set font size smaller (14px equivalent) */
+  }
+
+  .heroSubText img {
+    width: 1.25rem;  /* Adjust image size for responsiveness */
+  }
+
+  .heroSubText span {
+    white-space: nowrap;  /* Prevent text wrapping */
+    display: inline-block; /* Ensure the text is inline */
+  }
+  .flex {
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically */
+    height: 100vh;           /* Make the div take full viewport height */
+  }
+
+  .text-base {
+    font-size: 0.75rem;  /* Set text size to xs (12px) on smaller screens */
+  }
+  .text-white {
+    font-size: 0.75rem;  /* Text size xs (12px equivalent) */
+  }
+  .text-left {
+    font-size: 0.75rem;  /* Set text size to xs (12px equivalent) for screens between 600px to 414px */
+  }
+
+}
+
+
+/* Shine effect animation */
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.shine-effect {
+  display: inline-block;
+  position: relative;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3) 25%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 75%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  animation: shine 2s infinite;
+}
+
+.shine-effect span {
+  position: relative;
+  z-index: 1;
+}
+
+

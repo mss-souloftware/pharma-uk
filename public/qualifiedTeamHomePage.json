@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Lorem Ipsum",
+    "gphcNumber": "201393442",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do.png",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com",
+        "icon": "/icons/insta-icon.png"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com",
+        "icon": "/icons/facebook-icon.png"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://www.twitter.com",
+        "icon": "/icons/twitter-icon.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jacquiline",
+    "gphcNumber": "201393442",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do2.png",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com",
+        "icon": "/icons/insta-icon.png"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com",
+        "icon": "/icons/facebook-icon.png"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://www.twitter.com",
+        "icon": "/icons/twitter-icon.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Leos Morgan",
+    "gphcNumber": "201393442",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do3.png",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com",
+        "icon": "/icons/insta-icon.png"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com",
+        "icon": "/icons/facebook-icon.png"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://www.twitter.com",
+        "icon": "/icons/twitter-icon.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Leos Morgan",
+    "gphcNumber": "201393442",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do4.png",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com",
+        "icon": "/icons/insta-icon.png"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com",
+        "icon": "/icons/facebook-icon.png"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://www.twitter.com",
+        "icon": "/icons/twitter-icon.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Leos Morgan",
+    "gphcNumber": "201393442",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do5.png",
+    "socialLinks": [
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com",
+        "icon": "/icons/insta-icon.png"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com",
+        "icon": "/icons/facebook-icon.png"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://www.twitter.com",
+        "icon": "/icons/twitter-icon.png"
+      }
+    ]
+  }
+]

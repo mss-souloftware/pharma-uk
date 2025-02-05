@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply the imported Google Fonts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', 'Open Sans', 'Roboto Serif', sans-serif;
 }
 
 body {
   height: 100%;
+  overflow-x: hidden; 
   width: 100%;
-  overflow-x: hidden;  
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  
 }
+
 
 /* Tailwind CSS customizations */
 .nav {
@@ -81,3 +86,7 @@ body {
     height: 0%;
   }
 }
+
+
+/* Add this to your global CSS file */
+

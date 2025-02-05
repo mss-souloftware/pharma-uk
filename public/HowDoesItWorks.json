@@ -1,0 +1,20 @@
+{
+    "categories": [
+      {
+        "name": "Online Consulting",
+        "image": "/consultin.png",
+        "description": "Complete a free online medical assessment to check your eligibility for treatments."
+      },
+      {
+        "name": "Select Your Treatment",
+        "image": "/tratment.png",
+        "description": "Choose from a wide range of trusted treatments provided by leading brands."
+      },
+      {
+        "name": "Fast & Secure Delivery",
+        "image": "/Deliveri.png",
+        "description": "Your medication is professionally dispensed and delivered directly to your home or workplace."
+      }
+    ]
+  }
+  

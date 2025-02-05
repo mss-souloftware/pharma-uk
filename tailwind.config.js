@@ -4,19 +4,20 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      
       colors: {
         primaryText: 'white', // text-white
         secondary: 'gray', // secondary color
         blackBackground: 'black', // background color
-        hoverUnderlineColor: '#DC143C', // Hover underline color
-      },
+        hoverUnderlineColor: '#c62638', // Hover underline color
+      } 
+      
     },
   },
-  plugins: [],
-}
+  plugins: []
+
+};

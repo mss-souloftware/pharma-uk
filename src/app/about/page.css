@@ -1,0 +1,109 @@
+.underline-background {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px; /* Align the underline to the bottom of the text */
+  height: 14px; /* Height of the background underline */
+  background-color: black; /* Background color for the underline */
+  z-index: -1; /* Place it behind the text */
+  border-radius: 2px; /* Optional: Add slight curve for style */
+  transform: translateY(2px); /* Adjust the vertical position to move the underline slightly down */
+}
+
+
+/* Media query for xs screens (small devices) */
+@media (max-width: 414px) {
+  .underline-background::after {
+    bottom: 4px; /* Adjusted position */
+    height: 7px; /* Smaller height for underline */
+  }
+}
+ 
+
+
+.redunderline-background {
+  position: relative;
+  letter-spacing: 2px; /* Adjust the value as needed */
+}
+
+.redunderline-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9px; /* Move the underline below the text */
+  height: 12px; /* Height of the background underline */
+  background-color: #c62638; /* Background color for the underline */
+  z-index: -1; /* Place it behind the text */
+  border-radius: 2px; /* Optional: Add slight curve for style */
+  transform: translateY(2px); /* Move the underline slightly down, behind the text */
+}
+/* Media query for xs screens (small devices) */
+@media (max-width: 414px) {
+  .redunderline-background::after {
+    bottom: 4px; /* Adjusted position */
+    height: 7px; /* Smaller height for underline */
+  }
+}
+.custom-list-item::marker {
+  color: #c62638; /* Sets the marker (dot) color to red */
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.QualifiedTeamunderline-background {
+  position: relative;
+  display: inline-block; /* Ensures the underline is sized correctly to the text */
+}
+
+.QualifiedTeamunderline-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 240px;
+  bottom: 24px; /* Align with the bottom of the text */
+  height: 18px; /* Adjust the height to fit the background underline */
+  background-color: white; /* Background color for the underline */
+  z-index: -1; /* Places the underline behind the text */
+  border-radius: 2px; /* Optional: Add slight curve for style */
+}
+
+/* Customize pagination dots */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Adjust the position of pagination */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensure it's above the slides */
+}
+
+.swiper-pagination-bullet {
+  background-color: #bbb; /* Light gray color for inactive dots */
+  width: 12px; /* Make the dots larger */
+  height: 12px; /* Make the dots larger */
+  border-radius: 50%;
+  opacity: 0.7; /* Slightly transparent */
+  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #333; /* Dark color for the active dot */
+  opacity: 1; /* Full opacity for the active dot */
+  transform: scale(1.2); /* Slightly larger active dot */
+}
+
+.swiper-pagination-bullet:hover {
+  transform: scale(1.3); /* Make dots larger when hovered */
+}
+
+
+.swiper-pagination-bullet:hover {
+  transform: scale(1.3); /* Make dots larger when hovered */
+}

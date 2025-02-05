@@ -1,0 +1,19 @@
+{
+    "testimonials": [
+      {
+        "title": "Outstanding Support and Service", 
+        "description": "The team went above and beyond to ensure my issue was resolved quickly and efficiently. Truly outstanding! The personalized attention and expertise made all the difference.",
+        "client": "Jessica Devis",
+        "clientInfo": "Full Stack Developer @Netflix",
+        "img": "/client1.jpg"
+      },
+      {
+        "title": "Incredible Community and Growth Opportunities",
+        "description": "It has broadened my horizons and helped me advance my career. The community is incredibly supportive and inspiring, offering invaluable insights and resources for professional growth.",
+        "client": "Marcell Glock",
+        "clientInfo": "Graphic Designer @Coinbase",
+        "img": "/client.jpg"
+      }
+    ]
+  }
+  

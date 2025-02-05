@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion"; // Importing framer-motion for animations
 import Link from "next/link"; // Using Next.js Link for navigation
+import Image from "next/image";
 
 const UserProfileMenu = () => {
   // State to control the visibility of the profile menu
@@ -10,10 +11,8 @@ const UserProfileMenu = () => {
 
   // Links to display in the profile menu
   const links = [
-    { href: "/SignUp", label: "SignUp" },
-    { href: "/Login", label: "Login" },
-    { href: "/EditProfile", label: "Edit Profile" },
-    { href: "/DeleteProfile", label: "Delete Profile" },
+    { href: "/My Account", label: "My Account" },
+    { href: "/My Order", label: "My Order" },
   ];
 
   // Framer Motion variants for menu animation
@@ -24,17 +23,19 @@ const UserProfileMenu = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       {/* User Profile Image */}
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="cursor-pointer group relative w-12 h-12 rounded-full overflow-hidden"
+        className="cursor-pointer group relative xl:w-8 xl:h-8 md:w-6 md:h-6 rounded-full overflow-hidden"
       >
         {/* Replace with actual user image or placeholder */}
-        <img
-          src="/userProfile.png" // Example image, replace with user image source
+        <Image
+          src="/icons/user.png" // Example image, replace with user image source
           alt="User Profile"
-          className="w-full h-full object-cover absolute h-12 w-12 "
+          width={20} // Set width
+          height={20} // Set height
+          className=" object-cover absolute h-7 w-7 "
         />
       </div>
 
@@ -60,7 +61,9 @@ const UserProfileMenu = () => {
                 className="group px-4 py-2 hover:bg-gray-700 transition-colors duration-300"
               >
                 <Link href={link.href}>
-                  <span className="text-white group-hover:text-gray-100">{link.label}</span>
+                  <span className="text-white group-hover:text-gray-100">
+                    {link.label}
+                  </span>
                 </Link>
               </li>
             ))}

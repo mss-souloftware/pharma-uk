@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "Call NHS 111",
+      "description": "Call NHS 111 if you urgently need medical help or advice but it's not a life-threatening situation.",
+      "link": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/",
+      "points": [
+        "About NHS 111",
+        "Visit NHS 111 BSL interpreter service",
+        "About out-of-hours services"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Emergency Services",
+      "description": "For life-threatening emergencies, call 999 immediately for assistance.",
+      "link": "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/emergency-care/",
+      "points": [
+        "When to call 999",
+        "Emergency ambulance services",
+        "Understanding emergency care"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "NHS Online Services",
+      "description": "Use the NHS website or app for health information and service bookings.",
+      "link": "https://www.nhs.uk/",
+      "points": [
+        "Find health advice",
+        "Book appointments online",
+        "Access your medical records"
+      ]
+    }
+  ]
+  

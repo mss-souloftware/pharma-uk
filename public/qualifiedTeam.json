@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Dr. John Doe",
+      "specializes":"Superintendent Pharmacist",
+      "image": "/carolina.jpg",
+      "work":"Bachelor of Pharmacy, Ensino Universitário - CESPU",
+      "description": "Dr. John is an experienced pharmacist specializing in patient care and medication management.",
+      "GPHC_number": "1234567"
+    },
+    {
+      "name": "Dr. Jane Smith",
+      "specializes":"Pharmacy Manager",
+      "image": "/carolina.jpg",
+      "work":"Master of Pharmacy, University of Portsmouth",
+      "description": "Dr. Jane has over 10 years of experience in community pharmacy, ensuring the highest standards of care.",
+      "GPHC_number": "7654321"
+    },
+    {
+      "name": "Dr. Emily Johnson",
+      "specializes":" Responsible Pharmacist",
+      "image": "/carolina.jpg",
+      "work":"Master of Pharmacy, University College London ",
+      "description": "Emily is passionate about providing personalized advice and support to her patients.",
+      "GPHC_number": "2468101"
+    }
+  ]
+  

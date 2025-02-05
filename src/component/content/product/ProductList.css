@@ -1,0 +1,26 @@
+/* Scrollbar Customization */
+.scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thumb-hoverUnderlineColor {
+    scrollbar-color: #ff4500 #f0f0f0; /* Change to your theme colors */
+  }
+  
+  .scrollbar-track-gray-200 {
+    scrollbar-color: transparent ;
+  }
+  
+  .scrollbar-rounded-lg::-webkit-scrollbar {
+    height: 6px; /* Adjust scrollbar height */
+  }
+  
+  .scrollbar-rounded-lg::-webkit-scrollbar-thumb {
+    background: #ff4500; /* Change to your hover color */
+    border-radius: 9999px; /* Rounded scrollbar */
+  }
+  
+  .scrollbar-rounded-lg::-webkit-scrollbar-track {
+    background: #e5e7eb; /* Light background for track */
+  }
+  

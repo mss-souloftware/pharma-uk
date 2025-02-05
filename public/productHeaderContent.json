@@ -1,0 +1,206 @@
+{
+  "Condoms": [
+    {
+      "label": "text",
+      "title": "Condoms",
+      "subTitle": "Comfortable, reliable and highly-effective contraception",
+      "button": "Start a consulting",
+      "content": "Complete our quick online consultation and select your preferred contraception. Condoms are an essential tool for safe and comfortable sexual experiences. Explore our wide variety of condom options.",
+      "img": "/ProductImage/ErectileDysfunction/ErectileDysfunction.jpg"
+    }
+  ],
+  "ErectileDysfunction": [
+    {
+      "label": "text",
+      "title": "Erectile Dysfunction",
+      "subTitle": "Solutions for overcoming erectile dysfunction",
+      "button": "Start a consulting",
+      "content": "Erectile dysfunction is a condition that affects many men. We provide treatments and therapies to help regain confidence and performance, including oral medications and topical solutions.",
+      "img": "/ProductImage/ErectileDysfunction/ErectileDysfunction.jpg"
+    }
+  ],
+  "HairLoss": [
+    {
+      "label": "text",
+      "title": "Hair Loss",
+      "subTitle": "Solutions to combat hair loss and stimulate regrowth",
+      "button": "Start a consulting",
+      "content": "Hair loss is a common condition that can be caused by various factors such as genetics, stress, or hormonal changes. Our treatments, including Finasteride and Regaine, help stimulate hair regrowth and prevent further hair loss.",
+      "img": "/ProductImage/productImg/productHeader.jpg"
+    }
+  ],
+  "Lube": [
+    {
+      "label": "text",
+      "title": "Lube",
+      "subTitle": "Enhance your experience with premium lubes",
+      "button": "Start a consulting",
+      "content": "Lube is essential for comfortable and enjoyable intimate moments. We offer a variety of lubricants for different preferences, including water-based and silicone-based formulas.",
+      "img": "/ProductImage/productImg/LubeHeader1.jpg"
+    }
+  ],
+  "PainRelief": [
+    {
+      "label": "text",
+      "title": "Pain Relief",
+      "subTitle": "Effective solutions for managing pain",
+      "button": "Start a consulting",
+      "content": "Whether you’re dealing with muscle pain or chronic discomfort, our range of pain relief products is designed to provide you with the relief you need. Explore our topical creams, balms, and oral medications.",
+      "img": "/ProductImage/painRelief/header.jpg"
+    }
+  ],
+  "PrematureEjaculation": [
+    {
+      "label": "text",
+      "title": "Premature Ejaculation",
+      "subTitle": "Overcome premature ejaculation with tailored treatments",
+      "button": "Start a consulting",
+      "content": "Premature ejaculation is a common concern for many men. Our solutions include therapies and medications that can help you control and prolong your performance, leading to a more satisfying experience.",
+      "img": "/ProductImage/productImg/Premature.jpg"
+    }
+  ],
+  "Cystitis": [
+    {
+      "label": "text",
+      "title": "Cystitis",
+      "subTitle": "Cystitis, an inflammation of the bladder commonly caused by bacterial infections, leads to symptoms such as frequent urination, burning sensations, and pelvic discomfort",
+      "button": "Start a consulting",
+      "content": "Cystitis, an inflammation of the bladder commonly caused by bacterial infections, burning sensations, and pelvic discomfort. To alleviate these symptoms and support urinary tract health, several over-the-counter products are available.",
+      "img": "/ProductImage/Cystitis/headerContent/headerContent.jpg"
+    }
+  ], 
+    "contraceptivePill": [
+      {
+        "label": "Cystitis Relief Sachets",
+        "title": "Cystitis Relief Sachets",
+        "subTitle": "Effective treatment for relieving the symptoms of cystitis by reducing the acidity of urine and alleviating pain.",
+        "button": "Buy Now",
+        "content": "Cystitis Relief Sachets are specially formulated to reduce the acidity of your urine, helping to ease the burning sensation and discomfort caused by cystitis. These sachets work by neutralizing the acid in your bladder, providing fast and effective relief.",
+        "img": "/ProductImage/Cystitis/headerContent/headerContent.jpg"
+      }
+    ],
+    "FeminineCare": [
+      {
+        "label": "Cystitis Relief Sachets",
+        "title": "Cystitis Relief Sachets",
+        "subTitle": "Effective treatment for relieving the symptoms of cystitis by reducing the acidity of urine and alleviating pain.",
+        "button": "Buy Now",
+        "content": "Cystitis Relief Sachets are specially formulated to reduce the acidity of your urine, helping to ease the burning sensation and discomfort caused by cystitis. These sachets work by neutralizing the acid in your bladder, providing fast and effective relief.",
+        "img": "/ProductImage/feminineCare/header.jpg"
+      }
+    ],
+    "womensHairLoss": [
+      {
+        "label": "Cystitis Relief Sachets",
+        "title": "Womens Hair Loss",
+        "subTitle": "Effective treatment for relieving the symptoms of cystitis by reducing the acidity of urine and alleviating pain.",
+        "button": "Buy Now",
+        "content": "Cystitis Relief Sachets are specially formulated to reduce the acidity of your urine, helping to ease the burning sensation and discomfort caused by cystitis. These sachets work by neutralizing the acid in your bladder, providing fast and effective relief.",
+        "img": "/ProductImage/womenHairLoss/header.jpg"
+      }
+    ], 
+      "Menopause": [
+        {
+          "label": "Menopause",
+          "title": "Menopause",
+          "subTitle": "Effective treatment for hair thinning and loss commonly experienced during menopause.",
+          "button": "Buy Now",
+          "content": "Womens Hair Loss treatments are specially formulated to help manage hair thinning and hair loss caused by hormonal changes during menopause. These solutions work to nourish the scalp and strengthen hair, promoting healthier growth.",
+          "img": "/ProductImage/womenHairLoss/header.jpg"
+        }
+      ] ,
+      "Migraine":[
+        {
+          "label": "Migraine",
+          "title": "Migraine",
+          "subTitle": "Effective treatment for hair thinning and loss commonly experienced during menopause.",
+          "button": "Buy Now",
+          "content": "Womens Hair Loss treatments are specially formulated to help manage hair thinning and hair loss caused by hormonal changes during menopause. These solutions work to nourish the scalp and strengthen hair, promoting healthier growth.",
+          "img": "/ProductImage/Migraine/header.jpg"
+        }
+      ],
+      "Asthma": [
+  {
+    "label": "Asthma",
+    "title": "Asthma Relief",
+    "subTitle": "Effective treatment for managing asthma symptoms and improving breathing.",
+    "button": "Buy Now",
+    "content": "Asthma Relief treatments help to open airways and reduce inflammation, providing fast relief from breathing difficulties. Suitable for managing both acute and chronic asthma symptoms.",
+    "img": "/ProductImage/Asthma/header.jpg"
+  }
+],
+"Allergies": [
+  {
+    "label": "Allergies",
+    "title": "Allergy Relief",
+    "subTitle": "Effective treatment for relieving symptoms caused by allergies, such as sneezing, itching, and watery eyes.",
+    "button": "Buy Now",
+    "content": "Allergy Relief products help to reduce histamine reactions, providing fast and effective relief from common allergy symptoms like hay fever, dust allergies, and pet allergies.",
+    "img": "/ProductImage/Ilergies/header.jpg"
+  }
+],
+"Cough": [
+  {
+    "label": "Cough",
+    "title": "Cough Syrup",
+    "subTitle": "Effective treatment to soothe throat irritation and reduce coughing.",
+    "button": "Buy Now",
+    "content": "Cough Syrup is specially formulated to provide relief from both dry and chesty coughs. It helps to reduce throat irritation and loosen mucus for easier breathing.",
+    "img": "/ProductImage/Cough/header.jpg"
+  }
+], 
+"Indigestion": [
+  {
+    "label": "Indigestion",
+    "title": "Indigestion Relief",
+    "subTitle": "Effective treatment for relieving indigestion, heartburn, and bloating.",
+    "button": "Buy Now",
+    "content": "Indigestion Relief products help to neutralize stomach acid and reduce discomfort caused by overeating, spicy foods, or stress. Provides fast relief from bloating and heartburn.",
+    "img": "/ProductImage/Indigestion/header.jpg"
+  }
+],
+"Acne": [
+  {
+    "label": "Acne",
+    "title": "Acne Treatment",
+    "subTitle": "Effective treatment to reduce acne and prevent future breakouts.",
+    "button": "Buy Now",
+    "content": "Acne Treatment products are specially formulated to target acne at the source, reduce inflammation, and prevent new breakouts. They help to clear pores, balance skin, and improve overall skin health.",
+    "img": "/ProductImage/acne/header.jpg"
+  }
+],
+"Adenomyosis": [
+  {
+    "label": "Adenomyosis",
+    "title": "Adenomyosis Relief",
+    "subTitle": "Effective treatment options for managing the symptoms of adenomyosis.",
+    "button": "Buy Now",
+    "content": "Adenomyosis Relief products are designed to help reduce heavy menstrual bleeding, cramping, and pelvic pain caused by adenomyosis. These treatments aim to manage symptoms and improve overall comfort.",
+    "img": "/ProductImage/adenomyosis/header.jpg"
+  }
+],
+"Anxiety": [ 
+  {
+    "label": "Anxiety",
+    "title": "Anxiety Relief",
+    "subTitle": "Effective treatment to help manage anxiety and promote calmness.",
+    "button": "Buy Now",
+    "content": "Anxiety Relief products are designed to help reduce feelings of stress, tension, and worry. These treatments can promote a sense of calm and improve mental well-being, supporting you in managing anxiety symptoms effectively.",
+    "img": "/ProductImage/anxietyRelief/header.jpg"
+  }
+],
+"Appendicitis": [
+  {
+    "label": "Appendicitis",
+    "title": "Appendicitis Relief",
+    "subTitle": "Effective support for managing discomfort and symptoms associated with appendicitis.",
+    "button": "Buy Now",
+    "content": "Appendicitis Relief products are designed to help ease abdominal pain and reduce inflammation. These products support digestive health and help alleviate discomfort while you seek medical attention.",
+    "img": "/ProductImage/Indigestion/header.jpg"
+  }
+]
+
+            
+    
+  
+}

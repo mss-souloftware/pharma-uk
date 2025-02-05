@@ -1,0 +1,1128 @@
+{
+  "Condoms": [
+     {
+       "id": "1",
+       "title": "Durex Thin Feel",
+       "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
+       "imageUrl": "/ProductImage/condoms/product1.jpg",
+       "price": "29.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 10 },
+         { "week": 2, "capsules": 20 },
+         { "week": 4, "capsules": 36 },
+         { "week": 8, "capsules": 72 },
+         { "week": 12, "capsules": 120 }
+       ]
+     },
+     {
+       "id": "2",
+       "title": "Durex Extended Pleasure",
+       "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+       "imageUrl": "/ProductImage/condoms/product2.jpg",
+       "price": "29.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 10 },
+         { "week": 2, "capsules": 20 },
+         { "week": 4, "capsules": 36 },
+         { "week": 8, "capsules": 72 },
+         { "week": 12, "capsules": 120 }
+       ]
+     },
+     {
+       "id": "3",
+       "title": "Durex Pleasure Me",
+       "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
+       "imageUrl": "/ProductImage/condoms/product3.jpg",
+       "price": "29.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 10 },
+         { "week": 2, "capsules": 20 },
+         { "week": 4, "capsules": 36 },
+         { "week": 8, "capsules": 72 },
+         { "week": 12, "capsules": 120 }
+       ]
+     },
+     {
+       "id": "4",
+       "title": "PureShield",
+       "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
+       "imageUrl": "/ProductImage/condoms/product4.jpg",
+       "price": "29.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 10 },
+         { "week": 2, "capsules": 20 },
+         { "week": 4, "capsules": 36 },
+         { "week": 8, "capsules": 72 },
+         { "week": 12, "capsules": 120 }
+       ]
+     },
+     {
+       "id": "5",
+       "title": "SensuMax",
+       "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
+       "imageUrl": "/ProductImage/condoms/product5.jpg",
+       "price": "29.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 10 },
+         { "week": 2, "capsules": 20 },
+         { "week": 4, "capsules": 36 },
+         { "week": 8, "capsules": 72 },
+         { "week": 12, "capsules": 120 }
+       ]
+     },
+     {
+      "id": "6",
+      "title": "CuddleGuard",
+      "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+      "imageUrl": "/ProductImage/condoms/product2.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "EuphoriaCare",
+      "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
+      "imageUrl": "/ProductImage/condoms/product3.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "VelvetGuard",
+      "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
+      "imageUrl": "/ProductImage/condoms/product4.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "LuxeFit",
+      "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
+      "imageUrl": "/ProductImage/condoms/product5.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    }
+   ],
+   
+   "ErectileDysfunction": [
+   {
+     "id": "21",
+     "title": "Enhanced Vitality Formula",
+     "description": "A unique formula designed to boost vitality and improve overall energy levels. Perfect for a more active lifestyle.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product1.jpg",
+     "price": "39.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 10 },
+       { "week": 2, "capsules": 20 },
+       { "week": 4, "capsules": 40 },
+       { "week": 8, "capsules": 80 },
+       { "week": 12, "capsules": 120 }
+     ]
+   },
+   {
+     "id": "22",
+     "title": "Pure Confidence Capsules",
+     "description": "Formulated to help boost confidence and enhance performance, promoting better mental clarity and physical satisfaction.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product2.jpg",
+     "price": "34.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 10 },
+       { "week": 2, "capsules": 20 },
+       { "week": 4, "capsules": 35 },
+       { "week": 8, "capsules": 70 },
+       { "week": 12, "capsules": 110 }
+     ]
+   },
+   {
+     "id": "23",
+     "title": "Gentle Strength Solution",
+     "description": "A soothing yet effective solution to support your body’s natural strength, helping you regain balance and vitality.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product3.jpg",
+     "price": "32.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 12 },
+       { "week": 2, "capsules": 24 },
+       { "week": 4, "capsules": 48 },
+       { "week": 8, "capsules": 96 },
+       { "week": 12, "capsules": 144 }
+     ]
+   },
+   {
+     "id": "24",
+     "title": "Performance Boost Plus",
+     "description": "Maximize your potential with this performance-enhancing supplement designed for overall well-being and sexual health.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product4.jpg",
+     "price": "45.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 10 },
+       { "week": 2, "capsules": 20 },
+       { "week": 4, "capsules": 40 },
+       { "week": 8, "capsules": 80 },
+       { "week": 12, "capsules": 120 }
+     ]
+   },
+   {
+     "id": "25",
+     "title": "Active Life Capsules",
+     "description": "Revitalize your life with these capsules that support energy, stamina, and overall sexual health.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product5.jpg",
+     "price": "38.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 15 },
+       { "week": 2, "capsules": 25 },
+       { "week": 4, "capsules": 50 },
+       { "week": 8, "capsules": 100 },
+       { "week": 12, "capsules": 150 }
+     ]
+   },
+   {
+     "id": "26",
+     "title": "Powerful Endurance Blend",
+     "description": "This blend of natural ingredients supports enhanced endurance, focusing on strengthening vital energy and stamina.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product6.jpg",
+     "price": "40.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 12 },
+       { "week": 2, "capsules": 22 },
+       { "week": 4, "capsules": 44 },
+       { "week": 8, "capsules": 88 },
+       { "week": 12, "capsules": 132 }
+     ]
+   },
+   {
+     "id": "27",
+     "title": "Ultimate Focus Capsules",
+     "description": "A natural supplement aimed at improving focus, concentration, and physical performance, helping you feel more confident.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product7.jpg",
+     "price": "42.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 12 },
+       { "week": 2, "capsules": 24 },
+       { "week": 4, "capsules": 48 },
+       { "week": 8, "capsules": 96 },
+       { "week": 12, "capsules": 144 }
+     ]
+   },
+   {
+     "id": "28",
+     "title": "Herbal Harmony",
+     "description": "Discover the power of herbal ingredients that promote natural balance and support overall health and well-being.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product8.jpg",
+     "price": "36.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 10 },
+       { "week": 2, "capsules": 20 },
+       { "week": 4, "capsules": 40 },
+       { "week": 8, "capsules": 80 },
+       { "week": 12, "capsules": 120 }
+     ]
+   },
+   {
+     "id": "29",
+     "title": "Strong Mind and Body",
+     "description": "A comprehensive solution to help you build strength, both mentally and physically, to perform at your best.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product9.jpg",
+     "price": "43.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 12 },
+       { "week": 2, "capsules": 24 },
+       { "week": 4, "capsules": 48 },
+       { "week": 8, "capsules": 96 },
+       { "week": 12, "capsules": 144 }
+     ]
+   },
+   {
+     "id": "30",
+     "title": "Natural Rejuvenation",
+     "description": "A rejuvenating product focused on restoring youthful vitality and improving sexual performance with natural ingredients.",
+     "imageUrl": "/ProductImage/ErectileDysfunction/product10.jpg",
+     "price": "41.00",
+     "weekPlan": [
+       { "week": 1, "capsules": 10 },
+       { "week": 2, "capsules": 20 },
+       { "week": 4, "capsules": 40 },
+       { "week": 8, "capsules": 80 },
+       { "week": 12, "capsules": 120 }
+     ]
+   }
+ ],
+   
+  "HairLoss": [
+     {
+       "id": "1",
+       "title": "Anti-Hair Fall Shampoo",
+       "description": "A shampoo designed to reduce hair fall and strengthen hair from the roots.",
+       "imageUrl": "/ProductImage/hairLoss/product1.jpg",
+       "price": "19.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "2",
+       "title": "Hair Regrowth Oil",
+       "description": "An oil blend that promotes hair regrowth and reduces thinning.",
+       "imageUrl": "/ProductImage/hairloss/product2.jpg",
+       "price": "25.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "3",
+       "title": "Hair Growth Capsules",
+       "description": "Daily capsules packed with essential nutrients for promoting hair growth.",
+       "imageUrl": "/ProductImage/hairloss/product3.jpg",
+       "price": "30.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 14 },
+         { "week": 2, "capsules": 28 },
+         { "week": 4, "capsules": 56 },
+         { "week": 8, "capsules": 112 },
+         { "week": 12, "capsules": 168 }
+       ]
+     },
+     {
+       "id": "4",
+       "title": "Hair Strengthening Serum",
+       "description": "A serum to strengthen hair and prevent breakage.",
+       "imageUrl": "/ProductImage/hairloss/product4.jpg",
+       "price": "22.50",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "5",
+       "title": "Herbal Hair Mask",
+       "description": "A nourishing mask to rejuvenate hair and reduce hair loss.",
+       "imageUrl": "/ProductImage/hairloss/product5.jpg",
+       "price": "18.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "6",
+       "title": "Hair Loss Prevention Kit",
+       "description": "A complete kit containing shampoo, conditioner, and serum to prevent hair loss.",
+       "imageUrl": "/ProductImage/hairloss/product6.jpg",
+       "price": "45.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "7",
+       "title": "Scalp Revitalizer",
+       "description": "A scalp treatment to stimulate hair follicles and promote hair regrowth.",
+       "imageUrl": "/ProductImage/hairloss/product7.jpg",
+       "price": "27.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "8",
+       "title": "Hair Thickening Conditioner",
+       "description": "A conditioner that helps thicken hair and reduce hair loss.",
+       "imageUrl": "/ProductImage/hairloss/product8.jpg",
+       "price": "20.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "9",
+       "title": "Biotin Hair Spray",
+       "description": "A biotin-enriched spray to strengthen hair and reduce breakage.",
+       "imageUrl": "/ProductImage/hairloss/product9.jpg",
+       "price": "15.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "10",
+       "title": "Natural Hair Repair Cream",
+       "description": "A natural cream to repair damaged hair and reduce hair fall.",
+       "imageUrl": "/ProductImage/hairloss/product10.jpg",
+       "price": "24.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     }
+   ],
+   "Lube": [
+     {
+       "id": "1",
+       "title": "Joint Lubrication Capsules",
+       "description": "Capsules designed to improve joint lubrication and reduce stiffness.",
+       "imageUrl": "/ProductImage/lube/product1.jpg",
+       "price": "25.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 14 },
+         { "week": 2, "capsules": 28 },
+         { "week": 4, "capsules": 56 },
+         { "week": 8, "capsules": 112 },
+         { "week": 12, "capsules": 168 }
+       ]
+     },
+     {
+       "id": "2",
+       "title": "Knee Lubrication Gel",
+       "description": "A topical gel that provides relief and improves joint flexibility.",
+       "imageUrl": "/ProductImage/lube/product2.jpg",
+       "price": "18.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "3",
+       "title": "Arthritis Relief Cream",
+       "description": "A cream that reduces inflammation and lubricates joints for better mobility.",
+       "imageUrl": "/ProductImage/lube/product3.jpg",
+       "price": "22.50",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "4",
+       "title": "Hip Joint Lubrication Spray",
+       "description": "A spray designed to reduce friction in hip joints and ease pain.",
+       "imageUrl": "/ProductImage/lube/product4.jpg",
+       "price": "19.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "5",
+       "title": "Natural Joint Lubricant",
+       "description": "A natural supplement to improve joint lubrication and overall joint health.",
+       "imageUrl": "/ProductImage/lube/product5.jpg",
+       "price": "24.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 10 },
+         { "week": 2, "capsules": 20 },
+         { "week": 4, "capsules": 40 },
+         { "week": 8, "capsules": 80 },
+         { "week": 12, "capsules": 120 }
+       ]
+     },
+     {
+       "id": "6",
+       "title": "Knee Pain Relief Balm",
+       "description": "A balm that provides instant relief and helps lubricate the knee joints.",
+       "imageUrl": "/ProductImage/lube/product6.jpg",
+       "price": "20.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "7",
+       "title": "Joint Support Gummies",
+       "description": "Tasty gummies packed with ingredients that improve joint lubrication.",
+       "imageUrl": "/ProductImage/lube/product7.jpg",
+       "price": "17.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 14 },
+         { "week": 2, "capsules": 28 },
+         { "week": 4, "capsules": 56 },
+         { "week": 8, "capsules": 112 },
+         { "week": 12, "capsules": 168 }
+       ]
+     },
+     {
+       "id": "8",
+       "title": "Elbow Joint Lubrication Cream",
+       "description": "A cream designed to reduce elbow joint pain and improve mobility.",
+       "imageUrl": "/ProductImage/lube/product8.jpg",
+       "price": "21.50",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "9",
+       "title": "Shoulder Pain Relief Spray",
+       "description": "A spray that reduces friction in shoulder joints and provides pain relief.",
+       "imageUrl": "/ProductImage/lube/product9.jpg",
+       "price": "23.00",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     },
+     {
+       "id": "10",
+       "title": "Joint Health Supplement Powder",
+       "description": "A powder supplement that helps improve joint lubrication and flexibility.",
+       "imageUrl": "/ProductImage/lube/product10.jpg",
+       "price": "26.99",
+       "weekPlan": [
+         { "week": 1, "capsules": 0 },
+         { "week": 2, "capsules": 0 },
+         { "week": 4, "capsules": 0 },
+         { "week": 8, "capsules": 0 },
+         { "week": 12, "capsules": 0 }
+       ]
+     }
+   ],
+   "PainRelief": [
+    {
+      "id": "1",
+      "title": "Joint Lubrication Capsules",
+      "description": "Capsules designed to improve joint lubrication and reduce stiffness.",
+      "imageUrl": "/ProductImage/lube/product1.jpg",
+      "price": "25.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Knee Lubrication Gel",
+      "description": "A topical gel that provides relief and improves joint flexibility.",
+      "imageUrl": "/ProductImage/lube/product2.jpg",
+      "price": "18.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Arthritis Relief Cream",
+      "description": "A cream that reduces inflammation and lubricates joints for better mobility.",
+      "imageUrl": "/ProductImage/lube/product3.jpg",
+      "price": "22.50",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hip Joint Lubrication Spray",
+      "description": "A spray designed to reduce friction in hip joints and ease pain.",
+      "imageUrl": "/ProductImage/lube/product4.jpg",
+      "price": "19.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Natural Joint Lubricant",
+      "description": "A natural supplement to improve joint lubrication and overall joint health.",
+      "imageUrl": "/ProductImage/lube/product5.jpg",
+      "price": "24.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 40 },
+        { "week": 8, "capsules": 80 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Knee Pain Relief Balm",
+      "description": "A balm that provides instant relief and helps lubricate the knee joints.",
+      "imageUrl": "/ProductImage/lube/product6.jpg",
+      "price": "20.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Joint Support Gummies",
+      "description": "Tasty gummies packed with ingredients that improve joint lubrication.",
+      "imageUrl": "/ProductImage/lube/product7.jpg",
+      "price": "17.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Elbow Joint Lubrication Cream",
+      "description": "A cream designed to reduce elbow joint pain and improve mobility.",
+      "imageUrl": "/ProductImage/lube/product8.jpg",
+      "price": "21.50",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Shoulder Pain Relief Spray",
+      "description": "A spray that reduces friction in shoulder joints and provides pain relief.",
+      "imageUrl": "/ProductImage/lube/product9.jpg",
+      "price": "23.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Joint Health Supplement Powder",
+      "description": "A powder supplement that helps improve joint lubrication and flexibility.",
+      "imageUrl": "/ProductImage/lube/product10.jpg",
+      "price": "26.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    }
+  ],
+  "PrematureEjaculation": [
+    {
+      "id": "1",
+      "title": "Joint Lubrication Capsules",
+      "description": "Capsules designed to improve joint lubrication and reduce stiffness.",
+      "imageUrl": "/ProductImage/lube/product1.jpg",
+      "price": "25.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Knee Lubrication Gel",
+      "description": "A topical gel that provides relief and improves joint flexibility.",
+      "imageUrl": "/ProductImage/lube/product2.jpg",
+      "price": "18.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Arthritis Relief Cream",
+      "description": "A cream that reduces inflammation and lubricates joints for better mobility.",
+      "imageUrl": "/ProductImage/lube/product3.jpg",
+      "price": "22.50",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hip Joint Lubrication Spray",
+      "description": "A spray designed to reduce friction in hip joints and ease pain.",
+      "imageUrl": "/ProductImage/lube/product4.jpg",
+      "price": "19.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Natural Joint Lubricant",
+      "description": "A natural supplement to improve joint lubrication and overall joint health.",
+      "imageUrl": "/ProductImage/lube/product5.jpg",
+      "price": "24.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 40 },
+        { "week": 8, "capsules": 80 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Knee Pain Relief Balm",
+      "description": "A balm that provides instant relief and helps lubricate the knee joints.",
+      "imageUrl": "/ProductImage/lube/product6.jpg",
+      "price": "20.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Joint Support Gummies",
+      "description": "Tasty gummies packed with ingredients that improve joint lubrication.",
+      "imageUrl": "/ProductImage/lube/product7.jpg",
+      "price": "17.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 14 },
+        { "week": 2, "capsules": 28 },
+        { "week": 4, "capsules": 56 },
+        { "week": 8, "capsules": 112 },
+        { "week": 12, "capsules": 168 }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Elbow Joint Lubrication Cream",
+      "description": "A cream designed to reduce elbow joint pain and improve mobility.",
+      "imageUrl": "/ProductImage/lube/product8.jpg",
+      "price": "21.50",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Shoulder Pain Relief Spray",
+      "description": "A spray that reduces friction in shoulder joints and provides pain relief.",
+      "imageUrl": "/ProductImage/lube/product9.jpg",
+      "price": "23.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Joint Health Supplement Powder",
+      "description": "A powder supplement that helps improve joint lubrication and flexibility.",
+      "imageUrl": "/ProductImage/lube/product10.jpg",
+      "price": "26.99",
+      "weekPlan": [
+        { "week": 1, "capsules": 0 },
+        { "week": 2, "capsules": 0 },
+        { "week": 4, "capsules": 0 },
+        { "week": 8, "capsules": 0 },
+        { "week": 12, "capsules": 0 }
+      ]
+    }
+  ],
+    "contraceptivePill": [
+      {
+        "id": "1",
+        "title": "Cystitis Relief Sachets",
+        "description": "Sachets to relieve cystitis symptoms by neutralizing urine acidity.",
+        "imageUrl": "/ProductImage/hairloss/product10.jpg",
+        "price": "15.99",
+        "weekPlan": [
+          { "week": 1, "sachets": 14 },
+          { "week": 2, "sachets": 28 },
+          { "week": 4, "sachets": 56 },
+          { "week": 8, "sachets": 112 },
+          { "week": 12, "sachets": 168 }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Cystitis Prevention Capsules",
+        "description": "Capsules to prevent recurring cystitis by promoting a healthy bladder.",
+        "imageUrl": "/ProductImage/hairloss/product9.jpg",
+        "price": "20.50",
+        "weekPlan": [
+          { "week": 1, "capsules": 10 },
+          { "week": 2, "capsules": 20 },
+          { "week": 4, "capsules": 40 },
+          { "week": 8, "capsules": 80 },
+          { "week": 12, "capsules": 120 }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Cranberry Extract Tablets",
+        "description": "Natural cranberry tablets to support urinary tract health and reduce cystitis risk.",
+        "imageUrl": "/ProductImage/hairloss/product8.jpg",
+        "price": "12.99",
+        "weekPlan": [
+          { "week": 1, "tablets": 14 },
+          { "week": 2, "tablets": 28 },
+          { "week": 4, "tablets": 56 },
+          { "week": 8, "tablets": 112 },
+          { "week": 12, "tablets": 168 }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Bladder Health Tea",
+        "description": "Herbal tea blend designed to support bladder health and reduce cystitis symptoms.",
+        "imageUrl": "/ProductImage/hairloss/product7.jpg",
+        "price": "8.50",
+        "weekPlan": [
+          { "week": 1, "packs": 1 },
+          { "week": 2, "packs": 2 },
+          { "week": 4, "packs": 4 },
+          { "week": 8, "packs": 8 },
+          { "week": 12, "packs": 12 }
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Urinary Tract Probiotic",
+        "description": "Probiotic capsules to promote a healthy urinary tract and prevent infections.",
+        "imageUrl": "/ProductImage/hairloss/product6.jpg",
+        "price": "18.75",
+        "weekPlan": [
+          { "week": 1, "capsules": 10 },
+          { "week": 2, "capsules": 20 },
+          { "week": 4, "capsules": 40 },
+          { "week": 8, "capsules": 80 },
+          { "week": 12, "capsules": 120 }
+        ]
+      },
+      {
+        "id": "6",
+        "title": "Cystitis Pain Relief Spray",
+        "description": "Topical spray for instant pain relief from cystitis symptoms.",
+        "imageUrl": "/ProductImage/hairloss/product5.jpg",
+        "price": "14.99",
+        "weekPlan": [
+          { "week": 1, "sprays": 1 },
+          { "week": 2, "sprays": 2 },
+          { "week": 4, "sprays": 4 },
+          { "week": 8, "sprays": 8 },
+          { "week": 12, "sprays": 12 }
+        ]
+      },
+      {
+        "id": "7",
+        "title": "D-Mannose Powder",
+        "description": "D-Mannose powder to help flush out bacteria and reduce cystitis episodes.",
+        "imageUrl": "/ProductImage/hairloss/product4.jpg",
+        "price": "19.99",
+        "weekPlan": [
+          { "week": 1, "packs": 1 },
+          { "week": 2, "packs": 2 },
+          { "week": 4, "packs": 4 },
+          { "week": 8, "packs": 8 },
+          { "week": 12, "packs": 12 }
+        ]
+      },
+      {
+        "id": "8",
+        "title": "Urinary Alkalizer Tablets",
+        "description": "Tablets to reduce urine acidity and relieve burning sensations.",
+        "imageUrl": "/ProductImage/hairloss/product3.jpg",
+        "price": "11.50",
+        "weekPlan": [
+          { "week": 1, "tablets": 14 },
+          { "week": 2, "tablets": 28 },
+          { "week": 4, "tablets": 56 },
+          { "week": 8, "tablets": 112 },
+          { "week": 12, "tablets": 168 }
+        ]
+      },
+      {
+        "id": "9",
+        "title": "Cystitis Soothing Balm",
+        "description": "A balm to apply externally for soothing relief from cystitis discomfort.",
+        "imageUrl": "/ProductImage/hairloss/product2.jpg",
+        "price": "13.25",
+        "weekPlan": [
+          { "week": 1, "balms": 1 },
+          { "week": 2, "balms": 2 },
+          { "week": 4, "balms": 4 },
+          { "week": 8, "balms": 8 },
+          { "week": 12, "balms": 12 }
+        ]
+      },
+      {
+        "id": "10",
+        "title": "Bladder Health Supplement",
+        "description": "A daily supplement to support bladder health and reduce the risk of infections.",
+        "imageUrl": "/ProductImage/hairloss/product1.jpg",
+        "price": "22.00",
+        "weekPlan": [
+          { "week": 1, "capsules": 14 },
+          { "week": 2, "capsules": 28 },
+          { "week": 4, "capsules": 56 },
+          { "week": 8, "capsules": 112 },
+          { "week": 12, "capsules": 168 }
+        ]
+      }
+    ], 
+      "FeminineCare": [
+        {
+          "id": "1",
+          "title": "Cystitis Relief Sachets",
+          "description": "Sachets to relieve cystitis symptoms by neutralizing urine acidity.",
+          "imageUrl": "/ProductImage/hairloss/product10.jpg",
+          "price": "15.99",
+          "weekPlan": [
+            { "week": 1, "sachets": 14 },
+            { "week": 2, "sachets": 28 },
+            { "week": 4, "sachets": 56 },
+            { "week": 8, "sachets": 112 },
+            { "week": 12, "sachets": 168 }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Cystitis Prevention Capsules",
+          "description": "Capsules to prevent recurring cystitis by promoting a healthy bladder.",
+          "imageUrl": "/ProductImage/hairloss/product9.jpg",
+          "price": "20.50",
+          "weekPlan": [
+            { "week": 1, "capsules": 10 },
+            { "week": 2, "capsules": 20 },
+            { "week": 4, "capsules": 40 },
+            { "week": 8, "capsules": 80 },
+            { "week": 12, "capsules": 120 }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Cranberry Extract Tablets",
+          "description": "Natural cranberry tablets to support urinary tract health and reduce cystitis risk.",
+          "imageUrl": "/ProductImage/hairloss/product8.jpg",
+          "price": "12.99",
+          "weekPlan": [
+            { "week": 1, "tablets": 14 },
+            { "week": 2, "tablets": 28 },
+            { "week": 4, "tablets": 56 },
+            { "week": 8, "tablets": 112 },
+            { "week": 12, "tablets": 168 }
+          ]
+        },
+        {
+          "id": "4",
+          "title": "Bladder Health Tea",
+          "description": "Herbal tea blend designed to support bladder health and reduce cystitis symptoms.",
+          "imageUrl": "/ProductImage/hairloss/product7.jpg",
+          "price": "8.50",
+          "weekPlan": [
+            { "week": 1, "packs": 1 },
+            { "week": 2, "packs": 2 },
+            { "week": 4, "packs": 4 },
+            { "week": 8, "packs": 8 },
+            { "week": 12, "packs": 12 }
+          ]
+        },
+        {
+          "id": "5",
+          "title": "Urinary Tract Probiotic",
+          "description": "Probiotic capsules to promote a healthy urinary tract and prevent infections.",
+          "imageUrl": "/ProductImage/hairloss/product6.jpg",
+          "price": "18.75",
+          "weekPlan": [
+            { "week": 1, "capsules": 10 },
+            { "week": 2, "capsules": 20 },
+            { "week": 4, "capsules": 40 },
+            { "week": 8, "capsules": 80 },
+            { "week": 12, "capsules": 120 }
+          ]
+        },
+        {
+          "id": "6",
+          "title": "Cystitis Pain Relief Spray",
+          "description": "Topical spray for instant pain relief from cystitis symptoms.",
+          "imageUrl": "/ProductImage/hairloss/product5.jpg",
+          "price": "14.99",
+          "weekPlan": [
+            { "week": 1, "sprays": 1 },
+            { "week": 2, "sprays": 2 },
+            { "week": 4, "sprays": 4 },
+            { "week": 8, "sprays": 8 },
+            { "week": 12, "sprays": 12 }
+          ]
+        },
+        {
+          "id": "7",
+          "title": "D-Mannose Powder",
+          "description": "D-Mannose powder to help flush out bacteria and reduce cystitis episodes.",
+          "imageUrl": "/ProductImage/hairloss/product4.jpg",
+          "price": "19.99",
+          "weekPlan": [
+            { "week": 1, "packs": 1 },
+            { "week": 2, "packs": 2 },
+            { "week": 4, "packs": 4 },
+            { "week": 8, "packs": 8 },
+            { "week": 12, "packs": 12 }
+          ]
+        },
+        {
+          "id": "8",
+          "title": "Urinary Alkalizer Tablets",
+          "description": "Tablets to reduce urine acidity and relieve burning sensations.",
+          "imageUrl": "/ProductImage/hairloss/product3.jpg",
+          "price": "11.50",
+          "weekPlan": [
+            { "week": 1, "tablets": 14 },
+            { "week": 2, "tablets": 28 },
+            { "week": 4, "tablets": 56 },
+            { "week": 8, "tablets": 112 },
+            { "week": 12, "tablets": 168 }
+          ]
+        },
+        {
+          "id": "9",
+          "title": "Cystitis Soothing Balm",
+          "description": "A balm to apply externally for soothing relief from cystitis discomfort.",
+          "imageUrl": "/ProductImage/hairloss/product2.jpg",
+          "price": "13.25",
+          "weekPlan": [
+            { "week": 1, "balms": 1 },
+            { "week": 2, "balms": 2 },
+            { "week": 4, "balms": 4 },
+            { "week": 8, "balms": 8 },
+            { "week": 12, "balms": 12 }
+          ]
+        },
+        {
+          "id": "10",
+          "title": "Bladder Health Supplement",
+          "description": "A daily supplement to support bladder health and reduce the risk of infections.",
+          "imageUrl": "/ProductImage/hairloss/product1.jpg",
+          "price": "22.00",
+          "weekPlan": [
+            { "week": 1, "capsules": 14 },
+            { "week": 2, "capsules": 28 },
+            { "week": 4, "capsules": 56 },
+            { "week": 8, "capsules": 112 },
+            { "week": 12, "capsules": 168 }
+          ]
+        }
+      ] 
+    
+  
+ }  

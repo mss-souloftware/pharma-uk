@@ -1,0 +1,139 @@
+{
+  "categories": [
+    { 
+      "name": "All Treatment",
+      "image": "/productIcon/treatment.png", 
+      "subcategories": [
+        {
+          "name": "Erectile DysFunction",
+          "link": "consultation",
+          "image": "/ProductImage/ErectileDysfunction/ErectileDysfunction.jpg",
+          "description": "Browse through a wide range of treatment options to address various health concerns."
+        },
+        {
+          "name": "Asthma",
+          "link": "consultation",
+          "image": "/ProductImage/Asthma/header.jpg",
+          "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
+        },
+        {
+          "name": "Hair Loss",
+          "link": "consultation",
+          "image": "/ProductImage/productImg/product3.jpg",
+          "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
+        },
+        {
+          "name": "Allergies",
+          "link": "consultation",
+          "image": "/ProductImage/Ilergies/header.jpg",
+          "description": "Effective support for managing discomfort and symptoms associated with appendicitis."
+        },
+        {
+          "name": "Respiratory",
+          "link": "consultation",
+          "image": "/respiratory.jpg",
+          "description": "Treatments for erectile dysfunction to improve intimacy and confidence."
+        },
+        {
+          "name": "Migraine",
+          "link": "consultation",
+          "image": "/ProductImage/Migraine/header.jpg",
+          "description":"Treatments for erectile dysfunction to improve intimacy and confidence."
+        },
+        {
+          "name": "Pain Relief",
+          "link": "consultation",
+          "image": "/ProductImage/productImg/product8.jpg",
+          "description":"Treatments for erectile dysfunction to improve intimacy and confidence."
+        },
+        {
+          "name": "Acne",
+          "link": "consultation",
+          "image": "https://media.gettyimages.com/id/1280519512/photo/reflection-of-woman-with-towel-on-head-squeezing-blackhead-on-her-nose-side.jpg?s=612x612&w=0&k=20&c=MVadB8YjMnUzyJHkRCftj7TS5F7ZpAncwT_aW1Uci-w=",
+          "description":"Treatments for erectile dysfunction to improve intimacy and confidence."
+        }
+      ]
+    },  
+    {
+      "name": "Popular", 
+      "image": "/productIcon/popular1.png",
+      "subcategories": [
+        {
+          "name": "Respiratory",
+          "link": "https://example.com/popular/sub1",
+          "image": "/ProductImage/productImg/product9.jpg"
+        },
+        {
+          "name": "Acne",
+          "link": "https://example.com/popular/sub2",
+          "image": "https://media.gettyimages.com/id/1280519512/photo/reflection-of-woman-with-towel-on-head-squeezing-blackhead-on-her-nose-side.jpg?s=612x612&w=0&k=20&c=MVadB8YjMnUzyJHkRCftj7TS5F7ZpAncwT_aW1Uci-w="
+        },
+        {
+          "name": "Hair Loss",
+          "link": "https://example.com/popular/sub2",
+          "image": "/ProductImage/productImg/product3.jpg"
+        },
+        {
+          "name": "Pain Relief",
+          "link": "https://example.com/popular/sub2",
+          "image": "/ProductImage/productImg/product8.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Men's Health",
+      "image":"/productIcon/men.png", 
+      "subcategories": [
+        {
+          "name": "Men's Health ",
+          "link": "https://example.com/mens-health/sub1",
+          "image": "/ProductImage/productImg/product5.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Women's Health", 
+      "image":"/productIcon/women.png",
+      "subcategories": [
+        {
+          "name": "Women's Health",
+          "link": "https://example.com/womens-health/sub1",
+          "image": "/ProductImage/productImg/product6.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Respiratory", 
+      "image":"/productIcon/respiratory.png",
+      "subcategories": [
+        {
+          "name": "Respiratory",
+          "link": "https://example.com/respiratory/sub1",
+          "image": "/ProductImage/productImg/product9.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Sexual Health", 
+      "image":"/productIcon/sexual.png",
+      "subcategories": [
+        {
+          "name": "Sexual Health",
+          "link": "https://example.com/sexual-health/sub1",
+          "image": "/ProductImage/productImg/product4.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Other", 
+      "image":"/productIcon/other.png",
+      "subcategories": [
+        {
+          "name": "Other Sub 1",
+          "link": "https://example.com/other/sub1",
+          "image": "https://example.com/images/other-sub1.jpg"
+        }
+      ]
+    }
+  ]
+}

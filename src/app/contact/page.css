@@ -1,0 +1,18 @@
+.animated-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.9) 90%);
+    animation: moveBackground 10s infinite linear alternate;
+  }
+  
+  
+  @keyframes moveBackground {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+  

@@ -1,0 +1,25 @@
+/* Continuous Zoom-In and Zoom-Out Animation */
+@keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Apply the animation to the button */
+  .custom-zoom-button {
+    animation: zoomInOut 2s infinite;
+    transition: transform 0.3s ease;
+  }
+  @media (max-width: 640px) {
+    .custom-zoom-button { 
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row; 
+      width: 90%;
+      margin-left: 4%;
+    }
+  }
