@@ -5,6 +5,7 @@ import "./Hero.module.css";
 import Heading from "./Heading";
 import SubText from "./SubText";
 import Button from "../Button"; 
+import SearchInput from "./SearchInput";
 
 const Hero = () => {
   return (
@@ -17,15 +18,13 @@ const Hero = () => {
       >
       <div className="container mx-auto flex flex-col items-center lg:items-start text-center lg:text-left px-8 py-20  gap-5 ">
          
-        <Heading className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  leading-9 " />
+        <Heading className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl  leading-9 " />
         
-        
+        <SearchInput/>
+
         <SubText className="text-lg sm:text-xl md:text-2xl text-gray-800 mt-7 max-w-2xl " />
         
         
-        <div className="mt-6">
-          <Button />
-        </div>
       </div>
     </div>
 

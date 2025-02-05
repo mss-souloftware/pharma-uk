@@ -31,7 +31,7 @@ const SubText = () => {
           variants={textAnimation}
           custom={0}
         >
-          <p className="lg:font-semibold md:leading-[30.86px]">
+          <p className=" text-gray-800 md:leading-[30.86px]">
             Discover why <span className="text-hoverUnderlineColor">iFeelShy</span> is the go-to choice for seamless and convenient online pharmacy services. Shop with confidence today!
           </p>
         </motion.div>

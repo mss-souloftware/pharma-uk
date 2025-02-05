@@ -58,9 +58,9 @@ const HowDoesItWorks = () => {
   );
 
   return (
-    <div className="container mx-auto h-auto my-24 lg:px-12 relative">
+    <div className="container mx-auto h-auto my-20 lg:px-12 relative">
       <div className="relative z-10">
-        <h2 className="text-4xl sm:text-5xl   font-semibold leading-tight lg:leading-[91px] text-center sm:mb-2 ">
+        <h2 className="text-4xl sm:text-5xl font-semibold leading-tight lg:leading-[91px] text-center sm:mb-2 ">
           How Does It&nbsp; Work?
         </h2>
 

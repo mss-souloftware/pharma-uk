@@ -52,7 +52,7 @@ const QualifiedTeams = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="block mx-auto text-center text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold text-gray-800">
+      <h1 className="block mx-auto text-center text-xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-2xl font-semibold">
         A Fully Qualified Team
       </h1>
       <p className="flex justify-center lg:px-[10rem] xl:px-[20rem] text-center py-8 leading-6 sm:leading-10 text-gray-700">

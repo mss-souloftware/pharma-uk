@@ -4,12 +4,12 @@ const ProductVisual = () => {
   return (
     <div className="  px-6 py-2 ">
       {/* Content Section */}
-      <div className="flex flex-col justify-center items-center   space-y-6">
+      <div className="flex flex-col justify-center items-center space-y-4">
          
  {/* Dummy Text Section */}
  <div className="text-center max-w-4xl">
         
- <p className="[word-spacing:0.1em] text-lg text-center " style={{ letterSpacing: "0.5px", lineHeight:"44.6px" }}>
+ <p className="[word-spacing:0.1em] text-center text-gray-700 " >
   Discover the latest in cutting-edge technology with our new product. Designed to enhance your experience, it delivers performance, style, and reliability in one seamless package.
 </p>
 

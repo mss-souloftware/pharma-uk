@@ -16,15 +16,26 @@ const Heading = () => {
   };
 
   return (
-    <motion.h1
-      className="text-lg sm:text-2xl md:text-4xl xl:text-6xl font-bold text-black tracking-tight drop-shadow-lg capitalize 
-                 text-center sm:text-left max-w-[90%] sm:max-w-[70%] md:max-w-[60%] leading-6"
-      initial="hidden"
-      animate="visible"
-      variants={textAnimation}
-    >
-      Welcome to your trusted UK Online Pharmacy
-    </motion.h1>
+    <>
+      <motion.h1
+        className="text-lg sm:text-2xl md:text-4xl xl:text-6xl font-bold text-black tracking-tight drop-shadow-lg capitalize 
+      text-center sm:text-left max-w-[90%] sm:max-w-[70%] md:max-w-[50%] leading-6"
+        initial="hidden"
+        animate="visible"
+        variants={textAnimation}
+      >
+        Welcome to your trusted UK Online Pharmacy
+      </motion.h1>
+      <motion.h3
+        className="text-base xl:text-xl  font-bold text-hoverUnderlineColor tracking-tight drop-shadow-lg capitalize 
+      text-center sm:text-left  leading-6"
+        initial="hidden"
+        animate="visible"
+        variants={textAnimation}
+      >
+        Providing exceptional care and trusted by customers nationwide
+      </motion.h3>
+    </>
   );
 };
 

@@ -22,7 +22,7 @@ const CategoryList = ({ categories, selectedCategory, onSelectCategory, isLoadin
       <button
         key={index}
         onClick={() => onSelectCategory(category)}
-        className={`flex justify-center items-center m-1 text-sm w-full sm:w-36 md:w-48 lg:w-52 h-14 sm:h-14 md:h-16 lg:h-16 rounded-full transition-all duration-300 ${
+        className={`flex justify-center items-center m-1 text-sm w-full sm:w-36 md:w-48 lg:w-52 h-10 lg:h-12 rounded-full transition-all duration-300 ${
           selectedCategory === category ? "bg-hoverUnderlineColor text-white" : "bg-transparent text-gray-800"
         }`}
       >
@@ -114,8 +114,8 @@ const CategoryProduct = () => {
       <CategoryList categories={categories} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} isLoading={isLoading} />
 
       {selectedCategory && (
-        <div className="mt-8">
-          <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-normal text-center mb-8 text-hoverUnderlineColor">
+        <div className="mt-6">
+          <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-xl text-center mb-6 ">
             Subcategories Under <span className="text-hoverUnderlineColor">{selectedCategory.name}</span>
           </h3>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
