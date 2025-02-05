@@ -27,7 +27,7 @@ const SubText = () => {
       >
         {/* First Column */}
         <motion.div
-          className="w-[35rem] mb-7"
+          className="w-[33rem] mb-7"
           variants={textAnimation}
           custom={0}
         >

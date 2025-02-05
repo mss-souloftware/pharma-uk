@@ -15,7 +15,7 @@ const Map = () => {
                 >
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.0702170893087!2d-0.26628656032713144!3d51.52898401390689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487611edc75bb9af%3A0x14b81cfca4797c20!2sPark%20Royal%2C%20London%2C%20UK!5e0!3m2!1sen!2s!4v1735554020582!5m2!1sen!2s"
-                    className="w-full h-[40rem] rounded-2xl "
+                    className="w-full h-[30rem] rounded-2xl "
                     height="350"
                     allowFullScreen=""
                     loading="lazy"

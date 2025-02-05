@@ -26,10 +26,10 @@ const PharmaRegulation = () => {
       
       {/* Registration Info */}
       <div className="text-center mb-8 space-y-2">
-        <p className="[word-spacing:0.1em] text-lg" style={{lineHeight:"44.6px"}}>
+        <p className="[word-spacing:0.1em] text-gray-700" style={{lineHeight:"30.6px"}}>
           The pharmacy is registered with the General Pharmaceutical Council with number 9012030.
         </p>
-        <p className="[word-spacing:0.1em] text-lg" style={{lineHeight:"44.6px"}}>
+        <p className="[word-spacing:0.1em]  text-gray-700" >
           The superintendent pharmacist for Pharmica is: Ana Carolina Osório De Faria Goncalves GPhC Number: 2088635
         </p>
       </div>
@@ -52,7 +52,7 @@ const PharmaRegulation = () => {
                   width={300}
                 />
                 <h3 className="text-xl font-semibold my-3" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
-                <p className="text-sm mb-2" style={{lineHeight: '30.91px'}}>{pharmacist.description}</p>
+                <p className="text-sm mb-2  text-gray-700"  >{pharmacist.description}</p>
                 <p className="text-hoverUnderlineColor text-sm font-semibold">
                   (GPhC Number: {pharmacist.gphcNumber})
                 </p>
@@ -80,7 +80,7 @@ const PharmaRegulation = () => {
             </div>
             <div className="flex-grow text-center lg:text-left">
               <h3 className="text-xl font-semibold mb-2" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
-              <p className="text-sm mb-2" style={{lineHeight: '30.91px'}}>{pharmacist.description}</p>
+              <p className="text-sm mb-2  text-gray-700" style={{lineHeight: '25.91px'}}>{pharmacist.description}</p>
               <p className="text-hoverUnderlineColor text-sm font-semibold">
                 (GPhC Number: {pharmacist.gphcNumber})
               </p>

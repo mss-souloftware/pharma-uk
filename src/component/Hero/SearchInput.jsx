@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";  // Import motion from Framer Motion
 
 const SearchInput = () => {
   const [searchItem, setSearchItem] = useState("");
@@ -10,32 +10,36 @@ const SearchInput = () => {
   };
 
   return (
-    <div className="relative">
-    <input
-      className="rounded-lg p-2 w-full max-w-[20rem] border-2 border-gray-300 focus:border-red-500 pl-10 pr-4 transition-all duration-300"
-      type="text"
-      value={searchItem}
-      onChange={handleInputChange}
-      placeholder="Type to search"
-    />
-    <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-5 h-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M10 18l6-6m0 0a8 8 0 10-7 7 8 8 0 006-6z"
-        />
-      </svg>
-    </span>
-  </div>
-  
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}  // Start from below the screen (y: 50)
+      animate={{ opacity: 1, y: 0 }}   // End at the original position (y: 0)
+      transition={{ duration: 0.5 }}    // Animation duration of 0.5s
+      className="relative"
+    >
+      <input
+        className="rounded-lg p-2 w-full max-w-[20rem] border-2 border-gray-300 focus:border-red-500 pl-10 pr-4 transition-all duration-300"
+        type="text"
+        value={searchItem}
+        onChange={handleInputChange}
+        placeholder="Type to search"
+      />
+      <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M10 18l6-6m0 0a8 8 0 10-7 7 8 8 0 006-6z"
+          />
+        </svg>
+      </span>
+    </motion.div>
   );
 };
 

@@ -10,7 +10,7 @@ import MobileUserProfileMenu from "./content/MobileUserProfileMenu";
 import { FaCartPlus } from "react-icons/fa";
 import { CartContext } from "@/app/cart/feature/contextProvider";
 import SubNavbar from "./SubNavbar";
-
+import gsap from "gsap";
 const Navbar = () => {
   const { cart } = useContext(CartContext);
 
@@ -18,6 +18,7 @@ const Navbar = () => {
   const [cardOpen, setCardOpen] = useState(null); // To track which card is open
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navbarRef = useRef(null);
+  const logoRef =useRef(null)
 
   const handleDropdownToggle = (dropdown) => {
     if (activeDropdown === dropdown) {
@@ -38,6 +39,11 @@ const Navbar = () => {
 
   // Close dropdowns on click outside
   useEffect(() => {
+    gsap.fromTo(
+      [navbarRef.current, logoRef.current],
+      { opacity: 0, y: -20 }, // Start from ABOVE
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" } // Smooth Downward Motion
+    );
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
         // Delay dropdown closing slightly
@@ -54,6 +60,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
+    
   }, [navbarRef]);
 
   return (
@@ -66,6 +73,7 @@ const Navbar = () => {
             className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse "
           >
             <Image
+            ref={logoRef}
              src="/footerLogo1.svg"
              width={400}  // Make sure this is the original, high-resolution size of your logo
              height={120}

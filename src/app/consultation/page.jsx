@@ -49,7 +49,7 @@ const Consult = () => {
   }
 
   return (
-    <section className="bg-gray-900 text-white container mx-auto w-full py-12 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+    <section className=" text-black container mx-auto w-full py-12 px-6 md:px-12 lg:px-20 relative overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: 50 }} 
         animate={{ opacity: 1, y: 0 }} 
@@ -58,14 +58,14 @@ const Consult = () => {
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
           Medical Assessment
         </h2>
-        <p className="text-lg text-gray-300 text-center mb-10">
+        <p className="text-lg text-gray-700 text-center mb-10">
           Complete this online consultation to help us supply you with the most suitable treatment.
         </p>
 
         {faqData.map((section, sectionIndex) => (
           <motion.div 
             key={sectionIndex} 
-            className="mb-12 bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl"
+            className="mb-12 p-6 rounded-xl shadow-lg hover:shadow-2xl"
             initial={{ opacity: 0, scale: 0.9 }} 
             animate={{ opacity: 1, scale: 1 }} 
             transition={{ duration: 0.5 }}
@@ -75,7 +75,7 @@ const Consult = () => {
             </h3>
             <div className="grid gap-6">
               {section.questions.map((question, questionIndex) => (
-                <div key={questionIndex} className="bg-gray-700 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <div key={questionIndex} className="  p-4 rounded-lg ansition-transform transform hover:scale-105">
                   <h4 className="text-lg font-medium mb-3">{question.question}</h4>
                   <div className="flex space-x-4">
                     <button
@@ -115,7 +115,7 @@ const Consult = () => {
         >
           <CompleteBtn
             hrefLink="/treatments"
-            className="px-6 py-3 text-white font-semibold rounded-lg shadow-lg bg-red-500 hover:bg-red-600 transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="px-6 py-3 text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:bg-hoverUnderlineColor transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
         </motion.div>
       </motion.div>

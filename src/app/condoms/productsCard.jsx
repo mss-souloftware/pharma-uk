@@ -91,9 +91,9 @@ const ProductsCard = () => {
                       handleAddToCart(product);
                       e.stopPropagation(); // Prevent click event on the card
                     }}
-                    className="py-2 md:my-3 px-4 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                    className="py-2 md:my-3 px-7 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
                   >
-                    <p className="text-base font-light">Add to Cart</p>
+                    <p className="text-sm font-light">Add to Cart</p>
                   </button>
                 </div>
               </div>

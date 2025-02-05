@@ -70,7 +70,7 @@ const Card = () => {
               {/* List with Icons */}
               <ul className="mt-3">
                 {item.additionalInfo.map((info, idx) => (
-                  <li key={idx} className="flex items-center font-semibold my-2">
+                  <li key={idx} className="flex items-center font-semibold my-2 text-gray-700">
                     <div className="w-6 h-6 sm:flex items-center justify-center bg-hoverUnderlineColor rounded-full mr-3 hidden ">
                       <Image src={item.img} alt="tick" height={15} width={15} className="w-4  " />
                     </div>
