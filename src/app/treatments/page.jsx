@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Recomended from "./recomended";
 import WeeklyPlan from "../cart/feature/weeklyPlan";
 
-const Page = () => {
+const Treatment = () => {
   const [mensMedicineDataFirst, setMensMedicineDataFirst] = useState([]);
   const [selectedTreatmentFirst, setSelectedTreatmentFirst] = useState(null);
   const [mensMedicineDataSecond, setMensMedicineDataSecond] = useState([]);
@@ -89,4 +89,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Treatment;

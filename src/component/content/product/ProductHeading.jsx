@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const ProductHeading = () => {
-  return ( 
-          <div>
-        <h1 className="flex items-center justify-center text-xl lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl font-semibold text-hoverUnderlineColor">
-          Find Your Treatment
-        </h1>
-        <p className="text-center w-[80%] mx-auto text-xs lg:text-base md:text-base sm:text-base font-normal mt-7 text-gray-700">
-          At Pharmica we offer a wide range of treatments through our free online prescription service...
-        </p>
-      </div> 
-  )
-}
+  return (
+    <div className="flex flex-col items-center justify-center text-center">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-hoverUnderlineColor">
+        Find Your Treatment
+      </h2>
+       <span className="text-gray-600 max-w-[80rem] py-10">
+        <p><span className="text-hoverUnderlineColor">iFeelShy {" "}</span> provides a wide range of treatments through our easy-to-use online prescription service. Our platform ensures a safe, discreet, and convenient experience, with all medications dispensed from our GPhC-registered pharmacy. Benefit from fast, reliable same-day or express delivery across the UK. Choose iFeelShy for trusted, hassle-free online pharmacy services</p>
+    </span>
+    </div>
+  );
+};
 
-export default ProductHeading
+export default ProductHeading;

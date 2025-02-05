@@ -66,15 +66,14 @@ const Navbar = () => {
             className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse "
           >
             <Image
-             src="/footerLogo.png"
+             src="/footerLogo1.svg"
              width={400}  // Make sure this is the original, high-resolution size of your logo
              height={120}
              className="absolute w-24 sm:w-20 md:w-24 lg:w-24 xl:w-40"
              alt="Responsive Logo"
              style={{ imageRendering: "crisp-edges" }} // Ensure the logo is sharp
              quality={100}
-             priority={true}
-             layout="intrinsic"
+             priority={true} 
             />
           </Link>
 

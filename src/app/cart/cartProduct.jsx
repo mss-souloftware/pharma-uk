@@ -9,9 +9,7 @@ const CartProduct = ({
   onIncrease,
   onDecrease,
   onRemove,
-  deliveryCharge,
-  selectedWeek,
-  onPlanClick,
+  deliveryCharge, 
 }) => {
   const totalPrice = product.price * product.quantity;
   const totalProductPrice = totalPrice + deliveryCharge;

@@ -3,17 +3,17 @@
       {
         "name": "Online Consulting",
         "image": "/consultin.png",
-        "description": "Connect with certified professionals from the comfort of your home through our online consultation platform."
+        "description": "Complete a free online medical assessment to check your eligibility for treatments."
       },
       {
-        "name": "Choose a Treatment",
+        "name": "Select Your Treatment",
         "image": "/tratment.png",
-        "description": "Explore a wide range of treatments tailored to your needs and preferences, all in one place."
+        "description": "Choose from a wide range of trusted treatments provided by leading brands."
       },
       {
-        "name": "Express Delivery",
+        "name": "Fast & Secure Delivery",
         "image": "/Deliveri.png",
-        "description": "Get your essentials delivered swiftly and safely with our express delivery service."
+        "description": "Your medication is professionally dispensed and delivered directly to your home or workplace."
       }
     ]
   }

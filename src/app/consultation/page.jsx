@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import CompleteBtn from "./completeBtn";
+import { motion } from "framer-motion";
 
-const Page = () => {
+const Consult = () => {
   const [faqData, setFaqData] = useState([]);
   const [error, setError] = useState(null);
-  const [answers, setAnswers] = useState({}); // To store Yes/No answers
+  const [answers, setAnswers] = useState({});
+  const [loading, setLoading] = useState(true);
 
-  // Fetch FAQ data from JSON file
   useEffect(() => {
     const fetchFaqData = async () => {
       try {
@@ -19,20 +20,19 @@ const Page = () => {
 
         if (Array.isArray(data.consultation)) {
           setFaqData(data.consultation);
+          setLoading(false);
         } else {
-          throw new Error(
-            "Consultation data is not an array or is missing the 'consultation' key"
-          );
+          throw new Error("Consultation data is not an array or is missing the 'consultation' key");
         }
       } catch (err) {
         setError(err.message);
+        setLoading(false);
       }
     };
 
     fetchFaqData();
   }, []);
 
-  // Handle Yes/No button click
   const handleAnswer = (sectionIndex, questionIndex, answer) => {
     setAnswers((prevAnswers) => ({
       ...prevAnswers,
@@ -40,93 +40,87 @@ const Page = () => {
     }));
   };
 
+  if (loading) {
+    return <div className="text-center text-gray-500">Loading...</div>;
+  }
+
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className="text-center text-red-500 font-semibold">Error: {error}</div>;
   }
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 container mx-auto w-full">
-      <div className="py-8 max-w-screen-xl sm:py-16 lg:px-7">
-        <h2 className="mb-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight font-extrabold text-black dark:text-white text-center sm:text-left">
-          Medical Assessment for{" "}
-          <span className="text-hoverUnderlineColor">Condoms</span>
+    <section className="bg-gray-900 text-white container mx-auto w-full py-12 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8 }}
+      >
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+          Medical Assessment
         </h2>
-        <h4 className="text-lg mb-10 font-normal text-gray-600 ">
-          To help us supply you with the most suitable treatment, please
-          complete this online consultation.
-        </h4>
+        <p className="text-lg text-gray-300 text-center mb-10">
+          Complete this online consultation to help us supply you with the most suitable treatment.
+        </p>
 
-        {/* Iterate over sections */}
         {faqData.map((section, sectionIndex) => (
-          <div key={sectionIndex} className="mb-16 grid ">
-            <h3 className="text-2xl font-bold text-hoverUnderlineColor dark:text-white mb-6 justify-center flex sm:block sm:px-4 lg:px-0">
+          <motion.div 
+            key={sectionIndex} 
+            className="mb-12 bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl"
+            initial={{ opacity: 0, scale: 0.9 }} 
+            animate={{ opacity: 1, scale: 1 }} 
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="text-2xl font-semibold text-hoverUnderlineColor mb-4 text-center">
               {section.section}
             </h3>
-
-            {/* Grid for questions and answers */}
-            <div className="grid grid-cols-1 sm:grid-cols-1 gap-8 pt-4 text-center sm:text-left border-t border-gray-200 dark:border-gray-700 w-full xl:w-[125%] ">
+            <div className="grid gap-6">
               {section.questions.map((question, questionIndex) => (
-                <div
-                  key={questionIndex}
-                  className="flex flex-col items-center sm:items-start mb-8 w-full"
-                >
-                  <h4 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white sm:px-4 xl:pr-10 lg:px-0 px-4 ">
-                    <span className="text-gray-700">{question.question}</span>
-                  </h4>
-
-                  {/* Yes/No Buttons */}
-                  <div className="flex space-x-4 justify-center sm:justify-start sm:px-4 lg:px-0">
+                <div key={questionIndex} className="bg-gray-700 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                  <h4 className="text-lg font-medium mb-3">{question.question}</h4>
+                  <div className="flex space-x-4">
                     <button
-                      className={`py-2 px-4 rounded-lg border border-hoverUnderlineColor transition-all duration-300 ${
-                        answers[`${sectionIndex}-${questionIndex}`] === "Yes"
-                          ? "bg-hoverUnderlineColor text-white"
-                          : "bg-gray-50 text-gray-400"
-                      }`}
-                      onClick={() =>
-                        handleAnswer(sectionIndex, questionIndex, "Yes")
-                      }
+                      className={`py-2 px-6 rounded-lg transition-all duration-300 ${
+                        answers[`${sectionIndex}-${questionIndex}`] === "Yes" ? "bg-hoverUnderlineColor text-white" : "bg-gray-600 text-gray-300"
+                      } focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50`}
+                      onClick={() => handleAnswer(sectionIndex, questionIndex, "Yes")}
                     >
                       Yes
                     </button>
                     <button
-                      className={`py-2 px-4 rounded-lg border border-hoverUnderlineColor transition-all duration-300  ${
-                        answers[`${sectionIndex}-${questionIndex}`] === "No"
-                          ? "bg-hoverUnderlineColor text-white"
-                          : "bg-gray-50 text-gray-400"
-                      }`}
-                      onClick={() =>
-                        handleAnswer(sectionIndex, questionIndex, "No")
-                      }
+                      className={`py-2 px-6 rounded-lg transition-all duration-300 ${
+                        answers[`${sectionIndex}-${questionIndex}`] === "No" ? "bg-red-500 text-white" : "bg-gray-600 text-gray-300"
+                      } focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50`}
+                      onClick={() => handleAnswer(sectionIndex, questionIndex, "No")}
                     >
                       No
                     </button>
                   </div>
-
-                  {/* Show warning message if the answer is "No" for this specific question */}
                   {answers[`${sectionIndex}-${questionIndex}`] === "No" && (
-                    <p className="text-red-500 text-center mt-4">
-                      Warning: You have selected &ldquo;No&rdquo; for this question.
-                    </p>
+                    <p className="text-red-400 text-sm mt-3">Warning: You have selected &quot;No&quot; for this question.</p>
                   )}
-
-                  <p className="text-gray-500 dark:text-gray-400 mt-2 sm:px-4 lg:px-0">
-                    Answer:{" "}
-                    {answers[`${sectionIndex}-${questionIndex}`] ||
-                      "Not answered yet"}
+                  <p className="text-gray-400 text-sm mt-2">
+                    Answer: {answers[`${sectionIndex}-${questionIndex}`] || "Not answered yet"}
                   </p>
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
 
-        <CompleteBtn
-          hrefLink="/treatments"
-          className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 lg:px-8 lg:py-2 mt-2 w-full sm:w-1/5 lg:w-48 sm:h-[4vh] h-[4vh] lg:h-[5vh] text-xs sm:text-sm lg:text-base text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] transition-transform duration-300 ease-in-out"
-        />
-      </div>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }} 
+          animate={{ opacity: 1, scale: 1 }} 
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex justify-center mt-8"
+        >
+          <CompleteBtn
+            hrefLink="/treatments"
+            className="px-6 py-3 text-white font-semibold rounded-lg shadow-lg bg-red-500 hover:bg-red-600 transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
 
-export default Page;
+export default Consult;

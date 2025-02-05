@@ -1,43 +1,31 @@
-import React from 'react'
-import { motion } from "framer-motion"; // Import motion from Framer Motion
+import React from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const Heading = () => {
-     // Define the text animation for the bounce effect
+  // Define text animation for sliding up
   const textAnimation = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i) => ({
+    hidden: { opacity: 0, y: 100 }, // Start off-screen (below)
+    visible: {
       opacity: 1,
-      y: [50, -20, 0], // Bounce effect
+      y: 0, // Moves to normal position
       transition: {
-        delay: i * 0.1, // Stagger animation for each line
-        duration: 0.6,
-        ease: [0.17, 0.67, 0.83, 0.67], // Smooth bounce easing
+        duration: 0.8,
+        ease: "easeOut", // Smooth transition
       },
-    }),
+    },
   };
-  return (
-    <>
-     <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-lg shine-effect capitalize"
-          initial="hidden"
-          animate="visible"
-        >
-          {[
-            "Get High-Quality Service",
-            "With Quality Medicine",
-          ].map((line, index) => (
-            <motion.span
-              key={index}
-              className="block xl:text-7xl md:text-4xl"
-              custom={index} // Pass index for staggered animation
-              variants={textAnimation}
-            >
-              {line}
-            </motion.span>
-          ))}
-        </motion.h1> 
-    </>
-  )
-}
 
-export default Heading
+  return (
+    <motion.h1
+      className="text-lg sm:text-2xl md:text-4xl xl:text-6xl font-bold text-black tracking-tight drop-shadow-lg capitalize 
+                 text-center sm:text-left max-w-[90%] sm:max-w-[70%] md:max-w-[60%] leading-6"
+      initial="hidden"
+      animate="visible"
+      variants={textAnimation}
+    >
+      Welcome to your trusted UK Online Pharmacy
+    </motion.h1>
+  );
+};
+
+export default Heading;

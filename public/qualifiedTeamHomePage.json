@@ -3,7 +3,8 @@
     "id": 1,
     "name": "Dr. Lorem Ipsum",
     "gphcNumber": "201393442",
-    "image": "/teamImg/team-img1.jpg",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do.png",
     "socialLinks": [
       {
         "platform": "instagram",
@@ -26,7 +27,8 @@
     "id": 2,
     "name": "Jacquiline",
     "gphcNumber": "201393442",
-    "image": "/teamImg/team-img2.jpg",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do2.png",
     "socialLinks": [
       {
         "platform": "instagram",
@@ -49,7 +51,8 @@
     "id": 3,
     "name": "Leos Morgan",
     "gphcNumber": "201393442",
-    "image": "/teamImg/team-img3.jpg",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do3.png",
     "socialLinks": [
       {
         "platform": "instagram",
@@ -72,7 +75,8 @@
     "id": 4,
     "name": "Leos Morgan",
     "gphcNumber": "201393442",
-    "image": "/teamImg/team-img1.jpg",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do4.png",
     "socialLinks": [
       {
         "platform": "instagram",
@@ -95,7 +99,8 @@
     "id": 5,
     "name": "Leos Morgan",
     "gphcNumber": "201393442",
-    "image": "/teamImg/team-img3.jpg",
+    "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste voluptatum veritatis  ",
+    "image": "/teamImg/do5.png",
     "socialLinks": [
       {
         "platform": "instagram",

@@ -1,49 +1,33 @@
-import React from 'react';
+import React from "react";
 
 const ProductVisual = () => {
   return (
-    <div className="mt-28 px-4">
-      {/* Heading */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-hoverUnderlineColor mb-8 text-center">
-        Experience Our Product in Action
-      </h1>
-
+    <div className="  px-6 py-2 ">
       {/* Content Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="flex flex-col justify-center items-center   space-y-6">
+         
+ {/* Dummy Text Section */}
+ <div className="text-center max-w-4xl">
+        
+ <p className="[word-spacing:0.1em] text-lg text-center " style={{ letterSpacing: "0.5px", lineHeight:"44.6px" }}>
+  Discover the latest in cutting-edge technology with our new product. Designed to enhance your experience, it delivers performance, style, and reliability in one seamless package.
+</p>
+
+      </div>
         {/* Video Container */}
-        <div className="w-full max-w-4xl mx-auto">
+        <div className="w-auto py-5 xl:max-w-[50rem] mx-auto">
           <video
             src="/2340-157269921_tiny.mp4"
-            loop
-            autoPlay
             muted
             controls
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-lg "
             preload="auto"
           >
             Your browser does not support the video tag.
           </video>
         </div>
 
-        {/* Description Section */}
-        <div className="w-full md:ml-10">
-          <h4 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
-            Expert Guidance, Anytime, Anywhere.
-          </h4>
-          <p className="leading-relaxed text-sm sm:text-base text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-            sequi fuga itaque harum recusandae asperiores ut excepturi quaerat
-            minima impedit. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Dicta culpa harum laudantium vel quasi temporibus eum. Sequi
-            similique, dolorem rem debitis eligendi magnam repellendus laborum?
-            Sunt, ad voluptas, obcaecati natus dolores tempora corporis velit,
-            sapiente ea aliquid et animi cumque? Corrupti quasi facere,
-            tenetur laboriosam veniam animi at quidem fuga! Lorem ipsum dolor
-            sit, amet consectetur adipisicing elit. Dolores accusantium alias
-            itaque quod totam veritatis mollitia provident eum, culpa eaque
-            minima fuga quaerat, eveniet iste ex.
-          </p>
-        </div>
+       
       </div>
     </div>
   );

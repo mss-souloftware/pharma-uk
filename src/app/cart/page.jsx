@@ -6,7 +6,7 @@ import { CartContext } from "./feature/contextProvider";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import WeeklyPlan from "./feature/weeklyPlan"; // import WeeklyPlan component
 
-const Page = () => {
+const Cart = () => {
   const { cart, dispatch } = useContext(CartContext);
   const [selectedWeeks, setSelectedWeeks] = useState({});
 
@@ -33,11 +33,14 @@ const Page = () => {
   }, 0);
 
   // Calculate total items
-  const totalItems = products.reduce((sum, product) => sum + product.quantity, 0);
+  const totalItems = products.reduce(
+    (sum, product) => sum + product.quantity,
+    0
+  );
 
   // Check if at least one product has a selected week
-  const showContactButton = Object.values(selectedWeeks).some((week) => week); 
-  
+  const showContactButton = Object.values(selectedWeeks).some((week) => week);
+
   return (
     <section className="py-8 md:py-16 relative">
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
@@ -51,7 +54,7 @@ const Page = () => {
             const productDeliveryCharge = product.deliveryCharge || 15.0;
 
             return (
-              <div 
+              <div
                 key={index}
                 className="grid grid-cols-1 gap-6 py-6 border-t border-gray-200"
               >
@@ -65,7 +68,9 @@ const Page = () => {
                 <WeeklyPlan
                   weekPlan={product.weekPlan} // Assuming each product has a `weekPlan`
                   selectedWeek={selectedWeeks[product.id]}
-                  onPlanClick={(selectedWeek) => handleWeekSelection(product, selectedWeek)}
+                  onPlanClick={(selectedWeek) =>
+                    handleWeekSelection(product, selectedWeek)
+                  }
                 />
               </div>
             );
@@ -77,22 +82,32 @@ const Page = () => {
         {/* Cart Totals */}
         <div className="bg-gray-50 rounded-xl p-6 max-w-xl mx-auto mt-8">
           <div className="flex items-center justify-between py-4">
-            <p className="font-manrope font-medium text-lg text-gray-900">Total Items</p>
-            <h6 className="font-manrope font-medium text-lg text-gray-700">{totalItems}</h6>
+            <p className="font-manrope font-medium text-lg text-gray-900">
+              Total Items
+            </p>
+            <h6 className="font-manrope font-medium text-lg text-gray-700">
+              {totalItems}
+            </h6>
           </div>
           <div className="flex items-center justify-between py-4">
-            <p className="font-manrope font-medium text-lg text-gray-900">Delivery Charges</p>
-            <h6 className="font-manrope font-medium text-lg text-gray-700">${totalDeliveryCharges.toFixed(2)}</h6>
+            <p className="font-manrope font-medium text-lg text-gray-900">
+              Delivery Charges
+            </p>
+            <h6 className="font-manrope font-medium text-lg text-gray-700">
+              ${totalDeliveryCharges.toFixed(2)}
+            </h6>
           </div>
           <div className="flex items-center justify-between py-6">
-            <p className="font-manrope font-medium text-2xl text-gray-900">Total</p>
+            <p className="font-manrope font-medium text-2xl text-gray-900">
+              Total
+            </p>
             <h6 className="font-manrope font-medium text-2xl text-hoverUnderlineColor">
               ${totalCartPrice.toFixed(2)}
             </h6>
           </div>
         </div>
 
-        {/* Show Contact Information button once any product has a selected week */} 
+        {/* Show Contact Information button once any product has a selected week */}
         {showContactButton && (
           <div className="justify-center flex my-7 transition-all duration-500 opacity-100">
             <Link href="/cartAddress">
@@ -109,4 +124,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Cart;

@@ -8,7 +8,7 @@
   }
   
   .scrollbar-track-gray-200 {
-    scrollbar-color: transparent #c62638;
+    scrollbar-color: transparent ;
   }
   
   .scrollbar-rounded-lg::-webkit-scrollbar {

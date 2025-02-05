@@ -2,7 +2,7 @@
   "Condoms": [
      {
        "id": "1",
-       "title": "HIV Prevention",
+       "title": "Durex Thin Feel",
        "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
        "imageUrl": "/ProductImage/condoms/product1.jpg",
        "price": "29.00",
@@ -16,7 +16,7 @@
      },
      {
        "id": "2",
-       "title": "Protect Against STIs",
+       "title": "Durex Extended Pleasure",
        "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
        "imageUrl": "/ProductImage/condoms/product2.jpg",
        "price": "29.00",
@@ -30,7 +30,7 @@
      },
      {
        "id": "3",
-       "title": "Herpes Prevention",
+       "title": "Durex Pleasure Me",
        "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
        "imageUrl": "/ProductImage/condoms/product3.jpg",
        "price": "29.00",
@@ -44,7 +44,7 @@
      },
      {
        "id": "4",
-       "title": "Prevention of Unplanned Pregnancies",
+       "title": "PureShield",
        "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
        "imageUrl": "/ProductImage/condoms/product4.jpg",
        "price": "29.00",
@@ -58,7 +58,7 @@
      },
      {
        "id": "5",
-       "title": "Protection from HPV",
+       "title": "SensuMax",
        "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
        "imageUrl": "/ProductImage/condoms/product5.jpg",
        "price": "29.00",
@@ -71,75 +71,61 @@
        ]
      },
      {
-       "id": "6",
-       "title": "Condoms for Safe Sex",
-       "description": "Condoms provide a simple yet effective way to practice safe sex, preventing both STIs and unintended pregnancies.",
-       "imageUrl": "/ProductImage/condoms/product6.jpg",
-       "price": "29.00",
-       "weekPlan": [
-         { "week": 1, "capsules": 10 },
-         { "week": 2, "capsules": 20 },
-         { "week": 4, "capsules": 36 },
-         { "week": 8, "capsules": 72 },
-         { "week": 12, "capsules": 120 }
-       ]
-     },
-     {
-       "id": "7",
-       "title": "Preventing Syphilis",
-       "description": "Condom use during sex is a key factor in preventing syphilis, an STI that can lead to serious health complications.",
-       "imageUrl": "/ProductImage/condoms/product7.jpg",
-       "price": "29.00",
-       "weekPlan": [
-         { "week": 1, "capsules": 10 },
-         { "week": 2, "capsules": 20 },
-         { "week": 4, "capsules": 36 },
-         { "week": 8, "capsules": 72 },
-         { "week": 12, "capsules": 120 }
-       ]
-     },
-     {
-       "id": "8",
-       "title": "Condoms for Your Health",
-       "description": "Using condoms consistently reduces the risk of various STIs and helps maintain sexual health.",
-       "imageUrl": "/ProductImage/condoms/product8.jpg",
-       "price": "29.00",
-       "weekPlan": [
-         { "week": 1, "capsules": 10 },
-         { "week": 2, "capsules": 20 },
-         { "week": 4, "capsules": 36 },
-         { "week": 8, "capsules": 72 },
-         { "week": 12, "capsules": 120 }
-       ]
-     },
-     {
-       "id": "9",
-       "title": "Chlamydia Protection",
-       "description": "Regular use of condoms reduces the chance of contracting or transmitting chlamydia, a bacterial infection.",
-       "imageUrl": "/ProductImage/condoms/product9.jpg",
-       "price": "29.00",
-       "weekPlan": [
-         { "week": 1, "capsules": 10 },
-         { "week": 2, "capsules": 20 },
-         { "week": 4, "capsules": 36 },
-         { "week": 8, "capsules": 72 },
-         { "week": 12, "capsules": 120 }
-       ]
-     },
-     {
-       "id": "10",
-       "title": "Condoms and Your Sexual Wellness",
-       "description": "Protect your sexual wellness with condoms, a simple and effective method for reducing STI risk and promoting health.",
-       "imageUrl": "/ProductImage/condoms/product10.jpg",
-       "price": "29.00",
-       "weekPlan": [
-         { "week": 1, "capsules": 10 },
-         { "week": 2, "capsules": 20 },
-         { "week": 4, "capsules": 36 },
-         { "week": 8, "capsules": 72 },
-         { "week": 12, "capsules": 120 }
-       ]
-     }
+      "id": "6",
+      "title": "CuddleGuard",
+      "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+      "imageUrl": "/ProductImage/condoms/product2.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "EuphoriaCare",
+      "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
+      "imageUrl": "/ProductImage/condoms/product3.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "VelvetGuard",
+      "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
+      "imageUrl": "/ProductImage/condoms/product4.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "LuxeFit",
+      "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
+      "imageUrl": "/ProductImage/condoms/product5.jpg",
+      "price": "29.00",
+      "weekPlan": [
+        { "week": 1, "capsules": 10 },
+        { "week": 2, "capsules": 20 },
+        { "week": 4, "capsules": 36 },
+        { "week": 8, "capsules": 72 },
+        { "week": 12, "capsules": 120 }
+      ]
+    }
    ],
    
    "ErectileDysfunction": [

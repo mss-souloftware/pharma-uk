@@ -6,7 +6,6 @@ const FAQAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isLoading, setIsLoading] = useState(true); // Loading state
 
-  // Fetch the data from the JSON file
   useEffect(() => {
     const fetchData = async () => {
       try {

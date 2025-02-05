@@ -1,66 +1,105 @@
-import React from "react";
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-const CompanyInformation = () => {
+const CompanyInfo = () => {
   return (
-    <div className="container mx-auto mb-[50px] px-4 sm:px-6 lg:px-8">
-      <div className="w-full h-auto gap-4 p-0 relative">
-        {/* Company Information Section */}
-        <div className="my-10 justify-center sm:justify-start">
-          <h1 className="flex sm:block ml-2 xl:ml-0 justify-center text-center sm:text-left sm:justify-start text-xl lg:text-[48px] font-semibold">
-            Company&nbsp; Information
-          </h1>
+    <section
+      className="relative mx-auto max-w-6xl px-6 py-12 lg:py-16 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/about/reviewBackground.svg')" }} // Change to your actual image path
+    > 
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 sm:gap-y-4 h-auto w-full">
-            {/* Left Section */}
-            <div className="mt-7 flex flex-col lg:flex-row lg:justify-between lg:items-start text-center sm:text-left lg:w-[30rem]">
-              <div className="md:w-[40rem] lg:w-[20rem] xl:w-full">
-                <p className="tracking-wide font-light">
-                  <span className="block">
-                    This website is operated by Pharmica Ltd. Pharmica Ltd is
-                    registered Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolore, at.
-                  </span>
-                  <span className="block">
-                    in England and Wales under company number{" "}
-                    <span className="text-hoverUnderlineColor">9668055</span>
-                  </span>
-                  <span className="block">
-                    DUNS Number:{" "}
-                    <span className="text-hoverUnderlineColor">
-                      22-097-8327
-                    </span>
-                  </span>
-                  VAT Number:{" "}
-                  <span className="text-hoverUnderlineColor">
-                    GB 217 7259 95
-                  </span>
-                </p>
-              </div>
-            </div>
+      {/* Main Grid Layout */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="grid grid-cols-1 lg:grid-cols-[60%,40%] gap-10 items-center"
+      >
+        {/* Left Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="space-y-6"
+        >
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-wider">
+            Company Information
+          </h2>
+          <p className=" leading-relaxed" style={{lineHeight:'40.97px'}} >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
 
-            {/* Right Section */}
-            <div className="mt-7 flex flex-col lg:flex-row lg:justify-between lg:items-start text-center sm:text-left w-full lg:w-[30rem]">
-              <div className="lg:w-full">
-                <h1 className="block lg:text-xl font-light ">
-                  Registered Office:
-                </h1>
-                <p className="tracking-wide font-light w-full sm:w-full">
-                  Registered Office: 236 Gray&apos;s Inn Rd London WC1X 8HB
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus deserunt quam cumque nam blanditiis suscipit
-                  quidem nemo error ipsum exercitationem! United Kingdom 020
-                  7112 9014
-                  <span className="block text-hoverUnderlineColor font-light">
-                    help@pharmica.co.uk
-                  </span>
-                </p>
-              </div>
-            </div>
+          {/* Company Details */}
+          <div className="space-y-2  text-gray-800" style={{lineHeight:'44px'}}>
+            <p>
+              <span className="font-semibold">Pharmica Ltd</span> is registered in England
+              and Wales under company number{" "}
+              <span className="font-semibold text-hoverUnderlineColor ">9668055</span>
+            </p>
+            <p>
+              <span className="font-semibold">DUNS Number:</span>{" "}
+              <span className="text-hoverUnderlineColor">22-097-8327</span>
+            </p>
+            <p>
+              <span className="font-semibold">VAT Number:</span>{" "}
+              <span className="text-hoverUnderlineColor">GB 217 7259 95</span>
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+
+        {/* Right Image & Info Card */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+          className="relative"
+        >
+          <Image
+            src="/about/informationBackground.svg"
+            alt="Company"
+            width={400}
+            height={300}
+            className="rounded-2xl shadow-lg w-full h-auto"
+          />
+
+          {/* Registered Office Card */}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.7, duration: 0.6 }}
+            className="absolute bottom-0 right-0 rounded-xl shadow-lg bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] text-white p-4 w-52"
+            style={{ lineHeight: "30.48px" }}
+          >
+            <h3 className="font-semibold text-lg">Registered Office:</h3>
+            <p className="text-sm">
+              236 Gray&apos;s Inn Rd, London, WC1X 8HB, United Kingdom
+            </p>
+            <p className="text-sm">020 7112 9014</p>
+            <p className="text-sm underline">help@freshly.co.uk</p>
+          </motion.div>
+
+          {/* Google Reviews Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.9, duration: 0.5 }}
+            className="absolute bottom-4 left-4 bg-black p-2 rounded-md shadow-md"
+          >
+            <Image
+              src="/about/informationGoogleReview.svg"
+              alt="Google Reviews"
+              width={100}
+              height={30}
+            />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </section>
   );
 };
 
-export default CompanyInformation;
+export default CompanyInfo;

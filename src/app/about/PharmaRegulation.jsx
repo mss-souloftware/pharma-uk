@@ -1,99 +1,112 @@
-import PharmacyRegulationsMobile from '@/component/PharmacyRegulationsMobile'
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 
 const PharmaRegulation = () => {
-  return ( 
-    <>
-    <div
-    className="bg-cover bg-center bg-no-repeat hidden sm:block  " // Hide on mobile, show on larger screens
-    style={{
-      backgroundImage: "url('/bg.png')",
-    }}
-  >
-    <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8">
-      {/* First Section */}
-      <div className="text-white py-8 sm:py-10">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-relaxed pb-5">
-          Pharmacy&nbsp;
-          <span className="text-hoverUnderlineColor redunderline-background tracking-widest">
-            Regulation
-          </span>
-        </h1>
-        <div className="tracking-wide space-y-3">
-          <p
-            className="xl:text-base md:text-sm text-xs font-light max-w-full sm:max-w-[400px] lg:max-w-[504px]"
-            style={{ lineHeight: "1.8" }}
-          >
-            The pharmacy is registered with the General Pharmaceutical
-            Council with number 9012030. The superintendent pharmacist for
-            Pharmica is: Ana Carolina Osorio De Faria Goncalves (GPhC
-            Number: 2088658).
-          </p>
-          <ul className="space-y-2">
-            <li className="xl:text-base md:text-sm text-xs font-light text-white">
-              Dr Munawar Iqbal&nbsp;
-              <span className="text-hoverUnderlineColor">
-                (GPhC Number 2059871)
-              </span>
-            </li>
-            <li className="xl:text-base md:text-sm text-xs font-light text-white">
-              Rehma Gill&nbsp;
-              <span className="text-hoverUnderlineColor">
-                (GPhC Number 2225869)
-              </span>
-            </li>
-          </ul>
-        </div>
+  const pharmacists = [
+    {
+      name: "Dr Munawar Iqbal",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      gphcNumber: "2034871",
+      image: "/about/pharmaDoctor/doctor1.svg"
+    },
+    {
+      name: "Anika Jagot",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      gphcNumber: "2078699",
+      image: "/about/pharmaDoctor/doctor2.svg"
+    }
+  ];
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      {/* Header Section */}
+      <h1 className="text-4xl sm:text-6xl font-semibold leading-tight lg:leading-[91px] text-center tracking-wider">Pharmacy Regulation</h1>
+      
+      {/* Registration Info */}
+      <div className="text-center mb-8 space-y-2">
+        <p className="[word-spacing:0.1em] text-lg" style={{lineHeight:"44.6px"}}>
+          The pharmacy is registered with the General Pharmaceutical Council with number 9012030.
+        </p>
+        <p className="[word-spacing:0.1em] text-lg" style={{lineHeight:"44.6px"}}>
+          The superintendent pharmacist for Pharmica is: Ana Carolina Osório De Faria Goncalves GPhC Number: 2088635
+        </p>
       </div>
 
-      {/* Second Section */}
-      <div className="grid grid-rows-3 gap-6 sm:gap-8 text-white py-8 sm:py-14 w-full">
-        {/* Informational Text */}
-        <div>
-          <p
-            className="xl:text-base md:text-sm text-xs font-light"
-            style={{ lineHeight: "1.8" }}
+      {/* Pharmacists Carousel for Mobile */}
+      <div className="block md:hidden mb-8">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          pagination={{ clickable: true }} 
+        >
+          {pharmacists.map((pharmacist, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col items-center bg-white rounded-lg p-6 shadow-md">
+                <Image
+                  src={pharmacist.image}
+                  alt={pharmacist.name}
+                  className="w-52 h-[15rem] rounded-lg object-cover"
+                  height={300}
+                  width={300}
+                />
+                <h3 className="text-xl font-semibold my-3" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
+                <p className="text-sm mb-2" style={{lineHeight: '30.91px'}}>{pharmacist.description}</p>
+                <p className="text-hoverUnderlineColor text-sm font-semibold">
+                  (GPhC Number: {pharmacist.gphcNumber})
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* Pharmacists Grid for Desktop */}
+      <div className="hidden md:grid md:grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        {pharmacists.map((pharmacist, index) => (
+          <div 
+            key={index}
+            className="flex flex-col lg:flex-row items-center bg-white rounded-lg p-6 space-y-4 lg:space-y-0 lg:space-x-8 shadow-md"
           >
-            For more information or to view registration details, visit the
-            General Pharmaceutical Council’s website. Responsible
-            Pharmacist:
-          </p>
-        </div>
+            <div className="flex-shrink-0">
+              <Image
+                src={pharmacist.image}
+                alt={pharmacist.name}
+                className="w-52 h-[15rem] rounded-lg object-cover"
+                height={200}
+                width={200}
+              />
+            </div>
+            <div className="flex-grow text-center lg:text-left">
+              <h3 className="text-xl font-semibold mb-2" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
+              <p className="text-sm mb-2" style={{lineHeight: '30.91px'}}>{pharmacist.description}</p>
+              <p className="text-hoverUnderlineColor text-sm font-semibold">
+                (GPhC Number: {pharmacist.gphcNumber})
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
 
-        {/* Image Section */}
-        <div className="flex justify-start items-center">
-        <Image
-src="/registeredPharma.png"
-width={150}
-height={40}
-alt="Registered Pharma"
-className="w-[80px] sm:w-[80px] md:w-[100px] lg:w-[110px] xl:w-[150px] object-contain"
-quality={100} // Increase quality for sharper display
-layout="intrinsic" // Maintain image aspect ratio and prevent stretching
-/>
-
-        </div>
-
-        {/* Pharmacist Details */}
-        <div>
-          <p className="xl:text-base md:text-sm text-xs font-light">
-            <span className="block">Rehma Gill&nbsp;</span>
-            (GPhC Number 2225869)
-          </p>
+      {/* Footer Registration Section */}
+      <div className="border rounded-xl shadow-md bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] p-3 sm:p-6 text-lg lg:text-xl  flex flex-col md:flex-row items-center justify-between text-white">
+        <p className="text-center md:text-left mb-4 md:mb-0 ">
+          For more information or to view registration details visit the
+          General Pharmaceutical Council&apos;s website. Responsible Pharmacist:
+        </p>
+        <div className="rounded">
+          <Image
+            src="/about/registeredPharma 1.svg"
+            alt="Registration Badge"
+            className="h-10"
+            height={200}
+            width={200}
+          />
         </div>
       </div>
     </div>
-  </div>
-
-  {/* Pharmacy Regulations Mobile */}
-  <div className="sm:hidden block">
-    {" "}
-    {/* Only visible on mobile */}
-    <PharmacyRegulationsMobile />
-  </div>
-</>
-  )
+  );
 }
 
-export default PharmaRegulation
+export default PharmaRegulation;

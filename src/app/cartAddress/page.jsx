@@ -2,7 +2,7 @@ import React from 'react'
 import CartAddress from './cartAddress'
 import Link from 'next/link'
 
-const page = () => {
+const CartAdd = () => {
   return (
     <>
       <CartAddress/>
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default CartAdd

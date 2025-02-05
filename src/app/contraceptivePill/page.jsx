@@ -4,7 +4,7 @@ import ConsultingCard from './consulting'
 import FAQAccordion from './faqAccordion' 
 import ProductsCard from './ProductsCard'
 
-const page = () => {
+const ContraceptivePillPage = () => {
   return (
     <div className='container mx-auto mt-20'>
     <ProductHeader/>
@@ -21,4 +21,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ContraceptivePillPage

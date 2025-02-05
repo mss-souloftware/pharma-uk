@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Contact from "./contact";
 
-const Page = () => {
+const FaqsPage = () => {
   const [faqData, setFaqData] = useState([]);
   const [error, setError] = useState(null);
 
@@ -68,4 +68,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default FaqsPage;

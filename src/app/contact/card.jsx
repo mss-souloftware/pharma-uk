@@ -1,101 +1,87 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Import Swiper styles
-import "swiper/css/navigation"; // Import navigation styles
-import { Navigation, Autoplay } from "swiper/modules"; // Import Autoplay module
+import Image from "next/image";
+import React from "react";
 
 const Card = () => {
-  const [cardData, setCardData] = useState([]);
-
-  // Fetch the card data from the JSON file
-  useEffect(() => {
-    const fetchCardData = async () => {
-      const response = await fetch("/contactCard.json");
-      const data = await response.json();
-      setCardData(data);
-    };
-
-    fetchCardData();
-  }, []);
+  const data = [
+    {
+      firstHeading: "Call NHS 111",
+      description: "Call NHS 111 if you urgently need medical help or advice but it's not a life-threatening situation.",
+      img: "/contact/tickIcon.svg",
+      additionalInfo: [
+        "About NHS 111.",
+        "Visit the NHS 111 BSL interpreter service."
+      ]
+    },
+    {
+      firstHeading: "Emergency Contact",
+      description: "If you are experiencing a life-threatening emergency, please call 999 immediately.",
+      img: "/contact/tickIcon.svg",
+      additionalInfo: [
+        "For critical medical situations.",
+        "Ambulance, police, or fire services available."
+      ]
+    },
+    {
+      firstHeading: "Mental Health Support",
+      description: "For urgent mental health support, call NHS 111 or visit your nearest mental health crisis service.",
+      img: "/contact/tickIcon.svg",
+      additionalInfo: [
+        "24/7 mental health support services.",
+        "Speak to trained professionals."
+      ]
+    }
+  ];
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:mt-0 md:mt-[40%] h-auto bg-gray-50">
-      {/* Swiper for smaller screens */}
-      <div className="block sm:hidden">
-        {cardData.length > 0 && (
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 3000, // Auto-slide every 1 second
-              disableOnInteraction: false, // Keep autoplay running after interaction
-            }}
-            className="w-full"
-          >
-            {cardData.map((card) => (
-              <SwiperSlide key={card.id}>
-                <div
-                  className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 cursor-pointer 
-                  hover:shadow-xl hover:bg-gray-200 ease-in-out"
-                >
-                  <Link href={card.link}>
-                    <div className="text-left group">
-                      <h1 className="text-2xl md:text-3xl font-normal text-hoverUnderlineColor mb-4 relative group-hover:text-red-600">
-                        {card.title}
-                        <span className="absolute left-0 mt-[1px] block w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
-                      </h1>
-                      <p className="text-sm md:text-base py-5 text-gray-800 font-light">
-                        {card.description}
-                      </p>
-                      <ul className="text-sm md:text-base font-normal list-inside">
-                        {card.points.map((point, index) => (
-                          <li key={index} className="relative pl-6 mb-5">
-                            <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 rounded-full bg-hoverUnderlineColor"></span>
-                            {point}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </Link>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
+    <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto px-6 sm:px-10 py-8 gap-10">
+      
+      {/* First Column (Text & Image) */}
+      <div className="flex flex-col space-y-10 items-center lg:items-start">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-center lg:text-start">
+          Quick Help, <br /> Our Priority!
+        </h2>
+
+        {/* Image */}
+        <Image
+          src="/contact/image.svg"
+          alt="image"
+          height={300}
+          width={300}
+          className="w-full max-w-[30rem] sm:max-w-[25rem] md:max-w-[28rem] lg:max-w-[30rem]"
+        />
       </div>
 
-      {/* Grid layout for larger screens */}
-      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-10 lg:gap-12">
-        {cardData.map((card) => (
-          <div
-            key={card.id}
-            className="w-full h-96 p-5 border-4 border-hoverUnderlineColor rounded-lg shadow-lg transform transition-transform duration-300 cursor-pointer 
-            hover:shadow-xl hover:bg-gray-200 ease-in-out"
-          >
-            <Link href={card.link}>
-              <div className="text-left group">
-                <h1 className="text-2xl md:text-3xl font-normal text-hoverUnderlineColor mb-4 relative group-hover:text-red-600">
-                  {card.title}
-                  <span className="absolute left-0 mt-[1px] block w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
-                </h1>
-                <p className="text-sm md:text-base py-5 text-gray-800 font-light">
-                  {card.description}
-                </p>
-                <ul className="text-sm md:text-base font-normal list-inside">
-                  {card.points.map((point, index) => (
-                    <li key={index} className="relative pl-6 mb-5">
-                      <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-2 h-2 rounded-full bg-hoverUnderlineColor"></span>
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Link>
-          </div>
-        ))}
+      {/* Second Column (Info Cards) */}
+      <div className="flex flex-col space-y-10">
+        
+        {/* Paragraph */}
+        <p className="text-center lg:text-left text-gray-700 text-lg leading-relaxed">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+        </p>
+
+        {/* Info Cards */}
+        <div className="flex flex-col space-y-8">
+          {data.map((item, index) => (
+            <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-md">
+              <h1 className="text-2xl sm:text-3xl font-semibold mb-2">{item.firstHeading}</h1>
+              <p className="text-gray-700 leading-7">{item.description}</p>
+              
+              {/* List with Icons */}
+              <ul className="mt-3">
+                {item.additionalInfo.map((info, idx) => (
+                  <li key={idx} className="flex items-center font-semibold my-2">
+                    <div className="w-6 h-6 sm:flex items-center justify-center bg-hoverUnderlineColor rounded-full mr-3 hidden ">
+                      <Image src={item.img} alt="tick" height={15} width={15} className="w-4  " />
+                    </div>
+                    {info}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
       </div>
     </div>
   );

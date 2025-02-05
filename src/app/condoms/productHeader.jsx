@@ -69,14 +69,14 @@ const ProductHeader = () => {
 
                   {/* Custom Button */}
                   <CustomeBtn
-                    buttonText="Go to Consulting"
+                    buttonText="Get to Consulting"
                     buttonLink="/consultation"
                     imageSrc="/icons/arrowIcon.png"
                     altText="Consulting Arrow"
                     className=""
                   />
 
-                  <p className="xl:text-base md:text-base text-sm font-normal max-w-full text-gray-600 mt-4 leading-8">
+                  <p className="xl:text-base md:text-base text-sm font-normal max-w-full text-gray-600 mt-4 leading-8 px-5 ">
                     {item.content}
                   </p>
                 </div>
