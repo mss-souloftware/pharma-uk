@@ -3,14 +3,12 @@ import React from "react";
 import "./page.css";
 import Image from "next/image"; 
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
-import QualifiedTeamAboutPage from "@/component/qualifiedTeamAboutPage"; 
-import HowDoesItWorksMobile from "@/component/HowDoesItWorksMobile"; 
+import QualifiedTeamAboutPage from "@/component/qualifiedTeamAboutPage";  
 import CompanyInformation from "./companyInformation"; 
 import AboutHero from "./aboutHero";
 import AboutImages from "./aboutImages";
 import PharmaRegulation from "./PharmaRegulation";
-import CustomerReviews from "./customerReviews";
-import ArticleSection from "./articleSection";
+import CustomerReviews from "./customerReviews"; 
 import Article from "./article";
 
 const AboutPage = () => {
