@@ -27,17 +27,17 @@ const SubText = () => {
       >
         {/* First Column */}
         <motion.div
-          className="w-[33rem] mb-7"
+          className="w-[33rem] mb-2 "
           variants={textAnimation}
           custom={0}
         >
-          <p className=" text-black md:leading-[30.86px] text-sm ">
+          <p className=" text-black text-sm ">
             Discover why <span className="text-hoverUnderlineColor">iFeelShy</span> is the go-to choice for seamless and convenient online pharmacy services. Shop with confidence today!
           </p>
         </motion.div>
 
         {/* Second Column - Features List */}
-        <div className="heroSubText container flex flex-col text-sm   w-auto md:gap-3 ml-0">
+        <div className="heroSubText container flex flex-col text-sm w-auto md:gap-2 ml-0">
           {[
             "Fully licensed UK Online Pharmacy",
             "Secure and discreet packaging for privacy",
@@ -49,14 +49,17 @@ const SubText = () => {
               variants={textAnimation}
               custom={index + 1} // Staggered animation effect
             >
-              <Image
-                src="/heroTick.png"
-                width={20}
-                height={20}
-                alt="tick-icon"
-                className="w-4 h-4 md:pr-1 md:mt-1 hidden sm:block"
-              />
-              <span className="text-black text-sm p mt-2 sm:mt-0">
+              <div className="w-4 h-4 bg-hoverUnderlineColor rounded-xl flex items-center justify-center mr-2">
+  <Image
+    src="/heroTick.png"
+    width={16}
+    height={16}
+    alt="tick-icon"
+    className="w-4 h-4"
+  />
+</div>
+
+              <span className="text-black text-sm mt-2 sm:mt-0">
                 {text}
               </span>
             </motion.div>

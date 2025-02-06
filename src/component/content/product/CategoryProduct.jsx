@@ -1,4 +1,4 @@
-"use client";
+ 
 import React, { useState, useEffect, useCallback } from "react";
 import CategoryList from "./CategoryList";
 import SubcategoryList from "./SubcategoryList";

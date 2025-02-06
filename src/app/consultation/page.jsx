@@ -79,7 +79,7 @@ const Consult = () => {
             <div className="grid gap-6">
               {section.questions.map((question, questionIndex) => (
                 <div key={questionIndex} className="  p-4 rounded-lg ">
-                  <h6 className="text-base font-medium mb-3">{question.question}</h6>
+                  <h6 className="text-sm font-medium mb-3">{question.question}</h6>
                   <div className="flex space-x-4">
                     <button
                       className={`py-2 px-6 text-xs rounded-lg transition-all duration-300 ${
@@ -118,7 +118,7 @@ const Consult = () => {
         >
           <CompleteBtn
             hrefLink="/treatments"
-            className="px-6 py-3 text-white font-semibold text-xs rounded-lg shadow-lg bg-hoverUnderlineColor hover:bg-hoverUnderlineColor transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="py-4 xl:px-5 sm:py-4 xl:py-6 md:px-6 md:py-5 lg:py-5 sm:w-[20%] w-[30vw] sm:h-[4vh] h-[4vh] md:w-[20%] md:h-[3vh] lg:h-[4vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-normal rounded-lg shadow-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300 flex items-center justify-center"
           />
         </motion.div>
       </motion.div>
