@@ -4,7 +4,7 @@ import Skeleton from "react-loading-skeleton";
 
 const CategoryList = ({ categories, selectedCategory, onSelectCategory, isLoading }) => {
   return (
-    <div className="flex overflow-x-auto border-4 border-gray-200 rounded-3xl space-x-2 mt-8 justify-evenly w-auto scrollbar-thin scrollbar-thumb-gray-100 scrollbar-track-gray-200">
+    <div className="flex overflow-x-auto border-2 w-[60rem] rounded-3xl space-x-2 mt-8 justify-evenly mx-auto scrollbar-thin scrollbar-thumb-gray-100 scrollbar-track-gray-200">
       {isLoading
         ? [...Array(4)].map((_, index) => (
             <div key={index} className="py-2 w-28">

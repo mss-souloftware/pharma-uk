@@ -60,22 +60,22 @@
       "subcategories": [
         {
           "name": "Respiratory",
-          "link": "https://example.com/popular/sub1",
+          "link": "consultation",
           "image": "/ProductImage/productImg/product9.jpg"
         },
         {
           "name": "Acne",
-          "link": "https://example.com/popular/sub2",
+          "link": "consultation",
           "image": "https://media.gettyimages.com/id/1280519512/photo/reflection-of-woman-with-towel-on-head-squeezing-blackhead-on-her-nose-side.jpg?s=612x612&w=0&k=20&c=MVadB8YjMnUzyJHkRCftj7TS5F7ZpAncwT_aW1Uci-w="
         },
         {
           "name": "Hair Loss",
-          "link": "https://example.com/popular/sub2",
+          "link": "consultation",
           "image": "/ProductImage/productImg/product3.jpg"
         },
         {
           "name": "Pain Relief",
-          "link": "https://example.com/popular/sub2",
+          "link": "consultation",
           "image": "/ProductImage/productImg/product8.jpg"
         }
       ]
@@ -87,7 +87,7 @@
       "subcategories": [
         {
           "name": "Sexual Health",
-          "link": "https://example.com/sexual-health/sub1",
+          "link": "consultation",
           "image": "/ProductImage/productImg/product4.jpg"
         }
       ]
@@ -98,7 +98,7 @@
       "subcategories": [
         {
           "name": "Other Sub 1",
-          "link": "https://example.com/other/sub1",
+          "link": "consultation",
           "image": "https://example.com/images/other-sub1.jpg"
         }
       ]
