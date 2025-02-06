@@ -3,7 +3,7 @@ const Map = () => {
   return (
     <div className='max-w-6xl mx-auto px-4  '>
       <div className='justify-center items-center flex my-16'>
-      <h2 className='text-4xl xl:text-[48px]  font-semibold leading-tight  text-center tracking-wider sm:px-[10rem] '>Your Health Support is Just a Click Away on the Map</h2>
+      <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight  text-center tracking-wider sm:px-[10rem] '>Your Health Support is Just a Click Away on the Map</h2>
       </div>
       <div>
          {/* Map Section */}

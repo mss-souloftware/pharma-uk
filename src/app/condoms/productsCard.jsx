@@ -57,7 +57,7 @@ const ProductsCard = () => {
         ) : products.length > 0 ? (
           products.map((product, index) => (
             <div
-              className="relative border border-solid border-gray-300 rounded-lg shadow-sm hover:shadow-2xl hover:scale-[1.00] hover:-translate-y-1 transform transition-all duration-300 grid grid-cols-1 sm:grid-cols-2 gap-x-4 mx-5 my-5 items-stretch h-[24rem] sm:h-[12rem] overflow-hidden bg-white hover:bg-gray-50"
+              className="relative border border-solid border-gray-300 rounded-lg shadow-sm hover:shadow-2xl hover:scale-[1.00] hover:-translate-y-1 transform transition-all duration-300 grid grid-cols-1 sm:grid-cols-2 gap-x-4 mx-5 my-5 items-stretch h-[24rem] sm:h-[13rem] overflow-hidden bg-white hover:bg-gray-50"
               key={index}
             >
               {/* Image Section */}
@@ -73,12 +73,12 @@ const ProductsCard = () => {
 
               {/* Content Section */}
               <div className="flex flex-col justify-between px-4  py-6 sm:py-2 relative">
-                <h1 className="text-sm font-semibold">
+                <h6 className="text-sm font-semibold">
                   {product.title.length > 20
                     ? product.title.substring(0, 20) + "..."
                     : product.title}
-                </h1>
-                <p className="text-xs font-light ">
+                </h6>
+                <p className="text-sm font-light ">
                   {product.description.length > 70
                     ? product.description.substring(0, 70) + "..."
                     : product.description}
@@ -93,7 +93,7 @@ const ProductsCard = () => {
                     }}
                     className="py-2 md:my-3 px-7 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
                   >
-                    <p className="text-sm font-light">Add to Cart</p>
+                    <p className="text-xs font-light">Add to Cart</p>
                   </button>
                 </div>
               </div>

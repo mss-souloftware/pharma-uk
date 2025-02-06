@@ -37,18 +37,18 @@ const CustomerReviews = () => {
 
           {/* Right side - Content Section */}
           <div className="w-full md:w-1/2 space-y-4 md:order-2">
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-wider" style={{lineHeight: "30px"}}>
+            <h2 className="text-xl sm:text-3xl font-semibold leading-tight   "  >
               Customer Reviews
             </h2>
             
-            <p className="text-lg md:text-base md:leading-relaxed" style={{lineHeight: '30.6px'}}>
+            <p className="text-sm leading-8"  >
               Our customers trust us to deliver top-quality service. Read 
               more reviews on Google and TrustPilot!
             </p>
 
             {/* Reviews Count with Animation */}
             <div className="transform transition-all duration-500 hover:scale-105">
-              <div className="text-4xl md:text-5xl font-bold text-hoverUnderlineColor">
+              <div className="text-3xl  font-bold text-hoverUnderlineColor">
                 243,0094+
               </div>
               

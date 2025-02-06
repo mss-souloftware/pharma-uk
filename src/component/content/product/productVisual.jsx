@@ -9,7 +9,7 @@ const ProductVisual = () => {
  {/* Dummy Text Section */}
  <div className="text-center max-w-4xl">
         
- <p className="[word-spacing:0.1em] text-center text-gray-700 " >
+ <p className="[word-spacing:0.1em] text-center text-gray-700 text-sm " >
   Discover the latest in cutting-edge technology with our new product. Designed to enhance your experience, it delivers performance, style, and reliability in one seamless package.
 </p>
 

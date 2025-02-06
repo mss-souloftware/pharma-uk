@@ -5,6 +5,7 @@ import CartProduct from "./cartProduct";
 import { CartContext } from "./feature/contextProvider";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import WeeklyPlan from "./feature/weeklyPlan"; // import WeeklyPlan component
+import StepNavigation from "../stepsNavigation/page";
 
 const Cart = () => {
   const { cart, dispatch } = useContext(CartContext);
@@ -43,8 +44,9 @@ const Cart = () => {
 
   return (
     <section className="py-8 md:py-16 relative">
+      <StepNavigation/>
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
-        <h2 className="font-manrope text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight font-extrabold text-center text-gray-900 mb-8">
+        <h2 className="font-manrope text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight font-extrabold text-center text-gray-900 mb-8">
           Shopping <span className="text-hoverUnderlineColor">Cart</span>
         </h2>
 
@@ -111,7 +113,7 @@ const Cart = () => {
         {showContactButton && (
           <div className="justify-center flex my-7 transition-all duration-500 opacity-100">
             <Link href="/cartAddress">
-              <button className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 lg:px-8 lg:py-2 mt-2 w-[30vw] sm:w-1/5 md:w-[15rem] lg:w-[15rem] sm:h-[6vh] h-[4vh] lg:h-[4vh] xl:h-[5vh] text-xs sm:text-sm lg:text-base text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:bg-[#96192e] transition-transform duration-300 ease-in-out sm:leading-[1rem]">
+              <button className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 lg:px-8 lg:py-2 mt-2 w-[30vw] sm:w-1/5 md:w-[15rem] lg:w-[15rem] sm:h-[6vh] h-[4vh] lg:h-[4vh] xl:h-[5vh] text-xs  text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:bg-[#96192e] transition-transform duration-300 ease-in-out sm:leading-[1rem]">
                 Contact Information
               </button>
             </Link>

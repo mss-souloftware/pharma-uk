@@ -47,10 +47,10 @@ const Policy = () => {
     <div className="container mx-auto px-4 my-20">
       {/* Header Section */}
       <div className="text-center mb-10">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold  mb-8">
+        <h1 className="text-xl sm:text-3xl  font-semibold  mb-8">
           Our Policies
         </h1>
-        <p className="text-base md:text-lg text-gray-700  ">
+        <p className="text-sm md:text-lg text-gray-700  ">
           Here you can find the most important information regarding our
           policies and services.
         </p>
@@ -74,10 +74,10 @@ const Policy = () => {
           {policies.map((policy, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h2 className="text-xl lg:text-3xl xl:text-3xl md:text-2xl font-normal mb-4 text-gray-800">
+                <h2 className="text-base font-normal mb-4 text-gray-800">
                   {policy.title}
                 </h2>
-                <p className="text-sm md:text-base text-gray-700 font-light">
+                <p className="text-sm text-gray-700 font-light">
                   {policy.description}
                 </p>
               </div>
@@ -104,10 +104,10 @@ const Policy = () => {
       
             {/* Text Container */}
             <div className="text-left mt-4">
-              <h2 className="text-2xl lg:text-3xl font-semibold text-black mb-2">
+              <h2 className="text-base font-semibold text-black mb-2">
                 {policy.title}
               </h2>
-              <p className="text-sm md:text-base text-gray-700 font-light">
+              <p className="text-sm text-gray-700 font-light">
                 {policy.description}
               </p>
             </div>

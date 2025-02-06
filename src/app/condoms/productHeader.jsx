@@ -62,10 +62,10 @@ const ProductHeader = () => {
               ))
             : fetchData.map((item) => (
                 <div key={item.label}>
-                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-10 text-hoverUnderlineColor">
+                  <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-10 text-hoverUnderlineColor">
                     {item.title}
-                  </h1>
-                  <p className="text-base text-gray-700">{item.subTitle}</p>
+                  </h4>
+                  <p className="text-sm text-gray-700">{item.subTitle}</p>
 
                   {/* Custom Button */}
                   <CustomeBtn
@@ -76,7 +76,7 @@ const ProductHeader = () => {
                     className=""
                   />
 
-                  <p className="xl:text-base md:text-base text-sm font-normal max-w-full text-gray-600 mt-4 leading-8  ">
+                  <p className="text-sm font-normal max-w-full text-gray-600 mt-4  ">
                     {item.content}
                   </p>
                 </div>

@@ -9,7 +9,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
     if (weeklyPlanRef.current && !weeklyPlanRef.current.contains(event.target)) {
       setShowContactButton(false);
     }
-  };                       
+  };
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -21,8 +21,8 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
   // Handle click on a weekly plan
   const handlePlanClick = (plan) => {
     if (onPlanClick && typeof onPlanClick === "function") {
-      onPlanClick(plan); // Only call onPlanClick if it's a function
-      setShowContactButton(true); // Show the contact button when a week is selected
+      onPlanClick(plan);
+      setShowContactButton(true);
     } else {
       console.error("onPlanClick is not a function");
     }
@@ -48,7 +48,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
               }`}
             >
               {treatment.name}
-            </button>  
+            </button>
           ))
         ) : (
           <p>No Weekly Plan Available</p>
@@ -60,7 +60,9 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
           <thead>
             <tr>
               <th className="border border-gray-300 px-4 py-2">Week</th>
-              <th className="border border-gray-300 px-4 py-2">Capsules</th>
+              <th className="border border-gray-300 px-4 py-2">
+                {weekPlan.some((plan) => "packets" in plan) ? "Packets" : "Capsules"}
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -74,8 +76,13 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
                     : ""
                 }`}
               >
-                <td className="border border-gray-300 px-4 py-2">{plan.week} Week</td>
-                <td className="border border-gray-300 px-4 py-2">{plan.capsules} Capsules</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  {plan.week ? `${plan.week} Week` : ""}
+                </td>
+                <td className="border border-gray-300 px-4 py-2">
+                  {plan.capsules ?? plan.packets}{" "}
+                  {plan.packets ? "Packets" : "Capsules"}
+                </td>
               </tr>
             ))}
           </tbody>

@@ -30,10 +30,10 @@ const QualifiedTeamAboutPage = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-center text-4xl sm:text-6xl lg:text-[68px] font-semibold leading-tight">
+      <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
         A Fully Qualified Team
       </h1>
-      <p className="text-center py-8 text-gray-700 lg:px-[10rem] xl:px-[20rem] sm:px-4">
+      <p className="text-center text-sm py-8 text-gray-700 lg:px-[10rem] xl:px-[20rem] sm:px-4">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
       </p>
 
@@ -77,9 +77,9 @@ const QualifiedTeamAboutPage = () => {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent text-white p-4 rounded-b-lg">
-                  <h2 className="text-sm md:text-lg font-semibold">{member.name}</h2>
+                  <h2 className="text-base md:text-lg font-semibold">{member.name}</h2>
                   <p className="text-xs md:text-sm text-gray-200">{`GPhC Number: ${member.gphcNumber}`}</p>
-                  <p className="text-xs md:text-sm text-gray-300 mt-2">{member.text}</p>
+                  <p className="text-sm md:text-sm text-gray-300 mt-2">{member.text}</p>
                   <div className="flex justify-center mt-4">
                     {member.socialLinks.map((link, socialIndex) => (
                       <Link key={socialIndex} href={link.url} target="_blank">

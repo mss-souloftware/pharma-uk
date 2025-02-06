@@ -45,15 +45,15 @@ const Recomended = ({ headingName, title, description, image, price, weekPlan, o
 
   return (
     <div className="bg-gray-50 mx-auto container w-full p-10 rounded-lg justify-center flex flex-col items-center px-4 sm:px-8 md:px-12">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl mt-10 text-center mb-5 font-extrabold capitalize text-hoverUnderlineColor">
+      <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-10  mb-5   capitalize ">
         {headingName}
       </h1>
 
       <div className="w-full max-w-screen-xl py-8 sm:py-4 lg:px-7 px-10 border-2 shadow-xl border-hoverUnderlineColor rounded-lg bg-white flex flex-col items-center">
         <div className="sm:flex sm:flex-col sm:justify-center items-center xl:grid lg:grid-cols-2 gap-8 mb-14">
           <div>
-            <h3 className="xl:text-2xl text-lg my-3 font-bold text-hoverUnderlineColor">{title}</h3>
-            <p className="text-gray-700">{description}</p>
+            <h3 className="text-lg my-3 font-bold text-hoverUnderlineColor">{title}</h3>
+            <p className="text-gray-700 text-sm">{description}</p>
           </div>
           <div className="w-full xl:ml-40 sm:w-[300px] h-auto">
             <Image
@@ -69,7 +69,7 @@ const Recomended = ({ headingName, title, description, image, price, weekPlan, o
         <div className="flex justify-center gap-4 mb-6">
           <button
             onClick={handleAddToCart} // Pass the product object with weeklyPlan and price
-            className="px-4 py-2 text-white rounded-lg bg-hoverUnderlineColor"
+            className="px-4 py-2 text-white text-xs  rounded-lg bg-hoverUnderlineColor"
           >
             Add to Cart
           </button>

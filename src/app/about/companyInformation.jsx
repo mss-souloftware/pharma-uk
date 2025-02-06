@@ -23,10 +23,10 @@ const CompanyInfo = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="space-y-6"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-wider">
+          <h3 className="text-xl sm:text-3xl font-semibold tracking-wider">
             Company Information
-          </h2>
-          <p className=" leading-relaxed" style={{lineHeight:'30.97px'}} >
+          </h3>
+          <p className="text-sm leading-relaxed" style={{lineHeight:'30.97px'}} >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -34,7 +34,7 @@ const CompanyInfo = () => {
           </p>
 
           {/* Company Details */}
-          <div className="space-y-2  text-gray-800" style={{lineHeight:'30px'}}>
+          <div className="space-y-2 text-sm   text-gray-800" style={{lineHeight:'30px'}}>
             <p>
               <span className="font-semibold">Pharmica Ltd</span> is registered in England
               and Wales under company number{" "}
@@ -74,7 +74,7 @@ const CompanyInfo = () => {
             className="absolute bottom-0 right-0 rounded-xl shadow-lg bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] text-white p-4 w-52"
             style={{ lineHeight: "30.48px" }}
           >
-            <h3 className="font-semibold text-lg">Registered Office:</h3>
+            <h3 className="font-semibold text-sm">Registered Office:</h3>
             <p className="text-sm">
               236 Gray&apos;s Inn Rd, London, WC1X 8HB, United Kingdom
             </p>

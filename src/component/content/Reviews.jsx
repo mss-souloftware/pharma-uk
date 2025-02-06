@@ -70,7 +70,7 @@ const Reviews = () => {
                 <div className="w-20 h-20 rounded-full mb-7">
                   <Image src={review.imgUrl || '/default-avatar.png'} alt={review.author} width={80} height={80} className="rounded-full" />
                 </div>
-                <p className="text-lg font-semibold text-gray-800 mb-2">{review.author}</p>
+                <p className="text-base font-semibold text-gray-800 mb-2">{review.author}</p>
                 <p className="text-sm text-gray-600">{review.position}</p>
                 <p className="text-xs text-gray-500 mt-4">{review.text}</p>
               </div>

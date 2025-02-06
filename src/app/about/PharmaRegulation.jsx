@@ -22,14 +22,14 @@ const PharmaRegulation = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Header Section */}
-      <h1 className="text-4xl sm:text-6xl font-semibold leading-tight lg:leading-[91px] text-center tracking-wider">Pharmacy Regulation</h1>
+      <h1 className="text-xl sm:text-3xl font-semibold leading-tight lg:leading-[81px] text-center tracking-wider">Pharmacy Regulation</h1>
       
       {/* Registration Info */}
       <div className="text-center mb-8 space-y-2">
-        <p className="[word-spacing:0.1em] text-gray-700" style={{lineHeight:"30.6px"}}>
+        <p className="  text-sm text-gray-700" >
           The pharmacy is registered with the General Pharmaceutical Council with number 9012030.
         </p>
-        <p className="[word-spacing:0.1em]  text-gray-700" >
+        <p className="[word-spacing:0.1em] text-sm text-gray-700" >
           The superintendent pharmacist for Pharmica is: Ana Carolina Osório De Faria Goncalves GPhC Number: 2088635
         </p>
       </div>
@@ -51,9 +51,9 @@ const PharmaRegulation = () => {
                   height={300}
                   width={300}
                 />
-                <h3 className="text-xl font-semibold my-3" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
+                <h3 className="text-base font-semibold my-3" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
                 <p className="text-sm mb-2  text-gray-700"  >{pharmacist.description}</p>
-                <p className="text-hoverUnderlineColor text-sm font-semibold">
+                <p className="text-hoverUnderlineColor text-xs font-semibold">
                   (GPhC Number: {pharmacist.gphcNumber})
                 </p>
               </div>
@@ -79,9 +79,9 @@ const PharmaRegulation = () => {
               />
             </div>
             <div className="flex-grow text-center lg:text-left">
-              <h3 className="text-xl font-semibold mb-2" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
+              <h3 className="text-base font-semibold mb-2" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
               <p className="text-sm mb-2  text-gray-700" style={{lineHeight: '25.91px'}}>{pharmacist.description}</p>
-              <p className="text-hoverUnderlineColor text-sm font-semibold">
+              <p className="text-hoverUnderlineColor text-xs font-semibold">
                 (GPhC Number: {pharmacist.gphcNumber})
               </p>
             </div>
@@ -90,8 +90,8 @@ const PharmaRegulation = () => {
       </div>
 
       {/* Footer Registration Section */}
-      <div className="border rounded-xl shadow-md bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] p-3 sm:p-6 text-lg lg:text-xl  flex flex-col md:flex-row items-center justify-between text-white">
-        <p className="text-center md:text-left mb-4 md:mb-0 ">
+      <div className="border rounded-xl shadow-md bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] p-3 sm:p-6  flex flex-col md:flex-row items-center justify-between text-white">
+        <p className="text-center md:text-left mb-4 md:mb-0  text-sm">
           For more information or to view registration details visit the
           General Pharmaceutical Council&apos;s website. Responsible Pharmacist:
         </p>

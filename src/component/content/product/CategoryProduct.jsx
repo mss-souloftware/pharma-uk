@@ -34,7 +34,7 @@ const CategoryList = ({ categories, selectedCategory, onSelectCategory, isLoadin
                   priority
                   quality={100}
                 />
-                <span className="text-center font-semibold text-sm whitespace-nowrap w-auto">
+                <span className="text-center  text-sm whitespace-nowrap w-auto">
                   {category.name || "Unnamed Category"}
                 </span>
               </div>
@@ -97,12 +97,12 @@ const CategoryProduct = () => {
           className="w-full rounded-xl"
         />
         <div className="p-4">
-          <h5 className="text-lg md:text-xl font-semibold text-gray-800">{subcategory.name}</h5>
-          <p className="text-xs md:text-base text-gray-800 mt-2">
+          <h5 className="text-base font-semibold text-gray-800">{subcategory.name}</h5>
+          <p className="text-sm text-gray-800 mt-2">
             {subcategory.description?.length > 60 ? `${subcategory.description.substring(0, 70)}...` : subcategory.description || "No description available."}
           </p>
           <Link href={subcategory.link}>
-            <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white text-xs rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
               Get Consultation
             </button>
           </Link>
@@ -115,7 +115,7 @@ const CategoryProduct = () => {
       <CategoryList categories={categories} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} isLoading={isLoading} />
       {selectedCategory && (
         <div className="mt-6">
-          <h3 className="text-xl lg:text-4xl md:text-3xl sm:text-xl text-center mb-6 ">
+          <h3 className="text-base lg:text-3xl md:text-2xl sm:text-xl text-center mb-6 ">
             Subcategories Under <span className="text-hoverUnderlineColor">{selectedCategory.name}</span>
           </h3>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

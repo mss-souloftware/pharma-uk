@@ -27,7 +27,7 @@ const FAQAccordion = () => {
 
   return (
     <div className="container mx-auto md:px-5 lg:px-0">
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-relaxed mb-8 text-center sm:text-left">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed mb-8 text-center sm:text-left">
         Frequently Asked Questions About{" "}
         <span className="text-hoverUnderlineColor">Condoms</span>
       </h2>
@@ -68,7 +68,7 @@ const FAQAccordion = () => {
                 onClick={() => toggleAccordion(index)}
                 className="w-full text-left flex justify-between items-center py-4 text-lg font-semibold text-gray-800 hover:text-gray-600 focus:outline-none"
               >
-                <span className="text-hoverUnderlineColor">{item.question}</span>
+                <p className="text-hoverUnderlineColor text-sm ">{item.question}</p>
                 <svg
                   className={`transform transition-transform duration-200 ${
                     activeIndex === index ? "rotate-180" : ""
@@ -99,11 +99,11 @@ const FAQAccordion = () => {
                   {Array.isArray(item.answer) ? (
                     <ul className="list-disc list-inside space-y-2">
                       {item.answer.map((point, idx) => (
-                        <li key={idx}>{point}</li>
+                        <li key={idx} className="text-sm" >{point}</li>
                       ))}
                     </ul>
                   ) : (
-                    <p>{item.answer}</p>
+                    <p className="text-sm">{item.answer}</p>
                   )}
                 </div>
               </div>

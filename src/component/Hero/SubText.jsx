@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
 import "./Hero.module.css";
-
+import "@/app/globals.css"
 const textAnimation = {
   hidden: { opacity: 0, y: 100 }, // Start off-screen (below)
   visible: (i) => ({
@@ -31,13 +31,13 @@ const SubText = () => {
           variants={textAnimation}
           custom={0}
         >
-          <p className=" text-gray-800 md:leading-[30.86px]">
+          <p className=" text-black md:leading-[30.86px] text-sm ">
             Discover why <span className="text-hoverUnderlineColor">iFeelShy</span> is the go-to choice for seamless and convenient online pharmacy services. Shop with confidence today!
           </p>
         </motion.div>
 
         {/* Second Column - Features List */}
-        <div className="heroSubText container flex flex-col xl:text-sm md:text-sm text-xs w-auto md:gap-3 ml-0">
+        <div className="heroSubText container flex flex-col text-sm   w-auto md:gap-3 ml-0">
           {[
             "Fully licensed UK Online Pharmacy",
             "Secure and discreet packaging for privacy",
@@ -56,7 +56,7 @@ const SubText = () => {
                 alt="tick-icon"
                 className="w-4 h-4 md:pr-1 md:mt-1 hidden sm:block"
               />
-              <span className="text-black xl:text-sm md:text-sm mt-2 sm:mt-0">
+              <span className="text-black text-sm p mt-2 sm:mt-0">
                 {text}
               </span>
             </motion.div>

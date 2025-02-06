@@ -131,7 +131,7 @@ const Navbar = () => {
           {/* Navbar Items (hidden on small screens, visible on larger screens) */}
           <div className="w-full md:block md:w-auto mobile-nav-hidden">
             <ul
-              className="hidden md:flex flex-col font-normal sm:text-xs text-xs p-4 md:p-0 mt-4 border rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0
+              className="hidden md:flex flex-col font-normal text-xs p-4 md:p-0 mt-4 border rounded-lg bg-blackBackground md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0
               md:border-0 md:bg-blackBackground md:dark:bg-blackBackground dark:bg-blackBackground md:flex-wrap md:items-center md:space-y-0"
             >
               {/* Menu items go here */}

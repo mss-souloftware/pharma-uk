@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Recomended from "./recomended";
 import WeeklyPlan from "../cart/feature/weeklyPlan";
+import StepNavigation from "../stepsNavigation/page";
 
 const Treatment = () => {
   const [mensMedicineDataFirst, setMensMedicineDataFirst] = useState([]);
@@ -49,6 +50,9 @@ const Treatment = () => {
   return (
     <>
       <div className="container mx-auto">
+
+      <StepNavigation/>
+
         {/* Render the selected treatment for the first medicine */}
         {selectedTreatmentFirst && (
           <Recomended

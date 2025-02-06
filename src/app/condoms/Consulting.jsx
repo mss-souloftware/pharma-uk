@@ -75,10 +75,10 @@ const ConsultingCard = () => {
 
               {/* Left side: Text content */}
               <div className="md:w-2/3 w-full md:pr-8 text-center md:text-left">
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-relaxed text-white mb-4">
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed text-white mb-4">
                   {consulting.title}
                 </h2>
-                <p className="text-base sm:text-xl text-white mb-4">
+                <p className="text-sm text-white mb-4">
                   {consulting.description}
                 </p>
 
@@ -103,10 +103,10 @@ const ConsultingCard = () => {
                           width={20}
                           src={item.img}
                           alt={item.text}
-                          className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 ml-2"
+                          className="w-5 h-5 sm:w-6 sm:h-6 ml-2"
                         />
                       )}
-                      <p className="text-sm text-white">{item.text}</p>
+                      <p className="text-xs text-white">{item.text}</p>
                     </div>
                   ))}
                 </div>

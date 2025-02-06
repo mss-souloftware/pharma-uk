@@ -38,9 +38,9 @@ const Card = () => {
       {/* First Column (Text & Image) */}
       <div className="flex flex-col space-y-10 items-center lg:items-start">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-center lg:text-start">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-center lg:text-start">
           Quick Help, <br /> Our Priority!
-        </h2>
+        </h3>
 
         {/* Image */}
         <Image
@@ -56,7 +56,7 @@ const Card = () => {
       <div className="flex flex-col space-y-10">
         
         {/* Paragraph */}
-        <p className="text-center lg:text-left text-gray-700 text-lg leading-relaxed">
+        <p className="text-center lg:text-left text-gray-700 text-sm leading-relaxed">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
         </p>
 
@@ -64,14 +64,14 @@ const Card = () => {
         <div className="flex flex-col space-y-8">
           {data.map((item, index) => (
             <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <h1 className="text-2xl sm:text-3xl font-semibold mb-2">{item.firstHeading}</h1>
-              <p className="text-gray-700 leading-7">{item.description}</p>
+              <h1 className="text-base font-semibold mb-2">{item.firstHeading}</h1>
+              <p className="text-gray-700 leading-7 text-sm">{item.description}</p>
               
               {/* List with Icons */}
               <ul className="mt-3">
                 {item.additionalInfo.map((info, idx) => (
-                  <li key={idx} className="flex items-center font-semibold my-2 text-gray-700">
-                    <div className="w-6 h-6 sm:flex items-center justify-center bg-hoverUnderlineColor rounded-full mr-3 hidden ">
+                  <li key={idx} className="flex items-center text-xs font-semibold my-2 text-gray-700">
+                    <div className="w-4 h-4 sm:flex items-center justify-center bg-hoverUnderlineColor rounded-full mr-3 hidden ">
                       <Image src={item.img} alt="tick" height={15} width={15} className="w-4  " />
                     </div>
                     {info}
