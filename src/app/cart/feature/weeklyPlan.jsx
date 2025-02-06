@@ -28,7 +28,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
     }
   };
 
-  return (
+  return weekPlan.length > 0 ? ( // ✅ Ternary operator se check kiya hai
     <div ref={weeklyPlanRef}>
       <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
         24-Week Treatment Plan
@@ -36,60 +36,52 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
 
       {/* Filter Buttons */}
       <div className="flex justify-center gap-4 mb-6">
-        {weekPlan.length > 0 ? (
-          weekPlan.map((treatment, index) => (
-            <button
-              key={index}
-              onClick={() => handlePlanClick(treatment)}
-              className={`px-4 py-2 text-white rounded-lg ${
-                selectedWeek?.week === treatment.week
-                  ? "bg-hoverUnderlineColor"
-                  : "bg-gray-400"
-              }`}
-            >
-              {treatment.name}
-            </button>
-          ))
-        ) : (
-          <p>No Weekly Plan Available</p>
-        )}
+        {weekPlan.map((treatment, index) => (
+          <button
+            key={index}
+            onClick={() => handlePlanClick(treatment)}
+            className={`px-4 py-2 text-white rounded-lg ${
+              selectedWeek?.week === treatment.week
+                ? "bg-hoverUnderlineColor"
+                : "bg-gray-400"
+            }`}
+          >
+            {treatment.name}
+          </button>
+        ))}
       </div>
 
-      {weekPlan.length > 0 && (
-        <table className="w-full text-center border-collapse border border-gray-300">
-          <thead>
-            <tr>
-              <th className="border border-gray-300 px-4 py-2">Week</th>
-              <th className="border border-gray-300 px-4 py-2">
-                {weekPlan.some((plan) => "packets" in plan) ? "Packets" : "Capsules"}
-              </th>
+      <table className="w-full text-center border-collapse border border-gray-300">
+        <thead>
+          <tr>
+            <th className="border border-gray-300 px-4 py-2">Week</th>
+            <th className="border border-gray-300 px-4 py-2">
+              {weekPlan.some((plan) => "packets" in plan) ? "Packets" : "Capsules"}
+            </th> {/* ✅ Quantity add kar di */}
+          </tr>
+        </thead>
+        <tbody>
+          {weekPlan.map((plan, index) => (
+            <tr
+              key={index}
+              onClick={() => handlePlanClick(plan)}
+              className={`cursor-pointer ${
+                selectedWeek?.week === plan.week ? "text-white bg-hoverUnderlineColor" : ""
+              }`}
+            >
+              <td className="border border-gray-300 px-4 py-2">
+                {plan.week ? `${plan.week} Week` : ""}
+              </td>
+              <td className="border border-gray-300 px-4 py-2">
+                {plan.capsules ?? plan.packets}{" "}
+                {plan.packets ? "Packets" : "Capsules"}
+              </td> 
             </tr>
-          </thead>
-          <tbody>
-            {weekPlan.map((plan, index) => (
-              <tr
-                key={index}
-                onClick={() => handlePlanClick(plan)}
-                className={`cursor-pointer ${
-                  selectedWeek?.week === plan.week
-                    ? "bg-hoverUnderlineColor text-white"
-                    : ""
-                }`}
-              >
-                <td className="border border-gray-300 px-4 py-2">
-                  {plan.week ? `${plan.week} Week` : ""}
-                </td>
-                <td className="border border-gray-300 px-4 py-2">
-                  {plan.capsules ?? plan.packets}{" "}
-                  {plan.packets ? "Packets" : "Capsules"}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
+          ))}
+        </tbody>
+      </table>
     </div>
-  );
+  ) : null; // ✅ Agar weekPlan nahi hai to kuch bhi return nahi karega
 };
 
 export default WeeklyPlan;

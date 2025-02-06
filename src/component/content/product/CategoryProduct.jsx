@@ -36,7 +36,7 @@ const CategoryProduct = () => {
           <h3 className="text-lg lg:text-3xl text-center mb-6">
             Subcategories Under <span className="text-hoverUnderlineColor">{selectedCategory.name}</span>
           </h3>
-          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 shadow-sm rounded-lg lg:grid-cols-3 xl:grid-cols-4">
             <SubcategoryList selectedCategory={selectedCategory} isLoading={isLoading} />
           </div>
         </div>

@@ -5,126 +5,63 @@
        "title": "Durex Thin Feel",
        "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
        "imageUrl": "/ProductImage/condoms/product1.jpg",
-       "price": "29.00",
-      "weekPlan": [
-    { "week": 1, "packets": 10 },
-    { "week": 2, "packets": 20 },
-    { "week": 4, "packets": 36 },
-    { "week": 8, "packets": 72 },
-    { "week": 12, "packets": 120 }
-  ]
+       "price": "29.00" 
      },
      {
        "id": "2",
        "title": "Durex Extended Pleasure",
        "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
        "imageUrl": "/ProductImage/condoms/product2.jpg",
-       "price": "29.00",
-      "weekPlan": [
-    { "week": 1, "packets": 10 },
-    { "week": 2, "packets": 20 },
-    { "week": 4, "packets": 36 },
-    { "week": 8, "packets": 72 },
-    { "week": 12, "packets": 120 }
-  ]
+       "price": "29.00" 
      },
      {
        "id": "3",
        "title": "Durex Pleasure Me",
        "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
        "imageUrl": "/ProductImage/condoms/product3.jpg",
-       "price": "29.00",
-       "weekPlan": [
-    { "week": 1, "packets": 10 },
-    { "week": 2, "packets": 20 },
-    { "week": 4, "packets": 36 },
-    { "week": 8, "packets": 72 },
-    { "week": 12, "packets": 120 }
-  ]
+       "price": "29.00" 
      },
      {
        "id": "4",
        "title": "PureShield",
        "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
        "imageUrl": "/ProductImage/condoms/product4.jpg",
-       "price": "29.00",
-       "weekPlan": [
-    { "packets": 10 },
-    {  "packets": 20 },
-    { "packets": 36 },
-    { "packets": 72 },
-    { "packets": 120 }
-  ]
+       "price": "29.00" 
      },
      {
        "id": "5",
        "title": "SensuMax",
        "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
        "imageUrl": "/ProductImage/condoms/product5.jpg",
-       "price": "29.00",
-       "weekPlan": [
-         { "week": 1, "capsules": 10 },
-         { "week": 2, "capsules": 20 },
-         { "week": 4, "capsules": 36 },
-         { "week": 8, "capsules": 72 },
-         { "week": 12, "capsules": 120 }
-       ]
+       "price": "29.00" 
      },
      {
       "id": "6",
       "title": "CuddleGuard",
       "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
       "imageUrl": "/ProductImage/condoms/product2.jpg",
-      "price": "29.00",
-      "weekPlan": [
-        { "packets": 10 },
-        {  "packets": 20 },
-        { "packets": 36 },
-        { "packets": 72 },
-        { "packets": 120 }
-      ]
+      "price": "29.00" 
     },
     {
       "id": "7",
       "title": "EuphoriaCare",
       "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
       "imageUrl": "/ProductImage/condoms/product3.jpg",
-      "price": "29.00",
-      "weekPlan": [
-        { "packets": 10 },
-        {  "packets": 20 },
-        { "packets": 36 },
-        { "packets": 72 },
-        { "packets": 120 }
-      ]
+      "price": "29.00" 
     },
     {
       "id": "8",
       "title": "VelvetGuard",
       "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
       "imageUrl": "/ProductImage/condoms/product4.jpg",
-      "price": "29.00",
-      "weekPlan": [
-        { "packets": 10 },
-        {  "packets": 20 },
-        { "packets": 36 },
-        { "packets": 72 },
-        { "packets": 120 }
-      ]
+      "price": "29.00" 
     },
     {
       "id": "9",
       "title": "LuxeFit",
       "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
       "imageUrl": "/ProductImage/condoms/product5.jpg",
-      "price": "29.00",
-      "weekPlan": [
-        { "packets": 10 },
-        {  "packets": 20 },
-        { "packets": 36 },
-        { "packets": 72 },
-        { "packets": 120 }
-      ]
+      "price": "29.00" 
     }
    ],
    

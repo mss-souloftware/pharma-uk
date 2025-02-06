@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
-import React, { useState } from "react";
-import WeeklyPlan from "./feature/weeklyPlan";
+import Button from "@/component/Button";
+import Image from "next/image"; 
 import { ToastContainer } from "react-toastify";
 
 const CartProduct = ({

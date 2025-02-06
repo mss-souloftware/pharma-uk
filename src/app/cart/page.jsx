@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import CartProduct from "./cartProduct";
 import { CartContext } from "./feature/contextProvider";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
-import WeeklyPlan from "./feature/weeklyPlan"; // import WeeklyPlan component
+import WeeklyPlan from "./feature/weeklyPlan"; 
 import StepNavigation from "../stepsNavigation/page";
 
 const Cart = () => {
@@ -39,12 +39,14 @@ const Cart = () => {
     0
   );
 
-  // Check if at least one product has a selected week
-  const showContactButton = Object.values(selectedWeeks).some((week) => week);
+  // Check if at least one product has a selected week OR if any product is in the cart
+  const showContactButton =
+    products.length > 0 &&
+    (Object.values(selectedWeeks).some((week) => week) || products.some((product) => !product.weekPlan));
 
   return (
     <section className="py-8 md:py-16 relative">
-      <StepNavigation/>
+      <StepNavigation />
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
         <h2 className="font-manrope text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight font-extrabold text-center text-gray-900 mb-8">
           Shopping <span className="text-hoverUnderlineColor">Cart</span>
@@ -68,7 +70,7 @@ const Cart = () => {
                   onRemove={() => dispatch({ type: "Remove", product })}
                 />
                 <WeeklyPlan
-                  weekPlan={product.weekPlan} // Assuming each product has a `weekPlan`
+                  weekPlan={product.weekPlan} 
                   selectedWeek={selectedWeeks[product.id]}
                   onPlanClick={(selectedWeek) =>
                     handleWeekSelection(product, selectedWeek)
@@ -109,13 +111,17 @@ const Cart = () => {
           </div>
         </div>
 
-        {/* Show Contact Information button once any product has a selected week */}
+        {/* Show Contact Information button */}
         {showContactButton && (
           <div className="justify-center flex my-7 transition-all duration-500 opacity-100">
             <Link href="/cartAddress">
-              <button className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 lg:px-8 lg:py-2 mt-2 w-[30vw] sm:w-1/5 md:w-[15rem] lg:w-[15rem] sm:h-[6vh] h-[4vh] lg:h-[4vh] xl:h-[5vh] text-xs  text-white font-semibold rounded-lg shadow-lg bg-hoverUnderlineColor hover:bg-[#96192e] transition-transform duration-300 ease-in-out sm:leading-[1rem]">
-                Contact Information
-              </button>
+            <button 
+            className="py-4 xl:px-5 sm:py-4 xl:py-6 md:px-6 md:py-5 lg:py-5 sm:w-[20%] w-[30vw] sm:h-[4vh] h-[4vh] md:w-[20%] md:h-[3vh] lg:h-[4vh] lg:w-[12rem] sm:text-base text-xs bg-hoverUnderlineColor text-white font-normal rounded-lg shadow-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-[#96192e] duration-300 flex items-center justify-center"
+          >
+            <span className="flex justify-center text-center text-sm ">
+              Contact Information
+            </span>
+          </button>
             </Link>
           </div>
         )}
