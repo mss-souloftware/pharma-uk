@@ -10,6 +10,8 @@ import AboutHero from "./aboutHero";
 import AboutImages from "./aboutImages";
 import PharmaRegulation from "./PharmaRegulation";
 import CustomerReviews from "./customerReviews";
+import ArticleSection from "./articleSection";
+import Article from "./article";
 
 const AboutPage = () => {
   return (
@@ -57,6 +59,7 @@ const AboutPage = () => {
             <QualifiedTeamAboutPage />
         
       </div>
+<Article/>
     </div>
   );
 };
