@@ -5,7 +5,7 @@ const StepNavigation = () => {
   const pathname = usePathname();
 
   const steps = [
-    { name: "Consulting Q/A", path: "/consult", id: "consult" },
+    { name: "Consulting", path: "/consultation", id: "consult" },
     { name: "Treatment", path: "/treatments", id: "treatment" },
     { name: "Add to Cart", path: "/cart", id: "cart" },
     { name: "Payment", path: "/cartAddress", id: "payment" },
@@ -22,7 +22,7 @@ const StepNavigation = () => {
           />
           <span
             className={`text-sm font-medium ${
-              pathname === step.path ? "text-red-500" : "text-gray-600"
+              pathname === step.path ? "" : "text-gray-600"
             }`}
           >
             {step.name}

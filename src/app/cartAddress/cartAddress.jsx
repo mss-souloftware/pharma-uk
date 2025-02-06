@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
+import StepNavigation from "../stepsNavigation/page";
 
 const CartAddress = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-8 lg:py-20 px-4 mx-auto max-w-screen-md">
+      <StepNavigation/>
       <h2 className="mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white">
         Contact <span className="text-hoverUnderlineColor">Us</span>
       </h2>

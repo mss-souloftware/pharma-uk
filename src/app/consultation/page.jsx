@@ -78,12 +78,12 @@ const Consult = () => {
             </h3>
             <div className="grid gap-6">
               {section.questions.map((question, questionIndex) => (
-                <div key={questionIndex} className="  p-4 rounded-lg ansition-transform transform hover:scale-105">
+                <div key={questionIndex} className="  p-4 rounded-lg ">
                   <h6 className="text-base font-medium mb-3">{question.question}</h6>
                   <div className="flex space-x-4">
                     <button
                       className={`py-2 px-6 text-xs rounded-lg transition-all duration-300 ${
-                        answers[`${sectionIndex}-${questionIndex}`] === "Yes" ? "bg-hoverUnderlineColor text-white" : "bg-gray-600 text-gray-300"
+                        answers[`${sectionIndex}-${questionIndex}`] === "Yes" ? "bg-green-700 text-white" : "bg-gray-600 text-gray-300"
                       } focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50`}
                       onClick={() => handleAnswer(sectionIndex, questionIndex, "Yes")}
                     >
@@ -91,8 +91,8 @@ const Consult = () => {
                     </button>
                     <button
                       className={`py-2 px-6 text-xs rounded-lg transition-all duration-300 ${
-                        answers[`${sectionIndex}-${questionIndex}`] === "No" ? "bg-red-500 text-white" : "bg-gray-600 text-gray-300"
-                      } focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50`}
+                        answers[`${sectionIndex}-${questionIndex}`] === "No" ? "bg-hoverUnderlineColor text-white" : "bg-gray-600 text-gray-300"
+                      } focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor focus:ring-opacity-50`}
                       onClick={() => handleAnswer(sectionIndex, questionIndex, "No")}
                     >
                       No
