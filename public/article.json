@@ -9,54 +9,63 @@
     {
       "id": 2,
       "title": "Innovative Drug Delivery Systems",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "Learn about new drug delivery technologies that improve the efficacy and reduce the side effects of medicines. This article explores cutting-edge advancements in drug delivery, including nanotechnology, transdermal patches, and smart drug carriers. Understand how these technologies enhance patient compliance, target specific cells more effectively, and reduce unwanted side effects. Stay informed about the latest research that is shaping the future of medicine and revolutionizing how treatments are administered.",
       "image": "/ProductImage/article/person2.jpg"
     },
     {
       "id": 3,
       "title": "A Guide to Over-the-Counter Medications",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "This article provides essential information on the safe use of over-the-counter medications and common misconceptions. Learn about the most commonly used non-prescription drugs, their benefits, potential risks, and the importance of reading labels carefully. Understand how to avoid drug interactions, recognize when medical consultation is necessary, and make informed choices regarding self-medication for minor ailments while ensuring safety and effectiveness.",
       "image": "/ProductImage/article/person3.jpg"
     },
     {
       "id": 4,
       "title": "The Role of Vaccines in Public Health",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "Understand the importance of vaccines in preventing infectious diseases and their contribution to public health systems. This article explores how vaccines work, their development process, and their role in eradicating diseases such as polio and smallpox. Learn about vaccine safety, herd immunity, and the impact of global immunization programs in reducing mortality rates. Stay informed about the latest advancements in vaccine technology, including mRNA vaccines and their potential applications beyond infectious diseases.",
       "image": "/ProductImage/article/person4.jpg"
     },
     {
       "id": 5,
       "title": "Understanding Antibiotic Resistance",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "This article discusses the growing issue of antibiotic resistance and how it affects the effectiveness of treatments. Discover how the misuse and overuse of antibiotics have contributed to resistant bacterial strains, making infections harder to treat. Learn about global efforts to combat this crisis, including new antibiotic discoveries, alternative therapies, and policies aimed at responsible antibiotic use. Explore what individuals can do to help slow the spread of resistance and ensure the effectiveness of life-saving medications for future generations.",
       "image": "/ProductImage/article/person5.jpg"
     },
     {
       "id": 6,
       "title": "Pharmaceutical Research and Drug Development",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "Explore the processes involved in pharmaceutical research and how new drugs are developed and tested. This article takes you through the journey of a drug, from initial discovery and preclinical testing to rigorous clinical trials and regulatory approval. Learn about the challenges researchers face, the high costs and risks associated with drug development, and the role of cutting-edge technologies like AI and personalized medicine in accelerating the process. Get insights into the future of pharmaceuticals and how research is shaping the next generation of treatments.",
       "image": "/ProductImage/article/person6.jpg"
     },
     {
       "id": 7,
       "title": "The Importance of Mental Health Medication",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "Learn about the different types of mental health medications and their role in managing conditions such as depression and anxiety. This article explores the science behind antidepressants, mood stabilizers, and anti-anxiety medications, discussing how they work and their potential side effects. Understand the importance of a holistic approach that combines medication with therapy, lifestyle changes, and support systems to achieve optimal mental well-being. Gain insight into the latest advancements in psychopharmacology and the ongoing research in mental health treatment.",
       "image": "/ProductImage/article/person7.jpg"
     },
     {
       "id": 8,
       "title": "Herbal Supplements: Myths and Facts",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "Debunking the myths surrounding herbal supplements and understanding their benefits and risks. This article provides a balanced perspective on natural remedies, highlighting scientific research on their effectiveness, potential dangers, and interactions with prescription medications. Learn how to differentiate between evidence-based herbal treatments and misleading health claims, ensuring that you make safe and informed choices. Discover how traditional herbal medicine continues to influence modern healthcare and how ongoing research is validating—or disproving—age-old remedies.",
       "image": "/ProductImage/article/person8.jpg"
     },
     {
       "id": 9,
       "title": "Antiviral Medications and Their Impact",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "An in-depth look at antiviral medications and their effectiveness in treating viral infections like the flu and HIV. This article explains how antiviral drugs work, their role in preventing the replication of viruses, and their use in managing chronic conditions such as hepatitis and herpes. Learn about the development of new antiviral therapies, the challenges in combating emerging viruses, and the global effort to prepare for future pandemics. Understand the importance of continued research and innovation in the fight against viral diseases.",
       "image": "/ProductImage/article/person4.jpg"
     },
     {
       "id": 10,
       "title": "The Evolution of Pain Management Medications",
+      "subheading": "The basics of staying healthy in today's busy world",
       "description": "An in-depth exploration of how pain management medications have evolved over time, from traditional herbal remedies to modern pharmaceuticals. This article discusses the effectiveness of various treatments, their impact on patients' lives, and the promising future of pain relief therapies, including innovative drug developments and alternative holistic approaches. Learn about opioid and non-opioid pain relievers, the risks of long-term use, and how emerging technologies such as gene therapy and bioelectric medicine are revolutionizing pain management. Discover how a multidisciplinary approach combining medication, physical therapy, and lifestyle adjustments can provide sustainable pain relief solutions.",
       "image": "/ProductImage/article/person3.jpg"
     }
