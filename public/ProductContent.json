@@ -1,69 +1,72 @@
 {
-  "Condoms": [
-     {
-       "id": "1",
-       "title": "Durex Thin Feel",
-       "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
-       "imageUrl": "/ProductImage/condoms/product1.jpg",
-       "price": "29.00" 
-     },
-     {
-       "id": "2",
-       "title": "Durex Extended Pleasure",
-       "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
-       "imageUrl": "/ProductImage/condoms/product2.jpg",
-       "price": "29.00" 
-     },
-     {
-       "id": "3",
-       "title": "Durex Pleasure Me",
-       "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
-       "imageUrl": "/ProductImage/condoms/product3.jpg",
-       "price": "29.00" 
-     },
-     {
-       "id": "4",
-       "title": "PureShield",
-       "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
-       "imageUrl": "/ProductImage/condoms/product4.jpg",
-       "price": "29.00" 
-     },
-     {
-       "id": "5",
-       "title": "SensuMax",
-       "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
-       "imageUrl": "/ProductImage/condoms/product5.jpg",
-       "price": "29.00" 
-     },
-     {
-      "id": "6",
-      "title": "CuddleGuard",
+ "Condoms": [
+  {
+    "id": "1",
+    "title": "Durex Thin Feel",
+    "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
+    "detailDescription": "Durex Thin Feel condoms are designed to provide maximum sensitivity while maintaining the highest safety standards. Made from premium quality latex, these condoms are ultra-thin, lubricated, and specially designed to enhance intimacy and pleasure. They are dermatologically tested to ensure reliability and effectiveness, making them a trusted choice for protection against sexually transmitted infections (STIs) and unintended pregnancies.",
+    "imageUrl": "/ProductImage/condoms/product1.jpg",
+    "price": "29.00",
+    "uses": [
+      "Provides a natural skin-on-skin feeling.",
+      "Helps prevent sexually transmitted infections (STIs).",
+      "Reduces the risk of unintended pregnancy."
+    ],
+    "sideEffect": [
+      "May cause mild irritation or allergic reactions in some individuals.",
+      "Latex allergies can result in itching, redness, or rash.",
+      "Incorrect use may lead to breakage, reducing effectiveness."
+    ],
+    "quickView": [
+      "Thin and comfortable for a natural feel.",
+      "Designed to enhance sensitivity and pleasure.",
+      "Lubricated for smooth and comfortable use."
+    ],
+    "faq": [
+      {
+        "question": "Are Durex Thin Feel condoms safe?",
+        "answer": "Yes, they are rigorously tested and meet international safety standards."
+      },
+      {
+        "question": "Can I use lubricants with this condom?",
+        "answer": "Yes, you can use water-based or silicone-based lubricants."
+      }
+    ]
+  }
+  ,
+    {
+      "id": "2",
+      "title": "Durex Extended Pleasure",
       "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
       "imageUrl": "/ProductImage/condoms/product2.jpg",
-      "price": "29.00" 
-    },
-    {
-      "id": "7",
-      "title": "EuphoriaCare",
-      "description": "Condoms can significantly reduce the risk of transmitting herpes simplex virus (HSV) during sexual intercourse.",
-      "imageUrl": "/ProductImage/condoms/product3.jpg",
-      "price": "29.00" 
-    },
-    {
-      "id": "8",
-      "title": "VelvetGuard",
-      "description": "Condoms are a reliable and accessible method for preventing unplanned pregnancies when used correctly.",
-      "imageUrl": "/ProductImage/condoms/product4.jpg",
-      "price": "29.00" 
-    },
-    {
-      "id": "9",
-      "title": "LuxeFit",
-      "description": "Using condoms can lower the risk of human papillomavirus (HPV), a common virus linked to certain cancers.",
-      "imageUrl": "/ProductImage/condoms/product5.jpg",
-      "price": "29.00" 
+      "price": "29.00",
+      "uses": [
+        "Contains a special lubricant to delay climax.",
+        "Helps enhance sexual pleasure by extending duration.",
+        "Prevents sexually transmitted diseases and unwanted pregnancies."
+      ],
+      "sideEffect": [
+        "May cause temporary numbness due to desensitizing lubricant.",
+        "Prolonged use may lead to decreased sensation.",
+        "Not suitable for those allergic to latex."
+      ],
+      "quickView": [
+        "Special lubricant helps delay climax.",
+        "Enhances pleasure by extending duration.",
+        "Designed for those looking for longer-lasting experiences."
+      ],
+      "faq": [
+        {
+          "question": "How does Durex Extended Pleasure work?",
+          "answer": "It has a special lubricant that helps delay climax for prolonged pleasure."
+        },
+        {
+          "question": "Is it suitable for people with latex allergies?",
+          "answer": "No, this product contains natural latex and is not suitable for those with latex allergies."
+        }
+      ]
     }
-   ],
+  ],
    
    "ErectileDysfunction": [
    {

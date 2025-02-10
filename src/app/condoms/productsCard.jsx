@@ -1,15 +1,15 @@
-"use client"
-import React, { useState, useEffect, useContext } from "react";
-import { CartContext } from "../cart/feature/contextProvider";
+"use client";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation"; // Import useRouter
 import Skeleton from "react-loading-skeleton"; 
 import "react-loading-skeleton/dist/skeleton.css"; 
 import Image from "next/image";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify"; 
 
 const ProductsCard = () => {
   const [products, setProducts] = useState([]);
-  const { cart, dispatch } = useContext(CartContext);
   const [loading, setLoading] = useState(true); 
+  const router = useRouter(); 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,10 +26,13 @@ const ProductsCard = () => {
     fetchData();
   }, []);
 
-  const handleAddToCart = (product) => {
-    dispatch({ type: "Add", product: product }); 
+  // Function to navigate to SingleProduct page
+  const handleProductClick = (product) => {
+    router.push(`/singleProductPage?id=${product.id}`); // Query params format
+
   };
   
+
   return (
     <section className="antialiased dark:bg-gray-900 md:py-12 px-5 md:px-5">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -40,13 +43,7 @@ const ProductsCard = () => {
               className="relative border border-solid border-gray-300 rounded-lg shadow-sm p-4 flex flex-col"
               key={index}
             >
-              <Skeleton
-                height={150} // Adjust height as needed
-                width="100%" // Full width for the skeleton
-                className="rounded-lg"
-                baseColor="#e0e0e0" // Base color for skeleton
-                highlightColor="#f5f5f5" // Highlight color for skeleton
-              />
+              <Skeleton height={150} width="100%" className="rounded-lg" baseColor="#e0e0e0" highlightColor="#f5f5f5"/>
               <div className="flex flex-col flex-grow justify-between mt-2">
                 <Skeleton height={20} />
                 <Skeleton height={15} />
@@ -67,12 +64,12 @@ const ProductsCard = () => {
                   alt="productImg"
                   height={100}
                   width={200}
-                  className="object-cover h-auto sm:h-full w-full p-4 sm:p-6" // Ensures the image fully fits and stays inside the box
+                  className="object-cover h-auto sm:h-full w-full p-4 sm:p-6"
                 />
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-between px-4  py-6 sm:py-2 relative">
+              <div className="flex flex-col justify-between px-4 py-6 sm:py-2 relative">
                 <h6 className="text-sm font-semibold">
                   {product.title.length > 20
                     ? product.title.substring(0, 20) + "..."
@@ -82,18 +79,17 @@ const ProductsCard = () => {
                   {product.description.length > 70
                     ? product.description.substring(0, 70) + "..."
                     : product.description}
-                </p>
-                <p className="text-sm font-semibold">${product.price}</p>
+                </p> 
 
-                <div className="flex  items-center ">
+                <div className="flex items-center">
                   <button
                     onClick={(e) => {
-                      handleAddToCart(product);
-                      e.stopPropagation(); // Prevent click event on the card
+                      handleProductClick(product);
+                      e.stopPropagation(); // Prevent card click
                     }}
                     className="py-2 md:my-3 px-7 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all"
                   >
-                    <p className="text-xs font-light">Add to Cart</p>
+                    <p className="text-xs font-light">${product.price}</p>
                   </button>
                 </div>
               </div>
