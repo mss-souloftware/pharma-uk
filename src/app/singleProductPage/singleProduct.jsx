@@ -4,7 +4,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useSearchParams } from "next/navigation";
 import { CartContext } from "../cart/feature/contextProvider";
 import Image from "next/image";
-import SingleProductDetail from "./SingleProductDetail";
+import SingleProductDetail from "./singleProductDetail";
 import PharmaRegulation from "../about/PharmaRegulation";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 
