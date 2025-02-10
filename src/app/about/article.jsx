@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
@@ -44,7 +45,7 @@ const Article = () => {
               className="bg-white shadow-lg rounded-lg overflow-hidden p-6 flex flex-col"
             >
               <div className="w-full h-64 md:h-72 lg:h-80">
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
                   className="w-full h-full object-cover rounded"

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const SkeletonLoader = () => {
   return (
@@ -58,7 +59,7 @@ const AllArticles = () => {
                 key={article.id}
                 className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105"
               >
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
                   className="w-full h-56 object-cover"
@@ -97,7 +98,7 @@ const AllArticles = () => {
             >
               &times;
             </button>
-            <img
+            <Image
               src={selectedArticle.image}
               alt={selectedArticle.title}
               className="w-full h-64 object-cover rounded"
