@@ -49,7 +49,7 @@ const Treatment = () => {
 
   return (
     <>
-      <div className="container mx-auto">
+      <div className="max-w-6xl mx-auto ">
 
       <StepNavigation/>
 

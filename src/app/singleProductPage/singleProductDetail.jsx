@@ -1,19 +1,34 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const SingleProductDetail = ({ product }) => {
   const [activeSection, setActiveSection] = useState("uses");
+  const sections = ["uses", "sideEffect", "quickView"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (window.innerWidth < 640) { // Auto-slide only on mobile
+        setActiveSection((prev) => {
+          const currentIndex = sections.indexOf(prev);
+          const nextIndex = (currentIndex + 1) % sections.length;
+          return sections[nextIndex];
+        });
+      }
+    }, 5000); // Change section every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       {/* Section Buttons - Scrollable on Mobile */}
       <div className="flex overflow-x-auto sm:justify-center rounded-2xl gap-2 sm:gap-4 mb-5  p-2 sm:p-3 bg-white no-scrollbar">
-        {["uses", "sideEffect", "quickView"].map((section) => (
+        {sections.map((section) => (
           <button
             key={section}
-            className={`px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base transition-all duration-300 rounded-lg font-semibold   flex-shrink-0
+            className={`px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base transition-all duration-300 rounded-lg font-semibold flex-shrink-0
               ${
                 activeSection === section
                   ? "bg-hoverUnderlineColor text-white"
@@ -31,7 +46,7 @@ const SingleProductDetail = ({ product }) => {
 
       {/* Detail Description */}
       {product.detailDescription && (
-        <div className="mb-5 p-4 bg-blue-50 rounded-lg shadow-md mx-auto text-center max-w-[90%] sm:max-w-3xl">
+        <div className="mb-5 p-4 bg-blue-50 rounded-lg shadow-md mx-auto text-center   sm:max-w-3xl">
           <h2 className="text-sm sm:text-lg font-semibold mb-2 text-hoverUnderlineColor">
             Product Details
           </h2>
@@ -42,7 +57,7 @@ const SingleProductDetail = ({ product }) => {
       )}
 
       {/* Animated Section Display */}
-      <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg mx-auto max-w-[95%] sm:max-w-4xl w-full">
+      <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg mx-auto max-w-[100%] sm:max-w-4xl w-full">
         <AnimatePresence mode="wait">
           {activeSection === "uses" && (
             <motion.div

@@ -111,7 +111,7 @@ const SingleProduct = () => {
       </div>
 
       {/* Product Detail Section */}
-      <div className="bg-white p-6 rounded-2xl shadow-xl ">
+      <div className="bg-white p-6 rounded-2xl sm:shadow-xl ">
          
         <SingleProductDetail product={product} />
       </div>
