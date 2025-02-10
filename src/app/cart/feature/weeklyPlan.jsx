@@ -28,7 +28,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
     }
   };
 
-  return weekPlan.length > 0 ? ( // ✅ Ternary operator se check kiya hai
+  return weekPlan.length > 0 ? ( 
     <div ref={weeklyPlanRef}>
       <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
         24-Week Treatment Plan
@@ -81,7 +81,7 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
         </tbody>
       </table>
     </div>
-  ) : null; // ✅ Agar weekPlan nahi hai to kuch bhi return nahi karega
+  ) : null; 
 };
 
 export default WeeklyPlan;

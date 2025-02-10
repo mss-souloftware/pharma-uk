@@ -9,11 +9,11 @@
         "image": "/ProductImage/Mens/product1.jpg",
         "brandName":"Avianta", 
         "weekPlan": [
-          { "week": 1, "capsules": 20, "price": 10 },
-          { "week": 2, "capsules": 40, "price": 20 },
-          { "week": 4, "capsules": 60, "price": 30 },
-          { "week": 8, "capsules": 80, "price": 40 },
-          { "week": 12, "capsules": 120, "price": 50 }
+          {"capsules": 20 },
+          {"capsules": 40},
+          {"capsules": 60},
+          {"capsules": 80},
+          {"capsules": 120}
         ]
       } 
        

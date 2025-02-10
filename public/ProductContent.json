@@ -5,7 +5,9 @@
     "title": "Durex Thin Feel",
     "description": "Condoms help reduce the risk of HIV transmission by acting as a barrier during sexual activity.",
     "detailDescription": "Durex Thin Feel condoms are designed to provide maximum sensitivity while maintaining the highest safety standards. Made from premium quality latex, these condoms are ultra-thin, lubricated, and specially designed to enhance intimacy and pleasure. They are dermatologically tested to ensure reliability and effectiveness, making them a trusted choice for protection against sexually transmitted infections (STIs) and unintended pregnancies.",
-    "imageUrl": "/ProductImage/condoms/product1.jpg",
+
+    "imageUrl": "/ProductImage/condoms/product1.jpg", 
+
     "price": "29.00",
     "uses": [
       "Provides a natural skin-on-skin feeling.",

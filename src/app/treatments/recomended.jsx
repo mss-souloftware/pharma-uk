@@ -16,7 +16,7 @@ const Recomended = ({
   const { state, dispatch } = useContext(CartContext);
   const cart = state?.cart || [];
 
-  // Handle Add to Cart
+  // Handle Add to Cart 
   const handleAddToCart = () => {
     const product = {
       id: title, 

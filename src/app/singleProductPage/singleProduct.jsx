@@ -102,7 +102,7 @@ const SingleProduct = () => {
             </div>
             <button
               onClick={handleAddToCart}
-              className="w-full md:w-auto px-6 py-3 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"
+              className="w-full md:w-auto px-6 py-2 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"
             >
               Get Started Now
             </button>
