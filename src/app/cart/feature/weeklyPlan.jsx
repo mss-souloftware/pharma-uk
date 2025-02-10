@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
-  const [showContactButton, setShowContactButton] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("");
   const weeklyPlanRef = useRef(null);
 
   // Handle click outside of the WeeklyPlan component
   const handleClickOutside = (event) => {
     if (weeklyPlanRef.current && !weeklyPlanRef.current.contains(event.target)) {
-      setShowContactButton(false);
+      setSelectedOption(""); // Reset selection if clicked outside
     }
   };
 
@@ -18,70 +18,52 @@ const WeeklyPlan = ({ weekPlan = [], selectedWeek, onPlanClick }) => {
     };
   }, []);
 
-  // Handle click on a weekly plan
-  const handlePlanClick = (plan) => {
-    if (onPlanClick && typeof onPlanClick === "function") {
-      onPlanClick(plan);
-      setShowContactButton(true);
-    } else {
-      console.error("onPlanClick is not a function");
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
+    const selectedPlan = weekPlan.find((plan) => plan.week?.toString() === selectedValue);
+
+    if (selectedPlan) {
+      setSelectedOption(selectedValue);
+      if (onPlanClick) {
+        onPlanClick(selectedPlan);
+      }
     }
   };
 
-  return weekPlan.length > 0 ? ( 
-    <div ref={weeklyPlanRef}>
-      <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-        24-Week Treatment Plan
+  const handlePlanClick = (plan) => {
+    if (plan.week) {
+      setSelectedOption(plan.week.toString());
+      if (onPlanClick) {
+        onPlanClick(plan);
+      }
+    }
+  };
+
+  return weekPlan.length > 0 ? (
+    <div ref={weeklyPlanRef} className="max-w-md mx-auto">
+      <h3 className="text-xl font-semibold text-gray-900 mb-4">
+        Select Weekly Plan
       </h3>
 
-      {/* Filter Buttons */}
-      <div className="flex justify-center gap-4 mb-6">
-        {weekPlan.map((treatment, index) => (
-          <button
-            key={index}
-            onClick={() => handlePlanClick(treatment)}
-            className={`px-4 py-2 text-white rounded-lg ${
-              selectedWeek?.week === treatment.week
-                ? "bg-hoverUnderlineColor"
-                : "bg-gray-400"
-            }`}
-          >
-            {treatment.name}
-          </button>
-        ))}
-      </div>
-
-      <table className="w-full text-center border-collapse border border-gray-300">
-        <thead>
-          <tr>
-            <th className="border border-gray-300 px-4 py-2">Week</th>
-            <th className="border border-gray-300 px-4 py-2">
-              {weekPlan.some((plan) => "packets" in plan) ? "Packets" : "Capsules"}
-            </th> {/* ✅ Quantity add kar di */}
-          </tr>
-        </thead>
-        <tbody>
+      {/* Dropdown Selection */}
+      <label className="block text-gray-700 font-medium mb-2">
+        Choose a week:
+        <select
+          value={selectedOption}
+          onChange={handleSelectChange}
+          className="block w-full mt-2 p-2 border rounded"
+        >
+          <option value="">Select Weekly Plan</option>
           {weekPlan.map((plan, index) => (
-            <tr
-              key={index}
-              onClick={() => handlePlanClick(plan)}
-              className={`cursor-pointer ${
-                selectedWeek?.week === plan.week ? "text-white bg-hoverUnderlineColor" : ""
-              }`}
-            >
-              <td className="border border-gray-300 px-4 py-2">
-                {plan.week ? `${plan.week} Week` : ""}
-              </td>
-              <td className="border border-gray-300 px-4 py-2">
-                {plan.capsules ?? plan.packets}{" "}
-                {plan.packets ? "Packets" : "Capsules"}
-              </td> 
-            </tr>
+            <option key={index} value={plan.week ?? `week-${index}`}>
+              {plan.week ? `${plan.week} Week` : `Week ${index + 1}`} - 
+              {plan.packets ?? plan.capsules} {plan.packets ? "Packets" : "Capsules"}
+            </option>
           ))}
-        </tbody>
-      </table>
+        </select>
+      </label>
     </div>
-  ) : null; 
+  ) : null;
 };
 
 export default WeeklyPlan;

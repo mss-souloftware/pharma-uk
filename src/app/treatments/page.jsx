@@ -62,7 +62,8 @@ const Treatment = () => {
             image={selectedTreatmentFirst.image}
             medicineData={mensMedicineDataFirst}
             onBuy={handleAddToCart} // Handle add to cart
-            onFilter={(filterTreatment) => handleFilter(filterTreatment, true)} 
+            onFilter={(filterTreatment) => handleFilter(filterTreatment, true)}
+            weekPlan={selectedTreatmentFirst.weekPlan} // Pass the weekly plan to Recomended
           />
         )}
       </div>
@@ -76,7 +77,8 @@ const Treatment = () => {
             image={selectedTreatmentSecond.image}
             medicineData={mensMedicineDataSecond}
             onBuy={handleAddToCart} // Handle add to cart
-            onFilter={(filterTreatment) => handleFilter(filterTreatment, false)} 
+            onFilter={(filterTreatment) => handleFilter(filterTreatment, false)}
+            weekPlan={selectedTreatmentSecond.weekPlan} // Pass the weekly plan to Recomended
           />
         )}
       </div>
