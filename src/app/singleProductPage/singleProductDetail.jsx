@@ -9,11 +9,11 @@ const SingleProductDetail = ({ product }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       {/* Section Buttons - Scrollable on Mobile */}
-      <div className="flex overflow-x-auto sm:justify-center rounded-xl border border-black gap-2 sm:gap-4 mb-5 shadow-lg p-2 sm:p-3 bg-white no-scrollbar">
+      <div className="flex overflow-x-auto sm:justify-center rounded-2xl gap-2 sm:gap-4 mb-5  p-2 sm:p-3 bg-white no-scrollbar">
         {["uses", "sideEffect", "quickView"].map((section) => (
           <button
             key={section}
-            className={`px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base transition-all duration-300 rounded-lg border-2 border-hoverUnderlineColor font-semibold shadow-md flex-shrink-0
+            className={`px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base transition-all duration-300 rounded-lg font-semibold   flex-shrink-0
               ${
                 activeSection === section
                   ? "bg-hoverUnderlineColor text-white"
