@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import CartProduct from "./cartProduct";
 import { CartContext } from "./feature/contextProvider";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
@@ -8,7 +8,7 @@ import StepNavigation from "../stepsNavigation/page";
 import WeeklyPlan from "./feature/weeklyPlan";
 
 const Cart = () => {
-  const { cart, dispatch } = useContext(CartContext); 
+  const { cart, dispatch } = useContext(CartContext);
   const products = Array.isArray(cart.products) ? cart.products : [];
 
   // Calculate totals
@@ -61,7 +61,7 @@ const Cart = () => {
                   <span className="font-semibold text-sm">{totalProducts}</span>
                 </div>
                 <div className="flex justify-between mb-2">
-                  <span className="text-gray-600  text-sm">Total Price:</span>
+                  <span className="text-gray-600 text-sm">Total Price:</span>
                   <span className="font-semibold text-sm">${totalProductPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between mb-2">
@@ -73,7 +73,15 @@ const Cart = () => {
                   <span>Grand Total:</span>
                   <span>${grandTotal.toFixed(2)}</span>
                 </div>
-               
+
+                {/* Payment Button (Only shows if cart has products) */}
+                {products.length > 0 && (
+                  <Link href="/paymentForm">
+                    <button className="w-full mt-4 bg-hoverUnderlineColor text-white font-semibold py-2 rounded-lg hover:bg-hoverUnderlineColor transition duration-300">
+                      Proceed to Payment
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

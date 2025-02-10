@@ -46,7 +46,7 @@ const SingleProductDetail = ({ product }) => {
 
       {/* Detail Description */}
       {product.detailDescription && (
-        <div className="mb-5 p-4 bg-blue-50 rounded-lg shadow-md mx-auto text-center   sm:max-w-3xl">
+        <div className="mb-5 p-4 bg-blue-50 rounded-lg mx-auto text-center   sm:max-w-3xl">
           <h2 className="text-sm sm:text-lg font-semibold mb-2 text-hoverUnderlineColor">
             Product Details
           </h2>
@@ -57,7 +57,7 @@ const SingleProductDetail = ({ product }) => {
       )}
 
       {/* Animated Section Display */}
-      <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg mx-auto max-w-[100%] sm:max-w-4xl w-full">
+      <div className="bg-white p-4 sm:p-6 rounded-lg   mx-auto max-w-[100%] sm:max-w-4xl w-full">
         <AnimatePresence mode="wait">
           {activeSection === "uses" && (
             <motion.div
