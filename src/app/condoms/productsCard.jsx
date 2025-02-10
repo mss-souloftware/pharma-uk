@@ -58,7 +58,7 @@ const ProductsCard = () => {
               key={index}
             >
               {/* Image Section */}
-              <div className="flex justify-center items-center relative overflow-hidden">
+              <div className=" flex justify-center items-center relative overflow-hidden">
                 <Image
                   src={product.imageUrl}
                   alt="productImg"
@@ -69,7 +69,7 @@ const ProductsCard = () => {
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-between px-4 py-6 sm:py-2 relative">
+              <div className="flex flex-col justify-between px-4 py-6 sm:py-4 relative">
                 <h6 className="text-sm font-semibold">
                   {product.title.length > 20
                     ? product.title.substring(0, 20) + "..."

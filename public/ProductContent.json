@@ -99,6 +99,102 @@
           "answer": "No, this product contains natural latex and is not suitable for those with latex allergies."
         }
       ]
+    },
+    {
+      "id": "4",
+      "title": "Durex Thin (coated)",
+      "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+      "imageUrl": "/ProductImage/condoms/product4.jpg",
+      "price": "29.00",
+      "uses": [
+        "Contains a special lubricant to delay climax.",
+        "Helps enhance sexual pleasure by extending duration.",
+        "Prevents sexually transmitted diseases and unwanted pregnancies."
+      ],
+      "sideEffect": [
+        "May cause temporary numbness due to desensitizing lubricant.",
+        "Prolonged use may lead to decreased sensation.",
+        "Not suitable for those allergic to latex."
+      ],
+      "quickView": [
+        "Special lubricant helps delay climax.",
+        "Enhances pleasure by extending duration.",
+        "Designed for those looking for longer-lasting experiences."
+      ],
+      "faq": [
+        {
+          "question": "How does Durex Extended Pleasure work?",
+          "answer": "It has a special lubricant that helps delay climax for prolonged pleasure."
+        },
+        {
+          "question": "Is it suitable for people with latex allergies?",
+          "answer": "No, this product contains natural latex and is not suitable for those with latex allergies."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Durex Extra Safe",
+      "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+      "imageUrl": "/ProductImage/condoms/product5.jpg",
+      "price": "29.00",
+      "uses": [
+        "Contains a special lubricant to delay climax.",
+        "Helps enhance sexual pleasure by extending duration.",
+        "Prevents sexually transmitted diseases and unwanted pregnancies."
+      ],
+      "sideEffect": [
+        "May cause temporary numbness due to desensitizing lubricant.",
+        "Prolonged use may lead to decreased sensation.",
+        "Not suitable for those allergic to latex."
+      ],
+      "quickView": [
+        "Special lubricant helps delay climax.",
+        "Enhances pleasure by extending duration.",
+        "Designed for those looking for longer-lasting experiences."
+      ],
+      "faq": [
+        {
+          "question": "How does Durex Extended Pleasure work?",
+          "answer": "It has a special lubricant that helps delay climax for prolonged pleasure."
+        },
+        {
+          "question": "Is it suitable for people with latex allergies?",
+          "answer": "No, this product contains natural latex and is not suitable for those with latex allergies."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Durex Extra Safe",
+      "description": "Condoms are an effective tool in preventing a range of sexually transmitted infections (STIs), including chlamydia and gonorrhea.",
+      "imageUrl": "/ProductImage/condoms/product6.jpg",
+      "price": "29.00",
+      "uses": [
+        "Contains a special lubricant to delay climax.",
+        "Helps enhance sexual pleasure by extending duration.",
+        "Prevents sexually transmitted diseases and unwanted pregnancies."
+      ],
+      "sideEffect": [
+        "May cause temporary numbness due to desensitizing lubricant.",
+        "Prolonged use may lead to decreased sensation.",
+        "Not suitable for those allergic to latex."
+      ],
+      "quickView": [
+        "Special lubricant helps delay climax.",
+        "Enhances pleasure by extending duration.",
+        "Designed for those looking for longer-lasting experiences."
+      ],
+      "faq": [
+        {
+          "question": "How does Durex Extended Pleasure work?",
+          "answer": "It has a special lubricant that helps delay climax for prolonged pleasure."
+        },
+        {
+          "question": "Is it suitable for people with latex allergies?",
+          "answer": "No, this product contains natural latex and is not suitable for those with latex allergies."
+        }
+      ]
     }
   ],
    

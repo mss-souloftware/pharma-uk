@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import StepNavigation from "../stepsNavigation/page"; // Step Navigation Import
 
 const Payment = () => {
   const [formData, setFormData] = useState({
@@ -19,12 +20,19 @@ const Payment = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen  px-4">
+    <>
+    <div className="mt-10">
+        <StepNavigation />
+    </div>
+    <div className="flex flex-col items-center justify-center min-h-screen px-4">
+  
+
+      {/* Payment Form */}
       <div className="w-full max-w-md bg-white shadow-xl rounded-2xl p-6">
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">
           Secure Payment
         </h2>
-        
+
         <form onSubmit={handleSubmit}>
           {/* Card Number */}
           <div className="mb-4">
@@ -37,7 +45,7 @@ const Payment = () => {
               value={formData.cardNumber}
               onChange={handleChange}
               placeholder="1234 5678 9012 3456"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor "
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor"
               maxLength="16"
               required
             />
@@ -45,7 +53,6 @@ const Payment = () => {
 
           {/* Expiry & CVV */}
           <div className="flex gap-4 mb-4">
-            {/* Expiry Date */}
             <div className="w-1/2">
               <label className="block text-gray-700 text-sm font-semibold mb-2">
                 Expiry Date
@@ -62,7 +69,6 @@ const Payment = () => {
               />
             </div>
 
-            {/* CVV */}
             <div className="w-1/2">
               <label className="block text-gray-700 text-sm font-semibold mb-2">
                 CVV
@@ -74,8 +80,7 @@ const Payment = () => {
                 onChange={handleChange}
                 placeholder="•••"
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor"
-                maxLength="3"cls
-                
+                maxLength="3"
                 required
               />
             </div>
@@ -107,6 +112,7 @@ const Payment = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

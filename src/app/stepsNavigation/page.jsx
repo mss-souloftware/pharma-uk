@@ -8,7 +8,7 @@ const StepNavigation = () => {
     { name: "Consulting", path: "/consultation", id: "consult" },
     { name: "Treatment", path: "/treatments", id: "treatment" },
     { name: "Add to Cart", path: "/cart", id: "cart" },
-    { name: "Payment", path: "/cartAddress", id: "payment" },
+    { name: "Payment", path: "/paymentForm", id: "payment" },
   ];
 
   return (

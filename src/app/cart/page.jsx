@@ -18,6 +18,7 @@ const Cart = () => {
   const grandTotal = totalProductPrice + totalDeliveryCharge;
 
   return (
+    
     <section className="py-8 md:py-16 relative">
       <StepNavigation />
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">

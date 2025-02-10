@@ -57,7 +57,7 @@ const SingleProductDetail = ({ product }) => {
       )}
 
       {/* Animated Section Display */}
-      <div className="bg-white p-4 sm:p-6 rounded-lg   mx-auto max-w-[100%] sm:max-w-4xl w-full">
+      <div className="bg-white p-4 sm:p-6 rounded-lg mx-auto max-w-[100%] sm:max-w-4xl w-full">
         <AnimatePresence mode="wait">
           {activeSection === "uses" && (
             <motion.div
