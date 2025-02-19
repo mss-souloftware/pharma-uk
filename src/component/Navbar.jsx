@@ -71,7 +71,7 @@ const Navbar = () => {
           <Link
             href="/"
             className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse "
-          >
+          > 
             <Image
             ref={logoRef}
              src="/footerLogo1.svg"

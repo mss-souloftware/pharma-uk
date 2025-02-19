@@ -24,15 +24,15 @@ const ReviewsByPlatforms = () => {
   }, []);
   return (
     <>
-      <div className="container mx-auto p-4 mt-20 bg-white rounded-2xl">
+      <div className="container mx-auto py-12 mt-20 bg-[#FFE0E0] rounded-lg ">
         {/* Title */}
-        <div className="block mx-auto text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold  font-semibold   mb-10 sm:mb-0 ">
+        <div className="block mx-auto text-center text-xl  sm:text-2xl md:text-3xl lg:text-4xl font-semibold py-8 mb-10 sm:mb-0 ">
+          <h4 className="font-extrabold inline-block ">
           More Than{" "}
-          <h1 className="font-extrabold inline-block ">
           <span className="text-hoverUnderlineColor">207,891 </span>{" "} Reviews
-          </h1>
+          </h4>
         </div>
-
+      
          {/* Conditionally render Swiper or Grid */}
          {isMobile ? (
           <Swiper
@@ -50,7 +50,7 @@ const ReviewsByPlatforms = () => {
           >
             {/* Swiper Carousel */}
             <SwiperSlide>
-              <div className="bg-white w-full sm:w-48 md:w-60 lg:w-[10vw] rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+              <div className="   w-full sm:w-48 md:w-60 lg:w-[10vw] rounded-lg h-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
                 {/* Google Text */}
                 <h5 className="text-sm font-normal text-center mb-2">
                   <span style={{ color: "#4285F4" }}>𝖦</span>
@@ -245,7 +245,7 @@ const ReviewsByPlatforms = () => {
         )}
       </div>
       {/* Content Section 4 */}
-      <div className="">
+      <div>
         <Reviews />
       </div> 
     </>

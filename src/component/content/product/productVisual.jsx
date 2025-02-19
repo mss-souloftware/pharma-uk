@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductVisual = () => {
   return (
-    <div className="  px-6 py-2 ">
+    <div className=" px-6 py-2 ">
       {/* Content Section */}
       <div className="flex flex-col justify-center items-center space-y-4">
          

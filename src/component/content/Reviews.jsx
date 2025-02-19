@@ -61,11 +61,11 @@ const settings = {
 
 const Reviews = () => {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 rounded-lg py-8">
-      <div className="max-w-screen-xl px-4 mx-auto text-center lg:px-6">
+    <section className="bg-[#FFE0E0] rounded-lg py-8">
+      <div className="max-w-screen-xl px-4 mx-auto  bg-[#FFE0E0] rounded-lg text-center lg:px-6">
         <Slider {...settings}>
           {reviewsData.map((review) => (
-            <div key={review.id} className="px-2 md:px-4 lg:px-6">
+            <div key={review.id} className="px-2 md:px-4 lg:px-6 ">
               <div className="bg-white rounded-lg border border-gray-200 shadow-md w-full max-w-xs h-[350px] p-6 flex flex-col items-center">
                 <div className="w-20 h-20 rounded-full mb-7">
                   <Image src={review.imgUrl || '/default-avatar.png'} alt={review.author} width={80} height={80} className="rounded-full" />

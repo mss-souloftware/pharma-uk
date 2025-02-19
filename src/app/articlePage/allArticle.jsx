@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const SkeletonLoader = () => {
@@ -62,8 +61,12 @@ const AllArticles = () => {
                 <Image
                   src={article.image}
                   alt={article.title}
+                  layout="responsive"
+                  width={400}
+                  height={224}
                   className="w-full h-56 object-cover"
                 />
+
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-800">
                     {article.title}
@@ -101,15 +104,21 @@ const AllArticles = () => {
             <Image
               src={selectedArticle.image}
               alt={selectedArticle.title}
+              layout="responsive"
+              width={600}
+              height={400}
               className="w-full h-64 object-cover rounded"
             />
+
             <h3 className="text-2xl font-bold text-gray-800 mt-4">
               {selectedArticle.title}
             </h3>
             <p className="text-base text-gray-600 mt-2">
               {selectedArticle.subheading}
             </p>
-            <p className="text-gray-700 text-sm mt-4">{selectedArticle.description}</p>
+            <p className="text-gray-700 text-sm mt-4">
+              {selectedArticle.description}
+            </p>
           </div>
         </div>
       )}

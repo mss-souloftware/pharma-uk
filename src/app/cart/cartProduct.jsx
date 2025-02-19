@@ -1,8 +1,6 @@
 "use client";
-import Image from "next/image";
-import { ToastContainer } from "react-toastify";
-import { useState } from "react";
-import WeeklyPlan from "./feature/weeklyPlan";
+import Image from "next/image"; 
+import { useState } from "react"; 
 
 const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) => {
   const [selectedSize, setSelectedSize] = useState(product.packet ? "" : undefined);

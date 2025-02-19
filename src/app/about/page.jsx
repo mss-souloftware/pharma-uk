@@ -37,21 +37,6 @@ const AboutPage = () => {
         <CustomerReviews/>
       </div>
 
-      {/* How Does It Work Section */}
-      <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        
-        {/* Content Component for Desktop */}
-        <div className="w-full max-w-7xl  lg:mb-0 block">
-          <HowDoesItWorks />
-        </div>
-
-        {/* Content Component for Mobile */}
-
-        {/* <div className="w-full max-w-7xl mx-auto block sm:hidden">
-          <HowDoesItWorksMobile />
-        </div> */}
-      </div>
-
       {/* Our Qualified Team Section */}
       <div className=" max-w-7xl">  
             <QualifiedTeamAboutPage />

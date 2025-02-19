@@ -1,20 +1,17 @@
-"use client";
+"use client"
 import HowDoesItWorks from "../HowDoesItWorks";
-import "./ProductList.css";
-import HowDoesItWorksMobile from "../../HowDoesItWorksMobile";
 import QualifiedTeams from "../QualifiedTeams";
+import CategoryProduct from "./CategoryProduct";
 import ProductHeading from "./ProductHeading";
-import CategoryProduct from "@/component/content/product/CategoryProduct";
 
 const Content = () => {
   return (
     <div className="container mx-auto h-auto mt-20 border-2 border-solid border-transparent pl-[1.7rem] pr-[1.7rem]">
       <ProductHeading />
       <CategoryProduct />
-      <div className="block sm:hidden">
-        <HowDoesItWorksMobile />
-      </div>
-      <div className="mt-28 hidden sm:block">
+      
+      {/* Full-width background for HowDoesItWorks */}
+      <div className="mt-28 w-full bg-[#FFF5F5]">
         <HowDoesItWorks />
       </div>
       <QualifiedTeams />

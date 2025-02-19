@@ -48,6 +48,8 @@ const Article = () => {
                 <Image
                   src={article.image}
                   alt={article.title}
+                  height={500}
+                  width={500}
                   className="w-full h-full object-cover rounded"
                 />
               </div>

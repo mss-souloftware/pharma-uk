@@ -1,21 +1,26 @@
-"use client"; // This marks the file as a client-side component
+"use client"; 
 
 import { useState } from "react";
-import { motion } from "framer-motion"; // Importing framer-motion for animations
-import Link from "next/link"; // Using Next.js Link for navigation
+import { motion } from "framer-motion"; 
+import { useRouter } from "next/navigation"; 
 import Image from "next/image";
 
 const UserProfileMenu = () => {
-  // State to control the visibility of the profile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
-  // Links to display in the profile menu
   const links = [
-    { href: "/My Account", label: "My Account" },
-    { href: "/My Order", label: "My Order" },
+    { href: "/signUp", label: "My Account" },
+    { href: "/my-orders", label: "My Orders" },
   ];
 
-  // Framer Motion variants for menu animation
+ 
+  const handleNavigation = (href) => {
+    setIsMenuOpen(false); 
+    router.push(href); 
+  };
+
+  
   const menuVariants = {
     hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0 },
@@ -23,23 +28,22 @@ const UserProfileMenu = () => {
   };
 
   return (
-    <div className="relative z-50">
-      {/* User Profile Image */}
+    <div className="relative z-50"> 
+      
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="cursor-pointer group relative xl:w-8 xl:h-8 md:w-6 md:h-6 rounded-full overflow-hidden"
       >
-        {/* Replace with actual user image or placeholder */}
         <Image
-          src="/icons/user.png" // Example image, replace with user image source
+          src="/icons/user.png"
           alt="User Profile"
-          width={20} // Set width
-          height={20} // Set height
-          className=" object-cover absolute h-7 w-7 "
+          width={28}
+          height={28}
+          className="object-cover absolute h-7 w-7"
         />
       </div>
 
-      {/* Profile Menu (Card) with Framer Motion */}
+     
       {isMenuOpen && (
         <motion.div
           className="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 overflow-hidden"
@@ -50,7 +54,6 @@ const UserProfileMenu = () => {
           transition={{ duration: 0.3 }}
         >
           <div className="py-4 px-6 text-center bg-gray-900 rounded-t-lg">
-            {/* Profile Card Header */}
             <p className="font-semibold text-lg">User Name</p>
             <p className="text-sm text-gray-400">user@example.com</p>
           </div>
@@ -58,13 +61,12 @@ const UserProfileMenu = () => {
             {links.map((link, index) => (
               <li
                 key={index}
-                className="group px-4 py-2 hover:bg-gray-700 transition-colors duration-300"
+                className="group px-4 py-2 hover:bg-gray-700 transition-colors duration-300 cursor-pointer"
+                onClick={() => handleNavigation(link.href)}
               >
-                <Link href={link.href}>
-                  <span className="text-white group-hover:text-gray-100">
-                    {link.label}
-                  </span>
-                </Link>
+                <span className="text-white group-hover:text-gray-100">
+                  {link.label}
+                </span>
               </li>
             ))}
           </ul>
