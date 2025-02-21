@@ -1,5 +1,6 @@
   import React from 'react';
   import { Search, ShieldCheck, Package, Truck } from 'lucide-react';
+import Image from 'next/image';
 
     const Hero = () => {
     return (
@@ -7,7 +8,9 @@
         {/* Background Image Layer */}
         <div className="absolute inset-0">
           <div className="absolute inset-0    to-transparent z-10" />
-          <img 
+          <Image
+          height={400}
+          width={400}
             src="/hero/background2.svg" 
             alt="Pharmacy Background" 
             className="w-full h-full object-cover"

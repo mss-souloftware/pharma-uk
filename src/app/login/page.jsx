@@ -75,7 +75,7 @@ const Page = () => {
                                 className="w-full bg-hoverUnderlineColor text-white font-semibold rounded-lg text-lg py-3"
                                 disabled={loading}
                             >
-                                {loading ? 'Logging in...' : 'Login'}
+                                {loading ? 'Logging in...'   : 'Login'}
                             </button>
                             <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                                 <Link href="/signUp" className="hover:text-hoverUnderlineColor">Sign up</Link>

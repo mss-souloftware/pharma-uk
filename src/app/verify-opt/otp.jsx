@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import api from "@/config/axios";
@@ -101,7 +100,7 @@ const Otp = () => {
 
           <div className="text-sm text-center text-gray-500">
             <p>
-              Didn't receive code?{" "}
+              Didn&apos;t receive code?{" "}
               <a className="text-blue-500 cursor-pointer" onClick={resendOtpHandler}>Resend</a>
             </p>
           </div>

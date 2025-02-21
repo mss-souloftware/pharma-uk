@@ -16,7 +16,7 @@ const SingleProductDetail = ({ product }) => {
           return sections[nextIndex];
         });
       }
-    }, 5000); // Change section every 5 seconds
+    },[5000]);  
 
     return () => clearInterval(interval);
   }, []);
