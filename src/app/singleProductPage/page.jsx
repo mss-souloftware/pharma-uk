@@ -1,12 +1,13 @@
-import React from 'react'
-import SingleProduct from './singleProduct'
+'use client';
+import React from 'react';
+import SingleProduct from './singleProduct';
 
-const page = () => {
+const Page = () => {
   return (
     <>
-     <SingleProduct/> 
+      <SingleProduct />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

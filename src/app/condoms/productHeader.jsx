@@ -5,28 +5,27 @@ import CustomeBtn from "./customeBtn";
 
 const ProductHeader = () => {
   const [fetchData, setFetchData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Loading state
-  const [isError, setIsError] = useState(false); // Error handling state
-
+  const [isLoading, setIsLoading] = useState(true); 
+  const [isError, setIsError] = useState(false);  
   useEffect(() => {
     const dataFetched = async () => {
       try {
         const res = await fetch("/productHeaderContent.json");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
-        setFetchData(data.Condoms); // Setting the data for Condoms
-        setIsLoading(false); // Stop loading when data is fetched
+        setFetchData(data.Condoms); 
+        setIsLoading(false); 
       } catch (error) {
         console.error("Error fetching data:", error);
-        setIsError(true); // Set error state
-        setIsLoading(false); // Stop loading even on error
+        setIsError(true); 
+        setIsLoading(false); 
       }
     };
     dataFetched();
   }, []);
 
   if (isError) {
-    return <div className="text-center text-red-500">Failed to load content. Please try again later.</div>; // Error message
+    return <div className="text-center text-red-700">Failed to load content. Please try again later.</div>; 
   }
 
   return (
@@ -35,12 +34,12 @@ const ProductHeader = () => {
         {/* Image Section */}
         <div className="relative w-full h-[300px] lg:h-[350px]">
           {isLoading ? (
-            <div className="w-full h-full bg-gray-200 animate-pulse rounded-lg"></div> // Skeleton loader for image
+            <div className="w-full h-full bg-gray-200 animate-pulse rounded-lg"></div> 
           ) : (
             fetchData.length > 0 && (
               <Image
-                src={fetchData[0].img} // Ensure this path exists in public folder
-                alt={fetchData[0].title} // Alt text dynamically
+                src={fetchData[0].img} 
+                alt={fetchData[0].title} 
                 layout="fill"
                 className="rounded-lg shadow-xl object-cover"
               />
@@ -61,25 +60,24 @@ const ProductHeader = () => {
                 </div>
               ))
             : fetchData.map((item) => (
-                <div key={item.label}>
-                  <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-10 text-hoverUnderlineColor">
-                    {item.title}
-                  </h4>
-                  <p className="text-sm text-gray-700">{item.subTitle}</p>
-
-                  {/* Custom Button */}
-                  <CustomeBtn
-                    buttonText="Get to Consulting"
-                    buttonLink="/consultation"
-                    imageSrc="/icons/arrowIcon.png"
-                    altText="Consulting Arrow"
-                    className=""
-                  />
-
-                  <p className="text-sm font-normal max-w-full text-gray-600 mt-4  ">
-                    {item.content}
-                  </p>
-                </div>
+              <div key={item.label} className="space-y-2"> {/* Adds spacing between child elements */}
+              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-hoverUnderlineColor">
+                {item.title}
+              </h4>
+              <p className="text-sm text-gray-700">{item.subTitle}</p>
+              {/* <CustomeBtn
+                buttonText="Get to Consulting"
+                buttonLink="/consultation"
+                imageSrc="/icons/arrowIcon.png"
+                altText="Consulting Arrow"
+                className=""
+              /> */}
+            
+              <p className="text-sm font-normal max-w-full text-gray-600 mt-4">
+                {item.content}
+              </p>
+            </div>
+            
               ))}
         </div>
       </div>

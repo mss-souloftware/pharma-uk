@@ -41,8 +41,8 @@ const Navbar = () => {
   useEffect(() => {
     gsap.fromTo(
       [navbarRef.current, logoRef.current],
-      { opacity: 0, y: -20 }, // Start from ABOVE
-      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" } // Smooth Downward Motion
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" }
     );
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
