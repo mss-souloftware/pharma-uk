@@ -92,7 +92,7 @@ const Otp = () => {
 
             <button
               type="submit"
-              className="w-full py-5 bg-blue-500 text-white rounded-xl shadow-sm"
+              className="w-full py-5 bg-hoverUnderlineColor text-white rounded-xl shadow-sm"
             >
               Verify Account
             </button>

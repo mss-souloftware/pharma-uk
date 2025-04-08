@@ -1,24 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import api from '../../config/axios';
+
+const fetchArticles = async (setArticles, setLoading) => {
+  try {
+    const response = await api.get('/blogs');
+    setArticles(response.data.data || []);
+  } catch (error) {
+    console.error('Error fetching articles:', error);
+  } finally {
+    setLoading(false);
+  }
+};
 
 const Article = () => {
   const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/article.json');
-        const data = await response.json();
-        setArticles(data);
-        setLoading(false); // Set loading to false once data is fetched
-      } catch (error) {
-        console.error('Error fetching articles:', error);
-        setLoading(false); // Set loading to false even if there's an error
-      }
-    };
-    fetchData();
+    fetchArticles(setArticles, setLoading);
   }, []);
 
   return (
@@ -26,7 +27,6 @@ const Article = () => {
       <h2 className="text-4xl font-bold text-center mb-8">Featured Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {loading ? (
-          // Skeleton loader
           [1, 2].map((index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden p-6 flex flex-col">
               <div className="w-full h-64 md:h-72 lg:h-80 bg-gray-300 animate-pulse rounded"></div>
@@ -38,25 +38,21 @@ const Article = () => {
             </div>
           ))
         ) : (
-          // Article content
           articles.slice(0, 2).map((article) => (
-            <div
-              key={article.id}
-              className="bg-white shadow-lg rounded-lg overflow-hidden p-6 flex flex-col"
-            >
+            <div key={article.id} className="bg-white shadow-lg rounded-lg overflow-hidden p-6 flex flex-col">
               <div className="w-full h-64 md:h-72 lg:h-80">
                 <Image
-                  src={article.image}
-                  alt={article.title}
+                  src={article.thumbnail || '/default-image.jpg'}
+                  alt={article.title || 'Article Image'}
                   height={500}
                   width={500}
                   className="w-full h-full object-cover rounded"
                 />
               </div>
               <div className="mt-6">
-                <h3 className="text-2xl font-semibold text-gray-800">{article.title}</h3>
-                <h4 className="text-base text-gray-600 mt-2">{article.subheading}</h4>
-                <p className="text-gray-600 mt-4 text-sm line-clamp-3">{article.description}</p>
+                <h3 className="text-2xl font-semibold text-gray-800">{article.title || 'No Title'}</h3>
+                <h4 className="text-base text-gray-600 mt-2">{article.subheading || 'No Subheading'}</h4>
+                <p className="text-gray-600 mt-4 text-sm line-clamp-3">{article.content || 'No description available.'}</p>
               </div>
             </div>
           ))

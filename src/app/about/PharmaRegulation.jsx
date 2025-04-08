@@ -7,23 +7,24 @@ const PharmaRegulation = () => {
   const pharmacists = [
     {
       name: "Dr Munawar Iqbal",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Dr. Munawar Iqbal is a highly experienced pharmacist with extensive knowledge of pharmaceutical regulations, patient safety, and medication management. He specializes in ensuring compliance with the General Pharmaceutical Council (GPhC) guidelines, prescription accuracy, and proper dispensing practices to uphold the highest standards in patient care.",
       gphcNumber: "2034871",
       image: "/about/pharmaDoctor/doctor1.svg"
     },
     {
       name: "Anika Jagot",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Anika Jagot is a dedicated clinical pharmacist with expertise in pharmaceutical legislation, prescription validation, and patient counseling. She is committed to enhancing medication safety, ensuring adherence to regulatory frameworks, and providing evidence-based guidance to patients for optimal health outcomes.",
       gphcNumber: "2078699",
       image: "/about/pharmaDoctor/doctor2.svg"
     }
+    
   ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Header Section */}
       <h1 className="text-xl sm:text-3xl font-semibold leading-tight lg:leading-[81px] text-center tracking-wider">Pharmacy Regulation</h1>
-      
+ 
       {/* Registration Info */}
       <div className="text-center mb-8 space-y-2">
         <p className="  text-sm text-gray-700" >
@@ -69,7 +70,7 @@ const PharmaRegulation = () => {
             key={index}
             className="flex flex-col lg:flex-row items-center bg-white rounded-lg p-6 space-y-4 lg:space-y-0 lg:space-x-8 shadow-md"
           >
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0"> 
               <Image
                 src={pharmacist.image}
                 alt={pharmacist.name}
@@ -83,7 +84,7 @@ const PharmaRegulation = () => {
               <p className="text-sm mb-2  text-gray-700" style={{lineHeight: '25.91px'}}>{pharmacist.description}</p>
               <p className="text-hoverUnderlineColor text-xs font-semibold">
                 (GPhC Number: {pharmacist.gphcNumber})
-              </p>
+              </p>                      
             </div>
           </div>
         ))}
@@ -91,7 +92,7 @@ const PharmaRegulation = () => {
 
       {/* Footer Registration Section */}
       <div className="border rounded-xl shadow-md bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] p-3 sm:p-6  flex flex-col md:flex-row items-center justify-between text-white">
-        <p className="text-center md:text-left mb-4 md:mb-0  text-sm">
+        <p className="text-center md:text-left mb-4 md:mb-0  text-sm"> 
           For more information or to view registration details visit the
           General Pharmaceutical Council&apos;s website. Responsible Pharmacist:
         </p>

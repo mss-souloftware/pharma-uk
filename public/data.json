@@ -1,0 +1,48 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "dropdownTitle": "Men's Health",
+        "links": [
+          { "id": 101, "slug": "condoms", "label": "Condoms" },
+          { "id": 102, "slug": "erectile-dysfunction", "label": "Erectile Dysfunction" },
+          { "id": 103, "slug": "hair-loss", "label": "Hair Loss"},
+          { "id": 104, "slug": "lube", "label": "Lube" },
+          { "id": 105, "slug": "pain-relief", "label": "Pain Relief" },
+          { "id": 106, "slug": "premature-ejaculation", "label": "Premature Ejaculation" }
+        ]
+      },
+      {
+        "id": 2,
+        "dropdownTitle": "Women's Health",
+        "links": [
+          { "id": 201, "slug": "cystitis", "label": "Cystitis" },
+          { "id": 202, "slug": "contraceptive-pill", "label": "Contraceptive Pill" },
+          { "id": 203, "slug": "feminine-care", "label": "Feminine Care" },
+          { "id": 204, "slug": "women-hair-loss", "label": "Hair Loss" },
+          { "id": 205, "slug": "menopause", "label": "Menopause" },
+          { "id": 206, "slug": "migraine", "label": "Migraine" }
+        ]
+      },
+      {
+        "id": 3,
+        "dropdownTitle": "Respiratory & Digestive",
+        "links": [
+          { "id": 301, "slug": "asthma", "label": "Asthma" },
+          { "id": 302, "slug": "allergies", "label": "Allergies" },
+          { "id": 303, "slug": "cough", "label": "Cough" },
+          { "id": 304, "slug": "indigestion", "label": "Indigestion" }
+        ]
+      },
+      {
+        "id": 4,
+        "dropdownTitle": "General Health",
+        "links": [
+          { "id": 401, "slug": "acne", "label": "Acne" },
+          { "id": 402, "slug": "adenomyosis", "label": "Adenomyosis" },
+          { "id": 403, "slug": "anxiety", "label": "Anxiety" },
+          { "id": 404, "slug": "appendicitis", "label": "Appendicitis" }
+        ]
+      }
+    ]
+  }
