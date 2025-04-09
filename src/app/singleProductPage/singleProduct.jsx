@@ -25,7 +25,7 @@ const SingleProduct = () => {
       try {
         const response = await api.get(`products/${id}`);
         console.log("Fetched Products:", response.data.data);
-        setProducts(response.data.data || []);
+        setProduct(response.data.data || []);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -77,7 +77,7 @@ const SingleProduct = () => {
               ))}
             </div>
             <Skeleton width="80%" height={80} />
-            
+
             {/* Price Checker Skeleton */}
             <div className="bg-white p-6 rounded-lg shadow-md w-full">
               <Skeleton width="40%" height={30} />
@@ -106,21 +106,20 @@ const SingleProduct = () => {
   return (
     <div className="max-w-7xl mx-auto p-4 mt-20 px-4 sm:px-6 lg:px-8 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        
-        <div className="flex justify-center">
+
+        <div className="relative w-full h-full">
           <Image
-            src={product.imageUrl}
-            alt={product.title} 
-            width={300}
-            height={400}
-            className="rounded-lg"
+            src={product.thumbnail}
+            alt={product.name}
+            fill
+            className="object-cover rounded-lg"
           />
         </div>
 
-       
+
         <div className="space-y-5 text-center md:text-left">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-10">
-            {product.title}
+            {product.name}
           </h1>
           <div className="flex justify-center md:justify-start">
             {[...Array(5)].map((_, i) => (
@@ -131,7 +130,7 @@ const SingleProduct = () => {
             {product.description}
           </p>
 
-      
+
           <div className="bg-white p-6 rounded-lg shadow-md w-full">
             <h2 className="font-bold mb-4">Price Checker</h2>
             <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
@@ -162,15 +161,15 @@ const SingleProduct = () => {
               Get Started Now
             </button>
           </div>
-        </div>  
+        </div>
       </div>
 
       {/* Product Detail Section */}
       <div className="bg-white p-6 rounded-2xl sm:shadow-xl">
-      <SingleProductDetail product={product} />
+        <SingleProductDetail product={product} />
 
 
-            
+
       </div>
 
       {/* Additional Sections */}
