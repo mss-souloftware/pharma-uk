@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://zpcc9k2p-1545.inc1.devtunnels.ms/api/v1', // Replace with actual backend URL
+  baseURL: 'http://localhost:1545/api/v1', // Replace with actual backend URL
   timeout: 10000, // Request timeout in milliseconds
   headers: {
     'Content-Type': 'application/json',
