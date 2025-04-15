@@ -45,10 +45,10 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
           </label>
         ) : (
           // ✅ Show Packet Size dropdown if no weeklyPlan exists
-          <label>
+          <label> 
             <select onChange={handleSizeChange} value={selectedSize} className="border p-2 rounded">
               <option value="">Select Packet Size</option>
-              <option value="packet-2">Packets 2</option>
+              <option value="packet-2">Packets 2</option> 
               <option value="packet-4">Packets 4</option>
               <option value="packet-6">Packets 6</option>
             </select>

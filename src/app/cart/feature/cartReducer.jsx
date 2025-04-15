@@ -1,6 +1,12 @@
 import { toast } from "react-toastify"; // Import notification library
 
+const updateLocalStorage = (products) => {
+  localStorage.setItem("cart", JSON.stringify(products));
+};
+
 const cartReducer = (state, action) => {
+  let updatedProducts;
+
   switch (action.type) {
     case "Load":
       return {
@@ -15,61 +21,60 @@ const cartReducer = (state, action) => {
       );
 
       if (existingProductIndex >= 0) {
-        // No need to notify for increase in quantity
-        const updatedProducts = products.map((product, index) => {
-          if (index === existingProductIndex) {
-            return { ...product, quantity: product.quantity + 1 };
+        updatedProducts = products.map((product, index) =>
+          index === existingProductIndex
+            ? { ...product, quantity: product.quantity + 1 }
+            : product
+        );
+      } else {
+        toast.success(
+          <div>
+            <span style={{ color: "red", fontWeight: "bold" }}>
+              {action.product.title}
+            </span>{" "}
+            added to the cart!
+          </div>,
+          {
+            position: "top-right",
+            autoClose: 1000,
           }
-          return product;
-        });
-
-        return { ...state, products: updatedProducts };
+        );
+        updatedProducts = [...products, { ...action.product, quantity: 1 }];
       }
 
-      toast.success(
-        <div>
-          <span style={{ color: "red", fontWeight: "bold" }}>
-            {action.product.title}
-          </span>{" "}
-          added to the cart!
-        </div>,
-        {
-          position: "top-right",
-          autoClose: 1000,
-        }
-      );
-
-      return { 
-        ...state,
-        products: [...products, { ...action.product, quantity: 1 }],
-      };
+      updateLocalStorage(updatedProducts);
+      return { ...state, products: updatedProducts };
 
     case "Remove":
+      updatedProducts = state.products.filter(
+        (product) => product.id !== action.product.id
+      );
+
       toast.info(`${action.product.title} removed from the cart!`, {
         position: "top-right",
         autoClose: 1000,
       });
 
-      return {
-        ...state,
-        products: state.products.filter(
-          (product) => product.id !== action.product.id
-        ),
-      };
+      updateLocalStorage(updatedProducts);
+      return { ...state, products: updatedProducts };
 
     case "Increase":
-      // Don't show toast for quantity increase
-      return {
-        ...state,
-        products: state.products.map((product) => 
-          product.id === action.product.id 
-            ? { ...product, quantity: product.quantity + 1 } 
-            : product
-        ),
-      };
+      updatedProducts = state.products.map((product) =>
+        product.id === action.product.id
+          ? { ...product, quantity: product.quantity + 1 }
+          : product
+      );
+
+      updateLocalStorage(updatedProducts);
+      return { ...state, products: updatedProducts };
 
     case "Decrease":
-      // Don't show toast for quantity decrease
+      updatedProducts = state.products.map((product) =>
+        product.id === action.product.id && product.quantity > 1
+          ? { ...product, quantity: product.quantity - 1 }
+          : product
+      );
+
       const decreasingProduct = state.products.find(
         (product) => product.id === action.product.id
       );
@@ -81,14 +86,8 @@ const cartReducer = (state, action) => {
         });
       }
 
-      return {
-        ...state,
-        products: state.products.map((product) => 
-          product.id === action.product.id && product.quantity > 1
-            ? { ...product, quantity: product.quantity - 1 }
-            : product
-        ),
-      };
+      updateLocalStorage(updatedProducts);
+      return { ...state, products: updatedProducts };
 
     default:
       return state;

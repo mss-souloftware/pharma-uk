@@ -1,9 +1,9 @@
 "use client";
-
 import React, { useEffect, useState, useContext } from "react";
 import { useSearchParams } from "next/navigation";
 import { CartContext } from "../cart/feature/contextProvider";
 import Image from "next/image";
+import axios from "axios";
 import SingleProductDetail from "./singleProductDetail";
 import PharmaRegulation from "../about/PharmaRegulation";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
@@ -24,16 +24,8 @@ const SingleProduct = () => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/ProductContent.json");
-        const data = await res.json();
-
-        let foundProduct = null;
-        Object.values(data).some((category) => {
-          foundProduct = category.find((p) => String(p.id) === String(id));
-          return foundProduct;
-        });
-
-        setProduct(foundProduct);
+        const res = await axios.get(`http://localhost:5000/api/products/${id}`);
+        setProduct(res.data);
       } catch (error) {
         console.error("Error fetching product:", error);
       } finally {
@@ -97,18 +89,18 @@ const SingleProduct = () => {
   return (
     <div className="max-w-7xl mx-auto p-4 mt-20 px-4 sm:px-6 lg:px-8 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        {/* Product Image */}
+        
         <div className="flex justify-center">
           <Image
             src={product.imageUrl}
-            alt={product.title}
+            alt={product.title} 
             width={300}
             height={400}
             className="rounded-lg"
           />
         </div>
 
-        {/* Product Details */}
+       
         <div className="space-y-5 text-center md:text-left">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-10">
             {product.title}
@@ -118,11 +110,11 @@ const SingleProduct = () => {
               <Image key={i} src="/rankStarIcon.png" height={29} width={29} alt="starIcon" />
             ))}
           </div>
-          <p className="mt-4 text-gray-600 text-sm md:text-base leading-7">
+          <p className="mt-4 text-gray-600 text-sm md:text-ba se leading-7">
             {product.description}
           </p>
 
-          {/* Price Checker */}
+      
           <div className="bg-white p-6 rounded-lg shadow-md w-full">
             <h2 className="font-bold mb-4">Price Checker</h2>
             <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
@@ -153,12 +145,15 @@ const SingleProduct = () => {
               Get Started Now
             </button>
           </div>
-        </div>
+        </div>  
       </div>
 
       {/* Product Detail Section */}
       <div className="bg-white p-6 rounded-2xl sm:shadow-xl">
-        <SingleProductDetail product={product} />
+      <SingleProductDetail product={product} />
+
+
+            
       </div>
 
       {/* Additional Sections */}

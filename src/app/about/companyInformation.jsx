@@ -27,10 +27,7 @@ const CompanyInfo = () => {
             Company Information
           </h3>
           <p className="text-sm leading-relaxed" style={{lineHeight:'30.97px'}} >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          iFeelShy Pharmacy is committed to providing high-quality pharmaceutical products and healthcare solutions to our valued customers. With a focus on safety, reliability, and customer satisfaction, we offer a wide range of prescription and over-the-counter medications, wellness products, and healthcare essentials.
           </p>
 
           {/* Company Details */}

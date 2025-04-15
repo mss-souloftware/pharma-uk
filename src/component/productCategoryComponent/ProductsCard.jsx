@@ -4,19 +4,19 @@ import { useRouter } from "next/navigation";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Image from "next/image";
-import { ToastContainer } from "react-toastify";  
-import api from "@/config/axios"
+import { ToastContainer } from "react-toastify";
+import api from "../../config/axios";
+
 const ProductsCard = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
-
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await api.get('/products/categories/')
-        console.log("Fetched Products:", response.data); 
-        setProducts(response.data || []);
+        const response = await api.get("/products");
+        console.log("Fetched Products:", response.data.data);
+        setProducts(response.data.data || []);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -25,11 +25,8 @@ const ProductsCard = () => {
     };
     fetchProducts();
   }, []);
-  
-
-  // Navigate to SingleProduct page
   const handleProductClick = (product) => {
-    router.push(`/singleProductPage?id=${product._id}`); // Assuming MongoDB ObjectId
+    router.push(`/singleProductPage?id=${product.id}`);
   };
 
   return (
@@ -48,7 +45,7 @@ const ProductsCard = () => {
                 <Skeleton height={20} width={`50%`} />
               </div>
             </div>
-          ))  
+          ))
         ) : products.length > 0 ? (
           products.map((product, index) => (
             <div
@@ -58,22 +55,27 @@ const ProductsCard = () => {
             >
               {/* Product Image */}
               <div className="flex justify-center items-center relative overflow-hidden">
-                <Image
-                  src={product.imageUrl || "/placeholder.png"}
-                  alt={product.title}
+                <img
+                  src={product.thumbnail || "/placeholder.png"}
+                  alt={product.title || "Product Image"}
                   height={100}
                   width={200}
                   className="object-cover h-auto sm:h-full w-full p-4 sm:p-6"
+                  unoptimized
                 />
               </div>
 
               {/* Product Info */}
               <div className="flex flex-col justify-between px-4 py-6 sm:py-4">
                 <h6 className="text-sm font-semibold">
-                  {product.title?.length > 20 ? product.title.substring(0, 20) + "..." : product.title}
+                  {product.name?.length > 20
+                    ? product.name.substring(0, 20) + "..."
+                    : product.name}
                 </h6>
                 <p className="text-sm font-light">
-                  {product.description?.length > 70 ? product.description.substring(0, 70) + "..." : product.description}
+                  {product.description?.length > 70
+                    ? product.description.substring(0, 70) + "..."
+                    : product.description}
                 </p>
                 <div className="flex items-center">
                   <button
@@ -81,16 +83,18 @@ const ProductsCard = () => {
                       handleProductClick(product);
                       e.stopPropagation();
                     }}
-                    className="py-2 md:my-3 px-7 xl:px-8 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transform hover:scale-105 transition-all"
+                    className="py-2 md:my-3 px-7 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg transform hover:scale-105 transition-all"
                   >
                     <p className="text-xs font-light">${product.price}</p>
                   </button>
                 </div>
-              </div>    
+              </div>
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-600 dark:text-white">No products available.</p>
+          <p className="text-center text-gray-600 dark:text-white">
+            No products available.
+          </p>
         )}
       </div>
       <ToastContainer />

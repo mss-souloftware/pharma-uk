@@ -11,6 +11,8 @@ import { FaCartPlus } from "react-icons/fa";
 import { CartContext } from "@/app/cart/feature/contextProvider";
 import SubNavbar from "./SubNavbar";
 import gsap from "gsap";
+import axios from "axios";
+
 const Navbar = () => {
   const { cart } = useContext(CartContext);
 
@@ -18,7 +20,8 @@ const Navbar = () => {
   const [cardOpen, setCardOpen] = useState(null); // To track which card is open
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navbarRef = useRef(null);
-  const logoRef =useRef(null)
+  const logoRef = useRef(null);
+  const [navbarItems, setNavbarItems] = useState([]);
 
   const handleDropdownToggle = (dropdown) => {
     if (activeDropdown === dropdown) {
@@ -37,8 +40,19 @@ const Navbar = () => {
     setIsMenuOpen((prevState) => !prevState); // Toggle the mobile menu state
   };
 
+  const handleNavItem = async () => {
+    try {
+      const response = await axios.get("/data.json"); // Ensure data.json is accessible
+      setNavbarItems(response.data.categories || []);
+    } catch (error) {
+      console.error("Error fetching data", error);
+    }
+  };
+ 
+
   // Close dropdowns on click outside
   useEffect(() => {
+    handleNavItem();
     gsap.fromTo(
       [navbarRef.current, logoRef.current],
       { opacity: 0, y: -20 },
@@ -51,6 +65,7 @@ const Navbar = () => {
           setActiveDropdown(null); // Close all dropdowns
         }, 100); // Adjust timing as needed
       }
+
     };
 
     // Add event listener for clicks
@@ -71,17 +86,17 @@ const Navbar = () => {
           <Link
             href="/"
             className="flex items-center w-14 space-x-2 sm:left-0 sm:w-10 tl:space-x-reverse "
-          > 
+          >
             <Image
-            ref={logoRef}
-             src="/footerLogo1.svg"
-             width={400}  // Make sure this is the original, high-resolution size of your logo
-             height={120}
-             className="absolute w-24 sm:w-20 md:w-24 lg:w-24 xl:w-40"
-             alt="Responsive Logo"
-             style={{ imageRendering: "crisp-edges" }} // Ensure the logo is sharp
-             quality={100}
-             priority={true} 
+              ref={logoRef}
+              src="/footerLogo1.svg"
+              width={400} // Make sure this is the original, high-resolution size of your logo
+              height={120}
+              className="absolute w-24 sm:w-20 md:w-24 lg:w-24 xl:w-40"
+              alt="Responsive Logo"
+              style={{ imageRendering: "crisp-edges" }}
+              quality={100}
+              priority={true}
             />
           </Link>
 
@@ -140,88 +155,31 @@ const Navbar = () => {
                 ref={navbarRef}
               >
                 {/* Men's Health Dropdown */}
-                <Dropdown
-                  isDropdownOpen={activeDropdown === "men"}
-                  setDropdownOpen={() => handleDropdownToggle("men")}
-                  dropdownTitle="Men's Health"
-                  links={[
-                    { href: "/condoms", label: "Condoms" },
-                    {
-                      href: "/erectileDysfunction",
-                      label: "Erectile Dysfunction",
-                    },
-                    { href: "/hairLoss", label: "Hair Loss" },
-                    { href: "/lube", label: "Lube" },
-                    { href: "/painRelief", label: "Pain Relief" },
-                    {
-                      href: "/prematureEjaculation",
-                      label: "Premature Ejaculation",
-                    },
-                  ]}
-                  cardOpen={cardOpen}
-                  setCardOpen={setCardOpen}
-                  cardStyles="bg-black text-white p-4 rounded-lg"
-                  position="absolute left-0 top-full mt-2 z-50"
-                />
-
-                {/* Women's Health Dropdown */}
-                <Dropdown
-                  isDropdownOpen={activeDropdown === "women"}
-                  setDropdownOpen={() => handleDropdownToggle("women")}
-                  dropdownTitle="Women's Health"
-                  links={[
-                    { href: "/cystitis", label: "Cystitis" },
-                    { href: "/contraceptivePill", label: "Contraceptive Pill" },
-                    { href: "/FeminineCare", label: "Feminine Care" },
-                    { href: "/womenHairLoss", label: "Hair Loss" },
-                    { href: "/Menopause", label: "Menopause" },
-                    { href: "/Migraine", label: "Migraine" },
-                  ]}
-                  cardOpen={cardOpen}
-                  setCardOpen={setCardOpen}
-                  cardStyles="bg-black text-white p-4 rounded-lg"
-                  position="absolute left-0 top-full mt-2 z-50"
-                />
-
-                {/* Respiratory & Digestive Dropdown */}
-                <Dropdown
-                  isDropdownOpen={activeDropdown === "respiratory"}
-                  setDropdownOpen={() => handleDropdownToggle("respiratory")}
-                  dropdownTitle="Respiratory & Digestive"
-                  links={[
-                    { href: "/Asthma", label: "Asthma" },
-                    { href: "/Allergies", label: "Allergies" },
-                    { href: "/Cough", label: "Cough" },
-                    { href: "/Indigestion", label: "Indigestion" },
-                  ]}
-                  cardOpen={cardOpen}
-                  setCardOpen={setCardOpen}
-                  cardStyles="bg-black text-white p-4 rounded-lg"
-                  position="absolute left-0 top-full mt-2 z-50"
-                />
-
-                {/* General Health Dropdown */}
-                <Dropdown
-                  isDropdownOpen={activeDropdown === "general"}
-                  setDropdownOpen={() => handleDropdownToggle("general")}
-                  dropdownTitle="General Health"
-                  links={[
-                    { href: "/acne", label: "Acne" },
-                    { href: "/adenomyosis", label: "Adenomyosis" },
-                    { href: "/anxiety", label: "Anxiety" },
-                    { href: "/Appendicitis", label: "Appendicitis" },
-                  ]}
-                  cardOpen={cardOpen}
-                  setCardOpen={setCardOpen}
-                  cardStyles="bg-black text-white p-4 rounded-lg"
-                  position="absolute left-0 top-full mt-2 z-50"
-                />
+                {navbarItems.map((category) => (
+                  <Dropdown
+                    key={category.id}
+                    isDropdownOpen={activeDropdown === category.dropdownTitle}
+                    setDropdownOpen={() =>
+                      handleDropdownToggle(category.dropdownTitle)
+                    }
+                    dropdownTitle={category.dropdownTitle}
+                    links={category.links.map((link) => ({
+                      href: `/category/${link.slug}`,
+                      label: link.label,
+                    }))}
+                    cardOpen={cardOpen}
+                    setCardOpen={setCardOpen}
+                    cardStyles="bg-black text-white p-4 rounded-lg"
+                    position="absolute left-0 top-full mt-2 z-50"
+                  />
+                ))}
+   
               </div>
 
               {/* AddToCart */}
               <div className="hidden sm:block">
                 <Link href="/cart" className="flex items-center">
-                  <FaCartPlus className="text-white w-5 h-5" />
+                  <FaCartPlus className=" text-white w-5 h-5" />
                   <span className="ml-2 text-white">
                     <span className="text-hoverUnderlineColor">
                       {cart.products.length || 0}
@@ -230,14 +188,12 @@ const Navbar = () => {
                 </Link>
               </div>
 
-              {/* Profile Icon (UserProfileMenu) aligned to the right */}
+             
               <div className="mt-4 md:mt-0 ml-auto flex items-center">
                 <UserProfileMenu />
               </div>
             </ul>
           </div>
-
-          {/* Mobile Menu */}
           {isMenuOpen && (
             <MobileMenu
               mobileMenuOpen={isMenuOpen}

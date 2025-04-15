@@ -1,92 +1,76 @@
 "use client";
-import Link from 'next/link';
-import React, { useState } from 'react';
 import api from '@/config/axios';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';     
-import { useRouter } from 'next/navigation';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
-const Page = () => {
-      const router = useRouter();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [loading, setLoading] = useState(false);
-    const [showPassword, setShowPassword] = useState(false); 
+const LoginPage = () => {
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
-    const handleLogin = async (e) => {  
-        e.preventDefault();
-        setLoading(true);
-        try {
-            const response = await api.post('/users/auth/login', { email, password });
-            console.log(response.data.message); 
-            if (response.status === 200) {
-                toast.success('User Login successfully');
-                localStorage.setItem('token', response.data.token);
-                localStorage.setItem('userEmail', email);
-                router.push('/');
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    
+    try {
+      const response = await api.post('/users/auth/login', { email, password });
 
-            };
-        } catch (err) {
-            toast.error(err.response?.data?.message || 'Email or Password is incorrect');
-        } finally {
-            setLoading(false);
-        }
-    };
+      if (response.status === 200) {
+        // ✅ Save user info in local storage
+        localStorage.setItem('token', response.data.token);
+        localStorage.setItem('userEmail', email);
 
-    return (
-        <section className="min-h-screen flex items-center justify-center  dark:bg-gray-900 px-4">
-            <div className="w-full max-w-md bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8">
-             
-                        <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Login</h1>
-                            <p className="text-center text-gray-500 dark:text-gray-400 mb-6">Access your account</p>
-                        <form className="space-y-5" onSubmit={handleLogin}>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 dark:text-white">Email</label>
-                                <input
-                                    type="email"
-                                    className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white "
-                                    placeholder="name@example.com"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    required
-                                />
-                            </div>
-                            <div className="relative">
-                                <label className="block text-sm font-medium text-gray-700 dark:text-white">Password</label>
-                                <input
-                                    type={showPassword ? "text" : "password"}
-                                    className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white "
-                                    placeholder="••••••••"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    required
-                                />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                    className="absolute right-3 top-11 transform -translate-y-1/2 text-gray-500 dark:text-gray-400"
-                                >
-                                    {showPassword ? <FaEyeSlash /> : <FaEye />}
-                                </button>
-                            </div>
-                            <button
-                                type="submit"
-                                className="w-full bg-hoverUnderlineColor text-white font-semibold rounded-lg text-lg py-3"
-                                disabled={loading}
-                            >
-                                {loading ? 'Logging in...'   : 'Login'}
-                            </button>
-                            <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
-                                <Link href="/signUp" className="hover:text-hoverUnderlineColor">Sign up</Link>
-                                <Link href="/forgotPassword" className="hover:text">Forgot password?</Link>
-                            </div>
-                        </form>
-                   
-            </div>
-            <ToastContainer />
-        </section>
-    );
+        toast.success("Login successful! Redirecting...");
+        
+        setTimeout(() => {
+          router.push('/'); // ✅ Redirect to home page
+        }, 2000);
+      }
+    } catch (err) {
+      toast.error(err.response?.data?.message || "Email or Password is incorrect");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <section className="min-h-screen flex items-center justify-center dark:bg-gray-900">
+      <div className="w-full max-w-md bg-white rounded-lg shadow-lg dark:bg-gray-800 p-6">
+        <h1 className="text-2xl font-bold text-center text-gray-900 dark:text-white">Login</h1>
+        
+        <form className="space-y-4 mt-6" onSubmit={handleLogin}>
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full p-2 border rounded" />
+          
+          <div className="relative">
+            <input type={showPassword ? "text" : "password"} placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required className="w-full p-2 border rounded" />
+            <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-2 top-2 text-gray-500">
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
+          
+          <button type="submit" className="w-full bg-hoverUnderlineColor text-white p-2 rounded" disabled={loading}>
+            {loading ? 'Logging in...' : 'Login'}
+          </button>
+        </form>
+        
+        <p className="text-center text-gray-600 dark:text-gray-400 mt-4">
+          <button onClick={() => router.push('/forgotPassword ')} className="text-hoverUnderlineColor">Forgot Password?</button>
+        </p> 
+        
+        <p className="text-center text-gray-600 dark:text-gray-400 mt-4">
+          Don't have an account? <Link href="/signUp" className="text-hoverUnderlineColor">Sign Up</Link>
+        </p>
+
+        <ToastContainer position="top-right" autoClose={2000} />
+      </div>
+    </section>
+  );
 };
 
-export default Page;
+export default LoginPage;

@@ -60,9 +60,11 @@ const ForgotPassword = () => {
             {loading ? "Sending email..." : "Send OTP"}
           </button>
           <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
+            <Link href='/login'>
             <button type="button" className="hover:text-hoverUnderlineColor">
               Back to Login
             </button>
+            </Link>
             <Link
               href="/newPassword"
               className="hover:text-hoverUnderlineColor "
