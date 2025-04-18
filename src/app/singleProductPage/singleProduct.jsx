@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState, useContext } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { CartContext } from "../cart/feature/contextProvider";
 import Image from "next/image";
 import axios from "axios";
@@ -10,8 +10,10 @@ import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import api from "../../config/axios";
+import Link from "next/link";
 
 const SingleProduct = () => {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   const { dispatch } = useContext(CartContext);
@@ -35,28 +37,11 @@ const SingleProduct = () => {
     fetchProduct();
   }, [id]);
 
-  // useEffect(() => {
-  //   if (!id) return;
-
-  //   const fetchProduct = async () => {
-  //     try {
-  //       setLoading(true);
-  //       const res = await axios.get(`http://localhost:1545/api/products/${id}`);
-  //       setProduct(res.data);
-  //     } catch (error) {
-  //       console.error("Error fetching product:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchProduct();
-  // }, [id]);
-
   const handleAddToCart = () => {
     if (product) {
       dispatch({ type: "Add", product: { ...product, quantity } });
     }
+    router.push("/cart");
   };
 
   if (loading) {
@@ -154,12 +139,14 @@ const SingleProduct = () => {
             <div className="text-2xl text-hoverUnderlineColor font-semibold mb-4">
               £{(product.price * quantity).toFixed(2)}
             </div>
-            <button
-              onClick={handleAddToCart}
-              className="w-full md:w-auto px-6 py-2 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"
-            >
-              Get Started Now
-            </button>
+            {product.directCheckout ? (
+              <Link href="/consultation" className="w-full md:w-auto px-6 py-2 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"> Get Started Now</Link>
+            ) : (
+              <button
+                onClick={handleAddToCart}
+                className="w-full md:w-auto px-6 py-2 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"
+              > Add to Cart </button>
+            )}
           </div>
         </div>
       </div>

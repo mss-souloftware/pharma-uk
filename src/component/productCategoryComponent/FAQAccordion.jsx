@@ -2,66 +2,78 @@
 import React, { useEffect, useState } from "react";
 import api from "../../config/axios";
 
-const FAQAccordion = ({ categoryId, faqId }) => {
+const FAQAccordion = ({ slug }) => {
   const [faqData, setFaqData] = useState([]);
   const [activeIndex, setActiveIndex] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     const fetchFAQData = async () => {
-      // if (!categoryId) return;
-  
+      if (!slug) return;
+
       setIsLoading(true);
       setError(null);
-      console.log("Faq response start")
-      console.log(categoryId)
-      try {
-        const response = await api.get(`/products/categories/1/faqs`);
-        console.log("Faq response: ",response)
 
-        if (response.data.data && Array.isArray(response.data.data)) {
+      try {
+        // Step 1: Get categories
+        const categoryRes = await api.get("/products/categories");
+        const categoryList = categoryRes.data.data || [];
+
+        const currentCategory = categoryList.find(
+          (cat) => cat.name.toLowerCase().replace(/\s+/g, "-") === slug
+        );
+
+        if (!currentCategory) {
+          throw new Error("Category not found for slug");
+        }
+
+        const categoryId = currentCategory.id;
+
+        // Step 2: Get FAQs for category
+        const response = await api.get(`/products/categories/${categoryId}/faqs`);
+        if (Array.isArray(response.data.data)) {
+          console.log("FAQ's: ", response.data.data)
           setFaqData(response.data.data);
         } else {
           throw new Error("Invalid FAQ data format");
         }
       } catch (error) {
         setError("Failed to load FAQs");
+        console.error("FAQ fetch error:", error);
       } finally {
         setIsLoading(false);
       }
     };
-  
+
     fetchFAQData();
-  }, [categoryId]);
-  
+  }, [slug]);
+
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  // Your existing render logic remains unchanged
   return (
     <div className="container mx-auto md:px-5 lg:px-0">
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-relaxed mb-8 text-center sm:text-left">
         Frequently Asked Questions
       </h2>
-      
+
       {error && (
-        <div className="text-red-500 text-center p-4">
-          {error}
-        </div>
+        <div className="text-red-500 text-center p-4">{error}</div>
       )}
-      
+
       <div className="space-y-4">
         {isLoading ? (
-          <div className="space-y-4">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <div key={index} className="border-b border-gray-200 px-4 bg-gray-200 animate-pulse">
-                <div className="w-full text-left flex justify-between items-center py-4">
-                  <div className="w-2/3 h-6 bg-gray-300 rounded"></div>
-                  <div className="w-6 h-6 bg-gray-300 rounded"></div>
-                </div>
+          Array.from({ length: 5 }).map((_, index) => (
+            <div key={index} className="border-b border-gray-200 px-4 bg-gray-200 animate-pulse">
+              <div className="w-full text-left flex justify-between items-center py-4">
+                <div className="w-2/3 h-6 bg-gray-300 rounded"></div>
+                <div className="w-6 h-6 bg-gray-300 rounded"></div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))
         ) : faqData.length > 0 ? (
           faqData.map((item, index) => (
             <div key={item.id} className="border-b border-gray-200 px-4">
@@ -74,7 +86,6 @@ const FAQAccordion = ({ categoryId, faqId }) => {
                   className={`transform transition-transform duration-200 ${activeIndex === index ? "rotate-180" : ""}`}
                   width="16"
                   height="16"
-                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -85,9 +96,7 @@ const FAQAccordion = ({ categoryId, faqId }) => {
                   />
                 </svg>
               </button>
-              <div
-                className={`transition-all duration-300 ${activeIndex === index ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}
-              >
+              <div className={`transition-all duration-300 ${activeIndex === index ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="py-4 px-4 text-gray-700 text-center sm:text-left">
                   {Array.isArray(item.answer) ? (
                     <ul className="list-disc list-inside space-y-2">

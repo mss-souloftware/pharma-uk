@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Image from "next/image";
@@ -9,22 +9,45 @@ import api from "../../config/axios";
 
 const ProductsCard = () => {
   const [products, setProducts] = useState([]);
+  const [category, setCategory] = useState([]);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
+  const params = useParams();
+  const slug = params?.slug;
+
+
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchCategoryAndProducts = async () => {
       try {
-        const response = await api.get("/products");
-        console.log("Fetched Products:", response.data.data);
-        setProducts(response.data.data || []);
+        if (!slug) return;
+
+        const categoryRes = await api.get("/products/categories");
+        const categoryList = categoryRes.data.data || [];
+        setCategory(categoryList);
+
+        const currentCategory = categoryList.find(
+          (cat) => cat.name.toLowerCase().replace(/\s+/g, "-") === slug
+        );
+
+        if (!currentCategory) {
+          console.warn("No category matched slug:", slug);
+          return;
+        }
+
+        const categoryId = currentCategory.id;
+
+        const productRes = await api.get(`/products/categories/${categoryId}/products`);
+        setProducts(productRes.data.data || []);
         setLoading(false);
-      } catch (error) {
-        console.error("Error fetching products:", error);
+      } catch (err) {
+        console.error("Error fetching data:", err);
         setLoading(false);
       }
     };
-    fetchProducts();
-  }, []);
+
+    fetchCategoryAndProducts();
+  }, [slug]);
+
   const handleProductClick = (product) => {
     router.push(`/singleProductPage?id=${product.id}`);
   };
