@@ -12,6 +12,7 @@ import { CartContext } from "@/app/cart/feature/contextProvider";
 import SubNavbar from "./SubNavbar";
 import gsap from "gsap";
 import axios from "axios";
+import api from "@/config/axios"
 
 const Navbar = () => {
   const { cart } = useContext(CartContext);
@@ -22,6 +23,24 @@ const Navbar = () => {
   const navbarRef = useRef(null);
   const logoRef = useRef(null);
   const [navbarItems, setNavbarItems] = useState([]);
+
+  const [category, setCategory] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const fetchCategory = async () => {
+      try {
+        const response = await api.get("/products/categories");
+        // console.log("Fetched Category: Start");
+        // console.log("Fetched Category:", response.data.data);
+        setCategory(response.data.data || []);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching Category:", error);
+        setLoading(false);
+      }
+    };
+    fetchCategory();
+  }, []);
 
   const handleDropdownToggle = (dropdown) => {
     if (activeDropdown === dropdown) {
@@ -48,7 +67,7 @@ const Navbar = () => {
       console.error("Error fetching data", error);
     }
   };
- 
+
 
   // Close dropdowns on click outside
   useEffect(() => {
@@ -75,7 +94,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-    
+
   }, [navbarRef]);
 
   return (
@@ -154,26 +173,85 @@ const Navbar = () => {
                 className="flex flex-wrap items-center space-y-4 space-x-0 md:space-y-0 md:space-x-8"
                 ref={navbarRef}
               >
-                {/* Men's Health Dropdown */}
-                {navbarItems.map((category) => (
-                  <Dropdown
-                    key={category.id}
-                    isDropdownOpen={activeDropdown === category.dropdownTitle}
-                    setDropdownOpen={() =>
-                      handleDropdownToggle(category.dropdownTitle)
-                    }
-                    dropdownTitle={category.dropdownTitle}
-                    links={category.links.map((link) => ({
-                      href: `/category/${link.slug}`,
-                      label: link.label,
-                    }))}
-                    cardOpen={cardOpen}
-                    setCardOpen={setCardOpen}
-                    cardStyles="bg-black text-white p-4 rounded-lg"
-                    position="absolute left-0 top-full mt-2 z-50"
-                  />
-                ))}
-   
+                {!loading && (
+                  <>
+                    {/* Men's Health */}
+                    <Dropdown
+                      isDropdownOpen={activeDropdown === 'MEN_HEALTH'}
+                      setDropdownOpen={() => handleDropdownToggle('MEN_HEALTH')}
+                      dropdownTitle="Men's Health"
+                      links={category
+                        .filter(item => item.type === 'MEN_HEALTH')
+                        .map(item => ({
+                          id: item.id,
+                          href: `/category/${item.name.toLowerCase().replace(/\s+/g, '-')}`,
+                          label: item.name,
+                        }))
+                      }
+                      cardOpen={cardOpen}
+                      setCardOpen={setCardOpen}
+                      cardStyles="bg-black text-white p-4 rounded-lg"
+                      position="absolute left-0 top-full mt-2 z-50"
+                    />
+
+                    {/* Women's Health */}
+                    <Dropdown
+                      isDropdownOpen={activeDropdown === 'WOMEN_HEALTH'}
+                      setDropdownOpen={() => handleDropdownToggle('WOMEN_HEALTH')}
+                      dropdownTitle="Women's Health"
+                      links={category
+                        .filter(item => item.type === 'WOMEN_HEALTH')
+                        .map(item => ({
+                          href: `/category/${item.name.toLowerCase().replace(/\s+/g, '-')}`,
+                          label: item.name,
+                        }))
+                      }
+                      cardOpen={cardOpen}
+                      setCardOpen={setCardOpen}
+                      cardStyles="bg-black text-white p-4 rounded-lg"
+                      position="absolute left-0 top-full mt-2 z-50"
+                    />
+
+                    {/* Respiratory & Digestive */}
+                    <Dropdown
+                      isDropdownOpen={activeDropdown === 'RESPIRATORY_AND_DIGESTIVE'}
+                      setDropdownOpen={() => handleDropdownToggle('RESPIRATORY_AND_DIGESTIVE')}
+                      dropdownTitle="Respiratory and Digestive"
+                      links={category
+                        .filter(item => item.type === 'RESPIRATORY_AND_DIGESTIVE')
+                        .map(item => ({
+                          href: `/category/${item.name.toLowerCase().replace(/\s+/g, '-')}`,
+                          label: item.name,
+                        }))
+                      }
+                      cardOpen={cardOpen}
+                      setCardOpen={setCardOpen}
+                      cardStyles="bg-black text-white p-4 rounded-lg"
+                      position="absolute left-0 top-full mt-2 z-50"
+                    />
+
+                    {/* General Health */}
+                    <Dropdown
+                      isDropdownOpen={activeDropdown === 'GENERAL_HEALTH'}
+                      setDropdownOpen={() => handleDropdownToggle('GENERAL_HEALTH')}
+                      dropdownTitle="General Health"
+                      links={category
+                        .filter(item => item.type === 'GENERAL_HEALTH')
+                        .map(item => ({
+                          href: `/category/${item.name.toLowerCase().replace(/\s+/g, '-')}`,
+                          label: item.name,
+                        }))
+                      }
+                      cardOpen={cardOpen}
+                      setCardOpen={setCardOpen}
+                      cardStyles="bg-black text-white p-4 rounded-lg"
+                      position="absolute left-0 top-full mt-2 z-50"
+                    />
+                  </>
+                )}
+
+
+
               </div>
 
               {/* AddToCart */}
@@ -188,7 +266,7 @@ const Navbar = () => {
                 </Link>
               </div>
 
-             
+
               <div className="mt-4 md:mt-0 ml-auto flex items-center">
                 <UserProfileMenu />
               </div>

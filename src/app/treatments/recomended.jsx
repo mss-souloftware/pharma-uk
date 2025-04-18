@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useContext } from "react";
+import { useRouter } from "next/navigation";
 import { CartContext } from "../cart/feature/contextProvider";
 import WeeklyPlan from "../cart/feature/weeklyPlan";
 
@@ -13,13 +14,14 @@ const Recomended = ({
   weekPlan,
   onBuy,
 }) => {
+  const router = useRouter();
   const { state, dispatch } = useContext(CartContext);
   const cart = state?.cart || [];
 
   // Handle Add to Cart 
   const handleAddToCart = () => {
     const product = {
-      id: title, 
+      id: title,
       name: title,
       description,
       imageUrl: image,
@@ -34,6 +36,12 @@ const Recomended = ({
       return;
     }
 
+    if (isProductInCart) {
+      console.log("This product is already in the cart.");
+      router.push("/cart"); // ✅ redirect anyway
+      return;
+    }
+
     dispatch({
       type: "Add",
       product: {
@@ -42,6 +50,7 @@ const Recomended = ({
         quantity: 1,
       },
     });
+    router.push("/cart");
   };
 
   const validImage = image && image !== "" ? image : "/fallback-image.jpg";
