@@ -1,92 +1,77 @@
-"use client"; // Ensure this is at the top of the file for client-side rendering
+"use client";
 import { useEffect, useState } from "react";
 import Recomended from "./recomended";
 import WeeklyPlan from "../cart/feature/weeklyPlan";
 import StepNavigation from "../stepsNavigation/page";
+import api from "../../config/axios"; // Assuming you have an Axios instance set up
 
 const Treatment = () => {
-  const [mensMedicineDataFirst, setMensMedicineDataFirst] = useState([]);
-  const [selectedTreatmentFirst, setSelectedTreatmentFirst] = useState(null);
-  const [mensMedicineDataSecond, setMensMedicineDataSecond] = useState([]);
-  const [selectedTreatmentSecond, setSelectedTreatmentSecond] = useState(null);
-
-  const [weekPlan, setWeekPlan] = useState([]);  // State for weekly plan
-  const [cart, setCart] = useState([]);  // Local cart state to simulate adding items to cart
+  const [productData, setProductData] = useState(null);
+  const [cart, setCart] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchProductData = async () => {
+      setLoading(true);
       try {
-        const response = await fetch("/treatments.json");
-        const data = await response.json();
-        setMensMedicineDataFirst(data.Finasteride || []);
-        setSelectedTreatmentFirst(data?.Finasteride[0] || null);
-        setMensMedicineDataSecond(data?.Regaine_Foam_for_Men || []);
-        setSelectedTreatmentSecond(data?.Regaine_Foam_for_Men[0] || null);
-        setWeekPlan(data?.weekPlan || []);  // Set the week plan data
-      } catch (error) {
-        console.log("Some error occurred in fetching data", error);
+        const id = new URLSearchParams(window.location.search).get("id");
+        if (!id) throw new Error("Missing product ID");
+
+        const res = await api.get(`/products/${id}`);
+        const result = res.data.data;
+        console.log("Product response: ", result)
+        // Extract relevant product data from API response
+        setProductData(result);
+      } catch (err) {
+        console.error("Error fetching product data:", err);
+        setError(err.message || "Failed to load product data");
+      } finally {
+        setLoading(false);
       }
     };
-    fetchData();
+
+    fetchProductData();
   }, []);
 
-  // Handle filter based on the user's button click and ID
-  const handleFilter = (filterTreatment, isFirst) => {
-    if (isFirst) {
-      setSelectedTreatmentFirst(filterTreatment);
-    } else {
-      setSelectedTreatmentSecond(filterTreatment);
-    }
+  const handleAddToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
   };
 
-  // Handle Add to Cart
-  const handleAddToCart = (product, weekPlan) => {
-    // Add weeklyPlan to the product before adding to cart
-    const productWithWeeklyPlan = { ...product, weeklyPlan };
+  if (loading) {
+    return <div className="text-center text-gray-500">Loading treatment...</div>;
+  }
 
-    setCart((prevCart) => [...prevCart, productWithWeeklyPlan]); // Add product with weekly plan to the cart
-  };
+  if (error) {
+    return (
+      <div className="text-center text-red-500 font-semibold">
+        Error: {error}
+      </div>
+    );
+  }
 
   return (
     <>
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-6xl mx-auto">
+        <StepNavigation />
 
-      <StepNavigation/>
-
-        {/* Render the selected treatment for the first medicine */}
-        {selectedTreatmentFirst && (
-          <Recomended
-            headingName={selectedTreatmentFirst.heading}
-            title={selectedTreatmentFirst.name}
-            description={selectedTreatmentFirst.description}
-            image={selectedTreatmentFirst.image}
-            medicineData={mensMedicineDataFirst}
-            onBuy={handleAddToCart} // Handle add to cart
-            onFilter={(filterTreatment) => handleFilter(filterTreatment, true)}
-            weekPlan={selectedTreatmentFirst.weekPlan} // Pass the weekly plan to Recomended
-          />
+        {productData && (
+          <>
+            <Recomended
+              title={productData.name}
+              description={productData.description}
+              image={productData.thumbnail}
+              medicineData={[productData]} // Passing the single product as data
+              onBuy={handleAddToCart}
+              weekPlan={productData.weekPlan || []}
+            />
+          </>
         )}
       </div>
 
-      <div className="container mx-auto">
-        {/* Render the selected treatment for the second medicine */}
-        {selectedTreatmentSecond && (
-          <Recomended
-            title={selectedTreatmentSecond.name}
-            description={selectedTreatmentSecond.description}
-            image={selectedTreatmentSecond.image}
-            medicineData={mensMedicineDataSecond}
-            onBuy={handleAddToCart} // Handle add to cart
-            onFilter={(filterTreatment) => handleFilter(filterTreatment, false)}
-            weekPlan={selectedTreatmentSecond.weekPlan} // Pass the weekly plan to Recomended
-          />
-        )}
-      </div>
-
-      {/* Render weekly plan only if items are in the cart */}
       {cart.length > 0 && (
         <div className="container mx-auto mt-10">
-          <WeeklyPlan weekPlan={weekPlan} />
+          <WeeklyPlan weekPlan={productData?.weekPlan || []} />
         </div>
       )}
     </>
