@@ -148,7 +148,7 @@ const SingleProduct = () => {
               > Add to Cart </button>
             )}
           </div>
-        </div>
+        </div>  
       </div>
 
       {/* Product Detail Section */}
