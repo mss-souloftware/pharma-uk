@@ -1,7 +1,8 @@
 "use client";
-import React, { useContext, useState } from "react";
-import CartProduct from "./cartProduct";  // aapka cart product component
-import { CartContext } from "./feature/contextProvider"; // cart context
+import Link from "next/link";
+import { useContext } from "react";
+import CartProduct from "./cartProduct";
+import { CartContext } from "./feature/contextProvider";
 import HowDoesItWorks from "@/component/content/HowDoesItWorks";
 import StepNavigation from "../stepsNavigation/page";
 import WeeklyPlan from "./feature/weeklyPlan";
@@ -10,67 +11,14 @@ const Cart = () => {
   const { cart, dispatch } = useContext(CartContext);
   const products = Array.isArray(cart.products) ? cart.products : [];
 
-  const [loading, setLoading] = useState(false);
-
   // Calculate totals
   const totalProducts = products.reduce((sum, product) => sum + product.quantity, 0);
   const totalProductPrice = products.reduce((sum, product) => sum + product.price * product.quantity, 0);
   const totalDeliveryCharge = products.reduce((sum, product) => sum + (product.deliveryCharge || 15.0), 0);
   const grandTotal = totalProductPrice + totalDeliveryCharge;
 
-  // Order submit handler
-  const handleOrderSubmit = async () => {
-    if (products.length === 0) {
-      alert("Your cart is empty!");
-      return;
-    }
-
-    setLoading(true);
-
-    const orderPayload = {
-      products: products.map(product => ({
-        productId: product.id,
-        quantity: product.quantity,
-        size: product.packet ? product.selectedSize : null,
-        weeklyPlan: product.weeklyPlan ? product.selectedPlan : null,
-        price: product.price,
-        deliveryCharge: product.deliveryCharge || 15.0,
-      })),
-      totalProducts,
-      totalProductPrice,
-      totalDeliveryCharge,
-      grandTotal,
-    };
-
-    try {
-      const response = await fetch("http://localhost:1545/api/v1/orders/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(orderPayload),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to place order");
-              console.error("API error response:", errorData); // <== This will show the server error details
-
-      }
-
-      const data = await response.json();
-      console.log("Order Placed Successfully:", data);
-
-      // Redirect to payment page
-      window.location.href = "/paymentForm";
-    } catch (error) {
-      console.error("Error placing order:", error);
-      alert("Something went wrong while placing your order. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
+    
     <section className="py-8 md:py-16 relative">
       <StepNavigation />
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
@@ -105,7 +53,7 @@ const Cart = () => {
               </tbody>
             </table>
 
-            {/* Order Summary */}
+            {/* Total Summary Section */}
             <div className="flex justify-end mt-6">
               <div className="w-full max-w-md bg-gray-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-base font-semibold text-gray-700 mb-4">Order Summary</h3>
@@ -127,16 +75,15 @@ const Cart = () => {
                   <span>${grandTotal.toFixed(2)}</span>
                 </div>
 
-                {/* Payment Button */}
-                <button
-                  className={`w-full mt-4 bg-[#1AB8A3] text-white font-semibold py-2 rounded-lg hover:bg-[#15907F] transition duration-300 ${
-                    loading ? "opacity-50 cursor-not-allowed" : ""
-                  }`}
-                  onClick={handleOrderSubmit}
-                  disabled={loading}
-                >
-                  {loading ? "Processing..." : "Proceed to Payment"}
-                </button>
+                {/* Payment Button (Only shows if cart has products) */}
+                {products.length > 0 && (
+                  <Link href="/paymentForm">
+                    <button className="w-full mt-4 bg-[#1AB8A3] text-white font-semibold py-2 rounded-lg hover:bg-[#1AB8A3] transition duration-300">
+                      Proceed to Payment
+                    </button>
+                    
+                  </Link>
+                )}
               </div>
             </div>
           </div>
