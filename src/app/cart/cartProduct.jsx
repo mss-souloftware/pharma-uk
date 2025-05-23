@@ -23,7 +23,7 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
       <td className="p-4">
         <Image
           src={validImageUrl}
-          alt="Product Image"
+          alt={product.title}
           width={80}
           height={80}
           className="object-cover rounded-lg"

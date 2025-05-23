@@ -63,7 +63,7 @@ const HowDoesItWorks = () => {
   );
 
   return (
-    <div className="bg-gradient-to-b from-[#1AB8A3] to-[#1AB8A3 ]  rounded-2xl py-16 container mx-auto h-auto my-20 lg:px-12 relative">
+    <div className="bg-gradient-to-b from-[#30BFAC] to-[#30BFAC]  rounded-2xl py-16 container mx-auto h-auto my-20 lg:px-12 relative">
     <div className="relative z-10 text-center">
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[81px] text-white">
         How Does It&nbsp; Work?

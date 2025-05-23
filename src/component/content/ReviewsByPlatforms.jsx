@@ -24,12 +24,12 @@ const ReviewsByPlatforms = () => {
   }, []);
   return (
     <>
-      <div className="container mx-auto py-12 mt-20 bg-[#FFE0E0] rounded-lg ">
+      <div className="container mx-auto py-12 mt-20 bg-[#30BFAC] rounded-lg ">
         {/* Title */}
         <div className="block mx-auto text-center text-xl  sm:text-2xl md:text-3xl lg:text-4xl font-semibold py-8 mb-10 sm:mb-0 ">
-          <h4 className="font-extrabold inline-block ">
+          <h4 className="font-extrabold  text-white inline-block ">
           More Than{" "}
-          <span className="text-[#1AB8A3]">207,891 </span>{" "} Reviews
+          <span className="text-white">207,891 </span>{" "} Reviews
           </h4>
         </div>
       
