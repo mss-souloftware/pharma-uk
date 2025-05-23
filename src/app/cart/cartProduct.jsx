@@ -28,7 +28,7 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
           height={80}
           className="object-cover rounded-lg"
         />
-      </td>
+     </td>
       <td className="p-4 font-semibold text-gray-800">{product.title}</td>
       <td className="p-4">
         {product.weeklyPlan && product.weeklyPlan.length > 0 ? (
