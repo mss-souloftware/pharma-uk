@@ -32,7 +32,6 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
       <td className="p-4 font-semibold text-gray-800">{product.title}</td>
       <td className="p-4">
         {product.weeklyPlan && product.weeklyPlan.length > 0 ? (
-          // ✅ Show Weekly Plan dropdown if weeklyPlan exists
           <label>
             <select onChange={handlePlanChange} value={selectedPlan} className="border p-2 rounded">
               <option value="">Select Weekly Plan</option>
