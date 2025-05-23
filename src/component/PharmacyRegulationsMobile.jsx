@@ -12,7 +12,7 @@ const PharmacyRegulationsMobile = () => {
           <div className="text-center lg:text-left">
             <h1 className="md:text-3xl sm:text-2xl text-xl   font-extrabold leading-relaxed pb-5">
               Pharmacy&nbsp;
-              <span className="text-hoverUnderlineColor redunderline-background tracking-widest">
+              <span className="text-[#1AB8A3] redunderline-background tracking-widest">
                 Regulation
               </span>
             </h1>
@@ -25,11 +25,11 @@ const PharmacyRegulationsMobile = () => {
               <ul className="space-y-2">
                 <li className="xl:text-base md:text-sm text-xs font-normal text-white">
                   Dr Munawar Iqbal&nbsp;
-                  <span className="text-hoverUnderlineColor">(GPhC Number 2059871)</span>
+                  <span className="text-[#1AB8A3]">(GPhC Number 2059871)</span>
                 </li>
                 <li className="xl:text-base md:text-sm text-xs font-normal text-white">
                   Rehma Gill&nbsp;
-                  <span className="text-hoverUnderlineColor">(GPhC Number 2225869)</span>
+                  <span className="text-[#1AB8A3]">(GPhC Number 2225869)</span>
                 </li>
               </ul>
             </div>
@@ -37,7 +37,7 @@ const PharmacyRegulationsMobile = () => {
         </div>
 
         {/* Second Section */}
-        <div className="grid grid-rows-3 gap-6 md:ml-10 text-white w-full lg:max-w-[504px] justify-start items-center py-10 bg-hoverUnderlineColor px-2 sm:px-6   flex justify-center items-center">
+        <div className="grid grid-rows-3 gap-6 md:ml-10 text-white w-full lg:max-w-[504px] justify-start items-center py-10 bg-[#1AB8A3] px-2 sm:px-6   flex justify-center items-center">
           {/* Informational Text */}
           <div className="text-center">
             <p className="xl:text-base md:text-sm text-xs font-normal" style={{ lineHeight: "1.8" }}>

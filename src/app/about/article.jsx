@@ -60,7 +60,7 @@ const Article = () => {
       </div>
       <div className="text-center mt-12">
         <Link href="/articlePage">
-          <span className="text-hoverUnderlineColor text-lg font-semibold underline cursor-pointer">
+          <span className="text-[#1AB8A3] text-lg font-semibold underline cursor-pointer">
             Read More Articles →
           </span>
         </Link>

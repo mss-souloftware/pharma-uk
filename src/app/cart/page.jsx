@@ -23,7 +23,7 @@ const Cart = () => {
       <StepNavigation />
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
         <h2 className="font-manrope text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight font-extrabold text-center text-gray-900 mb-8">
-          Shopping <span className="text-hoverUnderlineColor">Cart</span>
+          Shopping <span className="text-[#1AB8A3]">Cart</span>
         </h2>
 
         {products.length > 0 ? (
@@ -78,7 +78,7 @@ const Cart = () => {
                 {/* Payment Button (Only shows if cart has products) */}
                 {products.length > 0 && (
                   <Link href="/paymentForm">
-                    <button className="w-full mt-4 bg-hoverUnderlineColor text-white font-semibold py-2 rounded-lg hover:bg-hoverUnderlineColor transition duration-300">
+                    <button className="w-full mt-4 bg-[#1AB8A3] text-white font-semibold py-2 rounded-lg hover:bg-[#1AB8A3] transition duration-300">
                       Proceed to Payment
                     </button>
                   </Link>

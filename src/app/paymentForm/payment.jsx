@@ -105,7 +105,7 @@ const Payment = () => {
           {/* Payment Button */}
           <button
             type="submit"
-            className="w-full mt-4 bg-hoverUnderlineColor text-white font-semibold py-3 rounded-lg transition duration-300"
+            className="w-full mt-4 bg-[#1AB8A3] text-white font-semibold py-3 rounded-lg transition duration-300"
           >
             Pay Now
           </button>

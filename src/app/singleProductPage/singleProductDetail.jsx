@@ -31,8 +31,8 @@ const SingleProductDetail = ({ product }) => {
             className={`px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base transition-all duration-300 rounded-lg font-semibold flex-shrink-0
               ${
                 activeSection === section
-                  ? "bg-hoverUnderlineColor text-white"
-                  : "bg-transparent text-gray-700 hover:text-hoverUnderlineColor"
+                  ? "bg-[#1AB8A3] text-white"
+                  : "bg-transparent text-gray-700 hover:text-[#1AB8A3]"
               }
             `}
             onClick={() => setActiveSection(section)}
@@ -46,7 +46,7 @@ const SingleProductDetail = ({ product }) => {
 
       {product.detailDescription && (
         <div className="mb-5 p-4 bg-blue-50 rounded-lg mx-auto text-center sm:max-w-3xl">
-          <h2 className="text-sm sm:text-lg font-semibold mb-2 text-hoverUnderlineColor">
+          <h2 className="text-sm sm:text-lg font-semibold mb-2 text-[#1AB8A3]">
             Product Details
           </h2>
           <p className="text-gray-700 leading-relaxed text-xs sm:text-base">
@@ -65,14 +65,14 @@ const SingleProductDetail = ({ product }) => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <h2 className="text-sm sm:text-lg font-semibold mb-4 text-hoverUnderlineColor">
+              <h2 className="text-sm sm:text-lg font-semibold mb-4 text-[#1AB8A3]">
                 Uses
               </h2>
               <ul>{product.uses.map((use, i) => <li key={i}>{use}</li>)}</ul>
 
               {product.faqs && product.faqs.length > 0 && (
                 <>
-                  <h2 className="text-sm sm:text-lg font-semibold mt-6 mb-4 text-hoverUnderlineColor">
+                  <h2 className="text-sm sm:text-lg font-semibold mt-6 mb-4 text-[#1AB8A3]">
                     FAQs
                   </h2>
                   <div className="space-y-3">

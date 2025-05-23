@@ -28,7 +28,7 @@ const FAQAccordion = () => {
     <div className="container mx-auto md:px-5 lg:px-0">
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-relaxed mb-8 text-center sm:text-left">
         Frequently Asked Questions About{" "}
-        <span className="text-hoverUnderlineColor">Condoms</span>
+        <span className="text-[#1AB8A3]">Condoms</span>
       </h2>
 
       <div className="space-y-4">
@@ -42,7 +42,7 @@ const FAQAccordion = () => {
               onClick={() => toggleAccordion(index)}
               className="w-full text-left flex justify-between items-center py-4 text-lg font-semibold text-gray-800 hover:text-gray-600 focus:outline-none"
             >
-              <span className="text-hoverUnderlineColor">{item.question}</span>
+              <span className="text-[#1AB8A3]">{item.question}</span>
               <svg
                 className={`transform transition-transform duration-200 ${
                   activeIndex === index ? "rotate-180" : ""

@@ -48,7 +48,7 @@ const ProductHeader = () => {
           {fetchData.map((item) => (
             
             <div key={item.label}>
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-relaxed text-hoverUnderlineColor">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-relaxed text-[#1AB8A3]">
                 {item.title}
               </h1>
               <p className="text-lg text-gray-600">{item.subTitle}</p>

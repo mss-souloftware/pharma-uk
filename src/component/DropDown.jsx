@@ -12,7 +12,7 @@ const Dropdown = ({
     <div className={`dropdown ${isDropdownOpen ? "open" : ""} relative`}>
       <button onClick={setDropdownOpen} className="text-white relative group">
         {dropdownTitle}
-        <span className="absolute left-0 mt-[1px] block w-0 h-0.5   bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
+        <span className="absolute left-0 mt-[1px] block w-0 h-0.5   bg-[#1AB8A3] transition-all duration-300 group-hover:w-full"></span>
       </button>
 
       {isDropdownOpen && (
@@ -30,7 +30,7 @@ const Dropdown = ({
                   className="text-white hover:text-gray-300 group relative"
                 >
                   {link.label}
-                  <span className="absolute left-0 mt-[1px]  block  w-0 h-[1px] bg-hoverUnderlineColor transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 mt-[1px]  block  w-0 h-[1px] bg-[#1AB8A3] transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}

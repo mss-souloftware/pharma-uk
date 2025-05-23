@@ -32,7 +32,7 @@ const SubText = () => {
           custom={0}
         >
           <p className=" text-black text-sm ">
-            Discover why <span className="text-hoverUnderlineColor">iFeelShy</span> is the go-to choice for seamless and convenient online pharmacy services. Shop with confidence today!
+            Discover why <span className="text-[#1AB8A3]">iFeelShy</span> is the go-to choice for seamless and convenient online pharmacy services. Shop with confidence today!
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ const SubText = () => {
               variants={textAnimation}
               custom={index + 1} // Staggered animation effect
             >
-              <div className="w-4 h-4 bg-hoverUnderlineColor rounded-xl flex items-center justify-center mr-2">
+              <div className="w-4 h-4 bg-[#1AB8A3] rounded-xl flex items-center justify-center mr-2">
   <Image
     src="/heroTick.png"
     width={16}

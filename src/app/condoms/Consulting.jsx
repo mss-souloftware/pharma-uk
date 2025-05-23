@@ -23,7 +23,7 @@ const ConsultingCard = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-[#c62638] via-hoverUnderlineColor to-hoverUnderlineColor py-8 relative">
+    <section className="bg-gradient-to-r from-[#1AB8A3] via-[#1AB8A3]r to-[#1AB8A3] py-8 relative">
 
       <div className="container mx-auto px-6">
         {isLoading ? (

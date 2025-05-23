@@ -61,8 +61,8 @@ const settings = {
 
 const Reviews = () => {
   return (
-    <section className="bg-[#FFE0E0] rounded-lg py-8">
-      <div className="max-w-screen-xl px-4 mx-auto  bg-[#FFE0E0] rounded-lg text-center lg:px-6">
+    <section className="bg-[#1AB8A3] rounded-lg py-8">
+      <div className="max-w-screen-xl px-4 mx-auto  bg-[#1AB8A3] rounded-lg text-center lg:px-6">
         <Slider {...settings}>
           {reviewsData.map((review) => (
             <div key={review.id} className="px-2 md:px-4 lg:px-6 ">

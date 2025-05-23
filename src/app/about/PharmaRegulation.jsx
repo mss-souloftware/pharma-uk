@@ -54,7 +54,7 @@ const PharmaRegulation = () => {
                 />
                 <h3 className="text-base font-semibold my-3" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
                 <p className="text-sm mb-2  text-gray-700"  >{pharmacist.description}</p>
-                <p className="text-hoverUnderlineColor text-xs font-semibold">
+                <p className="text-[#1AB8A3] text-xs font-semibold">
                   (GPhC Number: {pharmacist.gphcNumber})
                 </p>
               </div>
@@ -82,7 +82,7 @@ const PharmaRegulation = () => {
             <div className="flex-grow text-center lg:text-left">
               <h3 className="text-base font-semibold mb-2" style={{letterSpacing: '1%'}}>{pharmacist.name}</h3>
               <p className="text-sm mb-2  text-gray-700" style={{lineHeight: '25.91px'}}>{pharmacist.description}</p>
-              <p className="text-hoverUnderlineColor text-xs font-semibold">
+              <p className="text-[#1AB8A3] text-xs font-semibold">
                 (GPhC Number: {pharmacist.gphcNumber})
               </p>                      
             </div>
@@ -91,7 +91,7 @@ const PharmaRegulation = () => {
       </div>
 
       {/* Footer Registration Section */}
-      <div className="border rounded-xl shadow-md bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] p-3 sm:p-6  flex flex-col md:flex-row items-center justify-between text-white">
+      <div className="border rounded-xl shadow-md bg-gradient-to-t from-[#1AB8A3] to-[#1AB8A3] p-3 sm:p-6  flex flex-col md:flex-row items-center justify-between text-white">
         <p className="text-center md:text-left mb-4 md:mb-0  text-sm"> 
           For more information or to view registration details visit the
           General Pharmaceutical Council&apos;s website. Responsible Pharmacist:

@@ -122,29 +122,29 @@ const SingleProduct = () => {
               <span className="text-gray-600">Quantity</span>
               <div className="flex items-center gap-2 border p-2 rounded-md">
                 <button
-                  className="px-3 py-1 bg-hoverUnderlineColor text-white rounded"
+                  className="px-3 py-1 bg-[#1AB8A3] text-white rounded"
                   onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                 >
                   -
                 </button>
                 <span className="text-lg font-medium">{quantity}</span>
                 <button
-                  className="px-3 py-1 bg-hoverUnderlineColor text-white rounded"
+                  className="px-3 py-1 bg-[#1AB8A3] text-white rounded"
                   onClick={() => setQuantity((q) => q + 1)}
                 >
                   +
                 </button>
               </div>
             </div>
-            <div className="text-2xl text-hoverUnderlineColor font-semibold mb-4">
+            <div className="text-2xl text-[#1AB8A3] font-semibold mb-4">
               £{(product.price * quantity).toFixed(2)}
             </div>
             {product.directCheckout ? (
-              <Link href={`/consultation/?id=${id}`} className="w-full md:w-auto px-6 py-2 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"> Get Started Now</Link>
+              <Link href={`/consultation/?id=${id}`} className="w-full md:w-auto px-6 py-2 bg-[#1AB8A3] text-white rounded-md transition-all hover:bg-[#1AB8A3] focus:ring-4 focus:ring-hoverUnderlineColor"> Get Started Now</Link>
             ) : (
               <button
                 onClick={handleAddToCart}
-                className="w-full md:w-auto px-6 py-2 bg-hoverUnderlineColor text-white rounded-md transition-all hover:bg-hoverUnderlineColor focus:ring-4 focus:ring-hoverUnderlineColor"
+                className="w-full md:w-auto px-6 py-2 bg-[#1AB8A3] text-white rounded-md transition-all hover:bg-[#1AB8A3] focus:ring-4 focus:ring-hoverUnderlineColor"
               > Add to Cart </button>
             )}
           </div>

@@ -58,7 +58,7 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
       <td className="p-4 text-center">
         <div className="flex justify-center items-center gap-2">
           <button
-            className="bg-gray-200 px-3 py-1 rounded-l-md hover:bg-hoverUnderlineColor hover:text-white"
+            className="bg-gray-200 px-3 py-1 rounded-l-md hover:bg-[#1AB8A3] hover:text-white"
             onClick={onDecrease}
             disabled={product.quantity <= 1}
           >
@@ -66,7 +66,7 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
           </button>
           <span className="text-gray-700 font-semibold">{product.quantity}</span>
           <button
-            className="bg-gray-200 px-3 py-1 rounded-r-md hover:bg-hoverUnderlineColor hover:text-white"
+            className="bg-gray-200 px-3 py-1 rounded-r-md hover:bg-[#1AB8A3] hover:text-white"
             onClick={onIncrease}
           >
             +

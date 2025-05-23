@@ -18,7 +18,7 @@ const CategoryList = ({ categories, selectedCategory, onSelectCategory, isLoadin
               className={`flex items-center justify-center text-sm w-28 md:w-36  h-12 rounded-full transition-all duration-300 whitespace-nowrap px-3 
                 ${
                   selectedCategory?.name === category.name 
-                    ? "bg-hoverUnderlineColor text-white" 
+                    ? "bg-[#1AB8A3] text-white" 
                     : "bg-transparent text-gray-800"
                 }`}
             >

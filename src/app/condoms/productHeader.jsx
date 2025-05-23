@@ -61,7 +61,7 @@ const ProductHeader = () => {
               ))
             : fetchData.map((item) => (
               <div key={item.label} className="space-y-2"> {/* Adds spacing between child elements */}
-              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-hoverUnderlineColor">
+              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1AB8A3]">
                 {item.title}
               </h4>
               <p className="text-sm text-gray-700">{item.subTitle}</p>

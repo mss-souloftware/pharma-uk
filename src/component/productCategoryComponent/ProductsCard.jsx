@@ -106,7 +106,7 @@ const ProductsCard = () => {
                       handleProductClick(product);
                       e.stopPropagation();
                     }}
-                    className="py-2 md:my-3 px-7 xl:px-8 bg-hoverUnderlineColor text-white font-semibold rounded-lg transform hover:scale-105 transition-all"
+                    className="py-2 md:my-3 px-7 xl:px-8 bg-[#1AB8A3] text-white font-semibold rounded-lg transform hover:scale-105 transition-all"
                   >
                     <p className="text-xs font-light">${product.price}</p>
                   </button>

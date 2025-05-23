@@ -21,7 +21,7 @@ const ConsultingCard = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-[#c62638] via-hoverUnderlineColor to-hoverUnderlineColor py-8 relative">
+    <section className="bg-gradient-to-r from-[#1AB8A3] via-[#1AB8A3]r to-[#1AB8A3] py-8 relative">
       {/* Curved lines in the background */}
       <svg
         className="absolute top-0 left-0 w-full h-32 transform rotate-180"

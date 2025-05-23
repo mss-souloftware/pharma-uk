@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <div className="  ml-0 py-12 xl:w-[120%] ">
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center sm:text-start text-hoverUnderlineColor dark:text-white mb-8 px-7 sm:px-0">Can&apos;t find what you are looking for?</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center sm:text-start text-[#1AB8A3] dark:text-white mb-8 px-7 sm:px-0">Can&apos;t find what you are looking for?</h2>
       {formStatus === "success" && (
         <div className="text-green-500 text-center mb-4">Your message has been sent successfully!</div>
       )}
@@ -131,7 +131,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full py-3 px-6 bg-hoverUnderlineColor text-white font-normal rounded-lg shadow-md focus:outline-none hover:bg-hoverUnderlineColor transition duration-300 ease-in-out ${
+            className={`w-full py-3 px-6 bg-[#1AB8A3] text-white font-normal rounded-lg shadow-md focus:outline-none hover:bg-[#1AB8A3] transition duration-300 ease-in-out ${
               isSubmitting ? "cursor-not-allowed opacity-50" : ""
             }`}
           >

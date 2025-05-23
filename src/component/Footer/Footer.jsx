@@ -26,7 +26,7 @@ export default function Footer() {
         >
           <SebscribeSection />
           {/* Social network icons container */}
-          <div className="flex items-center sm:justify-between border-b-2 border-hoverUnderlineColor p-6">
+          <div className="flex items-center sm:justify-between border-b-2 border-[#1AB8A3] p-6">
             {/* Left text */}
             <div className="mr-12 hidden lg:block">
               <span className="text-white">
@@ -70,7 +70,7 @@ export default function Footer() {
                   className="flex justify-center md:justify-start items-center space-x-0 ml-0 "
                 >
                   <Image
-                    src="/footerLogo1.svg"
+                    src="/footerlogo.svg"
                     width={400} 
                     height={100} 
                     className="w-28 sm:w-30 md:w-36 lg:w-44 xl:w-56"
@@ -221,7 +221,7 @@ export default function Footer() {
           <div className="bg-transparent p-6 text-center dark:bg-neutral-700">
             <span className="text-white">© 2023 Copyright:</span>
             <a
-              className="font-semibold text-hoverUnderlineColor dark:text-hoverUnderlineColor"
+              className="font-semibold text-[#1AB8A3] dark:text-[#1AB8A3]"
               href="https://tw-elements.com/"
             >
               ifeelshy

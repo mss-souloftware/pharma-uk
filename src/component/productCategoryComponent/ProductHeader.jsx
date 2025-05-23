@@ -80,7 +80,7 @@ const ProductHeader = () => {
             </div>
           ) : categoryData ? (
             <div className="space-y-2">
-              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-hoverUnderlineColor">
+              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1AB8A3]">
                 {categoryData.name}
               </h4>
               <p className="text-sm text-gray-700">{categoryData.subTitle}</p>

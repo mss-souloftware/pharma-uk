@@ -55,13 +55,13 @@ const SignupPage = () => {
           <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required className="w-full p-2 border rounded" />
           <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required className="w-full p-2 border rounded" />
           
-          <button type="submit" className="w-full bg-hoverUnderlineColor text-white p-2 rounded" disabled={loading}>
+          <button type="submit" className="w-full bg-[#1AB8A3] text-white p-2 rounded" disabled={loading}>
             {loading ? 'Signing Up...' : 'Sign Up'}
           </button>
         </form>
 
         <p className="text-center text-gray-600 dark:text-gray-400 mt-4">
-          Already have an account? <Link href="/login" className="text-hoverUnderlineColor
+          Already have an account? <Link href="/login" className="text-[#1AB8A3]
            ">Login</Link>
         </p>
 

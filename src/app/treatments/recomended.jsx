@@ -76,7 +76,7 @@ const Recomended = ({
 
         {/* Right: Text Content */}
         <div className="w-full md:w-1/2 flex flex-col justify-center p-6 text-center md:text-left">
-          <h3 className="text-xl md:text-2xl font-bold text-hoverUnderlineColor mb-4">
+          <h3 className="text-xl md:text-2xl font-bold text-[#1AB8A3] mb-4">
             {title}
           </h3>
           <p className="text-gray-700 text-sm leading-7 mb-6">
@@ -84,7 +84,7 @@ const Recomended = ({
           </p>
           <button
             onClick={handleAddToCart}
-            className="py-3 px-6 text-white text-base font-medium rounded-lg bg-hoverUnderlineColor shadow-md transition-transform transform hover:scale-105 hover:bg-[#96192e] duration-300"
+            className="py-3 px-6 text-white text-base font-medium rounded-lg bg-[#1AB8A3] shadow-md transition-transform transform hover:scale-105 hover:bg-[#96192e] duration-300"
           >
             Add To Cart
           </button>

@@ -108,10 +108,10 @@ const Navbar = () => {
           >
             <Image
               ref={logoRef}
-              src="/footerLogo1.svg"
-              width={400} // Make sure this is the original, high-resolution size of your logo
-              height={120}
-              className="absolute w-24 sm:w-20 md:w-24 lg:w-24 xl:w-40"
+              src="/footerlogo.svg"
+              width={50} 
+              height={50}
+              className="absolute w-[10%] sm:w-20 md:w-24 lg:w-24 xl:w-40"
               alt="Responsive Logo"
               style={{ imageRendering: "crisp-edges" }}
               quality={100}
@@ -126,7 +126,7 @@ const Navbar = () => {
               <Link href="/cart" className="flex items-center ">
                 <FaCartPlus className="text-white w-5 h-5" />
                 <span className="ml-2 text-white">
-                  <span className="text-hoverUnderlineColor">
+                  <span className="text-[#1AB8A3]">
                     {cart.products.length || 0}
                   </span>
                 </span>
@@ -259,7 +259,7 @@ const Navbar = () => {
                 <Link href="/cart" className="flex items-center">
                   <FaCartPlus className=" text-white w-5 h-5" />
                   <span className="ml-2 text-white">
-                    <span className="text-hoverUnderlineColor">
+                    <span className="text-[#1AB8A3]">
                       {cart.products.length || 0}
                     </span>
                   </span>

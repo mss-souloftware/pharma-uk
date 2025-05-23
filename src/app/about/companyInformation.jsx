@@ -35,15 +35,15 @@ const CompanyInfo = () => {
             <p>
               <span className="font-semibold">Pharmica Ltd</span> is registered in England
               and Wales under company number{" "}
-              <span className="font-semibold text-hoverUnderlineColor ">9668055</span>
+              <span className="font-semibold text-[#1AB8A3] ">9668055</span>
             </p>
             <p>
               <span className="font-semibold">DUNS Number:</span>{" "}
-              <span className="text-hoverUnderlineColor">22-097-8327</span>
+              <span className="text-[#1AB8A3]">22-097-8327</span>
             </p>
             <p>
               <span className="font-semibold">VAT Number:</span>{" "}
-              <span className="text-hoverUnderlineColor">GB 217 7259 95</span>
+              <span className="text-[#1AB8A3]">GB 217 7259 95</span>
             </p>
           </div>
         </motion.div>
@@ -68,7 +68,7 @@ const CompanyInfo = () => {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.6 }}
-            className="absolute bottom-0 right-0 rounded-xl shadow-lg bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] text-white p-4 w-52"
+            className="absolute bottom-0 right-0 rounded-xl shadow-lg bg-gradient-to-t from-[#1AB8A3] to-[#1AB8A3] text-white p-4 w-52"
             style={{ lineHeight: "30.48px" }}
           >
             <h3 className="font-semibold text-sm">Registered Office:</h3>

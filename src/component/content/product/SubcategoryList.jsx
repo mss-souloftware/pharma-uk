@@ -28,7 +28,7 @@ const SubcategoryList = ({ selectedCategory, isLoading }) => {
         <h5 className="text-base font-semibold">{subcategory.name}</h5>
         <p className="text-sm mt-2">{subcategory.description?.slice(0, 70) || "No description available."}</p>
         <Link href={subcategory.link}>
-          <button className="w-full py-2 mt-4 bg-hoverUnderlineColor text-white rounded-lg shadow-lg hover:scale-105 transition duration-300">
+          <button className="w-full py-2 mt-4 bg-[#1AB8A3] text-white rounded-lg shadow-lg hover:scale-105 transition duration-300">
             Get Consultation
           </button>
         </Link>

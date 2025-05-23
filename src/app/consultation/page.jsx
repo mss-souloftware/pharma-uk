@@ -148,7 +148,7 @@ const Consult = () => {
         >
           <CompleteBtn
             hrefLink={`/treatments/?id=${productId}`}
-            className="py-4 px-8 bg-hoverUnderlineColor text-white text-lg font-medium rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300"
+            className="py-4 px-8 bg-[#1AB8A3] text-white text-lg font-medium rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300"
           />
         </motion.div>
       </motion.div>

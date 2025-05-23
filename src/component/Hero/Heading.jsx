@@ -25,10 +25,10 @@ const Heading = () => {
         animate="visible"
         variants={textAnimation}
       >
-        Welcome to your trusted UK Online Pharmacy
+        Welcome to your <br></br> trusted UK 
       </motion.h1>
       <motion.h3
-        className="text-base  font-bold text-hoverUnderlineColor tracking-tight drop-shadow-lg capitalize 
+        className="text-base  font-bold text-[#1AB8A3] tracking-tight drop-shadow-lg capitalize 
       text-center sm:text-left  leading-6"
         initial="hidden"
         animate="visible"

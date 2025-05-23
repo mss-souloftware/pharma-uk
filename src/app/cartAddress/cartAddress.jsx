@@ -5,7 +5,7 @@ const CartAddress = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-8 lg:py-20 px-4 mx-auto max-w-screen-md">
       <h2 className="mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white">
-        Contact <span className="text-hoverUnderlineColor">Us</span>
+        Contact <span className="text-[#1AB8A3]">Us</span>
       </h2>
       <p className="mb-8 text-center text-gray-500 dark:text-gray-400 sm:text-xl">
         Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.
@@ -62,7 +62,7 @@ const CartAddress = () => {
         <div className="lg:col-span-2 flex items-center mt-8">
           <input type="checkbox" id="terms" className="w-7 h-7 text-primary-600 bg-gray-100 rounded focus:ring-0 focus:outline-none dark:bg-gray-700" required />
           <label htmlFor="terms" className="ml-2 text-lg font-medium text-gray-500 dark:text-gray-300">
-            I agree to the terms and conditions outlined in the <a href="#" className="text-hoverUnderlineColor font-semibold hover:underline">Privacy Policy</a>.
+            I agree to the terms and conditions outlined in the <a href="#" className="text-[#1AB8A3] font-semibold hover:underline">Privacy Policy</a>.
           </label>
         </div>
       </form>

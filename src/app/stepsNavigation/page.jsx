@@ -17,7 +17,7 @@ const StepNavigation = () => {
         <div key={step.id} className="flex items-center space-x-2">
           <div
             className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-              pathname === step.path ? "bg-hoverUnderlineColor border-hoverUnderlineColor" : "bg-gray-300 border-gray-400"
+              pathname === step.path ? "bg-[#1AB8A3] border-hoverUnderlineColor" : "bg-gray-300 border-gray-400"
             }`}
           />
           <span

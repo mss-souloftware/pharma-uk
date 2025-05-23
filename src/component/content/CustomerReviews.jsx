@@ -26,7 +26,7 @@ const ContentSection3 = () => {
           More than{" "}
           <h1 className="inline font-extrabold">
             207,891{" "}
-            <span className="text-hoverUnderlineColor">reviews</span>
+            <span className="text-[#1AB8A3]">reviews</span>
           </h1>
         </div>
 
@@ -56,7 +56,7 @@ const ContentSection3 = () => {
                 <p className="font-bold text-sm sm:text-base mb-2">
                   {card.text}
                 </p>
-                <p className="text-hoverUnderlineColor font-bold sm:text-xl">
+                <p className="text-[#1AB8A3] font-bold sm:text-xl">
                   {card.name}
                 </p>
               </div>
@@ -73,7 +73,7 @@ const ContentSection3 = () => {
                   onClick={() => handleDotClick(index)}
                   className={`w-3 h-3 rounded-full transition-colors duration-300 ${
                     currentIndex === index
-                      ? "bg-hoverUnderlineColor"
+                      ? "bg-[#1AB8A3]"
                       : "bg-gray-300"
                   }`}
                 ></button>

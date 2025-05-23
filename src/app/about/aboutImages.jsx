@@ -21,7 +21,7 @@ const AboutImages = () => {
             width={400}
             className="w-full md:w-[60%] lg:w-[70%] h-auto object-cover rounded-xl transition-transform duration-200 hover:scale-105"
           />
-          <div className="w-full sm:w-[80%] md:w-[40%] lg:w-[30%] h-auto border rounded-xl shadow-lg bg-gradient-to-t from-hoverUnderlineColor to-[#ff7d8c] flex items-center p-6">
+          <div className="w-full sm:w-[80%] md:w-[40%] lg:w-[30%] h-auto border rounded-xl shadow-lg bg-gradient-to-t from-[#1AB8A3] to-[#1AB8A3] flex items-center p-6">
             <p className="text-white text-sm leading-relaxed">
               We use advanced technology to offer a safer, more affordable healthcare experience, with secure, discreet, and convenient services, all from our registered pharmacy in Central London.
             </p>

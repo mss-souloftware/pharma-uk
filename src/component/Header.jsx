@@ -18,21 +18,21 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="bg-hoverUnderlineColor">
-      <div className="flex container mx-auto md:justify-between bg-hoverUnderlineColor md:pl-2 md:pb-1 p-1 sm:ml-auto">
+    <div className="bg-[#1AB8A3]     bg-[#30BFAC] ">
+      <div className="flex container bg-[#30BFAC] mx-auto md:justify-between bg-[#1AB8A3] md:pl-2 md:pb-1 p-1 sm:ml-auto">
         {/* Phone and Email Section */}
         <div>
           <div className="phone-email-section sm:ml-3 text-nowrap gap-5 lg:gap-8 md:gap-10 sm:text-xs text-xs md:text-sm flex items-center justify-around">
             {/* Phone Section */}
             <div ref={phoneRef} className="flex justify-center">
               <Image
-                src="/icons/phoneIcon.png"
+                src="/phoneicon.png"
                 alt="Phone"
-                width={20}
-                height={20}
-                className="ml-1 mr-1 md:ml-0 mt-1  sm:mt-1 object-contain sm:w-3 md:w-4 lg:w-4 w-3"
+                width={15}
+                height={5}
+                className="text-[#000000] font-medium"
               />
-              <span className="text-white mt-1 font-normal text-xs sm:text-sm   ">
+              <span className="  text-[#000000] font-bold mt-1  text-xs sm:text-sm   ">
                 Phone: +163--654123
               </span>
             </div>
@@ -40,13 +40,13 @@ const Header = () => {
             {/* Email Section */}
             <div ref={emailRef} className="flex justify-center">
               <Image
-                src="/icons/emailIcon.png"
+                src="/messge.png"
                 alt="Email"
                 width={20}
                 height={20}
                 className="mr-1  mt-1 sm:w-3 object-contain md:w-4 lg:w-4 w-3"
               />
-              <span className="text-white mt-1 font-normal text-xs sm:text-sm  ">
+              <span className="text-[#000000] mt-1 font-bold text-xs sm:text-sm  ">
                 Email: David@gmail.com
               </span>
             </div>

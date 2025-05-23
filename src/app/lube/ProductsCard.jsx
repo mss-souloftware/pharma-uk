@@ -50,7 +50,7 @@ const ProductsCard = () => {
               <div className="pt-6 text-center sm:text-left">
                 <a
                   
-                  className="text-lg font-semibold text-hoverUnderlineColor hover:underline dark:text-white"
+                  className="text-lg font-semibold text-[#1AB8A3] hover:underline dark:text-white"
                 >
                   {product.title}
                 </a>
@@ -63,7 +63,7 @@ const ProductsCard = () => {
                 onClick={(e) => {  
                   handleAddToCart(product);
                 }}
-                className="w-full mt-4 flex flex-col sm:flex-row items-center gap-4 bg-hoverUnderlineColor justify-evenly py-2"
+                className="w-full mt-4 flex flex-col sm:flex-row items-center gap-4 bg-[#1AB8A3] justify-evenly py-2"
               >
                 <p className="text-2xl font-normal text-white dark:text-white text-center sm:text-center">
                   <span className="text-sm pr-2">from</span> ${product.price}

@@ -54,20 +54,20 @@ const ForgotPassword = () => {
           </div>
           <button
             onClick={handleResetPassword}
-            className="w-full bg-hoverUnderlineColor text-white font-semibold rounded-lg text-lg py-3"
+            className="w-full bg-[#1AB8A3] text-white font-semibold rounded-lg text-lg py-3"
             disabled={loading}
           >
             {loading ? "Sending email..." : "Send OTP"}
           </button>
           <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
             <Link href='/login'>
-            <button type="button" className="hover:text-hoverUnderlineColor">
+            <button type="button" className="hover:text-[#1AB8A3]">
               Back to Login
             </button>
             </Link>
             <Link
               href="/newPassword"
-              className="hover:text-hoverUnderlineColor "
+              className="hover:text-[#1AB8A3] "
             >
               Reset Password
             </Link>

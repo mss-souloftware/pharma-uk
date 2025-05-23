@@ -9,7 +9,7 @@ const ReviewsMobileScreen = () => {
           <Typography
                   variant="h2"
                   color="blue-gray"
-                  className=" lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl text-center mb-8 xl:mb-16 text-hoverUnderlineColor text-xl "
+                  className=" lg:text-4xl md:text-3xl sm:text-2xl xl:text-5xl text-center mb-8 xl:mb-16 text-[#1AB8A3] text-xl "
                 >  Real Stories, Real Impact 
                 </Typography>
         <blockquote className="mb-6">

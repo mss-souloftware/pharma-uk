@@ -11,7 +11,7 @@ import Image from 'next/image';
           <Image
           height={400}
           width={400}
-            src="/hero/background2.svg" 
+            src="/imagetextheer.svg" 
             alt="Pharmacy Background" 
             className="w-full h-full object-cover"
           />
@@ -26,15 +26,19 @@ import Image from 'next/image';
                 {/* Main Text */}
                 <div className="space-y-4">
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                    Welcome To Your Trusted UK Online Pharmacy
+                    Welcome To Your <br></br> Trusted UK 
                   </h1>
-                  <p className="text-hoverUnderlineColor text-lg sm:text-xl font-medium">
-                    Providing Exceptional Care And Trusted By Customers Nationwide
+                  <p className="text-black-900 text-lg sm:text-xl font-medium leading-[1.5]">
+                    Discover why iFeelShy is the go-to choice for seamless <br></br>and convenient online pharmacy services. Shop with<br></br> confidence today!
                   </p>
+                  <p className="text-black-900 text-lg sm:text-xl font-medium leading-[1.5]">
+                  The Winner of the Feefo Platinum<br></br>
+                  Trusted Service Award in 2025                
+                    </p>
                 </div>
 
                 {/* Search Bar */}
-                <div className="relative max-w-xl">
+                {/* <div className="relative max-w-xl">
                   <input
                     type="text"
                     placeholder="Search for medicines..."
@@ -45,22 +49,22 @@ import Image from 'next/image';
                   />
                   <button 
                     className="absolute right-3 top-1/2 transform -translate-y-1/2
-                            bg-hoverUnderlineColor  hover:bg-hoverUnderlineColor text-white p-2 rounded-full
+                            bg-[#1AB8A3]  hover:bg-[#1AB8A3] text-white p-2 rounded-full
                             transition-colors duration-300"
                   >
                     <Search size={24} />
                   </button>
-                </div>
+                </div> */}
 
                 {/* Features Grid */}
                 <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
                   <div className="group">
                     <div className="flex items-start gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl 
                                 shadow-sm hover:shadow-md transition-all duration-300
-                                border border-gray-100 hover:border-red-100">
+                                border border-gray-100 hover:border-[#1AB8A3]">
                       <div className="shrink-0">
-                        <div className="p-2 bg-red-50 rounded-lg group-hover:bg-red-100 transition-colors duration-300">
-                          <ShieldCheck className="w-6 h-6 text-hoverUnderlineColor" />
+                        <div className="p-2 bg-[#1ab8b430] rounded-lg group-hover:bg-[#1ab8b430] transition-colors duration-300">
+                          <ShieldCheck className="w-6 h-6 text-[#1AB8A3]" />
                         </div>
                       </div>
                       <div>
@@ -73,10 +77,10 @@ import Image from 'next/image';
                   <div className="group">
                     <div className="flex items-start gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl 
                                 shadow-sm hover:shadow-md transition-all duration-300
-                                border border-gray-100 hover:border-red-100">
+                                border border-gray-100 hover:border-[#1AB8A3]">
                       <div className="shrink-0">
-                        <div className="p-2 bg-red-50 rounded-lg group-hover:bg-red-100 transition-colors duration-300">
-                          <Package className="w-6 h-6 text-hoverUnderlineColor" />
+                        <div className="p-2 bg-[#1ab8b430] rounded-lg group-hover:bg-[#1ab8b430] transition-colors duration-300">
+                          <Package className="w-6 h-6 text-[#1AB8A3]" />
                         </div>
                       </div>
                       <div>
@@ -89,10 +93,10 @@ import Image from 'next/image';
                   <div className="group sm:col-span-2">
                     <div className="flex items-start gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl 
                                 shadow-sm hover:shadow-md transition-all duration-300
-                                border border-gray-100 hover:border-red-100">
+                                border border-gray-100 hover:border-[#1AB8A3]">
                       <div className="shrink-0">
-                        <div className="p-2 bg-red-50 rounded-lg group-hover:bg-red-100 transition-colors duration-300">
-                          <Truck className="w-6 h-6 text-hoverUnderlineColor" />
+                        <div className="p-2 bg-[#1ab8b430] rounded-lg group-hover:bg-[#1ab8b430] transition-colors duration-300">
+                          <Truck className="w-6 h-6 text-[#1AB8A3]" />
                         </div>
                       </div>
                       <div>

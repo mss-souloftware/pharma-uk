@@ -62,7 +62,7 @@ const CustomerReviews = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="px-6 py-3 md:px-8 md:py-4 text-sm md:text-base bg-hoverUnderlineColor text-white font-medium rounded-lg shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-red-700 w-full md:w-auto">
+            <button className="px-6 py-3 md:px-8 md:py-4 text-sm md:text-base bg-[#1AB8A3] text-white font-medium rounded-lg shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-red-700 w-full md:w-auto">
               Read More
             </button>
           </div>

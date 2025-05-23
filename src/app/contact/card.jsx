@@ -71,7 +71,7 @@ const Card = () => {
               <ul className="mt-3">
                 {item.additionalInfo.map((info, idx) => (
                   <li key={idx} className="flex items-center text-xs font-semibold my-2 text-gray-700">
-                    <div className="w-4 h-4 sm:flex items-center justify-center bg-hoverUnderlineColor rounded-full mr-3 hidden ">
+                    <div className="w-4 h-4 sm:flex items-center justify-center bg-[#1AB8A3] rounded-full mr-3 hidden ">
                       <Image src={item.img} alt="tick" height={15} width={15} className="w-4  " />
                     </div>
                     {info}

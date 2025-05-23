@@ -38,7 +38,7 @@ const CategoryProduct = () => {
       {selectedCategory && (
         <div className="mt-6">
           <h3 className="text-lg lg:text-3xl text-center mb-6">
-            Subcategories Under <span className="text-hoverUnderlineColor">{selectedCategory.name}</span>
+            Subcategories Under <span className="text-[#1AB8A3]">{selectedCategory.name}</span>
           </h3>
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 shadow-sm rounded-lg lg:grid-cols-3 xl:grid-cols-4">
             <Suspense fallback={<div>Loading Subcategories...</div>}>

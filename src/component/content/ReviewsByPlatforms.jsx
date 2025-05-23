@@ -29,7 +29,7 @@ const ReviewsByPlatforms = () => {
         <div className="block mx-auto text-center text-xl  sm:text-2xl md:text-3xl lg:text-4xl font-semibold py-8 mb-10 sm:mb-0 ">
           <h4 className="font-extrabold inline-block ">
           More Than{" "}
-          <span className="text-hoverUnderlineColor">207,891 </span>{" "} Reviews
+          <span className="text-[#1AB8A3]">207,891 </span>{" "} Reviews
           </h4>
         </div>
       

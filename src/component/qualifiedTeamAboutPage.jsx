@@ -102,7 +102,7 @@ const QualifiedTeamAboutPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-14">
           {teamData.map((member) => (
             <div key={member.id} className="card w-full relative h-[25rem]">
-              <div className="relative image_box flex flex-col items-center justify-end rounded-xl h-[199.37px] p-2 text-white shadow-lg overflow-hidden transition-all duration-500 ease-in-out group hover:h-[344.83px] bg-gray-100 hover:bg-gradient-to-t hover:from-black hover:to-[#ff5c71]">
+              <div className="relative image_box flex flex-col items-center justify-end rounded-xl h-[199.37px] p-2 text-white shadow-lg overflow-hidden transition-all duration-500 ease-in-out group hover:h-[344.83px] bg-gray-100 hover:bg-gradient-to-t hover:from-[#1AB8A3] hover:to-[#1AB8A3]">
                 <Image
                   src={member.image}
                   alt={member.name}

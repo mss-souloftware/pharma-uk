@@ -7,7 +7,7 @@ const ProductHeading = () => {
         Find Your Treatment
       </h2>
        <span className="text-gray-700  max-w-[64rem] py-7 ">
-        <p className="text-sm" ><span className="text-hoverUnderlineColor">iFeelShy {" "}</span> provides a wide range of treatments through our easy-to-use online prescription service. Our platform ensures a safe, discreet, and convenient experience, with all medications dispensed from our GPhC-registered pharmacy. Benefit from fast, reliable same-day or express delivery across the UK. Choose iFeelShy for trusted, hassle-free online pharmacy services</p>
+        <p className="text-sm" ><span className="text-[#1AB8A3]">iFeelShy {" "}</span> provides a wide range of treatments through our easy-to-use online prescription service. Our platform ensures a safe, discreet, and convenient experience, with all medications dispensed from our GPhC-registered pharmacy. Benefit from fast, reliable same-day or express delivery across the UK. Choose iFeelShy for trusted, hassle-free online pharmacy services</p>
     </span>
     </div>
   );

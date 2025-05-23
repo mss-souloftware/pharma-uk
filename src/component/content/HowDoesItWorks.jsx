@@ -63,9 +63,9 @@ const HowDoesItWorks = () => {
   );
 
   return (
-    <div className="bg-gradient-to-b from-[#FFF5F5] to-[#FFE0E0]  rounded-2xl py-16 container mx-auto h-auto my-20 lg:px-12 relative">
+    <div className="bg-gradient-to-b from-[#1AB8A3] to-[#1AB8A3 ]  rounded-2xl py-16 container mx-auto h-auto my-20 lg:px-12 relative">
     <div className="relative z-10 text-center">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[81px] text-gray-800">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[81px] text-white">
         How Does It&nbsp; Work?
       </h2>
   
@@ -93,10 +93,10 @@ const HowDoesItWorks = () => {
                 />
               </Suspense>
   
-              <h3 className="text-lg font-semibold text-gray-900 mb-3 text-center">
+              <h3 className="text-lg font-semibold text-gray mb-3 text-center">
                 {section.name}
               </h3>
-              <p className="font-light text-sm text-gray-700 text-center px-4">
+              <p className="font-light text-sm text-gray text-center px-4">
                 {section.description}
               </p>
             </div>
@@ -128,10 +128,10 @@ const HowDoesItWorks = () => {
                     />
                   </Suspense>
   
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 text-center">
+                  <h3 className="text-lg font-semibold text-gray mb-3 text-center">
                     {section.name}
                   </h3>
-                  <p className="font-light text-sm text-gray-700 text-center px-4">
+                  <p className="font-light text-sm text-gray text-center px-4">
                     {section.description}
                   </p>
                 </div>

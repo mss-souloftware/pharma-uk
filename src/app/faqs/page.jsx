@@ -47,7 +47,7 @@ const FaqsPage = ({ categoryId }) => {
   return (
     <section className="bg-white dark:bg-gray-900 container mx-auto">
       <div className="py-8 max-w-screen-xl sm:py-16 lg:px-7">
-        <h2 className="mb-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-hoverUnderlineColor dark:text-white text-center sm:text-left">
+        <h2 className="mb-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight font-semibold text-[#1AB8A3] dark:text-white text-center sm:text-left">
           Frequently Asked Questions
         </h2>
 
@@ -78,7 +78,7 @@ const FaqsPage = ({ categoryId }) => {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span className="text-hoverUnderlineColor font-normal">{faq.question}</span>
+                    <span className="text-[#1AB8A3] font-normal">{faq.question}</span>
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400 px-2 sm:px-0 font-light">{faq.answer}</p>
                 </div>

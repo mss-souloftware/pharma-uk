@@ -78,7 +78,7 @@
 
             <button
               type="submit"
-              className="w-full py-3 mt-4 bg-hoverUnderlineColor text-white font-semibold rounded-lg disabled:opacity-50"
+              className="w-full py-3 mt-4 bg-[#1AB8A3] text-white font-semibold rounded-lg disabled:opacity-50"
               disabled={loading}
             >
               {loading ? "Processing..." : "Reset Password"}

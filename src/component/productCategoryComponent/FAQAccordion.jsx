@@ -81,7 +81,7 @@ const FAQAccordion = ({ slug }) => {
                 onClick={() => toggleAccordion(index)}
                 className="w-full text-left flex justify-between items-center py-4 text-lg font-semibold text-gray-800 hover:text-gray-600 focus:outline-none"
               >
-                <p className="text-hoverUnderlineColor text-sm">{item.question}</p>
+                <p className="text-[#1AB8A3] text-sm">{item.question}</p>
                 <svg
                   className={`transform transition-transform duration-200 ${activeIndex === index ? "rotate-180" : ""}`}
                   width="16"
