@@ -44,7 +44,7 @@ import Image from 'next/image';
                     placeholder="Search for medicines..."
                     className="w-full px-6 py-4 text-lg rounded-full border-2 border-gray-200 
                             bg-white/90 backdrop-blur-sm
-                            focus:outline-none focus:border-hoverUnderlineColor focus:ring-2 focus:ring-red-200
+                            focus:outline-none focus:border-[#30BFAC] focus:ring-2 focus:ring-red-200
                             transition-all duration-300 ease-in-out"
                   />
                   <button 

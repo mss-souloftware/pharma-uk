@@ -18,7 +18,7 @@ const SearchInput = () => {
       className="relative"
     >
      <input
-  className="rounded-lg p-2 w-full max-w-[20rem] bg-transparent border-2 border-hoverUnderlineColor focus:border-hoverUnderlineColor pl-10 pr-4 transition-all duration-300"
+  className="rounded-lg p-2 w-full max-w-[20rem] bg-transparent border-2 border-[#30BFAC] focus:border-[#30BFAC] pl-10 pr-4 transition-all duration-300"
   type="text"
   value={searchItem}
   onChange={handleInputChange} 

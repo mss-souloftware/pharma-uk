@@ -3,7 +3,7 @@
     scrollbar-width: thin;
   }
   
-  .scrollbar-thumb-hoverUnderlineColor {
+  .scrollbar-thumb-[#30BFAC] {
     scrollbar-color: #ff4500 #f0f0f0; /* Change to your theme colors */
   }
   

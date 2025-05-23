@@ -62,7 +62,7 @@ const Recomended = ({
         {headingName}
       </h1>
 
-      <div className="w-full max-w-screen-lg bg-white border-2 border-hoverUnderlineColor shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center p-6">
+      <div className="w-full max-w-screen-lg bg-white border-2 border-[#30BFAC] shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center p-6">
         {/* Left: Image Section */}
         <div className="w-full md:w-1/2 flex justify-center">
           <Image

@@ -45,7 +45,7 @@ const Payment = () => {
               value={formData.cardNumber}
               onChange={handleChange}
               placeholder="1234 5678 9012 3456"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#30BFAC]"
               maxLength="16"
               required
             />
@@ -63,7 +63,7 @@ const Payment = () => {
                 value={formData.expiryDate}
                 onChange={handleChange}
                 placeholder="MM/YY"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#30BFAC]"
                 maxLength="5"
                 required
               />
@@ -79,7 +79,7 @@ const Payment = () => {
                 value={formData.cvv}
                 onChange={handleChange}
                 placeholder="•••"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#30BFAC]"
                 maxLength="3"
                 required
               />
@@ -97,7 +97,7 @@ const Payment = () => {
               value={formData.cardHolder}
               onChange={handleChange}
               placeholder="John Doe"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#30BFAC]"
               required
             />
           </div>

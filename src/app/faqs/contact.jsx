@@ -89,7 +89,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange} 
-            className="mt-1 p-3 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
+            className="mt-1 p-3 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#30BFAC] dark:bg-gray-700 dark:text-white dark:border-gray-600"
             placeholder="Enter your name"
             />
           {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -105,7 +105,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
+            className="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#30BFAC] dark:bg-gray-700 dark:text-white dark:border-gray-600"
             placeholder="Enter your email"
           />
           {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -121,7 +121,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 p-3 w-full h-32 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hoverUnderlineColor dark:bg-gray-700 dark:text-white dark:border-gray-600"
+            className="mt-1 p-3 w-full h-32 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#30BFAC] dark:bg-gray-700 dark:text-white dark:border-gray-600"
             placeholder="Enter your message"
           />
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}

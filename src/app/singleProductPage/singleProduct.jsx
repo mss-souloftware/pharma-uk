@@ -140,11 +140,11 @@ const SingleProduct = () => {
               £{(product.price * quantity).toFixed(2)}
             </div>
             {product.directCheckout ? (
-              <Link href={`/consultation/?id=${id}`} className="w-full md:w-auto px-6 py-2 bg-[#1AB8A3] text-white rounded-md transition-all hover:bg-[#1AB8A3] focus:ring-4 focus:ring-hoverUnderlineColor"> Get Started Now</Link>
+              <Link href={`/consultation/?id=${id}`} className="w-full md:w-auto px-6 py-2 bg-[#1AB8A3] text-white rounded-md transition-all hover:bg-[#1AB8A3] focus:ring-4 focus:ring-[#30BFAC]"> Get Started Now</Link>
             ) : (
               <button
                 onClick={handleAddToCart}
-                className="w-full md:w-auto px-6 py-2 bg-[#1AB8A3] text-white rounded-md transition-all hover:bg-[#1AB8A3] focus:ring-4 focus:ring-hoverUnderlineColor"
+                className="w-full md:w-auto px-6 py-2 bg-[#1AB8A3] text-white rounded-md transition-all hover:bg-[#1AB8A3] focus:ring-4 focus:ring-[#30BFAC]"
               > Add to Cart </button>
             )}
           </div>
