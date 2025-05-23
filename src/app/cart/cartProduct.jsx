@@ -20,7 +20,7 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
 
   return (
     <tr className="border border-gray-300">
-      {/* <td className="p-4">
+      <td className="p-4">
         <Image
           src={validImageUrl}
           alt="Product Image"
@@ -28,8 +28,8 @@ const CartProduct = ({ product, weeklyPlan, onIncrease, onDecrease, onRemove }) 
           height={80}
           className="object-cover rounded-lg"
         />
-      </td> */}
-      {/* <td className="p-4 font-semibold text-gray-800">{product.title}</td> */}
+      </td> 
+      <td className="p-4 font-semibold text-gray-800">{product.title}</td>
       <td className="p-4">
         {product.weeklyPlan && product.weeklyPlan.length > 0 ? (
           // ✅ Show Weekly Plan dropdown if weeklyPlan exists
